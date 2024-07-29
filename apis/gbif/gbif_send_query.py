@@ -15,7 +15,7 @@ with open('query.json') as f:
 
 headers = {'Content-Type' : 'application/json'}
 
-response = requests.post(url, data=data, headers=headers, auth=('conical_drupe','databotanist@2022!'))
+response = requests.post(url, data=data, headers=headers, auth=('username','password'))
 
 if response.status_code == 200 or 201:
     print(response.text)
