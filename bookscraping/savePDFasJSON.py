@@ -1,9 +1,10 @@
 import os
 import json
-import fitz
+# import fitz
+import pymupdf
 
 def convert_pdf_to_json(pdf_path, save_path, start_page, end_page):
-    with fitz.open(pdf_path) as doc:
+    with pymupdf.open(pdf_path) as doc:
         num_pages = doc.page_count
 
         if start_page < 0 or start_page >= num_pages:
@@ -61,9 +62,9 @@ def convert_pdf_to_json(pdf_path, save_path, start_page, end_page):
 
 if __name__ == '__main__':
     # Usage example
-    pdf_file_path = "~/Projects/iNaturalist-edible-plants/data/raw/'Southeast Foraging-compressed.pdf'"
-    save_path = '~/Projects/iNaturalist-edible-plants/data/outputs/southeast_foraging.json'
+    pdf_file_path = '/home/boon/Projects/iNaturalist-edible-plants/raw/southeast-foraging-compressed-book.pdf'
+    save_path = '/home/boon/Projects/iNaturalist-edible-plants/data/outputs/southeast_foraging.json'
     start_page_number = 58  # 0-based index
     end_page_number = 516  # 0-based index
 
-    convert_pdf_to_json(pdf_file_path,save_path, start_page_number, end_page_number)
+    # convert_pdf_to_json(pdf_file_path,save_path, start_page_number, end_page_number)
