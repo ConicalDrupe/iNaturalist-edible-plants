@@ -1,2 +1,3 @@
 raw/*
 .venv
+/apis/gbif/gbif_password.py

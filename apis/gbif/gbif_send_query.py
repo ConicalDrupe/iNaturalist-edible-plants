@@ -1,4 +1,5 @@
 import requests
+from gbif_password import user,pass
 
 # https://api.gbif.org/v1/
 # https://api.gbif.org/v1/occurence/search?
@@ -15,7 +16,7 @@ with open('query.json') as f:
 
 headers = {'Content-Type' : 'application/json'}
 
-response = requests.post(url, data=data, headers=headers, auth=('username','password'))
+response = requests.post(url, data=data, headers=headers, auth=(user,pass))
 
 if response.status_code == 200 or 201:
     print(response.text)
