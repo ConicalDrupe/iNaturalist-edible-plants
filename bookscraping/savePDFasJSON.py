@@ -3,6 +3,8 @@ import json
 # import fitz
 import pymupdf
 
+# Should I add block numbers and line numbers when storing text?
+
 def convert_pdf_to_json(pdf_path, save_path, start_page, end_page):
     with pymupdf.open(pdf_path) as doc:
         num_pages = doc.page_count
@@ -16,6 +18,7 @@ def convert_pdf_to_json(pdf_path, save_path, start_page, end_page):
         pdf_data = []
 
         for page_num in range(start_page, end_page + 1):
+            print(page_num)
             page = doc.load_page(page_num)
 
             # Extract formatting information
@@ -23,7 +26,9 @@ def convert_pdf_to_json(pdf_path, save_path, start_page, end_page):
             blocks = page.get_text("dict")["blocks"]
             for block in blocks:
                 lines = block.get("lines", [])
-                for line in lines:
+                # page_content = { page_number =
+                # }
+                for line_num,line in enumerate(lines):
                     spans = line.get("spans", [])
                     for span in spans:
                         text = span["text"]
@@ -34,6 +39,7 @@ def convert_pdf_to_json(pdf_path, save_path, start_page, end_page):
                         text_content.append({
                             'text': text,
                             'bbox': bbox,
+                            'line_number':line_num,
                             'font_size': font_size
                         })
 
@@ -45,19 +51,19 @@ def convert_pdf_to_json(pdf_path, save_path, start_page, end_page):
 
             pdf_data.append(page_data)
 
-        # Create a dictionary to store the PDF data
-        output_data = {
-            'file_name': pdf_path,
-            'num_pages': num_pages,
-            'pages': pdf_data
-        }
+    # Create a dictionary to store the PDF data
+    output_data = {
+        'file_name': pdf_path,
+        'num_pages': num_pages,
+        'pages': pdf_data
+    }
 
-        # Convert the dictionary to JSON
-        json_data = json.dumps(output_data, indent=4)
+    # Convert the dictionary to JSON
+    json_data = json.dumps(output_data, indent=4)
 
-        # Save the JSON to a file
-        with open(save_path, 'w') as json_file:
-            json_file.write(json_data)
+    # Save the JSON to a file
+    with open(save_path, 'w') as json_file:
+        json_file.write(json_data)
 
 
 if __name__ == '__main__':
@@ -67,4 +73,4 @@ if __name__ == '__main__':
     start_page_number = 58  # 0-based index
     end_page_number = 516  # 0-based index
 
-    # convert_pdf_to_json(pdf_file_path,save_path, start_page_number, end_page_number)
+    convert_pdf_to_json(pdf_file_path,save_path, start_page_number, end_page_number)

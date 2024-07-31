@@ -21,7 +21,7 @@ import pandas as pd
 import re
 import os
 
-raw_path = os.path.join(os.getcwd(),'~/Projects/iNaturalist-edible-plants/data/outputs/southeast_foraging.json')
+raw_path = '/home/boon/Projects/iNaturalist-edible-plants/data/outputs/southeast_foraging.json'
 
 with open(raw_path) as json_file:
     data = json.load(json_file)
@@ -115,5 +115,5 @@ df["When and Where"] = df["When and Where"].str[25:-14]
 df = df.iloc[:-1]
 
 # save as csv
-direct = '~/Projects/iNaturalist-edible-plants/data/outputs/southeast-foraging-rawdata.csv'
-df.to_csv(direct)
+direct = '/home/boon/Projects/iNaturalist-edible-plants/data/outputs/southeast-foraging-rawdata.csv'
+df.to_csv(direct,index=False)
