@@ -2,3 +2,4 @@ raw/*
 .venv
 /apis/gbif/gbif_password.py
 /workbooks/*
+/data/output/southeast_foraging.json
