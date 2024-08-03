@@ -18,3 +18,10 @@
 - Break down of origin of plants (Native, non native). (shrub, herb, tree, etc...)
 
 
+# Southeast Foraging
+1) Book was turned from PDF to JSON
+2) JSON data was extracted to get the following for each plant:
+    - Common Name
+    - Scientific Name
+    - Edible Parts
+    - Text description of When plant can be harvested and Where it is found
