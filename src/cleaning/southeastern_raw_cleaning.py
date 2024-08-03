@@ -1,7 +1,7 @@
 import os
 import re
 import pandas as pd
-from edible_hashmap import edible_map
+from edible_hashmap_2 import edible_map
 from ast import literal_eval
 
 
@@ -113,7 +113,7 @@ def clean_second_southeast():
     print('Saving Second Cleaned southeast-foraging-clean_1.csv')
     print('To staging as: southeast-foraging-clean_IM.csv')
     df.to_csv('/home/boon/Projects/iNaturalist-edible-plants/data/staging/southeast-foraging-clean_IM.csv',index=False)
-    pass
+    return
 
 if __name__ == "__main__":
     # Initial cleaning of whitespace
