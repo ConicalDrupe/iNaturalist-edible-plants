@@ -1,11 +1,8 @@
+import pandas as pd
 import requests
 import json
-#import pprint
-# 134847080
-# 179049462
-# nubKey is species_key
 
-url = "https://api.gbif.org/v1/species/search"
+### NEED TO ADD SUPPORT FOR GENERA
 
 test_names = [
             "Sambucus canadensis",
@@ -18,10 +15,8 @@ test_names = [
             "Callicarpa americana"
           ]
 
-# to-do next:
-    # for high volume search, introduce random delay between requests
-    # and header randomization
 def get_species_keys(names, limit=3):
+    # nubKey is species_key
     # dataset_Id is iNaturalist research grade observations 
     url = "https://api.gbif.org/v1/species/search"
     species_keys = []
@@ -65,9 +60,8 @@ def get_species_keys(names, limit=3):
 if __name__ == "__main__":
     import requests
     import json
-    import pandas as pd
 
-    path = '/home/boon/Projects/iNaturalist-edible-plants/data/outputs/southeast-foraging-rawdata.csv'
+    path = '/home/boon/Projects/iNaturalist-edible-plants/data/staging/southeast-foraging-clean_1.csv'
     df = pd.read_csv(path)
 
     # count blank spaces (single worded rows have zero spaces)
@@ -77,7 +71,11 @@ if __name__ == "__main__":
     print('[UNIQUE SPECIES] After mask :', df2["Scientific Name"].nunique())
 
     species_list = df2["Scientific Name"].to_list()
-    print(species_list)
+    # print(species_list)
+
+    mask = df["Scientific Name"].str.count(' ') != 1
+    df3 = df.loc[mask] 
+    print(df3["Scientific Name"].to_list())
 
     # species_keys = get_species_keys(species_list)
 

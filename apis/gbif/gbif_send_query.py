@@ -19,8 +19,9 @@ headers = {'Content-Type' : 'application/json'}
 response = requests.post(url, data=data, headers=headers, auth=(user,pass))
 
 if response.status_code == 200 or 201:
+    print('[DOWNLOAD KEY]')
     print(response.text)
-    download_code = response.text
+    print('-'*10)
 else:
     print(f"Error: {response.status_code}")
     
