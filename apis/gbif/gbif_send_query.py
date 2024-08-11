@@ -1,6 +1,5 @@
 import requests
-from gbif_password import user,pass
-
+import gbif_password as g
 # https://api.gbif.org/v1/
 # https://api.gbif.org/v1/occurence/search?
 
@@ -12,16 +11,18 @@ from gbif_password import user,pass
 #Download dataset
 url = "https://api.gbif.org/v1/occurrence/download/request"
 with open('query.json') as f:
-    data = f.read().replace('\n', '').replace('\r', '').encode()
+    data = f.read()
+    # data = f.read().replace('\n', '').replace('\r', '').encode()
 
 headers = {'Content-Type' : 'application/json'}
 
-response = requests.post(url, data=data, headers=headers, auth=(user,pass))
+response = requests.post(url, data=data, headers=headers, auth=(g.user,g.p))
 
 if response.status_code == 200 or 201:
     print('[DOWNLOAD KEY]')
     print(response.text)
     print('-'*10)
+    print(f"Status Code: {response.status_code}")
 else:
     print(f"Error: {response.status_code}")
     
