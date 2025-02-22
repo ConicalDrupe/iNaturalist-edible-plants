@@ -1,0 +1,15 @@
+
+```{python}
+import boto3
+import os
+
+client = boto3.client('textract')
+
+response = client.detect_document_text(
+    Document={'S3Object': {'Bucket': os.environ['AWS_BUCKET'], 'Name': 'your-document.jpg'}}
+)
+
+for item in response['Blocks']:
+    if item['BlockType'] == 'LINE':
+        print(item['Text'])
+```
