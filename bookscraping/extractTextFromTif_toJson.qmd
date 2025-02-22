@@ -12,6 +12,28 @@
             - BlockType
             - text (lines and words seperated by '\n')
 
+
+### Test Iterator Method
+```{python}
+import boto3
+import os
+
+def get_image_list(folder='book_images',ext='.tif'):
+    file_list=[]
+    s3_client = boto3.client('s3')
+    paginator = s3_client.get_paginator('list_objects_v2')
+    result = paginator.paginate(Bucket=os.environ['AWS_BUCKET'],StartAfter='book_images')
+    for page in result:
+        if "Contents" in page:
+            for key in page[ "Contents" ]:
+                keyString = key[ "Key" ]
+                if keyString.split('/')[0]==folder and keyString.endswith(ext):
+                    file_list.append(keyString)
+
+    return file_list
+file_list = get_image_list()
+```
+
 ```{python}
 import boto3
 from collections import defaultdict
