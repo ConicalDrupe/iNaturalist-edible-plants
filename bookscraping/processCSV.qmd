@@ -1,0 +1,164 @@
+
+```{python}
+import os
+import pandas as pd
+
+pd.options.display.max_rows=None
+pd.options.display.max_columns=None
+
+df = pd.read_csv(os.path.join(os.getcwd(),'book_extract.csv'))
+df.head()
+df.columns
+```
+
+# See how many did not find edibility
+- False: 224
+- True: 318
+We ignore the 224 for now
+```{python}
+df.groupby('found_edibilty')['found_edibilty'].count()
+```
+
+# See the false records
+```{python}
+df[df['found_edibilty']==False]['name_data'].iloc[3]
+```
+
+
+```{python}
+matched = df[df['found_edibilty']==True].reset_index(drop=True)
+matched.head()
+```
+
+# Use AWS bedrock to extract
+- Binomial Scientific Name
+- (Sometimes Genus only)
+- (family if applicable)
+
+- Edible part
+- berries
+- fruit
+- needels
+- rhizomes
+
+
+# LLM usage
+```{python}
+import boto3
+
+# Initialize Bedrock client
+bedrock = boto3.client(service_name="bedrock-runtime", region_name="us-east-1")
+
+# Next, we create a function called `send_prompt_to_claude` that will take a single argument `prompt`. We create a dictionary called `prompt_config` with the configuration of the prompt we send to Claude.  Notice that we define the version, the max_tokens, and the message.  
+
+def send_prompt_to_claude(prompt):
+    try:
+        prompt_config = {
+            "anthropic_version": "bedrock-2023-05-31",
+            "max_tokens": 1000,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ]
+        }
+
+# We convert the `prompt_config` dictionary into a JSON string.  
+
+        body = json.dumps(prompt_config)
+
+# Next, `modelId`, `contentType`, and `accept` set the values that are required by the `bedrock.invoke_model` method.  Have a look at the [Boto3 documentation](https://brandonjcarroll.com/links/9lmrs) and you will see the [request syntax](https://brandonjcarroll.com/links/0zfs2) that's required.  In this case the request and response should be in JSON.  
+
+        modelId = "anthropic.claude-3-sonnet-20240229-v1:0"
+        contentType = "application/json"
+        accept = "application/json"
+
+# We then invoke the model and extract and return the response. 
+
+        response = bedrock.invoke_model(
+            modelId=modelId,
+            contentType=contentType,
+            accept=accept,
+            body=body
+        )
+        response_body = json.loads(response.get("body").read())
+        claude_response = response_body.get("content")[0]["text"].strip()
+        return claude_response
+
+# Lastly we have an exception handling block to catch any exceptions and gives us some details.
+
+    except Exception as e:
+        print(f"An error occurred while invoking Claude: {e}")
+        return "An error occurred."
+
+
+```
+
+
+```{python}
+def call_mistral_7b(prompt,  max_tokens=512, temperature=0.7):
+    """
+    Calls Mistral-7B on AWS Bedrock using Boto3.
+    
+    :param prompt: Input text prompt for the model.
+    :param model_id: The model ID for Mistral-7B on AWS Bedrock.
+    :param max_tokens: Maximum number of tokens to generate.
+    :param temperature: Sampling temperature (higher values = more randomness).
+    :return: Model's response as a string.
+    """
+    model_id = "mistral.mistral-7b-instruct-v0:2"
+    
+    # Initialize Bedrock client
+    bedrock = boto3.client("bedrock-runtime")
+    
+    # Construct the payload
+    payload = {
+        "prompt": prompt,
+        "max_tokens": max_tokens,
+        "temperature": temperature
+    }
+    
+    # Convert payload to JSON
+    request_body = json.dumps(payload)
+    
+    try:
+        # Invoke Bedrock model
+        response = bedrock.invoke_model(
+            modelId=model_id,
+            body=request_body
+        )
+        
+        # Parse response
+        response_body = json.loads(response["body"].read())
+        return response_body["outputs"][0]["text"]
+    
+    except Exception as e:
+        print(f"Error invoking Mistral-7B: {e}")
+        return None
+```
+
+# Prompt engineering
+```{python}
+import json
+
+first_species = ''.join(list(matched.loc[10,'name_data']))
+prompt=f"""You are an expert at data cleaning, specifically long strings of text with "messy" bits between words.
+Your task is to identify a SINGLE binomial Scientific from a messing string of text.
+Tell me what the scientific name of the plant is in this text.
+
+Respond with only the two word scientific name. NO EXPLANATION!
+
+TEXT: \n {first_species}
+"""
+# Return the scientific name in the a key:value format.
+
+# 'scientific_name':'Monstera deliciosa',
+# llm_res = send_prompt_to_claude(prompt)
+llm_res = call_mistral_7b(prompt)
+print(llm_res)
+```
+
+```{python}
+print(prompt)
+```
