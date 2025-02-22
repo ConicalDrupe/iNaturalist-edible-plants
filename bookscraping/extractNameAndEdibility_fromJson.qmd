@@ -1,0 +1,22 @@
+
+```{python}
+import boto3
+import json
+import os
+
+# s3_tif_file='' # from pagnator object
+
+json_name =  '000001-a.tif'.split('.')[0] +'.json' # '000001-a.tif' will come from client pagnator
+
+# json_data = extract_text_from_file(s3_tif_file)
+s3_client = boto3.client('s3')
+
+response = s3_client.get_object( Bucket=os.environ['AWS_BUCKET'],
+                     Key=f'book_json/{json_name}')
+
+json_data = response['Body'].read().decode('UTF-8')
+data = json.loads(json_data)
+
+from pprint import pprint
+pprint(data)
+```
