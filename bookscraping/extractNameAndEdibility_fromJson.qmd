@@ -88,11 +88,12 @@ def food_use_opt1(response):
     # Below checks if list is empty
     if food_use_lines:
         print("Food use found")
-        return ' '.join(food_use_lines)
+        return ''.join(food_use_lines)
     else:
         print("No food use found")
         return ''
 
 res = food_use_opt1(data)
 pprint(res)
+print(type(res))
 ```
