@@ -19,6 +19,7 @@ df['edibility'] = df['edibility'].str.lower()
 
 
 ```{python}
+import re
 def get_unique_edible_names(s):
   # Get series of unique edible parts
   s = s.apply(literal_eval) #ensure list gets evaluated as a list
@@ -38,19 +39,19 @@ print(unique_names)
 
 ```{python}
 def create_indicator_matrix_via_proxy(df,mapping=edible_map):
-    df['temp'] = df['Edible']
+    df['temp'] = df['edibility']
     df['temp'] = df['temp'].apply(literal_eval)
 
     df['temp'] = df['temp'].apply(lambda l: [x.replace('young ','').strip() for x in l])
     df['temp'] = df['temp'].apply(lambda l: [x.replace(' (acorns)',' ').strip() for x in l])
     df['temp'] = df['temp'].apply(lambda l: [mapping[x] if x in list(mapping.keys()) else x for x in l])
 
-    names = get_unique_edible_names(df['Edible'])
+    names = get_unique_edible_names(df['edibility'])
     for name in names:
       df[name] = 0
 
     cols = names.copy()
-    cols.append('Edible')
+    cols.append('edibility')
 
     for index, value in df['temp'].items():
       for val in value:
@@ -59,7 +60,15 @@ def create_indicator_matrix_via_proxy(df,mapping=edible_map):
           if match:
             df.loc[index,name] = 1
 
-    df = df.rename(columns={'Nut':'Nuts','Leave':'Leaves','Seed':'Seeds','Fruit':'Fruits','Flower':'Flowers','Shoot':'Shoots','Bud':'Flower Buds','Twig':'Twigs','Needle':'Needles'})
-    df = df.drop(['Edible','When and Where','temp'],axis=1)
+    df = df.rename(columns={'nut':'Nuts','leave':'Leaves','seed':'Seeds','fruit':'Fruits','flower':'Flowers','shoot':'Shoots','bud':'Flower Buds','twig':'Twigs','needle':'Needles','bark':'Bark','seedcones':'Seedcones','sap':'Sap','heart':'Heart','pollen':'Pollen','root':'Root','tips':'Tips','fiddleheads':'Fiddleheads','pulp':'Pulp','stem':'Stem','stalk':'stalk','above-ground portion':'above_ground_portion','whole plant':'whole_plant','pith':'Pith','stalk':'Stalk'})
+    df = df.drop(['edibility','source','temp'],axis=1)
     return df
+
+im = create_indicator_matrix_via_proxy(df)
+im.columns
+```
+
+
+```{python}
+im.to_csv(os.path.join(os.getcwd(),'edible_wild_IM.csv'),index=False)
 ```
