@@ -67,11 +67,9 @@ def food_use_opt1(json_data):
 
     # Below checks if list is empty
     if food_use_lines:
-        print("Food use found")
-        return ''.join(food_use_lines)
+        return ''.join(food_use_lines), True
     else:
-        print("No food use found")
-        return ''
+        return '', False
 
 
 if __name__ == '__main__':
@@ -82,18 +80,23 @@ if __name__ == '__main__':
 
     master_ls= []
 
-    for json_s3 in json_list:
-        print(json_s3)
+    json_ls_len = len(json_list)
+
+    for i,json_s3 in enumerate(json_list):
         data = load_json_from_s3(s3_client,json_s3)
         name_resp = name_op1(data)
-        food_res = food_use_opt1(data)
+        food_res, found_flag = food_use_opt1(data)
 
         temp_data = {'source':json_s3.split('/')[1],
                      'name_data':name_resp,
-                     'food_data':food_res}
+                     'food_data':food_res,
+                     'found_edibilty':found_flag}
         master_ls.append(temp_data)
-        print(temp_data)
-        break
+
+        print(f'Appended json {i+1}/{json_ls_len}')
 
     final_df = pd.DataFrame(master_ls)
     final_df.to_csv(os.path.join(os.getcwd(),'book_extract.csv'),index=False)
+
+    # Save final df to s3
+    # s3_client.put_object(Bucket=os.environ['AWS_BUCKET'],Key='csvs/book_name_and_edibility_extract.csv')
