@@ -1,0 +1,318 @@
+,source,scientific_name,Mistral_edibles
+0,000001-a.json, Pteridium aquilinum,['fiddleheads']
+1,000001-b.json, Morus alba,"['berries', 'Young leaves']"
+2,000002-b.json, Rubus odoratus,"['berries', 'primocane shoots']"
+3,000003-a.json, Athyrium filix-femina,['fiddleheads']
+4,000003-b.json,Rubus phoenicolasius,"['berries', 'shoots']"
+5,000004-b.json,Rubus bilis,['berries']
+6,000005-a.json, Coryphantha missouriensis,['fruits']
+7,000005-b.json, Rubus chamaemorus,['berries']
+8,000006-b.json, Rubus arcticus,['berries']
+9,000008-a.json, Rubus occidentalis,['berries']
+10,000008-b.json, Abies balsamea,['immature seedcones']
+11,000009-a.json, Rubus dewberry,['berries']
+12,000009-b.json, Batis maritima,"['leaves', 'branch tips']"
+13,000010-a.json, Rubus pubescens,['berries']
+14,000010-b.json, Juniperus communis,"['berries', 'tips', 'needles']"
+15,000011-a.json,Picea engelamanii,"['inner bark', 'shoots']"
+16,000011-b.json, Juglans cinerea,['nuts']
+17,000012-a.json, Tsuga canadensis,"['bark', 'inner bark']"
+18,000013-a.json, Empetrum nigrum,['berries']
+19,000015-a.json, Juglans nigra,['nuts']
+20,000015-b.json, Castanea dentata,['nuts']
+21,000016-a.json,Rosa rugosa,['nuts']
+22,000016-b.json, Corylus betulaceae,['hazelnuts']
+23,000017-b.json,Quercus,['acorns']
+24,000019-a.json, Fagus grandifolia,['nuts']
+25,000020-a.json, Castanea pumila,['nuts']
+26,000020-b.json, Citrus trifoliata,['oranges']
+27,000021-b.json, Diospyros texanum,['fruit']
+28,000022-b.json, Nyssa ogeche,['fruits']
+29,000023-b.json,Malus domestica,['fruit']
+30,000025-a.json, Diospyros virginiana,"['fruit', 'pulp']"
+32,000026-a.json,Malus,['apples']
+33,000027-a.json, Aralia spinosa,['shoots']
+34,000027-b.json, Prunus serotina,['cherries']
+36,000028-b.json, Prunus avium,['cherries']
+37,000029-a.json, Prunus pensylvanica,['fruit']
+38,000029-b.json, Elaeagnus angustifolia,['fruit']
+40,000030-b.json, Sassafras albidum,"['leaves', 'roots', 'bark']"
+41,000031-a.json, Cornus mas,['fruit']
+42,000031-b.json,Amelanchier,['berries']
+43,000032-a.json, Sideroxylon tanuginosum,['fruit']
+44,000033-a.json, Gymnocladus dioicus,"['pods', 'seeds']"
+45,000033-b.json, Cercis canadensis,"['flowers', 'newly formed young pods']"
+46,000034-a.json, Gleditsia triacanthos,"['pulp', 'seeds']"
+47,000034-b.json, Prosopis glandulosa,['pods']
+48,000035-a.json,Abies balsamea,"['flowers', 'beans']"
+49,000036-a.json, Populus tremuloides,['cambium']
+50,000037-b.json,Betula,"['sap', 'inner bark']"
+51,000038-b.json, Acer sapindaceae,['sap']
+52,000040-a.json, Mitchella repens,['berries']
+53,000042-a.json, Gaultheria procumbens,"['berries', 'leaves']"
+54,000043-a.json, Arctous rubra,['berries']
+55,000043-b.json, Arctostaphylos uva-ursi,['berries']
+56,000044-a.json, Sambucus racemosa,"['berries', 'flowers']"
+57,000044-b.json, Shepherdia argentea,"['buf-faloberries', 'seeds']"
+58,000045-a.json, Shepherdia canadensis,['berries']
+59,000045-b.json, Elaeagnus umbellata,['berries']
+60,000046-b.json, Viburnum edule,['berries']
+61,000048-a.json, Mahonia trifoliata,['berries']
+62,000049-a.json, Lycium carolinianum,"['fruit', 'succulentsaity leaves']"
+63,000050-a.json, Ribes glandulosum,['berries']
+64,000050-b.json, Ribes triste,['berries']
+65,000051-a.json,ilex vomitoria,['leaves']
+66,000052-a.json, Vaccinium stamineum,['berries']
+67,000053-a.json, Cornus stolonifera,['berries']
+69,000056-a.json, Ribes grossularia,['berries']
+70,000057-a.json, Callicarpa americana,['berries']
+71,000058-a.json, Vaccinium arboreum,['berries']
+72,000058-b.json, Lonicera caerulaea,['berries']
+73,000059-b.json, Aronia melanocarpa,['berries']
+74,000060-a.json, Zanthoxylum americanum,"['dried fruit', 'leaves']"
+75,000061-a.json, Comptonia peregrina,['leaves']
+76,000062-a.json, Myrica gale,"['leaves', 'flower buds', 'fruits']"
+77,000063-a.json, Ledum groenlandicum,['leaves']
+78,000065-a.json, Ampelopsis arborea,['fruit']
+79,000066-a.json, Lonicera white,['flowers']
+80,000067-a.json, Pueraria lobata,"['starch', 'shoots', 'tender young leaves', 'flowers', 'flower buds']"
+81,000069-a.json, Zizaniopsis miliaceae,"['shoots', 'lateral rhizomes', 'seeds']"
+82,000071-a.json,Typha latifolia,"['rhizomes', ' cores', ' heart', ' green to with grain or you vegetables', ' male flowers', ' pollen']"
+83,000073-a.json, Nasturtium officinale,['greens']
+84,000074-a.json, Water parsnip,"['roots', 'young stems', 'leaves', 'leaf shoots']"
+85,000075-b.json, Zizania palustris\nZizania aquatica,['kernels']
+86,000076-a.json, Veronica americana,['tips']
+87,000077-a.json, Trapa natans,['nuts']
+88,000078-a.json, Sagittaria latifolia,['tubers']
+89,000079-a.json,Plantago aquatica,"['corms', 'Young leaves', 'Young shoots']"
+90,000080-a.json, Nelumbo lutea,"['tubers', ' nuts']"
+91,000081-a.json, Peltandra virginica,['rootstock']
+92,000082-a.json, Allium vineale,"['leaves', 'scapes', 'flower buds', 'green pods']"
+93,000082-b.json, Alternanthera philoxeroides,"['Young leaves', 'stem tips']"
+95,000085-a.json, Allium drummondii,"['bulbs', 'greens']"
+97,000087-a.json, Hemerocallis fulva,"['tubers', 'whitish heart', 'shoots', 'flowerbuds', 'flowers']"
+98,000087-b.json, Colocasia esculenta,['corms']
+99,000089-a.json,Phyllostachys aurea,"['shoots', 'ripe grains']"
+100,000090-a.json, Oryzopsis hymenoides,['seeds']
+101,000091-a.json, Hordeum pusillum,['seeds']
+102,000091-b.json, Allium sativum,"['bulbs', 'young greens', 'scapes']"
+103,000092-a.json, Plantago maritima,"['leaves', 'Young flowerstalks']"
+104,000092-b.json, Allium onion,"['bulbs', 'leaves']"
+105,000094-a.json, Triglochin maritima,"['heart', 'shoots']"
+106,000097-a.json, Asarum canadense,['rhizomes']
+107,000098-a.json, Clintonia borealis,['young leaves']
+108,000099-a.json, Oxyria digyna,['leaves']
+109,000100-a.json,Plantago major,"['leaves', 'immature spikes', 'ripe pods']"
+110,000100-b.json, Liatris punctata,['roots']
+111,000101-a.json, Viola sagittata,"['Young leaves', 'peduncles', 'flowers']"
+113,000102-b.json, Nothoscordum bivalve,['bulbs']
+114,000103-a.json, Pyrrhopappus grandiflorus,"['digged bulbs', 'Young leaves', 'Young scapes']"
+115,000105-a.json, Bellis perennis,['leaves']
+116,000106-a.json, Tussilago farfara,"['shoots', 'young leaves']"
+117,000107-a.json, Hydrocotyle bonariensis,"['leaves', 'petioles']"
+118,000108-b.json, Dodecatheon pulchellum,"['greens', 'shoots']"
+119,000109-a.json, Trifolium repens,"['leaves', 'flowers']"
+120,000110-a.json, Musineon tenuifolium,"['leaves', 'roots']"
+121,000111-a.json, Cymopterus montanus,['roots']
+122,000112-a.json,Fragaria rosmarus,['strawberries']
+123,000113-a.json, Pediomelum hypogaeum,['roots']
+124,000113-b.json, Hypochaeris radicata,"['leaves', 'shoots']"
+125,000114-a.json, Mollugo verticillata,['leaves']
+126,000115-a.json, Salvia lyrata,['shoots']
+127,000115-b.json, Micranthes micranthidifolia,"['shoots', 'leaves']"
+128,000116-a.json,Valerianella,['tendergrowth']
+129,000116-b.json, tasites frigidus,['flower stalk shoots']
+130,000117-a.json, Prunella vulgaris,['leaves']
+131,000118-a.json, Silene alba,['young leaves']
+132,000119-a.json, Dentaria laciniata,"['tubers', 'above-ground portion']"
+133,000119-b.json, Lomalush,"['roots', 'Young leaves', 'stems', 'flowers']"
+134,000120-a.json, Dentaria diphylla,"['rhizomes', 'greens']"
+135,000120-b.json,Mopterus acualis,"['roots', 'Young leaves']"
+136,000121-a.json, Rumex acetosella,['leaves']
+137,000122-a.json, Rumex acetosa,['leaves']
+138,000122-b.json, Oxalis violacea,"['bulbs', 'taproot']"
+139,000123-a.json,Bistorta vivipara,"['rhizomes', ' leaves', ' bulblets']"
+140,000123-b.json, Pediomelum subacaule,['root']
+141,000124-b.json, Anemonella thalictroides,['tinytubers']
+142,000125-a.json, Mertensia virginica,['young leaves']
+143,000125-b.json, Krigia caespitosa,"['leaves', 'stems']"
+144,000126-a.json,Mertensia maritama,"['leaves', 'stemtips']"
+145,000128-b.json,Silene vulgaris,"['leaves', 'stems']"
+146,000129-a.json, Berteroa incana,"['shoots', 'seeds']"
+147,000130-a.json, Campanula rotundifolia,"['leaves', 'shoots', 'flowers']"
+148,000131-a.json, Campanula rapunculoides,"['shoots', 'leaves', 'buds', 'flowers']"
+149,000132-a.json, Caltha palustris,['young growth']
+150,000133-a.json, Cardamine bulbosa,['tuber']
+151,000134-a.json, Armoracia rusticana,"['Young leaves', 'shoots', 'root']"
+152,000135-a.json, Hesperis matronalis,"['leaves', 'shoots', 'flower buds']"
+153,000136-a.json, Alliaria petiolata,"['leaves', 'shoots']"
+154,000137-b.json,Arctim lancea,"['roots', 'lower 2/3 of the root', 'stalks', 'peeled stalks', 'whiter lower part of the stalk']"
+155,000138-a.json, Aster macrophyllus,['leaves']
+156,000140-a.json, Scorzonera laciniata,"['roots', 'young leaves', 'shoots', 'flower buds']"
+157,000142-b.json, Thlaspi arvense,"['shoots', 'seeds']"
+158,000143-a.json, Youngia japonica,"['young stems', 'tender leaves']"
+160,000144-a.json, Cichorium intybus,"['roots', 'Young spring leaves']"
+161,000144-b.json, Cardaria draba,"['shoots', 'leafytops', 'flowerbud clusters']"
+162,000145-a.json, Sonchus asper,"['stalks', 'leaves']"
+163,000145-b.json, Eryngium yuccifolium,"['bases', 'young shoots']"
+164,000147-b.json,ilphium terebinthinaceum,['shoots']
+165,000148-b.json, Viola canadensis,['leaves']
+166,000149-a.json, Castilleja coccinea,"['tops', 'flowers']"
+167,000149-b.json,ygodesmia texana,"['leaves', 'stems', 'peduncles', 'flower buds']"
+168,000150-a.json, Monolepis nuttalliana,"['Young stems', 'Young leaves']"
+169,000151-a.json, Callirhoe pedata,"['roots', 'Young leaves', 'shoots', 'flower buds']"
+170,000152-a.json, Malva moschata,"['young leaves', 'flower bud clusters']"
+171,000152-b.json,apsana communis,"['young leaves', 'tendershoots']"
+172,000153-a.json, Napaea dioica,"['roots', 'young petioles', 'peeled shoots', 'leaves', 'flowers', 'flower buds']"
+173,000153-b.json, Pyrrhopappus carolinianus,['young leaves']
+174,000155-a.json, Viola bicolor,['flowers']
+175,000156-a.json, Pedicularis canadensis,['young shoots']
+176,000157-a.json, Oenothera laciniata,"['stem tips', 'flowers', 'flower buds']"
+177,000158-a.json, Rorippa palustris,"['leaves', 'shoots']"
+178,000159-a.json, Barbarea vulgaris,"['shoots', 'tops', 'basal leaves']"
+179,000160-a.json, Chorispora tenella,['leaves']
+180,000161-a.json, Lepidium campestre,"['Young leaves', 'stem tips', 'seedpods', 'seeds']"
+181,000162-a.json, Arabis glabra,"['shoots', 'leaves']"
+182,000162-b.json,Malva sylvestris,"['greens', 'flowers', 'buds', 'immature fruits']"
+183,000163-a.json, Rugosum cabbage,['leaves']
+184,000163-b.json,drophyllum appendiculatum,"['leaves', 'young shoots']"
+185,000165-a.json, Sisymbrium officinale,"['young leaves', 'stems']"
+186,000166-a.json, Sisymbrium altissimum,"['leaves', 'flower buds', 'stems']"
+187,000166-b.json, Chrysanthemum leucanthemum,"['leaves', 'tender stem tips']"
+188,000167-a.json, Erucastrum gallicum,"['leaves', 'stem tips']"
+189,000168-a.json, Raphanus raphanistrum,"['parts', 'pods']"
+190,000169-a.json, Heracleum lanatum,"['roots', 'tender', ' young stalks', 'flower bud clusters']"
+191,000171-b.json,Lepidium virginicum,"['leaves', 'shoots', 'tip', 'seed pods']"
+192,000172-a.json, Pastinaca sativa,['taproots']
+194,000173-b.json, Bunias orientalis,"['Young leaves', 'tender shoots', 'flower buds']"
+195,000174-a.json, Cardamine hirsuta,['greens']
+196,000175-a.json, Cardamine impatiens,['parts']
+197,000175-b.json, Sisymbrium loeselii,['basal leaves']
+198,000176-a.json, Duchesnea indica,['berries']
+199,000176-b.json, Coincya monensis,"['stalks', 'leaves']"
+200,000177-a.json, Phacelia dubia,['young greens']
+201,000179-a.json, Taenidia integerrima,"['roots', 'leaves', 'shoots', 'seeds']"
+202,000183-a.json, Angelica archangelica,"['stalks', 'petioles', 'seeds']"
+203,000185-a.json, Aegopodium podagraria,['young leaves']
+204,000187-a.json, Aquilegia canadensis,['flowers']
+205,000188-a.json, Matricaria matricarioides,"['young greens', 'flowerheads']"
+206,000188-b.json, Oenanthe javanica,"['shoots', 'leaves']"
+207,000192-a.json, Erigenia bulbosa,"['root', 'greens']"
+208,000194-b.json,Osmorhizo chilensis,"['stalks', 'petioles', 'seeds']"
+209,000195-b.json, Foeniculum vulgare,"['shoots', 'leaves', 'flower buds', 'seeds']"
+211,000198-a.json, Lathyrus latifolius,"['shoots', ' greens', ' flowers', ' youngpods', ' seeds']"
+212,000198-b.json, Perideridia gairdneri,['roots']
+213,000199-b.json, Musineon divaricatum,"['roots', 'leaves']"
+214,000201-a.json, Fabaceae amphicarpaea,"['underground beans', 'seeds']"
+215,000201-b.json,Torilis orvensis,"['youngest greens', 'tender young stems']"
+216,000202-b.json, Doucus pusillus,"['taproots', 'young leaves']"
+217,000203-a.json, Vicia angulae,['shoots']
+218,000203-b.json, Chaerophyllum procumbens,"['tender greens', 'roots']"
+219,000204-b.json,Erodium cicutarium,['leaves']
+220,000205-a.json, Smilax carrionifera,"['shoots', 'tender leafy tips']"
+221,000205-b.json,Melonette halicacabum,['Young greens']
+222,000206-a.json,Fallopia inhed,"['shoots', 'seeds']"
+223,000207-b.json, Lathyrus ochroleucus,"['tips', 'flowers', 'Young pods', 'seeds']"
+224,000208-a.json, Humulus lupulus,"['shoots', 'vine tips']"
+225,000208-b.json, Lathyrus japonicus,['young pods']
+226,000209-a.json, Passiflora lutea,"['Young leaves', 'ripe fruit']"
+227,000209-b.json, Phaseolus polystachios,['beans']
+229,000210-b.json, Apios americana,"['tubers', 'immature pods', 'mature seeds']"
+230,000213-a.json, Galium aparine,['spring growth']
+231,000213-b.json, Dioscorea polystachya,"['tubers', 'aerial tubers']"
+232,000214-a.json, Panax quinquefoli,['roots']
+233,000214-b.json, Ipomoea pandurata,['roots']
+234,000215-a.json, Calamint arkansana,"['leaves', 'sprouts']"
+235,000215-b.json, Melothria pendula,['fruit']
+237,000216-b.json, Passiflora incarnata,"['fruit', 'new leaves', 'stem tips', 'Flower buds']"
+238,000217-a.json,Satureja vulgaris,['Young greens']
+239,000218-a.json, Marrubium vulgare,['leaves']
+240,000219-a.json, Perilla frutescens,['greens']
+241,000220-b.json, Sedum ternatum,"['leaves', 'stemtips']"
+242,000222-a.json,Lamium purpureum,['flowers']
+243,000223-a.json, Stachys floridana,"['tubers', 'Young shoots/greens']"
+244,000223-b.json, Hedeoma pulegioides,['leaves']
+245,000224-a.json,Galeopsis,['seeds']
+246,000224-b.json, Origanum vulgare,['leaves']
+247,000226-a.json, Hypericum ascryon,['shoots']
+248,000227-a.json, Stellaria graminea,['leafytips']
+249,000228-a.json, Bidens bipinnata,"['tender greens', 'flowerheads']"
+250,000229-a.json, Honckenya peploides,"['leaves', 'stem tips']"
+251,000230-a.json,Stellaria,['leafy greens']
+252,000230-b.json, Lamium amplexicaule,"['leaves', 'stems']"
+253,000232-a.json, Proboscidea louisiana,"['pods', 'seeds']"
+254,000232-b.json, Lycopus unifiorus,['tubers']
+256,000233-b.json, Urtica dioica,['tender leafy tops']
+257,000234-b.json, Rhexia virginica,"['tubers', 'Young leaves', 'growing tips']"
+258,000235-a.json, Pilea pumila,"['young greens', 'stems']"
+259,000236-a.json,Galinsoga,['tender leafy tops']
+260,000237-a.json, Iva annua,['seeds']
+261,000239-a.json,Artiplex,['leafy tops']
+262,000239-b.json, Drymaria cordata,['leaves']
+263,000241-a.json,Amaranthus,"['greens', 'young stems']"
+264,000242-a.json, Kochia scoparia,['leafy tops']
+265,000243-b.json, Helianthus tuberosus,['tubers']
+266,000244-a.json, Conyza canadensis,"['new leaves', 'tender stem tips']"
+267,000245-b.json, Pedicularis lanceolata,['leaves']
+269,000248-a.json, Phytolacca americana,"['shoots', 'leaves']"
+270,000249-a.json, Parietaria pensylvanica,['whole plant']
+271,000250-a.json, Comandra umbellata,['seeds']
+272,000252-a.json, Streptopus lanceolatus,"['tips', 'greens']"
+273,000253-a.json, Polygonatum biflorum,"['rhizomes', 'shoots']"
+275,000255-b.json, Rumex triangulivalvis,"['young leaves', 'stems', 'petioles']"
+276,000256-b.json, Epilobium angustifolium,"['shoots', 'pith']"
+278,000258-a.json, Artemisia serrata,['youngleafy tips']
+279,000258-b.json, Commelina communis,"['leaves', 'stems', 'flowers', 'seedpods']"
+280,000259-a.json,Penthorum,['young greens']
+281,000259-b.json, Streptopus amplexifolius,"['shoots', 'greens', 'berries']"
+282,000260-a.json, Oenothera grandiflora,"['flowers', 'buds']"
+283,000260-b.json, Uvularia grandiflorum,['young shoots']
+284,000261-a.json, Mugwort vulgaris,"['leaves', 'youngest shoots']"
+285,000261-b.json, Maianthemum racemosum,"['rhizomes', 'shoots', 'berries']"
+286,000264-a.json, Modiola caroliniana,"['leaves', 'stem tips']"
+287,000266-a.json, Kosteletzkya pentaca,"['tip', 'flowers']"
+288,000266-b.json, Laportea canadensis,"['shoots', 'leaves', 'seeds']"
+289,000267-b.json, Solidago canadensis,"['shoots', 'leaves']"
+290,000268-a.json, Cycloloma atriplicifolium,['seeds']
+291,000269-a.json, Chenopodium hybridum,"['seeds', 'leafy tips', 'leaf blades']"
+292,000269-b.json, Campanula divaricata,['stemtips']
+293,000270-b.json, Castilleja sessiflora,"['shoots', 'tip']"
+294,000271-a.json, Hibiscus trionum,['new parts']
+295,000271-b.json, Cnidoscolus stimulosus,['nuts']
+296,000272-b.json, Hibiscus coccineus,"['flower buds', 'flowers']"
+297,000273-a.json, Floerkia proserpinacoides,['greens']
+298,000273-b.json, Hibiscus moscheutos,"['leaves', 'flowers', 'flowerbuds', 'immature pods']"
+299,000274-a.json, Melilotus albus,"['leaves', 'flowers']"
+300,000274-b.json, Malvaviscus arboreus,"['leaves', 'flowers', 'fruits']"
+301,000276-a.json, Hedysarum alpinum,['roots']
+302,000276-b.json, Cakile edentula,"['tender greens', 'stems']"
+303,000277-b.json, Chenopodium ambrosioides,['leaves']
+304,000278-a.json, Aralia altea,"['roots', 'shoots', 'berries']"
+305,000278-b.json, Oenothera speciosa,"['stem tips', 'flowerbuds', 'flowers']"
+306,000279-b.json, Erechtites hieracifolia,['young leaves']
+307,000281-b.json,Oxalis,"['greens', 'pods']"
+308,000282-a.json, Zamia floridana,['storage organ']
+309,000283-a.json, Matteucia struthiopteris,"['fiddleheads', 'tendershoots']"
+310,000283-b.json, Desmodium glutinosum,['seeds']
+311,000284-a.json, Sabal palmetto,['palm hearts']
+313,000285-b.json, Astragalus crassicarpus,['pods']
+314,000286-a.json,Opuntia cactaceae,"['pads', ' flowers', ' fruits', ' seeds']"
+315,000286-b.json, Cannabis sativa,['seeds']
+316,000287-b.json, Pediomelum cuspidatum,['root']
+317,000288-b.json, Aralia hispida,['tender shoots']
+318,000030-a.json,Persea borbonia,['leaves']
+319,000030-a.json,Persea palustris,['leaves']
+320,000055-a.json,Prunus pumila,['cherries']
+321,000055-a.json,Prunus susquehanae,['cherries']
+322,000086-a.json,Tragopogon  dubius,"['roots', 'tender green parts', 'shoots', 'flower buds', 'peduncles']"
+323,000086-a.json,Tragopogon  pratensis,"['roots', 'tender green parts', 'shoots', 'flower buds', 'peduncles']"
+324,000101-b.json,Yucca glauca,"['flower stalk shoot', 'petals']"
+325,000101-b.json,Yucca arkansana,"['flower stalk shoot', 'petals']"
+326,000210-a.json,Trillium grandiflorum,['young shoots']
+327,000210-a.json,Trillium recurvatum,['young shoots']
+328,000216-a.json,Pycnanthemum muticum,['mints']
+329,000216-a.json,Pycnanthemum incanum,['mints']
+330,000254-b.json,Persicaria amphibia,"['shoots', 'young leaves']"
+331,000254-b.json,Persicaria coccinea,"['shoots', 'young leaves']"
+332,000257-a.json,Physalis angulata,"['husks', 'fruit']"
+333,000257-a.json,Physalis virginiana,"['husks', 'fruit']"
