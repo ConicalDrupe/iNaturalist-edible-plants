@@ -1,0 +1,127 @@
+```{python}
+import pandas as pd
+import os
+
+pd.options.display.max_rows=None
+pd.options.display.max_columns=None
+
+df = pd.read_csv(os.path.join(os.getcwd(),'matched_311_mistral_edibles.csv'))
+
+
+df['Mistral_edibles'] = df['Mistral_edibles'].str.replace('\n','').str.strip()
+
+
+df.loc[228,'Mistral_edibles'] = 'young shoots'
+df.loc[218,'Mistral_edibles'] = r"'tender greens','roots'"
+df.loc[216,'Mistral_edibles'] = r"'taproots','young leaves'"
+df.loc[202,'Mistral_edibles'] = r"'stalks','petioles','seeds'"
+df.loc[208,'Mistral_edibles'] = r"'stalks','petioles','seeds'"
+df.loc[199,'Mistral_edibles'] = r"'stalks','leaves'"
+df.loc[14,'Mistral_edibles'] = r"'berries','tips','needles'"
+
+
+df['Mistral_edibles'] = df['Mistral_edibles'].str.replace('[','')
+df['Mistral_edibles'] = df['Mistral_edibles'].str.replace(']','')
+
+df['Mistral_edibles'] = df['Mistral_edibles'].str.replace("'","").str.strip().str.split(",")
+
+df.loc[4,'Mistral_scientific_name'] = 'Rubus phoenicolasius'
+df.loc[5,'Mistral_scientific_name'] = 'Rubus bilis'
+df.loc[23,'Mistral_scientific_name'] = 'Quercus'
+df.loc[42,'Mistral_scientific_name'] = 'Amelanchier'
+df.loc[48,'Mistral_scientific_name'] = 'Abies balsamea'
+df.loc[50,'Mistral_scientific_name'] = 'Betula'
+df.loc[109,'Mistral_scientific_name'] = 'Plantago major'
+df.loc[122,'Mistral_scientific_name'] = 'Fragaria rosmarus'
+df.loc[128,'Mistral_scientific_name'] = 'Valerianella'
+df.loc[135,'Mistral_scientific_name'] = 'Mopterus acualis'
+df.loc[145,'Mistral_scientific_name'] = 'Silene vulgaris'
+df.loc[154,'Mistral_scientific_name'] = 'Arctim lancea'
+df.loc[182,'Mistral_scientific_name'] = 'Malva sylvestris'
+df.loc[191,'Mistral_scientific_name'] = 'Lepidium virginicum'
+df.loc[208,'Mistral_scientific_name'] = 'Osmorhizo chilensis'
+df.loc[215,'Mistral_scientific_name'] = 'Torilis orvensis'
+df.loc[219,'Mistral_scientific_name'] = 'Erodium cicutarium'
+df.loc[221,'Mistral_scientific_name'] = 'Melonette halicacabum'
+df.loc[222,'Mistral_scientific_name'] = 'Fallopia inhed'
+df.loc[242,'Mistral_scientific_name'] = 'Lamium purpureum'
+df.loc[245,'Mistral_scientific_name'] = 'Galeopsis'
+df.loc[251,'Mistral_scientific_name'] = 'Stellaria'
+df.loc[259,'Mistral_scientific_name'] = 'Galinsoga'
+df.loc[261,'Mistral_scientific_name'] = 'Artiplex'
+df.loc[263,'Mistral_scientific_name'] = 'Amaranthus'
+df.loc[280,'Mistral_scientific_name'] = 'Penthorum'
+df.loc[307,'Mistral_scientific_name'] = 'Oxalis'
+df.loc[15,'Mistral_scientific_name'] = 'Picea engelamanii'
+df.loc[21,'Mistral_scientific_name'] = 'Rosa rugosa'
+df.loc[32,'Mistral_scientific_name'] = 'Malus'
+df.loc[82,'Mistral_scientific_name'] = 'Typha latifolia'
+df.loc[89,'Mistral_scientific_name'] = 'Plantago aquatica'
+df.loc[99,'Mistral_scientific_name'] = 'Phyllostachys aurea'
+df.loc[139,'Mistral_scientific_name'] = 'Bistorta vivipara'
+df.loc[144,'Mistral_scientific_name'] = 'Mertensia maritama'
+df.loc[314,'Mistral_scientific_name'] = 'Opuntia cactaceae'
+
+
+df.loc[35,'Mistral_scientific_name'] = df.loc[35,'Mistral_scientific_name'][3:].strip()  # split into two
+df.loc[312,'Mistral_scientific_name'] = df.loc[12,'Mistral_scientific_name'].strip()[3:].strip()  # split into two
+df.loc[39,'Mistral_scientific_name'] = df.loc[39,'Mistral_scientific_name'].strip() #probably needs to be split into two
+df.loc[68,'Mistral_scientific_name'] = df.loc[68,'Mistral_scientific_name'].replace('or\n','')  #probably needs to be split into two
+df.loc[274,'Mistral_scientific_name'] = df.loc[274,'Mistral_scientific_name'].replace('or\n','')  #probably needs to be split into two
+df.loc[112,'Mistral_scientific_name'] = df.loc[112,'Mistral_scientific_name'].replace('or\n','')  #probably needs to be split into two
+
+df.loc[96,'Mistral_scientific_name'] = df.loc[96,'Mistral_scientific_name'].replace('T.','Tragopogon ') #probably needs to be split into two
+
+df = df.drop([268,94,193,210,31,255,312,35,159])
+
+df['Mistral_scientific_name'] = df['Mistral_scientific_name'].str.replace(' or ',r'\n')
+
+```
+
+
+```{python}
+to_edit = df[df['Mistral_scientific_name'].str.contains(r'\n')]
+df = df[~df['Mistral_scientific_name'].str.contains(r'\n')]
+idx_to_delete = to_edit.index
+to_edit = to_edit.reset_index(drop=True)
+
+to_edit
+
+print(df.shape)
+```
+
+
+
+
+```{python}
+for i in range(0,8):
+    temp_edit = to_edit.iloc[i].copy()
+    two_names = temp_edit['Mistral_scientific_name'].split('\n')
+    two_names = [name.strip() for name in two_names]
+
+    one_row = temp_edit.copy()
+    two_row = temp_edit.copy()
+    one_row.loc['Mistral_scientific_name'] =  two_names[0]
+    two_row.loc['Mistral_scientific_name'] =  two_names[1]
+
+    df.loc[max(df.index)+1] = one_row
+    df.loc[max(df.index)+1] = two_row
+
+# df = df.drop(list(idx_to_delete))
+# df = df.reset_index(drop=True)
+```
+
+```{python}
+df['Mistral_scientific_name']
+print(df.shape)
+# df.iloc[309]
+print(df.columns)
+```
+
+
+```{python}
+df = df[['source','Mistral_scientific_name','Mistral_edibles']]
+
+df = df.rename(columns={'Mistral_scientific_name':'scientific_name','Mitral_edibles':'edibility'})
+df.to_csv(os.path.join(os.getcwd(),'final_species_list.csv'))
+```
