@@ -1,0 +1,33 @@
+```{python}
+import os
+import pandas as pd
+
+# path = os.path.join(os.getwd(),'bookscraping','final_species_list.csv')
+# df = pd.read_csv(path)
+# df['book_author'] = 'Sam Thayer'
+
+import psycopg2
+
+
+# Load CSV file into DataFrame
+df = pd.read_csv('/home/ubuntu/iNaturalist-edible-plants/temp/food-access-research-2.csv')
+df.columns
+print(len(df.columns))
+
+```
+
+```{python}
+# Establish connection
+conn = psycopg2.connect("host=inaturalist-dev.cu9mqs2m0f9r.us-east-1.rds.amazonaws.com dbname=postgres user=postgres, password=aws-cc2200")
+cur = conn.cursor()
+# Insert data into PostgreSQL
+for index, row in df.iterrows():
+    cur.execute(
+        "INSERT INTO raw_stg.food_access VALUES ( %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+        tuple(row)  # Convert row to tuple for SQL execution
+    )
+
+# Commit the transaction
+conn.commit()
+```
+

@@ -1,0 +1,80 @@
+
+```{python}
+import pandas as pd
+import os
+
+pd.options.display.max_rows=None
+pd.options.display.max_columns=None
+
+df = pd.read_csv(os.path.join(os.getcwd(),'matched_311_mistral_edibles.csv'))
+df.columns
+```
+
+
+```{python}
+df['Mistral_scientific_name']
+```
+
+
+```{python}
+df['Mistral_edibles']
+```
+
+
+# Cleaning Mistral Edibles
+```{python}
+df['Mistral_edibles'] = df['Mistral_edibles'].str.replace('\n','').str.strip()
+df['Mistral_edibles']
+```
+
+
+```{python}
+df['Mistral_edibles'].iloc[228] = 'young shoots'
+df['Mistral_edibles'].iloc[218] = r"'tender greens','roots'"
+df['Mistral_edibles'].iloc[216] = r"'taproots','young leaves'"
+df['Mistral_edibles'].iloc[202] = r"'stalks','petioles','seeds'"
+df['Mistral_edibles'].iloc[208] = r"'stalks','petioles','seeds'"
+df['Mistral_edibles'].iloc[199] = r"'stalks','leaves'"
+df['Mistral_edibles'].iloc[14] = r"'berries','tips','needles'"
+```
+
+
+# Final cleaning of edibles (turning it into a list)
+```{python}
+import ast
+df['Mistral_edibles'] = df['Mistral_edibles'].str.replace('[','')
+df['Mistral_edibles'] = df['Mistral_edibles'].str.replace(']','')
+
+df['test'] = df['Mistral_edibles']
+df['test'] = df['test'].str.replace("'","").str.strip().str.split(",")
+# df['test'] = df['test'].map(lambda x: ast.literal_eval(f"[{x}]"))
+
+df['test']
+```
+
+# Cleaning species
+
+```{python}
+df['Mistral_scientific_name']
+```
+
+
+```{python}
+df['Mistral_scientific_name'].iloc[4] = 'Rubus bilis'
+df['Mistral_scientific_name'].iloc[23] = 'Quercus'
+df['Mistral_scientific_name'].iloc[42] = 'Amelanchier'
+df['Mistral_scientific_name'].iloc[48] = 'Abies balsamea'
+df['Mistral_scientific_name'].iloc[50] = 'Betula'
+```
+
+To investigate
+```{python}
+df['Mistral_scientific_name'].iloc[15]
+df['Mistral_scientific_name'].iloc[21]
+df['Mistral_scientific_name'].iloc[31]
+df['Mistral_scientific_name'].iloc[32]
+df['Mistral_scientific_name'].iloc[35]
+df['Mistral_scientific_name'].iloc[39] #probably needs to be split into two
+df['Mistral_scientific_name'].iloc[68] #probably needs to be split into two
+
+```

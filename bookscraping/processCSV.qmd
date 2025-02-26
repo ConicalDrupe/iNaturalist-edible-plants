@@ -28,6 +28,7 @@ df[df['found_edibilty']==False]['name_data'].iloc[3]
 ```{python}
 matched = df[df['found_edibilty']==True].reset_index(drop=True)
 matched.head()
+print(matched.shape)
 ```
 
 # Use AWS bedrock to extract
@@ -142,7 +143,7 @@ def call_mistral_7b(prompt,  max_tokens=512, temperature=0.7):
 ```{python}
 import json
 
-first_species = ''.join(list(matched.loc[10,'name_data']))
+first_species = ''.join(list(matched.loc[100,'name_data']))
 prompt=f"""You are an expert at data cleaning, specifically long strings of text with "messy" bits between words.
 Your task is to identify a SINGLE binomial Scientific from a messing string of text.
 Tell me what the scientific name of the plant is in this text.
@@ -151,14 +152,65 @@ Respond with only the two word scientific name. NO EXPLANATION!
 
 TEXT: \n {first_species}
 """
-# Return the scientific name in the a key:value format.
 
-# 'scientific_name':'Monstera deliciosa',
+prompt_2 = f"""
+You are an expert in data cleaning and natural language processing, specializing in extracting scientific names from unstructured text.
+
+Your task is to extract a single binomial scientific name from the given text. The scientific name consists of exactly two words: the genus and species. Ignore any extra words, punctuation, or formatting issues.
+
+Respond only with the two-word scientific name and nothing else—no explanations, no additional text.
+
+Example input:
+['NEEDLE-LEAVED TREES AND SHRUBS', '3 Balsam fir', 'Abies balsmaea Pinacea (Pine family)']
+
+Expected output:
+Abies balsmaea
+
+Input:
+f{first_species}
+
+Output:
+"""
+
 # llm_res = send_prompt_to_claude(prompt)
-llm_res = call_mistral_7b(prompt)
-print(llm_res)
+# llm_res = call_mistral_7b(prompt_2)
+# print(llm_res)
 ```
 
 ```{python}
-print(prompt)
+first_species = ''.join(list(matched.loc[10,'name_data']))
+print(first_species)
+```
+
+# Scientific Name extraction of 318 matched species
+
+```{python}
+matched['Mistral_scientific_name']=''
+for idx,row in matched.iterrows():
+    name_data= ''.join(list(row.iloc[1]))
+
+    prompt = f"""
+    You are an expert in data cleaning and natural language processing, specializing in extracting scientific names from unstructured text.
+
+    Your task is to extract a single binomial scientific name from the given text. The scientific name consists of exactly two words: the genus and species. Ignore any extra words, punctuation, or formatting issues.
+
+    Respond only with the two-word scientific name and nothing else—no explanations, no additional text.
+
+    Example input:
+    ['NEEDLE-LEAVED TREES AND SHRUBS', '3 Balsam fir', 'Abies balsmaea Pinacea (Pine family)']
+
+    Expected output:
+    Abies balsmaea
+
+    Input:\n
+    {name_data}
+
+    Output:
+    """
+
+    llm_res = call_mistral_7b(prompt_2)
+    matched.loc[idx,'Mistral_scientific_name'] = llm_res
+
+matched.to_csv(os.path.join(os.getcwd(),'matched_311_mistral_names.csv'),index=False)
+
 ```

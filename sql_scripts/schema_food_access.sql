@@ -1,0 +1,20 @@
+CREATE TABLE raw_stg.food_access (
+    CensusTract bigint,
+    State varchar(36),
+    County varchar(36),
+    POP2010 int,
+    OHU2010 int,
+    PovertyRate float,
+    MedianFamilyIncome float,
+    LA1and10 int,
+    LATracts10 int,
+    lapophalf int,
+    lalowihalf int,
+    lahunvhalf int,
+    lasnaphalf int,
+    lahunv1 int,
+    lasnap1 int,
+    lasnap10 int,
+    TractLOWI int,
+    TractSNAP int
+);

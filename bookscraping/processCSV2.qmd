@@ -1,0 +1,206 @@
+
+```{python}
+import os
+import pandas as pd
+
+pd.options.display.max_rows=None
+pd.options.display.max_columns=None
+
+df = pd.read_csv(os.path.join(os.getcwd(),'matched_311_mistral_names.csv'))
+df.head()
+df.columns
+```
+
+
+# Use AWS bedrock to extract
+- Edible part
+- berries
+- fruit
+- needels
+- rhizomes
+
+# LLM usage
+```{python}
+import boto3
+
+# Initialize Bedrock client
+bedrock = boto3.client(service_name="bedrock-runtime", region_name="us-east-1")
+
+# Next, we create a function called `send_prompt_to_claude` that will take a single argument `prompt`. We create a dictionary called `prompt_config` with the configuration of the prompt we send to Claude.  Notice that we define the version, the max_tokens, and the message.  
+
+def send_prompt_to_claude(prompt):
+    try:
+        prompt_config = {
+            "anthropic_version": "bedrock-2023-05-31",
+            "max_tokens": 1000,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ]
+        }
+
+# We convert the `prompt_config` dictionary into a JSON string.  
+
+        body = json.dumps(prompt_config)
+
+# Next, `modelId`, `contentType`, and `accept` set the values that are required by the `bedrock.invoke_model` method.  Have a look at the [Boto3 documentation](https://brandonjcarroll.com/links/9lmrs) and you will see the [request syntax](https://brandonjcarroll.com/links/0zfs2) that's required.  In this case the request and response should be in JSON.  
+
+        modelId = "anthropic.claude-3-sonnet-20240229-v1:0"
+        contentType = "application/json"
+        accept = "application/json"
+
+# We then invoke the model and extract and return the response. 
+
+        response = bedrock.invoke_model(
+            modelId=modelId,
+            contentType=contentType,
+            accept=accept,
+            body=body
+        )
+        response_body = json.loads(response.get("body").read())
+        claude_response = response_body.get("content")[0]["text"].strip()
+        return claude_response
+
+# Lastly we have an exception handling block to catch any exceptions and gives us some details.
+
+    except Exception as e:
+        print(f"An error occurred while invoking Claude: {e}")
+        return "An error occurred."
+
+
+```
+
+
+```{python}
+def call_mistral_7b(prompt,  max_tokens=1000, temperature=0.7):
+    """
+    Calls Mistral-7B on AWS Bedrock using Boto3.
+    
+    :param prompt: Input text prompt for the model.
+    :param model_id: The model ID for Mistral-7B on AWS Bedrock.
+    :param max_tokens: Maximum number of tokens to generate.
+    :param temperature: Sampling temperature (higher values = more randomness).
+    :return: Model's response as a string.
+    """
+    model_id = "mistral.mistral-7b-instruct-v0:2"
+    
+    # Initialize Bedrock client
+    bedrock = boto3.client("bedrock-runtime")
+    
+    # Construct the payload
+    payload = {
+        "prompt": prompt,
+        "max_tokens": max_tokens,
+        "temperature": temperature
+    }
+    
+    # Convert payload to JSON
+    request_body = json.dumps(payload)
+    
+    try:
+        # Invoke Bedrock model
+        response = bedrock.invoke_model(
+            modelId=model_id,
+            body=request_body
+        )
+        
+        # Parse response
+        response_body = json.loads(response["body"].read())
+        return response_body["outputs"][0]["text"]
+    
+    except Exception as e:
+        print(f"Error invoking Mistral-7B: {e}")
+        return None
+```
+
+# Prompt engineering
+```{python}
+import json
+
+first_species = ''.join(list(df.loc[300,'food_data']))
+print(first_species)
+prompt=f"""You are an expert at data cleaning, specifically long strings of text with "messy" bits between words.
+Your task is to identify a SINGLE binomial Scientific from a messing string of text.
+Tell me what the scientific name of the plant is in this text.
+
+Respond with only the two word scientific name. NO EXPLANATION!
+
+TEXT: \n {first_species}
+"""
+
+prompt_2 = f"""
+You are an expert in data cleaning and natural language processing, specializing in extracting edibile plant parts from unstructured text.
+
+Your task is to extract a one or several edible parts named from the given text. Each edible part consists of exactly one word. Ignore any extra words, punctuation, or formatting issues.
+
+Respond only with a list of edible parts. nothing else—no explanations, no additional text.
+
+Example input 1:
+'FOOD USE: The grain is gathered in early to mid summer by beating the heads into a bin or basket, or bys
+tripping the tops by hand. Dark, plump seeds are good; empties are smaller and light brown. Parch to bur
+noff the fluff, then rub and winnow to purify the seed (see p. 27). Conservation 1.'
+
+Expected output 1:
+'seeds'
+
+Example input 2:
+'FOOD USE: Gather berries from the branches by hand or shake them onto a tarp or cloth. They can be dried
+,eaten fresh, or used in jams, jellies, pies, juice, or ice cream. Young leaves, especially on stump spr
+outs, can beeaten as a cooked green and have been traditionally dried and powdered as a flour additive. 
+Note: the warningssometimes seen about mulberry sap being hallucinogenic seem overblown and irrelevant t
+o normal food use.
+
+Expected output 2:
+'berries','Young leaves'
+
+
+Input:
+f{first_species}
+
+Output:
+"""
+
+# llm_res = send_prompt_to_claude(prompt)
+llm_res = call_mistral_7b(prompt_2)
+print(llm_res)
+```
+
+```{python}
+first_species = ''.join(list(matched.loc[10,'_data']))
+print(first_species)
+```
+
+# Scientific Name extraction of 318 matched species
+
+```{python}
+matched['Mistral_scientific_name']=''
+for idx,row in matched.iterrows():
+    name_data= ''.join(list(row.iloc[1]))
+
+    prompt = f"""
+    You are an expert in data cleaning and natural language processing, specializing in extracting scientific names from unstructured text.
+
+    Your task is to extract a single binomial scientific name from the given text. The scientific name consists of exactly two words: the genus and species. Ignore any extra words, punctuation, or formatting issues.
+
+    Respond only with the two-word scientific name and nothing else—no explanations, no additional text.
+
+    Example input:
+    ['NEEDLE-LEAVED TREES AND SHRUBS', '3 Balsam fir', 'Abies balsmaea Pinacea (Pine family)']
+
+    Expected output:
+    Abies balsmaea
+
+    Input:\n
+    {name_data}
+
+    Output:
+    """
+
+    llm_res = call_mistral_7b(prompt_2)
+    matched.loc[idx,'Mistral_scientific_name'] = llm_res
+
+matched.to_csv(os.path.join(os.getcwd(),'matched_311_mistral_names.csv'),index=False)
+
+```
