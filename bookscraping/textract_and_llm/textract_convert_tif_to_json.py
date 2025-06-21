@@ -2,7 +2,7 @@ import boto3
 import json
 import os
 
-def get_image_list(folder='book_images',ext='.tif'):
+def get_image_list(folder='book_images_v2',ext='.tif'):
     file_list=[]
     s3_client = boto3.client('s3')
     paginator = s3_client.get_paginator('list_objects_v2')
