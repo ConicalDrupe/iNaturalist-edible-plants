@@ -59,7 +59,7 @@ def food_use_opt1(json_data):
             food_use_flag=False
         elif food_use_flag:
             food_use_lines.append(item['Text'])
-        elif 'FOOD USE' in item['Text']:
+        elif 'FOOD USE' in item['Text'] or 'USE' in item['Text']:
             food_use_flag=True
             food_use_lines.append(item['Text'])
         else:
@@ -98,7 +98,7 @@ if __name__ == '__main__':
     final_df = pd.DataFrame(master_ls)
     one_dir_back = os.path.normpath(os.getcwd() + os.sep + os.pardir)
 
-    final_df.to_csv(os.path.join(one_dir_back,'outputs','book_extract.csv'),index=False)
+    final_df.to_csv(os.path.join(one_dir_back,'outputs','json_extract.csv'),index=False)
 
     # Save final df to s3
     # s3_client.put_object(Bucket=os.environ['AWS_BUCKET'],Key='csvs/book_name_and_edibility_extract.csv')
