@@ -3,10 +3,10 @@ import boto3
 import json
 import os
 
-def get_json_list(s3_client,folder='book_json',ext='.json'):
+def get_json_list(s3_client,folder='book_json_v2',ext='.json'):
     file_list=[]
     paginator = s3_client.get_paginator('list_objects_v2')
-    result = paginator.paginate(Bucket=os.environ['AWS_BUCKET'],StartAfter='book_images')
+    result = paginator.paginate(Bucket=os.environ['AWS_BUCKET'],StartAfter='book_images_v2')
     for page in result:
         if "Contents" in page:
             for key in page[ "Contents" ]:
@@ -96,7 +96,9 @@ if __name__ == '__main__':
         print(f'Appended json {i+1}/{json_ls_len}')
 
     final_df = pd.DataFrame(master_ls)
-    final_df.to_csv(os.path.join(os.getcwd(),'book_extract.csv'),index=False)
+    one_dir_back = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+
+    final_df.to_csv(os.path.join(one_dir_back,'outputs','book_extract.csv'),index=False)
 
     # Save final df to s3
     # s3_client.put_object(Bucket=os.environ['AWS_BUCKET'],Key='csvs/book_name_and_edibility_extract.csv')

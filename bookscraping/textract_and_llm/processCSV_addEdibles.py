@@ -48,4 +48,6 @@ for idx,row in df.iterrows():
     df.loc[idx,'Mistral_edibles'] = llm_res
     print('succeeded matching ',idx)
 
-df.to_csv(os.path.join(os.getcwd(),'matched_311_mistral_edibles.csv'),index=False)
+
+one_dir_back = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+df.to_csv(os.path.join(one_dir_back,'outputs','matched_311_mistral_edibles.csv'),index=False)

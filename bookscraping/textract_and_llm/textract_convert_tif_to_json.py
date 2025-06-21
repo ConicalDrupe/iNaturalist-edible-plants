@@ -6,7 +6,7 @@ def get_image_list(folder='book_images',ext='.tif'):
     file_list=[]
     s3_client = boto3.client('s3')
     paginator = s3_client.get_paginator('list_objects_v2')
-    result = paginator.paginate(Bucket=os.environ['AWS_BUCKET'],StartAfter='book_images')
+    result = paginator.paginate(Bucket=os.environ['AWS_BUCKET'],StartAfter='book_images_v2')
     for page in result:
         if "Contents" in page:
             for key in page[ "Contents" ]:
@@ -49,7 +49,7 @@ def save_json_to_s3(json_data,tif_name):
 
     s3_client.put_object(Body=bytes(json.dumps(json_data).encode('UTF-8')),
                          Bucket=os.environ['AWS_BUCKET'],
-                         Key=f'book_json/{json_name}',
+                         Key=f'book_json_v2/{json_name}',
                          ContentType='application/json')
     return True
 

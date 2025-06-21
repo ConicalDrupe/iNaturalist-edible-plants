@@ -33,4 +33,5 @@ for idx,row in matched.iterrows():
     llm_res = call_mistral_7b(prompt)
     matched.loc[idx,'Mistral_scientific_name'] = llm_res
 
-matched.to_csv(os.path.join(os.getcwd(),'matched_311_mistral_names.csv'),index=False)
+one_dir_back = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+matched.to_csv(os.path.join(one_dir_back,'outputs','matched_311_mistral_names.csv'),index=False)
