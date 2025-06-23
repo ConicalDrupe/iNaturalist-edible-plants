@@ -5,7 +5,8 @@ import time
 import pandas as pd
 from llm_utils import call_mistral_7b
 
-df = pd.read_csv(os.path.join(os.getcwd(),'matched_311_mistral_names.csv'))
+back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+df = pd.read_csv(os.path.join(back_dir,'outputs','txt_extract.csv'))
 
 df['Mistral_edibles']=''
 for idx,row in df.iterrows():
@@ -50,4 +51,4 @@ for idx,row in df.iterrows():
 
 
 one_dir_back = os.path.normpath(os.getcwd() + os.sep + os.pardir)
-df.to_csv(os.path.join(one_dir_back,'outputs','matched_311_mistral_edibles.csv'),index=False)
+df.to_csv(os.path.join(one_dir_back,'outputs','mistral_appended_edibles.csv'),index=False)

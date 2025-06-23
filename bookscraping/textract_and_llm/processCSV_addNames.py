@@ -3,7 +3,8 @@ import os
 import pandas as pd
 from llm_utils import call_mistral_7b
 
-df = pd.read_csv(os.path.join(os.getcwd(),'book_extract.csv'))
+back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+df = pd.read_csv(os.path.join(back_dir,'outputs','txt_extract.csv'))
 
 matched = df[df['found_edibilty']==True].reset_index(drop=True)
 
@@ -34,4 +35,4 @@ for idx,row in matched.iterrows():
     matched.loc[idx,'Mistral_scientific_name'] = llm_res
 
 one_dir_back = os.path.normpath(os.getcwd() + os.sep + os.pardir)
-matched.to_csv(os.path.join(one_dir_back,'outputs','matched_311_mistral_names.csv'),index=False)
+matched.to_csv(os.path.join(one_dir_back,'outputs','mistral_appended_names.csv'),index=False)
