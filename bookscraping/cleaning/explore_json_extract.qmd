@@ -1,0 +1,45 @@
+
+```{python}
+import os
+import pandas as pd
+
+pd.options.display.max_rows = None
+pd.options.display.max_columns= None
+
+back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+path_v1 = os.path.join(back_dir,'outputs','json_extract_v1.csv')
+path_v2 = os.path.join(back_dir,'outputs','json_extract.csv')
+
+df1 = pd.read_csv(path_v1)
+df2 = pd.read_csv(path_v2)
+
+# print(df.shape)
+# print(df.head())
+
+```
+
+
+```{python}
+# df1.isna().sum()
+df2.isna().sum()
+
+df2[df2['food_data'].isna()].tail(20)
+```
+
+
+```{python}
+df2['source'].unique()
+```
+
+
+```{python}
+# ''.join(df.iloc[8]['name_data'])
+''.join(df2.iloc[12]['name_data'])
+```
+
+
+investigating 0288_a.json, has no edibility info on this page.
+on 0288_b.json there is edibility info, but then also starts another species.
+```{python}
+''.join(df2[df2['source'] == '0288_b.json']['name_data'])
+```
