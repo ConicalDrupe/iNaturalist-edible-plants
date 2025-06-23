@@ -1,0 +1,121 @@
+0005_b,Sabal minor,,0,1,0
+0008_a,,,0,0,1
+0014_b,,,0,0,1
+0018_a,Taxus canadensis,berries,0,0,0
+0018_b,,,0,0,1
+0020_b,"Carya illinoinensis, Carya aquatica",nuts,1,0,0
+0021_a,"Carya cordiformis, Carya ovata",nuts,1,0,0
+0021_b,Carya laciniosa,nuts,0,0,0
+0022_a,"Carya tomentosa, Carya texana",nuts,1,0,0
+0022_b,Carya glabra,nuts,0,0,0
+0025_a,Corylus americana,nuts,0,1,0
+0026_a,"Quercus nigra, Quercus imbricaria",nuts,1,0,0
+0026_b,"Quercus rubra, Quercus alba",nuts,1,0,0
+0027_a,"Quercus macrocarpa, Quercus michauxii",nuts,1,0,0
+0027_b,"Quercus montana,Quercus virginiana",nuts,1,0,0
+0032_b,,,0,0,1
+0033_a,,,0,0,1
+0034_b,Celtis occidentalis,,0,1,0
+0041_a,,,0,0,1
+0043_b,Robina pseudoacacia,,0,1,0
+0046_a,"Betula nigra, Betula alleghaniensis, Betula lenta",,1,0,0
+0047_a,"Acer rubrum, Acer saccharinum, Acer negundo",,1,0,0
+0047_b,Ulmus rubra,"Inner bark, cambium, samaras,seeds",0,0,0
+0048_a,Ulmus pumila,,0,1,0
+0048_b,Egigaea repens,,0,1,0
+0048_b,Epigaea repens,,0,1,0
+0052_b,,,0,0,1
+0056_a,Rosa,,0,1,0
+0056_a,Rosa,"petals,fruits,leaves",0,1,0
+0061_b,,,0,0,1
+0064_a,"Viburnum cassinoides, Viburnum nudum, Viburnum prunifolium",,1,1,0
+0064_b,"Viburnum rufidulum, Viburnum obovatum",,1,1,0
+0073_a,Rhus,,0,1,0
+0074_a,"Rhus glabra, Rhus typhina",,1,1,0
+0079_a,Vitis,,0,1,0
+0080_a,,,0,0,1
+0082_a,,,0,1,1
+0085_a,Scirpus validus,,0,1,0
+0087_a,Bolboschoenus fluviatilis,,0,1,0
+0089_a,Acorus,,0,1,0
+0090_a,,,0,0,1
+0091_b,Sium suave,,0,1,0
+0092_b,,,0,0,1
+0093_a,Berula erecta,,0,1,0
+0096_b,Sagittaria rigida,,1,1,0
+0101_b,Allium tricoccum,,0,1,0
+0106_a,,,0,0,1
+0114_a,,,0,0,1
+0116_a,Camassia,,0,1,0
+0117_a,Aplectrum hyemale,,0,1,0
+0121_b,Plantago lanceolata,,0,1,0
+0122_a,Voila,,0,1,0
+0124_a,Taraxacum officinale,,0,1,0
+0130_a,Aralia nudicaulis,,0,1,0
+0136_a,,,0,0,1
+0142_b,"Dentaria multifida, Dentaria heterophylla",,1,1,0
+0143_b,,,0,0,1
+0144_b,Rumex hastatalus,,0,1,0
+0147_a,Rumex longifolius,,0,1,0
+0147_b,"Rumex fueginus, Rumex patientia,Rumex obtusifolius",,1,1,0
+0151_a,"Aritium lappa,Arctium minus, Arctium tomentosa",,1,1,0
+0152_b,,,0,0,1
+0153_b,Campanula americana,,0,1,0
+0160_b,Oenothera biennis,,0,1,0
+0163_a,Viola pubescens,,0,1,0
+0163_b,,,0,0,1
+0166_a,"Cirsium altissimum,Cirsium horridulum",,1,1,0
+0166_b,"Cirsium vulgare, Cirsium muticum, Onopordum acanthium",,1,1,0
+0167_a,"Carduus nutans, Silybum marianum",,1,1,0
+0171_a,Lactuca hirsuta,,1,1,0
+0171_b,Lactuca floridana,,1,1,0
+0172_a,Lactuca biennis,,0,1,0
+0172_b,"Lactuca pulchella, Lactuca saligna",,1,0,0
+0173_a,Lactuca serriola,,0,0,0
+0173_b,Lactuca ludoviciana,,0,0,0
+0174_a,,,0,0,1
+0174_b,,,0,0,1
+0180_a,"Hydrophyllum canadense, Hydrophyllum virginianum",,1,0,0
+0190_a,Brassica nigra,,0,1,0
+0194_b,,,0,0,1
+0195_b,Heracleum mantegazzianum,,0,1,0
+0197_a,"Sanicula europaea, Oxypolis rigidior",,1,1,0
+0198_b,Pimpinella saxifraga,,0,1,0
+0204_b,,,0,0,1
+0205_b,Ligusticum canadense,,0,1,0
+0207_a,"Ligusticum scoticum, Oenanthe javanica",,1,1,0
+0208_b,Angelica atropurpurea,,0,1,0
+0209_b,Angelica triquinata,,0,1,0
+0212_a,Osmorhiza longistylis,,0,1,0
+0213_b,,,0,0,1
+0215_a,"Foeniculum vulgare, Conioselinum chinense",,1,1,0
+0216_a,Carum carvi,,0,1,0
+0217_a,Perideridia americana,,0,1,0
+0219_b,Anthriscus sylvestris,,0,1,0
+0221_a,Daucus carota,,0,1,0
+0222_a,Chaerophyllum tainturieri,,0,1,0
+0224_a,,,0,0,1
+0225_b,Lathyrus sylvestris,,0,1,0
+0227_a,"Lathyrus palustris, Lathyrus venosus",,1,1,0
+0230_b,"Vicia caroliniana, Vicia americana",,1,1,0
+0231_a,Vicia villosa,,0,0,0
+0231_b,Vicia cracca,,0,0,0
+0236_b,Trillium,,0,1,0
+0241_b,,,0,0,1
+0248_a,"Mentha spicata, Mentha piperata",,1,1,0
+0250_b,,,0,0,1
+0254_a,,,0,0,1
+0255_a,"Urtica dioica, Urtica chamaedryoides, Urtica urens",,1,1,0
+0258_b,,,0,0,1
+0260_b,Stellaria pubera,,0,1,0
+0261_a,"Stellaria aquatica, Cerastium fontanum",,1,1,0
+0263_b,"Asclepias syriaca, Asclepias speciosa, Asclepias viridiflora",,1,1,0
+0264_a,"Asclepias arenaria, Asclepias exaltata",,1,0,0
+0264_b,,,0,0,1
+0270_a,,,0,0,1
+0277_a,"Persicaria lapathifolia,Persicaria maculosa, Persicaria hydropiper",,1,1,0
+0285_a,,,0,0,1
+0288_a,Solanum nigrum,,0,1,0
+0293_a,,,0,0,1
+0298_a,Hibiscus laevis,,0,1,0
+0304_a,,,0,0,1

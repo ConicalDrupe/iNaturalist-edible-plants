@@ -1,0 +1,21 @@
+
+# Maps Genus or Species to edible parts.
+{'Rhus': 'shoots,berries',
+ 'Ceanothus':'tea (leaves)',
+ 'Vitis':'tendrils,leaves,fruit',
+ 'Smilax':'tubers,shoots,greens',
+ 'Rosa':'petals,hips,tea (leaves)',
+ 'Rumex':'leaves,stem,seeds',
+ 'Viburnum':'berries',
+ 'Celtis':'fruit,cambium',
+ 'Quercus':'nuts',
+ 'Acer':'sap',
+ 'Arctium':'roots,stalks,petioles',
+ 'Asclepias':'shoots,leafy tops, flower buds, immature pods',
+ 'Cirsium':'taproots,shoots,midribs,flower buds',
+ 'Carduus':'taproots,shoots,midribs,flower buds',
+ 'Onopordum':'taproots,shoots,midribs,flower buds',
+ 'Silybum':'taproots,shoots,midribs,flower buds',
+ 'Lactuca':'leaves,shoots',
+ 'Vicia':'shoots,leafy tips,flowers,seeds',
+ 'Hydrophyllum':'leaves,shoots'}
