@@ -10,7 +10,7 @@ matched = df[df['found_edibilty']==True].reset_index(drop=True)
 
 matched['Mistral_scientific_name']=''
 for idx,row in matched.iterrows():
-    name_data= ''.join(list(row.iloc[1]))
+    name_data= row.iloc[1]
 
     prompt = f"""
     You are an expert in data cleaning and natural language processing, specializing in extracting scientific names from unstructured text.

@@ -10,7 +10,7 @@ df = pd.read_csv(os.path.join(back_dir,'outputs','txt_extract.csv'))
 
 df['Mistral_edibles']=''
 for idx,row in df.iterrows():
-    food_data= ''.join(list(row.iloc[2]))
+    food_data= row.iloc[2]
 
     prompt = f"""
     You are an expert in data cleaning and natural language processing, specializing in extracting edibile plant parts from unstructured text.
