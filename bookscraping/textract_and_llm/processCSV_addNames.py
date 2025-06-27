@@ -4,7 +4,8 @@ import pandas as pd
 from llm_utils import call_mistral_7b
 
 back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
-df = pd.read_csv(os.path.join(back_dir,'outputs','txt_extract.csv'))
+# df = pd.read_csv(os.path.join(back_dir,'outputs','txt_extract.csv'))
+df = pd.read_csv(os.path.join(back_dir,'outputs','reprocessing','names_to_reprocess.csv'))
 
 matched = df[df['found_edibilty']==True].reset_index(drop=True)
 
@@ -17,8 +18,6 @@ for idx,row in matched.iterrows():
 
     Your task is to extract a single binomial scientific name from the given text. The scientific name consists of exactly two words: the genus and species. Ignore any extra words, punctuation, or formatting issues.
 
-    Respond only with the two-word scientific name and nothing else—no explanations, no additional text.
-
     Example input:
     ['NEEDLE-LEAVED TREES AND SHRUBS', '3 Balsam fir', 'Abies balsmaea Pinacea (Pine family)']
 
@@ -29,10 +28,12 @@ for idx,row in matched.iterrows():
     {name_data}
 
     Output:
+
+    Respond only with the two-word scientific name and nothing else—no explanations, no additional text.
     """
 
     llm_res = call_mistral_7b(prompt)
     matched.loc[idx,'Mistral_scientific_name'] = llm_res
 
 one_dir_back = os.path.normpath(os.getcwd() + os.sep + os.pardir)
-matched.to_csv(os.path.join(one_dir_back,'outputs','mistral_appended_names.csv'),index=False)
+matched.to_csv(os.path.join(one_dir_back,'outputs','mistral_reproccessed_names.csv'),index=False)

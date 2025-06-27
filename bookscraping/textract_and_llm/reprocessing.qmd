@@ -1,0 +1,53 @@
+
+```{python}
+import pandas as pd
+import os
+
+back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+df = pd.read_csv(os.path.join(back_dir,'outputs','mistral_appended_names.csv'))
+print(df.columns)
+
+df['Mistral_scientific_name'] = df['Mistral_scientific_name'].map(lambda x: x.strip())
+
+def count_words(string):
+    string = string.strip()
+    ls = string.split(' ')
+    return len(ls)
+
+df['words_in_name'] = df['Mistral_scientific_name'].map(lambda x: count_words(x))
+
+```
+
+```{python}
+df.groupby('words_in_name')['words_in_name'].count()
+```
+
+
+```{python}
+names_redo = df[(df['words_in_name']!=2) & (df['words_in_name']!=1)]
+print(names_redo.shape)
+print(names_redo['Mistral_scientific_name'].head())
+```
+
+# Saving in reprocessing directory
+```{python}
+save_path = os.path.join(back_dir,'outputs','reprocessing','names_to_reprocess.csv')
+names_redo.to_csv(save_path,index=False)
+```
+
+
+# Edible redo
+
+```{python}
+import pandas as pd
+import os
+
+back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+df = pd.read_csv(os.path.join(back_dir,'outputs','mistral_appended_edibles.csv'))
+print(df.columns)
+
+df['Mistral_edibles'] = df['Mistral_edibles'].map(lambda x: x.strip())
+
+
+# df['words_in_name'] = df['Mistral_scientific_name'].map(lambda x: count_words(x))
+```

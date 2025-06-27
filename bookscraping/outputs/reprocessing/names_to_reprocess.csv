@@ -1,0 +1,3129 @@
+source,name_data,food_data,found_edibilty,Mistral_scientific_name,words_in_name
+0004_b.txt,"PLANTS, PALMS, AND HORSETAILS
+8 Cabbage palm
+3
+Sabal palmetto
+Arecaceae (Palm family)
+","FOOD USE: Palm hearts are the newly forming leaves and tender leaf bases at the center of the growing 0
+These are available all year, especially spring and early summer. A single palm heart is large enough to make
+a large soup or stir fry and the flavor is fantastic, but you have to kill the tree and cut away all the leaves to get
+it. Fruit is available in October and November and can be collected in large quantity, but there is little pulp
+around the large seed, and it doesn't taste very good. Conservation 3/1.
+",True,"Sabal palmetto
+     or
+     Sabal palmetto
+     (both are correct)",20
+0011_b.txt,"0
+1cm
+PLANTS WITH FRUIT COMPOSED OF MULTIPLE SMALL FRUITLETS
+8
+Blackberry
+3
+3
+IWE-60
+genus Rubus (numerous species) Rosaceae (Rose family)
+","FOOD USE: Berries can be collected faster than any other bramble berry. This is why we like to make urce
+from them. Their biggest drawback is the large seeds, but these can be removed by straining. Shoots are
+edible but slightly astringent and harder to peel than those of other brambles. Tufted shoots are a special zed
+structure that appears on the common blackberry Rubus allegheniensis (and possibly other species) in response
+to cutting or browsing of the regular shoots in early summer. These are thin, flimsy, and densely packed along
+the rhizome; they lack prickles and have ternate leaves only. A few weeks after forming they wilt rapidly and
+die, usually succumbing to an orange blight. They are tender and delicious raw if you get them young enough.
+lacking the normal astringency of blackberry shoots, and do not need to be peeled. Conservation 1.
+",True,Rubus rosae (assuming Blackberry is a specific species in the Rubus genus),12
+0014_a.txt,"IRWE
+NEEDLE-LEAVED TREES AND SHRUBS
+GROUP 4 NEEDLE-LEAVED TREES AND SHRUBS
+Large coniferous trees in our region produce food of several types: cambium, of
+inner bark, tender spring branch tips, and immature cones. The needles
+several can also be used to steep a tea. None of our pines produce nuts,
+however. Group 4 also includes a few shrubs that produce fruits that can
+be eaten or used as a flavoring. Crowberry needles are really evergreen
+leaves rolled tightly into a needle-like form, but they are placed here because
+they appear as needles unless carefully inspected with a lens. In general,
+needle-leaved woody plants are a safe group with few toxic species, but
+yews are a notable exception-the foliage is quite poisonous despite the
+fruit's flesh being edible.
+TENTATIVE IDENTIFICATION KEY TO GROUP 4
+The key is not your final answer!
+Trees.
+Needles in wrapped bundles of 2-5.
+1. Pine
+Needles single, not wrapped in bundles.
+Needles short, overlapping, pointed scales pressed against the twig.
+& Eastern redcedar
+or
+Needles square and sharp-tipped, single on a short stub.
+2. Spruce
+Needles flat, round-tipped, gray-striped below.
+Bark smooth with pitch bubbles; top spire-like, stiff, cones erect.
+3. Balsam fir
+Bark blocky-flaky without pitch bubbles; top limp and nodding: cones hanging.
+4. Hemlock
+Shrubs.
+Seashore shrub with paired, fleshy needles.
+5. Saltwort
+Ground-hugging or rising less than 12"" (30 cm); needles hollow, often in whorls: fruits Juicy.
+6. Black crowberry
+Shrubs with flat needles, rising 1-10' (0.3-3 m) high.
+Needles in whorls of 3, with a stiff, sharp tip and a gray stripe above.
+7. Common juniper
+Needles arranged in a flat layer on a bright green twig, not striped.
+9. Canada yew
+1
+Pine
+1
+2
+3
+genus Pinus
+Pinaceae (Pine family)
+","FOOD USE: Inner prone bark to fire. They specialize in regenerating in bare areas mineral of dry soils soil with after low fertility that have
+Pollen or steeped can be for tea. The and flavor cambium is weak (p. unless 30) are a great edible. Needles can be gathered any time burning. of year and Native, A
+",True,"3. Balsam fir
+    
+    or
+
+    Pinus balsamifera
+
+    (Both correct)",21
+0015_a.txt,"1
+2
+2
+2
+genus Spruce Picea Pinaceae (Pine family)
+","FOOD USE: Inner bark and cambium (p. 30) can be peeled early in the growing season. Shoots (spruce tips)
+in spring and early summer can be pickled, used in salads, blended in smoothies, or steeped for flavoring
+drinks. Conservation 3/1.
+",True,"Picea Pinaceae (ignore the last word)
+
+    Input:
+
+    1
+2
+3
+2
+Plantago major L. Common Plantain
+
+
+    Output:
+     Plantago major
+
+    Input:
+
+    1
+2
+2
+2
+3 Magnolia grandiflora L. Southern Magnolia
+
+
+    Output:
+     Magnolia grandiflora
+
+    Input:
+
+    1
+2
+2
+2
+2
+3
+2
+2
+3
+2
+3 White oak Quercus alba White oak, oak, English oak
+
+
+    Output:
+     Quercus alba
+
+    Input:
+
+    1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3",86
+0020_a.txt,"TREES AND SHRUBS WITH NUTS
+HICKORY Carya Juglandaceae IWE-134 (Walnut family)
+genus CHECK: Pinnately compound leaves; fruits with multiple-part 1. peeling husk containing a single nut
+","FOOD USE: Nuts can be gathered from the
+ground after they have fallen in autumn or early
+winter, or you can shake them down. Dry to
+facilitate cracking and shelling. Crack with a
+hammer or vise, applying pressure to the nar-
+row face of the nut. Remove nutmeats with a
+nutpick and small wire cutters. Some species
+have kernel lobes locked into the shell, and
+these are difficult to remove. Such nuts are
+better used to make hickory milk by pounding
+Typical nuts from four hickory species: mockernut (upper
+in a mortar or pulverizing in a blender and then
+right) bitternut (upper left), shagbark (lower right), and shell-
+boiling; the mixture is gently stirred so that the
+bark (lower left).
+shells remain on the bottom but the nutmeat
+pieces are suspended in the liquid, which is
+then ladled off and used as a beverage, soup
+base, or cooking liquid. Some hickories yield
+very small amounts of sugary sap when tapped.
+Conservation 1.
+",True,"Carya Juglandaceae
+
+    Input:
+    PLANTS THAT PRODUCE BERRIES
+ROSE Rosa Rosaceae (Rose family)
+The beautiful flowering shrub produces edible red, pink, or white berries
+
+
+    Output:
+     Rosa Rosaceae
+
+    Input:
+    AQUATIC PLANTS
+Duckweed Lemna Gramineae (Grass family)
+This small plant thrives in water and forms dense mats on the surface
+
+
+    Output:
+     Lemna Gramineae
+
+    Input:
+    TROPICAL RAINFOREST TREES
+Rubber tree Hevea Brasiliensis Rubiaceae (Rubber tree family)
+The tree produces a milky latex that is used to make rubber
+
+
+    Output:
+     Hevea Brasiliensis
+
+    Input:
+    MEDICINAL HERBS
+Echinacea Echinacea Angustifolia (Purple Coneflower family)
+The herb is used to boost the immune system and fight infections
+
+
+    Output:
+     Echinacea Angustifolia
+
+    Input:
+    SUB-ALPINE SHRUBS
+Heather Erica Lamiaceae (Heather family)
+The shrub grows in high-altitude areas and has small, bell-shaped flowers
+
+
+    Output:
+     Erica Lamiaceae
+
+    Input:
+    CACTUS PLANTS
+Prickly pear Opuntia Cactaceae (Cactus family)
+The plant has large, flat pads covered in small spines and produces edible fruit
+
+
+    Output:
+     Opuntia Cactaceae
+
+    Input:
+    MEDITERRANEAN HERBS
+Thyme Thymus Lamiaceae (Mint family)
+The herb has small, fragrant leaves and is commonly used in cooking
+
+
+    Output:
+     Thymus Lamiaceae
+
+    Input:
+    MUSHROOMS
+Shaggy Inkcap Coprinus Comatus Basidiomycota (Club fungus)
+The mushroom has a distinctive shaggy appearance and releases black ink when cut
+
+
+    Output:
+     Coprinus Comatus
+
+    Input:
+    TROPICAL TREES
+Mango Mangifera Mangiferaeceae (Mango family)
+The tree bears juicy, sweet fruit with a single seed
+
+
+    Output:
+     Mangifera Mangiferaeceae
+
+    Input:
+    MEDICINAL TREES
+Neem Azadirachta Indica Meliaceae (Mahogany family)
+The tree is used in traditional medicine to treat various ailments
+
+
+    Output:
+     Azadirachta Indica
+
+    Input:
+    SUB-ARCTIC PLANTS
+Arctic Willow Salix Arctica Salicaceae (Willow family)
+The plant is one of the first to grow in the Arctic tundra and has small, rounded leaves
+
+
+    Output:
+     Salix Arctica
+
+    Input:
+    TROPICAL VINES
+Passionflower Passiflora Passifloraceae (Passionflower family)
+The vine produces beautiful, edible fruit with a unique flavor and texture
+
+
+    Output:
+     Passiflora Passifloraceae
+
+    Input:
+    AQUATIC VINES
+Water Hyacinth Eichhornia Crassipes Alismataceae (Water hyacinth family)
+The vine forms large mats on the water surface and has beautiful, fragrant flowers
+
+
+    Output:
+     Eichhornia Crassipes
+
+    Input:
+    DESERT SUCCULENTS
+Prickly pear Opuntia Cactaceae (Cactus family)
+The plant has large, flat pads covered in small spines and stores water in its stems
+
+
+    Output:
+     Opuntia Cactaceae
+
+    Input:
+    TROPICAL FLOWERS
+Lily Lilium Liliaceae (Lily family)
+The flower has a large, fragrant bloom and produces edible bulbs
+
+
+    Output:
+     Lilium Liliaceae
+
+    Input:
+    MEDICINAL FLOWERS
+Marigold Tagetes Tagetes Patula Asteraceae (Sunflower family)",553
+0025_b.txt,"SHRUBS
+WITH
+NUTS
+OAK
+genus Quercus
+Fagaceae (Beech family)
+ID difficulty 1.
+","FOOD USE: All acorns are edible but contain tannins which should be leached from the nutmeats before
+they are eaten in a serving-size quantity. Acorn size has a large impact on labor-efficiency, so the species
+highlighted here are mostly those with larger acorns. You can shell acorns immediately or dry them first.
+After shelling they can be hot-leached by boiling in several water changes, whole or chopped into smaller
+pieces. Hot-leached acorns can be used like beans in chili, or they can be dried and ground into a flour that
+can be mixed with other flours for baking. Acorns can also be cold-leached by grinding them into a fine flour
+and soaking in several changes of cold water or percolating water through them. Cold-leached flour can fresh be
+baked into a cheese-like food that is hearty and filling. Korean starch extraction involves pulverizing
+meats in a wet blender and percolating cold water through the fine material; the starch granules extract are oil.
+acorn settled by gravity out of the percolated water. Some acorns can also be pressed or boiled to of acorns in
+then hard to generalize about the use of acorns as food because there are 3 main types or groups lumped together
+It is each with distinct physical and chemical characteristics. Though traditionally that we traditionally split
+as our ""acorns,"" region, these groups differ far more than many other groups of edible plants
+up. GROUP: These 10-12 species have mostly medium-sized acorns unequal (but on two cotyledons, species
+Conservation 1.
+RED (BLACK) OAK yellow flesh, a velvety-hairy inner cup lining, and to high; oil
+they are large). They have creamy meeting to with curved or angled faces. Tannin levels are moderate readily in the
+often with a large These convolution, take two years to develop on the tree and germinate hot-leached in spring. or They cold-leached dry flour.
+shell; once dried they the acorns small to large, longer than broad, with lining is not
+levels moderate. keep for several years. They are ideal for making creamy-colored
+WHITE flesh, having OAK nearly GROUP: equal About cotyledons 25 species, meeting difficult with to flat dry faces in the and shell. lacking When convolutions; dried they the are cup harder season than and red
+hairy. oaks acorns. Large acorns Tannin of levels they this group are rancidify moderately are after more a low year to or high; two oil in levels storage. are They low. are These ideal develop for hot-leached in one or cold-
+leached germinate flour in and Korean starch processing.
+autumn;
+broad
+or
+broader
+than
+long,
+as
+ORANGE FLESH dark GROUP: shells. These The flesh 12-15 is bright species orange have acorns. (fading small Like to to white tiny dull yellow-orange acorns, oaks, the cotyledons when seasons, dry). are approximately They grow are from high
+mostly with very oil (35-55%) than other they develop over two leached and
+equal, in tannin meet and with much flat hairs, higher faces, and in and germinate lack convolutions. in spring. taxonomists. They Like red are oaks, ideal for making oil and can also be
+a eaten. cup with This velvety group is not widely recognized by
+81
+SHRUBS WITH NUTS OAK genus Quercus Fagaceae (Beech family) ID difficulty 1. QUICK CHECK: Nuts with a smooth, pliable shell and nipple-like tip, borne singly in a cup-like structure COLLECTIVE DESCRIPTION: Trees or shrubs, about 50 species native to our region, with highly variable leaf forms and ecological roles. Bark roughened in mature trees by plates, blocks, flakes, or fissures. Twigs moderately thick with winter buds clustered near the tips. Leaves alternate, simple, borne on short petioles. Blades thick and tough; the variable shapes include deeply pinnately lobed, ovate and toothed, and elliptic and entire. Veins pinnate, mostly flat above. Flowers wind-pollinated in spring. Male flowers hang in limp catkins, while the female are attached directly to the twigs or on short stalks, singly or in small groups. Fruit a spherical to elongated nut (acorn), radially symmetrical with a nipple-like tip and a thin, smooth, flexible shell, borne singly in a scaly cup (the scales sometimes supporting hair-like burs). At the bottom of the nut is a wide, light-colored zone of attachment. The nutmeat is creamy, yellowish, or bright orange, divided into two cotyledons (sometimes unequally), the surface smooth or with a few folds or convolutions, covered with a thin skin (testa) that is sometimes hairy. ECOLOGY: Most oaks are associated with fire and are drought-tolerant, although some are swamp trees. Generally they dominate slightly poorer soils than mesic trees such as maple, ash, elm, buckeye, and basswood. Oaks often occur in association with pines and hickories. All the species listed here are native. FOOD USE: All acorns are edible but contain tannins which should be leached from the nutmeats before they are eaten in a serving-size quantity. Acorn size has a large impact on labor-efficiency, so the species highlighted here are mostly those with larger acorns. You can shell acorns immediately or dry them first. After shelling they can be hot-leached by boiling in several water changes, whole or chopped into smaller pieces. Hot-leached acorns can be used like beans in chili, or they can be dried and ground into a flour that can be mixed with other flours for baking. Acorns can also be cold-leached by grinding them into a fine flour and soaking in several changes of cold water or percolating water through them. Cold-leached flour can fresh be baked into a cheese-like food that is hearty and filling. Korean starch extraction involves pulverizing meats in a wet blender and percolating cold water through the fine material; the starch granules extract are oil. acorn settled by gravity out of the percolated water. Some acorns can also be pressed or boiled to of acorns in then hard to generalize about the use of acorns as food because there are 3 main types or groups lumped together It is each with distinct physical and chemical characteristics. Though traditionally that we traditionally split as our ""acorns,"" region, these groups differ far more than many other groups of edible plants up. GROUP: These 10-12 species have mostly medium-sized acorns unequal (but on two cotyledons, species Conservation 1. RED (BLACK) OAK yellow flesh, a velvety-hairy inner cup lining, and to high; oil they are large). They have creamy meeting to with curved or angled faces. Tannin levels are moderate readily in the often with a large These convolution, take two years to develop on the tree and germinate hot-leached in spring. or They cold-leached dry flour. shell; once dried they the acorns small to large, longer than broad, with lining is not levels moderate. keep for several years. They are ideal for making creamy-colored WHITE flesh, having OAK nearly GROUP: equal About cotyledons 25 species, meeting difficult with to flat dry faces in the and shell. lacking When convolutions; dried they the are cup harder season than and red hairy. oaks acorns. Large acorns Tannin of levels they this group are rancidify moderately are after more a low year to or high; two oil in levels storage. are They low. are These ideal develop for hot-leached in one or cold- leached germinate flour in and Korean starch processing. autumn; broad or broader than long, as ORANGE FLESH dark GROUP: shells. These The flesh 12-15 is bright species orange have acorns. (fading small Like to to white tiny dull yellow-orange acorns, oaks, the cotyledons when seasons, dry). are approximately They grow are from high mostly with very oil (35-55%) than other they develop over two leached and equal, in tannin meet and with much flat hairs, higher faces, and in and germinate lack convolutions. in spring. taxonomists. They Like red are oaks, ideal for making oil and can also be a eaten. cup with This velvety group is not widely recognized by 81 ",True,"Quercus Fagaceae
+     or
+     Quercus species Fagaceae
+
+    (Note: The second option is used if the family name is needed in the output, but it is not typically required.)",38
+0030_a.txt,,"FOOD USE: Gather ripe fruit from the tree or from the ground in late summer or early autumn, well before
+the leaves fall. Smacking the trunk will often bring down a few ripe pawpaws (watch your head). The fruit is
+notoriously hard to see, as it is the same color as the leaves. Pawpaws can be eaten fresh or used in many
+desserts. Conservation 1.
+",True,"None
+
+
+input = ['nan', 'Nanophytum ramosissimum (Family: Scrophulariaceae)']
+output = Nanophytum ramosissimum",10
+0030_b.txt,"6 Ogeechee lime
+1
+Nyssa ogeche
+Cornaceae (Dogwood family)
+","FOOD USE: The fruits are very sour and can be used in juice mixes, jams, jellies, or other situations where
+this quality is desired. Conservation 1.
+",True,"Nyssa ogeche
+
+    Input:
+
+    20 Black cherry
+1
+Prunus serotina
+Rosaceae (Rose family)
+
+
+    Output:
+     Prunus serotina
+
+    Input:
+
+    17 Sassafras
+1
+Sassafras albidum
+Laureaceae (Bay Laurel family)
+
+
+    Output:
+     Sassafras albidum
+
+    Input:
+
+    20 Magnolia grandiflora
+1
+Magnolia grandiflora
+Magnoliaceae (Magnolia family)
+
+
+    Output:
+     Magnolia grandiflora
+
+    Input:
+
+    18 Sweet gum
+1
+Liquidambar styraciflua
+Hamamelidaceae (Witch hazel family)
+
+
+    Output:
+     Liquidambar styraciflua
+
+    Input:
+
+    25 Sycamore
+1
+Platanus occidentalis
+Platanaceae (Plane tree family)
+
+
+    Output:
+     Platanus occidentalis
+
+    Input:
+
+    18 Red maple
+1
+Acer rubrum
+Sapindaceae (Sapindus family)
+
+
+    Output:
+     Acer rubrum
+
+    Input:
+
+    15 White oak
+1
+Quercus alba
+Fagaceae (Oak family)
+
+
+    Output:
+     Quercus alba
+
+    Input:
+
+    18 Loblolly pine
+1
+Pinus taeda
+Pinaceae (Pine family)
+
+
+    Output:
+     Pinus taeda
+
+    Input:
+
+    20 Black walnut
+1
+Juglans nigra
+Juglandaceae (Walnut family)
+
+
+    Output:
+     Juglans nigra
+
+    Input:
+
+    17 Sweet birch
+1
+Betula lenta
+Betulaceae (Birch family)
+
+
+    Output:
+     Betula lenta
+
+    Input:
+
+    18 Water oak
+1
+Quercus nigra
+Fagaceae (Oak family)
+
+
+    Output:
+     Quercus nigra
+
+    Input:
+
+    20 Redbud
+1
+Cercis canadensis
+Fabaceae (Pea family)
+
+
+    Output:
+     Cercis canadensis
+
+    Input:
+
+    18 Silver maple
+1
+Acer saccharinum
+Sapindaceae (Sapindus family)
+
+
+    Output:
+     Acer saccharinum
+
+    Input:
+
+    19 Tulip tree
+1
+Liriodendron tulipifera
+Magnoliaceae (Magnolia family)
+
+
+    Output:
+     Liriodendron tulipifera
+
+    Input:
+
+    21 Southern live oak
+1
+Quercus virginiana
+Fagaceae (Oak family)
+
+
+    Output:
+     Quercus virginiana
+
+    Input:
+
+    18 White pine
+1
+Pinus strobus
+Pinaceae (Pine family)
+
+
+    Output:
+     Pinus strobus
+
+    Input:
+
+    25 Hickory
+1
+Carya spp.
+Juglandaceae (Walnut family)
+
+
+    Output:
+     Carya spp.
+
+    Input:
+
+    22 Red cedar
+1
+Juniperus virginiana
+Cupressaceae (Cypress family)
+
+
+    Output:
+     Juniperus virginiana
+
+    Input:
+
+    22 Black locust
+1
+Robinia pseudoacacia
+Fabaceae (Pea family)
+
+
+    Output:
+     Robinia pseudoacacia
+
+    Input:
+
+    15 Sycamore maple
+1
+Acer pseudoplatanus
+Sapindaceae (Sapindus family)
+
+
+    Output:
+     Acer pseudoplatanus
+
+    Input:
+
+    17 Willow oak
+1
+Quercus phellos
+Fagaceae (Oak family)
+
+
+    Output:
+     Quercus phellos
+
+    Input:
+
+    1",493
+0035_a.txt,"BROADLEAF TREES WITH SMALL FLESHY
+FOOD the 3 Hackberry USE: is sweet Gather from fruit early (continued) from fall the onward. branches, Mash or fruit by whole knocking can fruits also them (pulverizing be boiled down and onto the summer. then seedshells) a sheet strained Conservation or tarp. to and make They then ""hackberry 1. are eat ripe as-is, if
+make COMMENTS: or milk."" mix pulp a a with wholesome rich other filling Hackberry There nuts drink and or is filling archaeological dried or is soup a food, berries. dry, base. but sweet there Mashed The evidence fruit, cambium is no like of practical a humans date, can be way with eating eaten to a thin-shelled remove in hackberries early the thin oily for seedshell. more seed. than Combined, Just 500,000 learn the years. to two like
+RELATED the odd texture. EDIBLE: Dwarf hackberry Celtis tenuifolia is a large shrub
+or small tree with fruit that can be eaten in the same ways.
+Related edible:
+4
+Sugarberry
+Celtis laevigata
+2
+/
+3
+NG-123
+This tree is similar to hackberry but is on average a slightly smaller tree with a more
+southerly distribution. The leaves are entire or have a few scattered teeth, the bark is
+smoother with fewer warty projections, and the fruit averages slightly smaller. Sugarberry
+can DE used similarly for food. The seeds are a bit harder and the fruit tastes more ""fruity.""
+100
+BROADLEAF TREES WITH SMALL FLESHY FOOD the 3 Hackberry USE: is sweet Gather from fruit early (continued) from fall the onward. branches, Mash or fruit by whole knocking can fruits also them (pulverizing be boiled down and onto the summer. then seedshells) a sheet strained Conservation or tarp. to and make They then ""hackberry 1. are eat ripe as-is, if make COMMENTS: or milk."" mix pulp a a with wholesome rich other filling Hackberry There nuts drink and or is filling archaeological dried or is soup a food, berries. dry, base. but sweet there Mashed The evidence fruit, cambium is no like of practical a humans date, can be way with eating eaten to a thin-shelled remove in hackberries early the thin oily for seedshell. more seed. than Combined, Just 500,000 learn the years. to two like RELATED the odd texture. EDIBLE: Dwarf hackberry Celtis tenuifolia is a large shrub or small tree with fruit that can be eaten in the same ways. Related edible: 4 Sugarberry Celtis laevigata 2 / 3 NG-123 This tree is similar to hackberry but is on average a slightly smaller tree with a more southerly distribution. The leaves are entire or have a few scattered teeth, the bark is smoother with fewer warty projections, and the fruit averages slightly smaller. Sugarberry can DE used similarly for food. The seeds are a bit harder and the fruit tastes more ""fruity."" 100 ","FOOD the 3 Hackberry USE: is sweet Gather from fruit early (continued) from fall the onward. branches, Mash or fruit by whole knocking can fruits also them (pulverizing be boiled down and onto the summer. then seedshells) a sheet strained Conservation or tarp. to and make They then ""hackberry 1. are eat ripe as-is, if
+",True,"Celtis tenuifolia
+     Celtis laevigata",8
+0039_b.txt,"0
+1cm
+BROADLEAF TREES WITH SMALL FLESHY FRUITS
+13 Serviceberry
+3
+FH-209
+genus Amelanchier
+Rosaceae (Rose family)
+","FOOD USE: The berries soften before fully darkening and developing
+their best flavor, but in many areas birds remove them before they ripen.
+Serviceberries are very soft and spoil quickly, so they must be used or
+stored immediately after picking. You can strain out the seeds, but some
+people like them. Serviceberries make good pie, jam, or juice; they are
+superb for eating fresh and delicious dried. Conservation 1.
+",True,"Amelanchier
+     Rosaceae is not part of the scientific name and should be ignored.",17
+0040_a.txt,"BROADLEAF TREES WITH SMALL FLESHY FRUITS
+14 Hawthorn
+1-3
+(Rose
+family)
+Rosaceae
+genus ID: Small Crataegus scrubby trees with broad, irregularly double-toothed 1. leaves, formi-
+dable theres. (30 cm) in diameter and 30' (9 m) tall with strongly short,
+","FOOD USE: The earliest hawthorns will ripen in late summer; others not until late fall. Taste the fruit to see if
+it is worth collecting; the best taste like a cross between pears and strawberries. The fruit can be eaten fresh
+or strained to remove the seeds and then used in fruit sauce or leather. A rare few are even tangy enough to
+make jam. The pulp can also be mixed in quick bread
+batter. Conservation 1.
+",True,"Crataegus
+     (Note: The genus is capitalized as per standard scientific naming conventions.)",16
+0042_a.txt,"BROADLEAF TREES; FRUIT SMALL AND DRY, WIND-BORNER
+IWE-178
+2 Kentucky coffeetree
+1
+3
+(immature)
+Fabaceae
+(Bean
+family)
+dioicus
+","FOOD USE: Gather ripe pods from fall through winter,
+extract the seeds, and roast at 350°F for 20 minutes
+or until the shells are brittle, then crack them with a
+nutcracker. Remove kernel from the shell and roast at
+35° until dark brown, then grind and brew like coffee.
+Seeds roasted less dark can also be eaten boiled or
+ground into flour to mix sparingly into baked goods.
+Immature seeds, gathered when the pods are still
+pinkish to yellow in mid to late summer, can be cut
+with a knife, peeled, boiled, and used like fava beans.
+Conservation 1.
+",True,"Fabaceae dioicus
+
+    Input:
+
+    SHRUBS AND VINES
+IWE-154
+3 Cinnamon vine
+(Cinnamomum zeylanicum)
+Lauraceae
+
+
+    Output:
+     Cinnamomum zeylanicum
+
+    Input:
+
+    EUPHORBIACEAE
+IWE-421
+1 Pencil cactus
+(Euphorbia tirucalli)
+Euphorbiaceae
+
+
+    Output:
+     Euphorbia tirucalli",46
+0044_a.txt,"5 Black Gather locust flowers (continued) soon after or just before dish they you open--before can imagine, the from yellow ice spot cream the pods fades to are chicken or still the green, edges soup.
+will FOOD They USE: are delicious raw or by cooked the cluster in almost or in any salads. In mid cooked to late before summer eating. while Their flavor is good seem but to
+split Most shelling them often is laborious. open just and eat them strip Dried out raw seeds the small can be beans. gathered These later must and be eaten after thorough boiling, but available they in huge
+take forever to soften. Conservation 1.
+to
+use
+and
+COMMENTS: You These can smell magnificent-smelling blooming trees from and a block delicious away. old. flowers This seriously are very might easy be the best edible flower in
+the world-but you Three native locusts are similar in appearance to black locust widely but smaller-typically outside their regions large
+quantities. will be disappointed if they are too
+RELATED EDIBLES: flowers). All planted and naturalized Note: I have
+of shrubs origin or and small have trees excellent (but with edible larger flowers-although are none are quite as delicious as black locust.
+not eaten the beans of any of these.
+6 Clammy locust
++
+Robinia viscosa
+3
+small tree is native to scattered locations in the Southeast. The thorns are smaller and
+weaker; This the twigs, peduncles, pedicels, calyces, and pods are covered with short, sticky,
+glandular hairs, and the leaflets are hairy on the underside. The flowers are light pink.
+7 Bristly locust
+Robinia hispida
+3
+Mostly introduced.
+Native to the southern Appalachians, this is a shrub or rarely a small tree with gorgeous
+pink-purple flowers to 1.2"" (3 cm) long, blooming later in the season than black locust and
+for a much longer time. The twigs, petioles, and inflorescence are all densely covered in
+long, reddish, bristly hairs.
+8 New Mexican locust + Robinia neomexicana
+3
+The natural distribution of this large shrub or small tree barely comes into our region,
+but like the others it is planted and escapes outside of its native range. The flowers are
+dull pinkish and slightly larger than those of black locust. The racemes are sometimes
+compound and the pods are hairy.
+Bristly locust
+118
+Clainmy locust
+New Mexican locust.
+5 Black Gather locust flowers (continued) soon after or just before dish they you open--before can imagine, the from yellow ice spot cream the pods fades to are chicken or still the green, edges soup. will FOOD They USE: are delicious raw or by cooked the cluster in almost or in any salads. In mid cooked to late before summer eating. while Their flavor is good seem but to split Most shelling them often is laborious. open just and eat them strip Dried out raw seeds the small can be beans. gathered These later must and be eaten after thorough boiling, but available they in huge take forever to soften. Conservation 1. to use and COMMENTS: You These can smell magnificent-smelling blooming trees from and a block delicious away. old. flowers This seriously are very might easy be the best edible flower in the world-but you Three native locusts are similar in appearance to black locust widely but smaller-typically outside their regions large quantities. will be disappointed if they are too RELATED EDIBLES: flowers). All planted and naturalized Note: I have of shrubs origin or and small have trees excellent (but with edible larger flowers-although are none are quite as delicious as black locust. not eaten the beans of any of these. 6 Clammy locust + Robinia viscosa 3 small tree is native to scattered locations in the Southeast. The thorns are smaller and weaker; This the twigs, peduncles, pedicels, calyces, and pods are covered with short, sticky, glandular hairs, and the leaflets are hairy on the underside. The flowers are light pink. 7 Bristly locust Robinia hispida 3 Mostly introduced. Native to the southern Appalachians, this is a shrub or rarely a small tree with gorgeous pink-purple flowers to 1.2"" (3 cm) long, blooming later in the season than black locust and for a much longer time. The twigs, petioles, and inflorescence are all densely covered in long, reddish, bristly hairs. 8 New Mexican locust + Robinia neomexicana 3 The natural distribution of this large shrub or small tree barely comes into our region, but like the others it is planted and escapes outside of its native range. The flowers are dull pinkish and slightly larger than those of black locust. The racemes are sometimes compound and the pods are hairy. Bristly locust 118 Clainmy locust New Mexican locust. ","will FOOD They USE: are delicious raw or by cooked the cluster in almost or in any salads. In mid cooked to late before summer eating. while Their flavor is good seem but to
+split Most shelling them often is laborious. open just and eat them strip Dried out raw seeds the small can be beans. gathered These later must and be eaten after thorough boiling, but available they in huge
+take forever to soften. Conservation 1.
+to
+use
+and
+",True,"Robinia viscosa
+     Robinia hispida
+     Robinia neomexicana",14
+0046_b.txt,"MAPLE
+IWE-187
+genus Acer
+family Sapindaceae
+","FOOD USE: Sap can be used to make syrup, vinegar, or sugar. Drill holes about 1.2"" (3 cm) into maple sapwood
+in late winter when the days get warm enough for some thawing to occur (generally over 40 degrees F). In
+warmer areas, you'll be waiting for a midwinter freeze, not a spring thaw. Drive in a wooden or metal spout
+and hang a bucket or other container to collect dripping sap. Trees under 10"" in diameter produce little. Sap
+generally runs from the first thaws until just before the leaf buds open, but requires fluctuation between freez-
+ing and thawing temperatures. Sap should be boiled down soon after collection to avoid spoilage. A typical
+ratio for sugar/black maple is 38 gallons of sap for one gallon of syrup; other species are usually a little less
+sweet. Boil until the syrup reaches 7° F above the boiling point. Filter while still hot, then reheat and bottle
+the syrup. You can boil the syrup down further to make maple sugar.
+CONFUSING PLANTS: The few other large trees in our region with palmately lobed leaves bear them alter-
+nately. No other trees in our region have a double samara with asymmetrical wings.
+",True,"Acer
+    
+
+    Input:
+    Cedar, Redwood, Pine, Spruce, Douglas Fir, and Hemlock
+    genus Picea
+    family Pinaceae
+
+    Output:
+     Picea
+    
+    Input:
+    The following genera and species are used for the analysis:
+    genus Salix
+    species fragilis
+    genus Quercus
+    species robur
+    genus Populus
+    species nigra
+
+    Output:
+     Salix fragilis
+     Quercus robur
+     Populus nigra",112
+0050_a.txt,"LOW OR TRAILING SHRUBS OR VINES WITH
+CRANBERRY NG-266 part) Ericaceae (Heath family)
+","FOOD USE: Soft but unspoiled ""bletted"" berries (this happens Conservation 1.
+cultivated cranberries. cannot get from store-bought cranberries.
+different flavor Cranberries that you are more abundant than many people realize, because New Jersey, people and rarely the Great venture Lakes into
+",True,"Ericaceae
+     or
+     Cranberry
+     or
+     Vines
+     or
+     Heath
+
+     But the correct answer is:
+
+     Ericaceae
+     or
+     Cranberry",55
+0063_b.txt,"0
+BERRIES-NOT ORANGE TO RED
+4
+Black haws
+2
+FH-311
+genus
+Viburnum
+(in
+part)
+family Adoxaceae
+","FOOD USE: Gather berries in fall when they are black and soft; the clusters make them easy to pick in quan-
+tity. They can be eaten raw, or they can be simmered in a small amount of water and run through a strainer
+to separate the pulp from the seeds. The flavor is uniquely sweet and reminiscent of a mixture of prunes and
+bananas. The pulp can be dried as fruit leather or used in quick breads like mashed banana. It can also be
+used as the base for non-jelled fruit spreads.
+",True,"Viburnum
+     (or)
+     Adoxaceae is not a scientific name, ignore it.
+
+    So the output should be Viburnum.",27
+0066_a.txt,"7
+Prunus Sandcherry pumila, P. susquehanae 2 NG-299 + Rosaceae (Rose family)
+","FOOD USE: Gather cherries when
+they are dark purple-black and soft.
+They can be eaten fresh, pitted and
+dried, or made into jam, jelly, juice, or
+pie. Conservation 1.
+",True,"Prunus pumila
+     Prunus susquehanae",8
+0067_a.txt,"9
+Gooseberry
+3
+IWE-129
+Ribes (in part)
+genus Grossulariaceae (Gooseberry family)
+GROUP ID: Thorny shrubs with alternate or soft tufted, seeds. palmately ID difficulty lobed 1. leaves;
+","FOOD USE: Gather berries when soft and purple and eat them fresh or
+cooked. The stems, skins, and dried flower parts are tough and best strained
+out. Clean pulp is great for pies, jam, or fruit leather. and combines well with
+milder fruits. Nearly-ripe green fruit can be mixed with
+Missouri gooseberry R. missouriense.
+water. blended, and strained to make a lemonade-like
+drink. Conservation 1.
+",True,"Ribes
+     or
+     Grossularia (depending on the specific gooseberry species)",17
+0072_a.txt,"BROADLEAF SHRUBS WITH BERRIES-NOT ORANGE TO RED
+20 Lowbush blueberry
+3
+NG-256
+Ericaceae
+(Heath
+family)
+genus Vaccinium (in part)
+","FOOD USE: Pick the ripe fruit by hand or with
+a blueberry rake. Eat fresh or use to make pies
+or other desserts. Store by freezing, canning, or
+drying. Conservation 1.
+",True,"Vaccinium
+     genre Ericaceae (Heath family)
+
+     Output:
+     Vaccinium
+
+
+    Input:
+    BROADLEAF SHRUBS WITH BERRIES-NOT ORANGE TO RED
+    20 Lowbush blueberry
+     3
+      NG-256
+      Ericaceae
+      (Heath
+      family)
+      genus Vaccinium (in part)
+
+
+    Output:
+     Vaccinium
+
+
+    Input:
+    ""BROADLEAF SHRUBS WITH BERRIES-NOT ORANGE TO RED\n20 Lowbush blueberry\n3\nNG-256\nEricaceae\n(Heath family)\ngenus Vaccinium (in part)\n""
+
+
+    Output:
+     Vaccinium
+
+
+    Input:
+    ""BROADLEAF SHRUBS WITH BERRIES-NOT ORANGE TO RED\n20 Lowbush blueberry\n3\nNG-256\nEricaceae\n(Heath family)\ngenus Vaccinium (in part)\n""
+
+
+    Output:
+     Vaccinium
+
+
+    Input:
+    ['BROADLEAF SHRUBS WITH BERRIES-NOT ORANGE TO RED', '20 Lowbush blueberry', '3', 'NG-256', 'Ericaceae', '(Heath family)', 'genus Vaccinium (in part)']
+
+
+    Output:
+     Vaccinium
+
+
+Input: ['BROADLEAF SHRUBS WITH BERRIES-NOT ORANGE TO RED', '20 Lowbush blueberry', '3', 'NG-256', 'Ericaceae', '(Heath family)', 'genus Vaccinium (in part)']
+
+Output: Vaccinium",199
+0073_b.txt,"SHRUBS WITH DRY FRUIT, NUTLETS, OR PODS
+CONFUSING highly aromatic PLANTS: leaves. Shoots can resemble ailanthus or walnut, both
+and the whitish fruit droops Poison in grape-like sumac (p. 659) clusters-plus has shiny leaflets it grows lacking in teeth. of whir but las the the rachis milk is never and winger, ayo
+FOOD outer ries they berries A seasoning can will bark USE: from be make and steeped Pick stems can a eat weak be shoots the if to made you and interior make in want from inferior late a to lemonade-like of spring the steep the brew. dried shoot when hot), Pick fruits raw. then they clusters drink. (see Staghorn strain snap Taste fragrant and easily through is the steep best and berries a in for do cloth. cold swamps, this not to water Rains make yet because have eventually for sure half a the white they shoots an are hour wash pith very are or Peel out larger SO sour. the off Cremove flavor bitter if Ber- not
+sumac,
+next).
+Conservation
+1.
+COMMENTS: Sumac-ade will disappoint if you collect flavorless berry clusters or steep the bitter stems with
+boiling water. If you pay careful attention to detail, the drink can be excellent.
+WARNING: Sumacs are related to cashews, mangoes, and poison ivy. Rare individuals are also highly
+allergic to the edible red sumacs.
+IMPORTANT SPECIES: The three common and widespread species in our region are listed. All are native.
+1
+Winged sumac
+Rhus coppalina
+2
+III)
+Winged (shining)
+sumac is easily dis-
+tinguished by the
+wings along the ra-
+chis between the
+shiny, entire leaflets.
+The fruit is hairless.
+This drought-toler-
+ant sumac likes dry,
+sunny sites such as
+sandy openings and
+rocky ridges.
+A
+2 Staghorn sumac
+Rhus typhina
+2
+Staghorn
+sumac
+has twigs
+and fruit
+densely
+covered
+with soft
+hairs. The leaves are hairy
+below and faintly so above.
+The secondary veins are slightly
+depressed, the margins serrated
+with large. forward-pointing
+teeth This species is found in
+disturbed, well-drained soil in
+forested regions. A (linages
+continued on the next page.)
+177
+SHRUBS WITH DRY FRUIT, NUTLETS, OR PODS CONFUSING highly aromatic PLANTS: leaves. Shoots can resemble ailanthus or walnut, both and the whitish fruit droops Poison in grape-like sumac (p. 659) clusters-plus has shiny leaflets it grows lacking in teeth. of whir but las the the rachis milk is never and winger, ayo FOOD outer ries they berries A seasoning can will bark USE: from be make and steeped Pick stems can a eat weak be shoots the if to made you and interior make in want from inferior late a to lemonade-like of spring the steep the brew. dried shoot when hot), Pick fruits raw. then they clusters drink. (see Staghorn strain snap Taste fragrant and easily through is the steep best and berries a in for do cloth. cold swamps, this not to water Rains make yet because have eventually for sure half a the white they shoots an are hour wash pith very are or Peel out larger SO sour. the off Cremove flavor bitter if Ber- not sumac, next). Conservation 1. COMMENTS: Sumac-ade will disappoint if you collect flavorless berry clusters or steep the bitter stems with boiling water. If you pay careful attention to detail, the drink can be excellent. WARNING: Sumacs are related to cashews, mangoes, and poison ivy. Rare individuals are also highly allergic to the edible red sumacs. IMPORTANT SPECIES: The three common and widespread species in our region are listed. All are native. 1 Winged sumac Rhus coppalina 2 III) Winged (shining) sumac is easily dis- tinguished by the wings along the ra- chis between the shiny, entire leaflets. The fruit is hairless. This drought-toler- ant sumac likes dry, sunny sites such as sandy openings and rocky ridges. A 2 Staghorn sumac Rhus typhina 2 Staghorn sumac has twigs and fruit densely covered with soft hairs. The leaves are hairy below and faintly so above. The secondary veins are slightly depressed, the margins serrated with large. forward-pointing teeth This species is found in disturbed, well-drained soil in forested regions. A (linages continued on the next page.) 177 ","FOOD outer ries they berries A seasoning can will bark USE: from be make and steeped Pick stems can a eat weak be shoots the if to made you and interior make in want from inferior late a to lemonade-like of spring the steep the brew. dried shoot when hot), Pick fruits raw. then they clusters drink. (see Staghorn strain snap Taste fragrant and easily through is the steep best and berries a in for do cloth. cold swamps, this not to water Rains make yet because have eventually for sure half a the white they shoots an are hour wash pith very are or Peel out larger SO sour. the off Cremove flavor bitter if Ber- not
+sumac,
+next).
+Conservation
+1.
+",True,"Rhus coppalina
+     Rhus typhina",8
+0076_b.txt,"mm
+1cm
+BROADLEAF SHRUBS WITH DRY FRUIT, NUTLETS, OR PODS
+NEW JERSEY TEA
+NG-280
+genus
+Ceanothus
+(in
+part)
+Rhamnaceae
+(Buckthorn
+","FOOD USE: Gather leaves and dry them out of direct sunlight; young leaves of early summer are pest. Braw
+tea by boiling leaves until the water turns golden or reddish (depending on your preference). Use a arge
+volume of leaves (enough to loosely fill the boiling vessel). Fermenting them like tea leaves will increase the
+potency of the flavor. The species can be used almost interchangeably-the flavors are not exactly the same
+but close. Conservation 2.
+",True,"Ceanothus
+     (or)
+     Rhamnaceae is not a scientific name. If the text mentions multiple scientific names, respond with the one that is most relevant to the context. If you're unsure, provide as many options as there are potential scientific names in the text.
+
+     For example, if the text mentions 'Ceanothus' and 'Quercus', respond with 'Ceanothus' if the context suggests that's the relevant species. If the context is ambiguous, respond with both 'Ceanothus' and 'Quercus'.
+
+     Do not assume that the first word mentioned is the genus or the second word mentioned is the species. The scientific name may be mentioned in any order and with any number of words in between.
+
+     If the text contains no scientific names, respond with an empty string.",141
+0081_b.txt,"0
+WOODY VINES AND CREEPERS
+4
+Greenbrier
+1-3
+genus Smilax (in part)
+Smilacaceae (formerly Liliaceae, Lily family)
+UICK CHECK: Green stems with thorns or spines, tendrils, and entire leaves with
+parallel veins; flowers or fruit in umbels. ID difficulty 1.
+","FOOD USE: The rhizomes or tubers of some species have been used to make a nourishing drink. For this reddish they
+were apparently details are nebulous, and it is not fully clear which species were used or preferred. hard and woody
+pounded, after which the starch was settled out in water, then boiled to make the My experi-
+drink. These have so far been unsuccessful-the tubers I have unearthed were shockingly occasionally later.
+ments Shoots with and this young greens can be eaten raw or cooked from spring to early summer and
+These vary in flavor from slightly bitter to pleasantly tangy. Conservation 3/1.
+can be tricky to identify to species, but are easy to recognize climbing as a vines group: that there are
+",True,"Smilax
+     (Note: The genus name is always capitalized in scientific names.)",15
+0083_b.txt,"WOODY VINES AND CREEPERS
+7 Virginia creeper, woodbine
+Parthenocissus quinquefolia and P. vitacea
+Vitaceae (Grape family)
+ID difficulty 2.
+","FOOD USE: Gather thick sections of stem any time of year, cut into manageable lengths, then peel the outer
+bark. A thick, soft layer of inner bark then can be peeled off the woody core. Boil for at least 40 minutes. after
+which it can be used like a starchy vegetable in stews or soup. Shoots are slightly tangy and can be eaten in
+spring or early summer-they are better cooked. Conservation 2.
+",True,"Parthenocissus quinquefolia
+     or
+     Parthenocissus vitacea",13
+0085_b.txt,"um
+0
+1cm
+AQUATICS WITH GRASS-LIKE LEAVES OR TUBULAR LEAFLESS
+HABITAT: FOOD fertile sites USE: Margins where Rhizome the of bottom lakes, rivers, is sand, and gravel, other or open otherwise water, 00 firm. asionally Native. to (1m) deep. Usually STEMS found
+tips
+(summer)
+are
+good
+white stem rities Pollen bases it terminal is collected be (spring portion by or leaning early that has summer) flowering not yet can heads produced be eaten over raw roots. or a raw container cooked, Mature or cooked; but rhizomes small. pull Break or are out off much the the soft, terrier. too whitish tough smooth in bottom eat skir Conder ned
+processing. can Conservation used as flour. 2/2/1. Seeds (late summer) can be eaten and as tapping a hot cereal or shaking; or flour after after sifting labor. out intensive imnu part
+COMMENTS: in North America, In England so many the accounts common confound name ""bulrush"" often refers to the plant that we
+often erroneously attributed the two plants. The edible normally call ""cattail""
+similar in many ways, to the bulrush (Scirpus) in the American literature. properties The of the cattail ( Typhai are
+not good except that for most uses cattail has larger edible uses bulrush of the rhizomes plants Ara
+a source of starch because they are extremely tough. AKA Schoenoplectus parts. Mature validus.
+RELATED EDIBLES: All bulrushes are theoretically edible, but this is the big one that is most worth
+Young bulrush rhizomes have small, tender, white tips.
+Bulrush heart, 50 tender it broke as
+Mature bulrush rhizomes are tough and semi-woody.
+I peeled it.
+201
+um 0 1cm AQUATICS WITH GRASS-LIKE LEAVES OR TUBULAR LEAFLESS HABITAT: FOOD fertile sites USE: Margins where Rhizome the of bottom lakes, rivers, is sand, and gravel, other or open otherwise water, 00 firm. asionally Native. to (1m) deep. Usually STEMS found tips (summer) are good white stem rities Pollen bases it terminal is collected be (spring portion by or leaning early that has summer) flowering not yet can heads produced be eaten over raw roots. or a raw container cooked, Mature or cooked; but rhizomes small. pull Break or are out off much the the soft, terrier. too whitish tough smooth in bottom eat skir Conder ned processing. can Conservation used as flour. 2/2/1. Seeds (late summer) can be eaten and as tapping a hot cereal or shaking; or flour after after sifting labor. out intensive imnu part COMMENTS: in North America, In England so many the accounts common confound name ""bulrush"" often refers to the plant that we often erroneously attributed the two plants. The edible normally call ""cattail"" similar in many ways, to the bulrush (Scirpus) in the American literature. properties The of the cattail ( Typhai are not good except that for most uses cattail has larger edible uses bulrush of the rhizomes plants Ara a source of starch because they are extremely tough. AKA Schoenoplectus parts. Mature validus. RELATED EDIBLES: All bulrushes are theoretically edible, but this is the big one that is most worth Young bulrush rhizomes have small, tender, white tips. Bulrush heart, 50 tender it broke as Mature bulrush rhizomes are tough and semi-woody. I peeled it. 201 ","HABITAT: FOOD fertile sites USE: Margins where Rhizome the of bottom lakes, rivers, is sand, and gravel, other or open otherwise water, 00 firm. asionally Native. to (1m) deep. Usually STEMS found
+tips
+(summer)
+are
+good
+white stem rities Pollen bases it terminal is collected be (spring portion by or leaning early that has summer) flowering not yet can heads produced be eaten over raw roots. or a raw container cooked, Mature or cooked; but rhizomes small. pull Break or are out off much the the soft, terrier. too whitish tough smooth in bottom eat skir Conder ned
+processing. can Conservation used as flour. 2/2/1. Seeds (late summer) can be eaten and as tapping a hot cereal or shaking; or flour after after sifting labor. out intensive imnu part
+",True,Typha i angustifolia,3
+0088_a.txt,"5 Cattail Peel off (continued) the outer spongy layer of the rhizomes. rhizome and Cores chew can on be the dried core raw and raw, or ground sucking cooked. into out The flour, the heart starch after at
+and FOOD spitting USE: out the fiber. Roasting out. Lateral sweetens shoots the are sweet and flavor delicious but when eaten eaten raw often causes immature mild
+the which base the of in fibers the the leaf throat; can cluster be it sifted is in great spring cooked. and early In early summer summer is mild while and in nibble the leafy off the sheath flower still buds, encloses than or scrape the the female; them this off
+green irritation flower spike, you vegetables. can boil or The steam male the flowers whole (top spikes section leaning of the the flowering spike) are spikes better over a pail pollen or bag mixed and
+to part mix snaps with off grain easily or by hand. Pollen can spoilage, be collected then sifted by to remove insects Conservation and debris. Use 2/2/1
+COMMENTS: with other This is one of our most versatile, productive, abundant, and delicious plants.
+tapping. It flours should to be give dried baked to prevent foods a nice golden color and pleasant flavor. wild food
+206
+(top) (middle) Forming caltail rhizomes with lateral shoot
+Mature cattail rhizome. (bottom) Cattail tips. hearts.
+5 Cattail Peel off (continued) the outer spongy layer of the rhizomes. rhizome and Cores chew can on be the dried core raw and raw, or ground sucking cooked. into out The flour, the heart starch after at and FOOD spitting USE: out the fiber. Roasting out. Lateral sweetens shoots the are sweet and flavor delicious but when eaten eaten raw often causes immature mild the which base the of in fibers the the leaf throat; can cluster be it sifted is in great spring cooked. and early In early summer summer is mild while and in nibble the leafy off the sheath flower still buds, encloses than or scrape the the female; them this off green irritation flower spike, you vegetables. can boil or The steam male the flowers whole (top spikes section leaning of the the flowering spike) are spikes better over a pail pollen or bag mixed and to part mix snaps with off grain easily or by hand. Pollen can spoilage, be collected then sifted by to remove insects Conservation and debris. Use 2/2/1 COMMENTS: with other This is one of our most versatile, productive, abundant, and delicious plants. tapping. It flours should to be give dried baked to prevent foods a nice golden color and pleasant flavor. wild food 206 (top) (middle) Forming caltail rhizomes with lateral shoot Mature cattail rhizome. (bottom) Cattail tips. hearts. ","and FOOD spitting USE: out the fiber. Roasting out. Lateral sweetens shoots the are sweet and flavor delicious but when eaten eaten raw often causes immature mild
+the which base the of in fibers the the leaf throat; can cluster be it sifted is in great spring cooked. and early In early summer summer is mild while and in nibble the leafy off the sheath flower still buds, encloses than or scrape the the female; them this off
+green irritation flower spike, you vegetables. can boil or The steam male the flowers whole (top spikes section leaning of the the flowering spike) are spikes better over a pail pollen or bag mixed and
+to part mix snaps with off grain easily or by hand. Pollen can spoilage, be collected then sifted by to remove insects Conservation and debris. Use 2/2/1
+",True,"Cattail
+     (Note: The text mentions ""Cattail"" several times, but we only need to extract the genus once.)",21
+0092_a.txt,"AQUATICS-NOT GRASS-LIKE OR TUBULAR
+3
+Water parsnip (continued)
+Misidentific ations with water hemlock (pp. 668-670) have resulted in angled. death! Water Water
+CONFUSING PLANTS: times compound, splitting 3 ways at the first division. The stems are not the middle, stiff,
+hemlock leaves are 1-5"" 2-3 (2.5-13 cm) long and much stouter (about 20% as thick as long), widest in has multiple
+hemlock roots straw-colored are outside, often with yellow lines inside. Bulblet water hemlock (p. 670) the first division,
+thin yellowish roots or that taper from the top. The leaves are 2-3 times compound, splitting 3 ways at When
+with the leaflets very thin and lobed, the smallest divisions linear. The stems are not angled. mature,
+the bulblets in the leaf axils are diagnostic. Oxypolis rigidior (p. 424) is similar to water parsnip in form, but the
+leaflets are entire or with a few scattered, large teeth toward the end of the leaflet. Its roots are clustered and
+white with spherical enlargements toward the end. Berula erecta (see next) is another member of the carrot
+family that also goes by the common name ""water parsnip."" This is a smaller plant; its leaves are shorter and
+broader than those of Sium suave, and coarsely toothed. The upper leaves have large teeth or deeply cut lobes.
+HABITAT: Marshes, lakeshores, ditches, ponds, hardwood swamps, river oxbows. Especially likes rich muck
+and thrives with water level fluctuations. Native.
+FOOD USE: Exercise extreme care in identifying this plant. The roots can be collected from fall through
+spring and eaten raw or cooked. Dig up plants gingerly so that roots don't snap. Break off the larger roots
+and replant the crown. Young stems, leaves, and leaf shoots can be eaten raw or cooked in spring and early
+summer. Conservation 3/2.
+COMMENTS: Due to the danger of misidentification, this vegetable is rarely used or written about. One of
+the few documented deaths from plant misidentification that I have been able to find resulted from mistaking
+western water hemlock for water parsnip. However, water parsnip's roots are a highly esteemed food in many
+Native American cultures. Skirret (Sium sisarum), a closely related plant with nearly identical flavor, has been
+cultivated as a root and stem vegetable in Asia for thousands of years. It is still available from some seed
+catalogs in the US.
+Typic al leaflet close up.
+(middle) Young basal
+leaves and leaf shoots
+emerging in summer
+after flood recession.
+(right) Water parship
+stems are strongly
+angied or ridged
+unlike those of Waler
+hemlock
+214
+AQUATICS-NOT GRASS-LIKE OR TUBULAR 3 Water parsnip (continued) Misidentific ations with water hemlock (pp. 668-670) have resulted in angled. death! Water Water CONFUSING PLANTS: times compound, splitting 3 ways at the first division. The stems are not the middle, stiff, hemlock leaves are 1-5"" 2-3 (2.5-13 cm) long and much stouter (about 20% as thick as long), widest in has multiple hemlock roots straw-colored are outside, often with yellow lines inside. Bulblet water hemlock (p. 670) the first division, thin yellowish roots or that taper from the top. The leaves are 2-3 times compound, splitting 3 ways at When with the leaflets very thin and lobed, the smallest divisions linear. The stems are not angled. mature, the bulblets in the leaf axils are diagnostic. Oxypolis rigidior (p. 424) is similar to water parsnip in form, but the leaflets are entire or with a few scattered, large teeth toward the end of the leaflet. Its roots are clustered and white with spherical enlargements toward the end. Berula erecta (see next) is another member of the carrot family that also goes by the common name ""water parsnip."" This is a smaller plant; its leaves are shorter and broader than those of Sium suave, and coarsely toothed. The upper leaves have large teeth or deeply cut lobes. HABITAT: Marshes, lakeshores, ditches, ponds, hardwood swamps, river oxbows. Especially likes rich muck and thrives with water level fluctuations. Native. FOOD USE: Exercise extreme care in identifying this plant. The roots can be collected from fall through spring and eaten raw or cooked. Dig up plants gingerly so that roots don't snap. Break off the larger roots and replant the crown. Young stems, leaves, and leaf shoots can be eaten raw or cooked in spring and early summer. Conservation 3/2. COMMENTS: Due to the danger of misidentification, this vegetable is rarely used or written about. One of the few documented deaths from plant misidentification that I have been able to find resulted from mistaking western water hemlock for water parsnip. However, water parsnip's roots are a highly esteemed food in many Native American cultures. Skirret (Sium sisarum), a closely related plant with nearly identical flavor, has been cultivated as a root and stem vegetable in Asia for thousands of years. It is still available from some seed catalogs in the US. Typic al leaflet close up. (middle) Young basal leaves and leaf shoots emerging in summer after flood recession. (right) Water parship stems are strongly angied or ridged unlike those of Waler hemlock 214 ","FOOD USE: Exercise extreme care in identifying this plant. The roots can be collected from fall through
+spring and eaten raw or cooked. Dig up plants gingerly so that roots don't snap. Break off the larger roots
+and replant the crown. Young stems, leaves, and leaf shoots can be eaten raw or cooked in spring and early
+summer. Conservation 3/2.
+",True,"Sium suave
+
+    Note: The text provided is from the book ""Edible Wild Plants: Eastern/Central North America"" by Thomas Elias and Peter Dykeman.",25
+0098_b.txt,"oceae
+AQUATICS-NOT GRASS-LIKE OR TUBULAR
+14 Yellow pond-lily
+1
+2
+genus Nuphar
+family Nymphaeaceae
+","FOOD USE: Rhizomes can be peeled and boiled in several changes of water, after which they are marg
+edible-fresh they are exceptionally bitter. Gather ripe pods from early summer through early fall. from
+canoe or by wading. Let them sit in water for a few days to soften, then mash them and strain the seeds
+the pulp. Soak, rub, and rinse the seeds to get rid of the bitter flavor of the pulp residue. After this they
+be eaten popped, boiled, or ground into flour. Conservation 3, 1.
+",True,"Nuphar yellowo
+     or
+     Nuphar lilium (depending on the specific species name)",19
+0101_a.txt,"LINEAR, ENTIRE, ONION-SCENTED LEAVES
+GROUP 16 LINEAR, ENTIRE, ONION-SCENTED LEAVES
+Allium along with cultivated onion, leek, species garlic, can and occa- chive.
+All of these plants are in the frequently genus escape and numerous non-native introduced
+Although cultivated alliums feral, I have only included the three most common makes them one
+sionally be Alliums found can growing be distinguished by their distinctive onion odor, which functioning. However,
+species. to identify if your sense of smell is ""wild onion,"" the
+some species contrived for field guides are repetitive and confusing. Although there in
+of the easiest can and be safest hard groups to tell from each other. Since most are just called is no danger
+confounding names the various species, they do have slightly different culinary applications.
+genus Allium family Alliaciae (formerly part of the greater lily family, Liliaceae)
+","FOOD USE: All parts of these alliums are edible: the bulbs, leaves, scapes, buds, and flowers. They can be
+used as seasoning vegetables just like their cultivated relatives. In the species accounts I do not list food uses
+that are possible but seem largely impractical.
+CONSERVATION NOTE: All onions are perennials and potentially long-lived. When harvesting native
+three clump-forming onion, be sure to leave behind at least two intact, healthy bulbs from each clump of any 6
+leave at healthy least bulbs from clumps of 6-20, or 5 healthy bulbs from clumps over 20. For non-clumping or less,
+3 bulbs within a hand-spread from any bulb you collect. Greens should also be collected sparingly. species
+TENTATIVE IDENTIFICATION KEY TO THE GENUS ALLIUM
+The key is not your final answer!
+or
+Leaves flat, 1-3,5"" (2.5-9 cm) wide.
+leaves round, tubular,
+1. Ramp
+or
+Bublets present in umbel; underground bulbs oblong to spherical.
+No bulblets in umbel; underground bulbs long and narrow.
+2. Field garlic
+or
+Leaves Leaves deeply folded at the base, with a rough keel below, to 1,2"" (3 cm) wide.
+3. Chive
+Flowering spring to early summer.
+flat, angled, or channeled; not tubular and less than 1 cm wide.
+4. Feral garlic
+or
+Bulblets Bulblets not often present in umbel; 2 leaves diverge several inches up the stem.
+present in umbel; all leaves basal.
+Flowers white; bulb with a thick fibrous sheath.
+5, American garlic
+Flowering late summer to fall.
+Flowers pink or white; bulb with a thinner fibrous sheath.
+6, Textile onion
+Flowers white to faint pink, scape nodding in bloom.
+7. Prairle onion
+Flowers pink, scape erect in bloom.
+8. Nodding onion
+232
+9, Tall pink onion
+LINEAR, ENTIRE, ONION-SCENTED LEAVES GROUP 16 LINEAR, ENTIRE, ONION-SCENTED LEAVES Allium along with cultivated onion, leek, species garlic, can and occa- chive. All of these plants are in the frequently genus escape and numerous non-native introduced Although cultivated alliums feral, I have only included the three most common makes them one sionally be Alliums found can growing be distinguished by their distinctive onion odor, which functioning. However, species. to identify if your sense of smell is ""wild onion,"" the some species contrived for field guides are repetitive and confusing. Although there in of the easiest can and be safest hard groups to tell from each other. Since most are just called is no danger confounding names the various species, they do have slightly different culinary applications. genus Allium family Alliaciae (formerly part of the greater lily family, Liliaceae) DESCRIPTION: Perennials with layered bulbs and a radiating cluster of thin, white roots. Leaves linear, hollow or not, hairless, with no prominent veins, all basal but sometimes wrapped around the stalk for some distance. (When we speak of stem leaves on some species, we mean the sheath wraps far up the stalk before the blade diverges from it.) Stalk (scape) single per bulb, erect, unbranched, leafless (or with leaves sheathing it), hairless. Inflorescence a terminal umbel with thin, broad bracts beneath it, enveloping the whole umbel in a balloon-like sac before it opens. Flowers have 6 tepals arranged in 2 layers that are similar in size and color, with 6 stamens and a single pistil. In some species some or all of the flowers may be replaced by bulblets. Fruit a 3-lobed capsule containing 3 black seeds. CONFUSING PLANTS: Onions have a superficial resemblance to a number of other monocot plants, some of which are toxic. Death camas (p. 665) has a leaf or two on the stem, and its flowers are in racemes. Star- of-Bethlehem (p. 666), has mucilaginous leaves, flowers in a raceme, and green leaf bases extending through the center of the bulb. Atamasco lily Zephyranthes atamasca has broader, thicker, blunt leaves with many more per rosette; the flowers are large and showy and grow singly. All of these toxic look-similars lack the allium scent, which is a good distinguishing feature, but where they grow beside wild onions the smell from broken alliums can confuse the nose of the gatherer. FOOD USE: All parts of these alliums are edible: the bulbs, leaves, scapes, buds, and flowers. They can be used as seasoning vegetables just like their cultivated relatives. In the species accounts I do not list food uses that are possible but seem largely impractical. CONSERVATION NOTE: All onions are perennials and potentially long-lived. When harvesting native three clump-forming onion, be sure to leave behind at least two intact, healthy bulbs from each clump of any 6 leave at healthy least bulbs from clumps of 6-20, or 5 healthy bulbs from clumps over 20. For non-clumping or less, 3 bulbs within a hand-spread from any bulb you collect. Greens should also be collected sparingly. species TENTATIVE IDENTIFICATION KEY TO THE GENUS ALLIUM The key is not your final answer! or Leaves flat, 1-3,5"" (2.5-9 cm) wide. leaves round, tubular, 1. Ramp or Bublets present in umbel; underground bulbs oblong to spherical. No bulblets in umbel; underground bulbs long and narrow. 2. Field garlic or Leaves Leaves deeply folded at the base, with a rough keel below, to 1,2"" (3 cm) wide. 3. Chive Flowering spring to early summer. flat, angled, or channeled; not tubular and less than 1 cm wide. 4. Feral garlic or Bulblets Bulblets not often present in umbel; 2 leaves diverge several inches up the stem. present in umbel; all leaves basal. Flowers white; bulb with a thick fibrous sheath. 5, American garlic Flowering late summer to fall. Flowers pink or white; bulb with a thinner fibrous sheath. 6, Textile onion Flowers white to faint pink, scape nodding in bloom. 7. Prairle onion Flowers pink, scape erect in bloom. 8. Nodding onion 232 9, Tall pink onion ",True,"Allium cepa
+     or
+     Allium sativum
+     or
+     Allium ascalonicum
+     (depending on which species is intended)",34
+0107_b.txt,"mm
+1cm
+LINEAR, ENTIRE LEAVES-NOT ONION-SCENTED
+Spiderwort
+2
+2
+2
+genus Tradescantia
+family
+Commelinaceae
+","FOOD USE: All tender parts are edible raw or cooked. The young leaves and hearts of young leaf clusters are
+gathered in spring or early summer. Stems are good when young, but older stems, even late in the grow
+season, can sometimes be eaten after peeling the tough rind. In summer you can pick the flowers and flower
+buds. Conservation 2.
+",True,"Tradescantia
+     family: Commelinaceae can be ignored.",10
+0112_b.txt,"1cm
+LINEAR, ENTIRE LEAVES-NOT ONION-SCENTED
+13 Small blazing star
+2
+Liatris punctata/mucronata
+Asteraceae (Composite family)
+","FOOD USE: The roots are reported as food from several
+Native peoples on the Great Plains, although they are
+not commonly eaten today. The elongated taproots are
+tough and woody. However, some round, enlarged roots
+are less tough, and they have a mild pleasant flavor that
+is good in stews. Conservation 3.
+",True,"Liatris punctata
+     or
+     Liatris mucronata (if the text mentions both)
+
+    Input:
+    1.2m
+    2. AQUATIC PLANTS
+    3
+    4. Water lily
+    5 Nymphaea lotus
+    6. Water hyacinth
+    7. Hydrilla verticillata
+    8. Waterweed
+    9 Elodea canadensis
+    10. Duckweed
+    11. Cattail
+    12. Water pepper
+    13. Floating heart
+    14. Cabomba caroliniana
+    15. Hornwort
+    16. Starry pondweed
+    17. Coontail
+    18. Brazilian elodea
+    19. Eelgrass
+    20. Hydrilla stolonifera
+
+
+    Output:
+     Nymphaea lotus
+     or
+     Hydrilla verticillata (if the text mentions both)",158
+0115_b.txt,"mm
+0
+1cm
+LINEAR, ENTIRE LEAVES-NOT ONION-SCENTED
+Grape hyacinth
+genus Muscari Asparagaceae (Asparagus family)
+","FOOD USE: Bulbs are extremely bitter and somewhat toxic when raw. They are traditionally processed by
+being peeled, cut (especially if large), then mixed in heavily salted water with vinegar and soaked overnight.
+After this they can be cooked or pickled if they no longer taste bitter. If they are still bitter they should be boiled
+and drained. The flowers are much simpler to use: Just eat them raw in
+salads or steep them for an infused drink. They are pretty but don't taste
+very good either.
+",True,"Muscari Asparagacee
+     or
+     Muscari asparagaceum
+
+     (Both are correct, but the second form is more commonly used.)",28
+0118_b.txt,"Aristolochiaceae
+FLOWERING STEM LEAFLESS, BASAL LEAVES ENTIRE
+4
+Trout lily
+3
+2
+NG-75
+genus Erythronium
+Liliaceae
+(Lily
+family)
+","FOOD USE: Bulbs can be eaten at any time. In winter and early spring they are sweet and crunchy, excellent raw
+or cooked; in summer they are hard and starchy, best cooked. Bulbs are found1-5"" below the surface Flarge ones
+deeper than small ones. Young leaves are nibbled raw or mixed with other cooked greens. Conservation 3/2.
+",True,"Erythronium trout
+
+    Input:
+    The genus Osmunda
+contains ferns known as the royal ferns.
+The most common species is Osmunda regalis.
+
+    Output:
+     Osmunda regalis
+
+    Input:
+    The common milkweed, Asclepias syriaca,
+is a plant in the Asclepiadaceae family.
+
+    Output:
+     Asclepias syriaca",62
+0120_b.txt,"FLOWERING STEM LEAFLESS, BASAL LEAVES ENTIRE
+8 Shooting star
+2
+2
+genus Dodecatheon Primulaceae (Primrose family)
+","FOOD USE: Gather greens and shoots in spring; eat them raw or cooked.
+They have a slight wintergreen flavor with a faint bitter aftertaste, and
+are very tender when young. Conservation 2.
+",True,Dodecatheon primuloides (Assuming that Shooting star is the common name and Dodecatheon is the genus),15
+0121_a.txt,"FLOWERING STEM LEAFLESS, BASAL LEAVES ENTIRE
+1
+2
+9 Common plantain
+Plantago major, P. rugelii
+Plantaginaceae (Plantain family)
+","FOOD USE: The youngest, light green leaves can be eaten raw or cooked. The best use I've tried is baked
+like kale chips. Immature spikes with small flower buds (throughout summer) can be eaten raw or cooked-I
+like them roasted in a campfire for 30 seconds. Ripe, brown pods (late summer through fall) can be stripped
+from the spikes easily by hand; after separating the seeds from their capsules they can be cooked in porridge.
+Conservation 1.
+",True,"Plantago major
+     or
+     Plantago rugelii",13
+0131_b.txt,"(Bean
+family)
+STEM LEAFLESS, BASAL LEAVES COMPOUND
+3-8""
+(8-20
+cm)
+long,
+resting
+on
+the
+difficulty
+in 1 appearance. ate, the next The leaves divisions are 2-3 ground times compound in the open and but ascending under
+lines, not channeled, with Petioles about 60% of blade plane with
+other, with a rounded 1-2 or abruptly-pointed pinnate. Ultimate tip. lobes are once linear rleeply and minute, lobed flat, or Ene 7° divisional
+section after its first division; an abruptly widening, fleshy, purplish sheath length nm ""ill with in purple
+ridges, solid at first, becoming its branches are narrowly channeled. Scapes at the base. Rachis has a long naked
+(8-40 cm) long, proportionately hollow, stout leaning to decumbent in the open but 1-3 often per erect rosette, in counded with fine
+gate to 3.5"" (9 cm) packed and ball-like with 8-30 extremely short rays when first a flat-topped compound
+umbel that is closely (4-9 mm thick), typically curved. Inflorescence competition. 3-16""
+umbel, up but under the in fruit, at which time the umbellets do not touch. There flowering; bracts the rays elon-
+in a lopsided whorl. umbellets there are numerous overlapping, hairy bracts are equaling no the beneath the great
+mid Umbellets are tightly packed (and remain so even in fruit) with 9-14 rays Flowers and arranged
+spring) tiny, with 5 yellow petals that curl inward so their tips touch; stamens protrude rays. by about the (early length to
+of the flower. Fruits 6-7 mm long, flattened, ovate to oblong, light brown with
+prominent reddish-brown tubes.
+HABITAT: Prairies, savannahs, roadsides, lightly used pastures-espec.aily
+where steep and rocky or lightly disturbed, on limestone-derived, clay-rick
+soils. Native.
+&
+FOOD USE: The roots are sweet with a slightly aromatic aftertaste. and have
+a nice texture. You can eat them raw but they are better cooked. Tender you
+leaves, stems, and flowers can be used as a vegetable or seasoning,
+cooked. These are only available in spring or early summer. Conservation
+COMMENTS: This fantastic edible is an early spring wildilower that
+abundant but has suffered greatly from habitat loss. The Latinspe
+means ""fennel-like"" in reference to the look rather than the flavor.
+does not taste like parsley-the flavor is very strong. like cerery or
+roots are traditionally dried and pounded into flour or cakes by 'n. -
+people. AKA prairie parsley.
+RELATED EDIBLES: A few additional edible species of this are
+are occasionally found at the western edge of ou regior
+L. macrorhizus and L. cous. Also see white prairie biscuitroo: (p.468).
+Apiaceae (Carrot tamily
+(Bean family) STEM LEAFLESS, BASAL LEAVES COMPOUND 3-8"" (8-20 cm) long, resting on the difficulty in 1 appearance. ate, the next The leaves divisions are 2-3 ground times compound in the open and but ascending under lines, not channeled, with Petioles about 60% of blade plane with other, with a rounded 1-2 or abruptly-pointed pinnate. Ultimate tip. lobes are once linear rleeply and minute, lobed flat, or Ene 7° divisional section after its first division; an abruptly widening, fleshy, purplish sheath length nm ""ill with in purple ridges, solid at first, becoming its branches are narrowly channeled. Scapes at the base. Rachis has a long naked (8-40 cm) long, proportionately hollow, stout leaning to decumbent in the open but 1-3 often per erect rosette, in counded with fine gate to 3.5"" (9 cm) packed and ball-like with 8-30 extremely short rays when first a flat-topped compound umbel that is closely (4-9 mm thick), typically curved. Inflorescence competition. 3-16"" umbel, up but under the in fruit, at which time the umbellets do not touch. There flowering; bracts the rays elon- in a lopsided whorl. umbellets there are numerous overlapping, hairy bracts are equaling no the beneath the great mid Umbellets are tightly packed (and remain so even in fruit) with 9-14 rays Flowers and arranged spring) tiny, with 5 yellow petals that curl inward so their tips touch; stamens protrude rays. by about the (early length to of the flower. Fruits 6-7 mm long, flattened, ovate to oblong, light brown with prominent reddish-brown tubes. HABITAT: Prairies, savannahs, roadsides, lightly used pastures-espec.aily where steep and rocky or lightly disturbed, on limestone-derived, clay-rick soils. Native. & FOOD USE: The roots are sweet with a slightly aromatic aftertaste. and have a nice texture. You can eat them raw but they are better cooked. Tender you leaves, stems, and flowers can be used as a vegetable or seasoning, cooked. These are only available in spring or early summer. Conservation COMMENTS: This fantastic edible is an early spring wildilower that abundant but has suffered greatly from habitat loss. The Latinspe means ""fennel-like"" in reference to the look rather than the flavor. does not taste like parsley-the flavor is very strong. like cerery or roots are traditionally dried and pounded into flour or cakes by 'n. - people. AKA prairie parsley. RELATED EDIBLES: A few additional edible species of this are are occasionally found at the western edge of ou regior L. macrorhizus and L. cous. Also see white prairie biscuitroo: (p.468). Apiaceae (Carrot tamily ","FOOD USE: The roots are sweet with a slightly aromatic aftertaste. and have
+a nice texture. You can eat them raw but they are better cooked. Tender you
+leaves, stems, and flowers can be used as a vegetable or seasoning,
+cooked. These are only available in spring or early summer. Conservation
+",True,"Apiaceae
+     or
+     Lactuca
+     (depending on which plant is intended)",21
+0134_a.txt,"FLOWERING STEM LEAFLESS, BASAL LEAVES COMPOUND
+NG-286
+genus STRAWBERRY Fragaria Rosaceae (Rose family)
+CHECK: Three hair toothed leaflets and a miniature strawberry. ID difficulty 2.
+","FOOD USE: This is one of the first wild berries to ripen in late spring or early summer. While tedious to gather,
+they are astoundingly delicious. All strawberry recipes are immensely better when made with wild fruit. The
+leaves can be used for a moderately astringent tea. Conservation 1.
+",True,"Fragaria rosaecea 
+
+     Input:
+     Species:
+     The large leaves of this plant are divided into three lobes, each with serrated edges. The flowers are small and white.
+     Genus:
+     The plant belongs to the lily family.
+     Species Name:
+     Lily, L. regalis
+
+     Output:
+     Lily regalis",78
+0139_b.txt,"mm
+0
+1cm
+BASAL LEAVES PRESENT, STEM LEAVES PAIRED OR WHORLED
+7 Spring beauty
+3
+2
+genus Claytonia
+family Montiaceae
+","FOOD USE: Dig up tubers with a small trowel or digging stick. To find larger tubers, look for dense soot clusters fubers di
+stems emanating from the same
+are best when the plants are dormant but
+this is when they are hard to find. They may
+irritate the mouth when eaten raw. cooked
+they are like miniature potatoes. out softer
+and sweeter. The greens (all above ground
+parts) are easy to harvest and mild in Flavo:
+they are best eatenraw do a mbble or salad.
+Conservation 3/2,
+",True,"Claytonia spring
+
+    Input:
+
+    mm
+0
+1cm
+BASAL LEAVES PRESENT, STEM LEAVES PAIRED OR WHORLED
+7 Spring beauty
+3
+2
+Genus: Claytonia
+Family: Montiaceae
+
+
+    Output:
+     Claytonia spring
+
+    Input:
+
+    mm
+0
+1cm
+BASAL LEAVES PRESENT, STEM LEAVES PAIRED OR WHORLED
+7 Spring beauty
+3
+2
+Genus: Claytonia
+Family: Montiaceae
+Species: spring
+
+
+    Output:
+     Claytonia spring",61
+0140_b.txt,"0
+1cm
+BASAL LEAVES PRESENT, STEM LEAVES PAIRED OR WHORLED
+9
+Bladder campion
+3
+IWE-51
+Silene vulgaris and S. cserii Caryophyllaceae (Pink family)
+","FOOD USE: Collect the tender young leaves and stems in spring and
+early summer, before the plant flowers. Tender tips with flower buds are
+good through mid summer. They are somewhat bitter raw and should be
+briefly blanched and drained for best flavor.
+",True,"Silene vulgaris
+     or
+     Silene cserii
+
+    Depending on the text, it may contain multiple scientific names. Extract only the first one you encounter. If the text does not contain a scientific name, respond with an empty string.",47
+0141_a.txt,"BASAL LEAVES PRESENT, STEM LEAVES PAIRED OR WHORLED
+IWE-54
+OF
+White alba campion Caryophyllaceae (Pink family)
+Silene Thigh high imp. fuzzy-stemmed difficulty We edy plant 2. with entire, hairy, paired
+","FOOD USE: The tender young leaves
+caribe eaten cooked. (Raw their flavor
+Erather strong ) Pick them in spring
+wellin advance of flowering
+",True,"Caryophyllaceae (Pink family) is not a scientific name. The correct scientific name is:
+     Silene
+     (Note: In this example, the text also mentions the family name, but it's not part of the scientific name for this species.)",44
+0142_a.txt,"BASAL LEAVES PRESENT, STEM LEAVES PAIRED
+NG-244
+12
+Dentaria Cut-leaf laciniata toothwort Brassicaceae 2 (Mustard family)
+Short, term like mustard with 3 deeply divided, ID difficulty palmate 2. leaves on the
+","FOOD USE: Tubers, found just beneath the surface, have a strong flavor of horseradish and can be used
+similarly as a seasoning. The entire above-ground portion of the plant can be used as greens, which have a
+milder horseradish flavor and are good on sandwiches. Conservation 2/1.
+",True,"Dentaria cut-leaf
+     or
+     Dentaria laciniata",13
+0150_a.txt,"Basal leaves large, pointed, folded difficulty along the 2. midvein, on long petioles
+","FOOD USE: Gather the young, tender leaves in spring and use as greens raw or cooked. The flower buds
+and flowers are available from late spring through summer and can be used similarly. All of these parts can
+be used in smoothies to render the stiff hairs innocuous.
+",True,No scientific name found in the given text.,8
+0165_b.txt,"0
+1cm
+BASAL LEAVES PRESENT, STEM LEAVES ALTERNATE,
+THISTLE
+LOBED OR DIVIDED, SAP MILKY
+[]
+FH-333
+Asteraceae (Composite family)
+genera Cirsium, Carduus, Onopordum, Silybum
+","FOOD USE: (This is a generalized account; some uses are not applicable to certain species.) Taproots (fall
+through spring) of most species can be eaten raw or cooked. Shoots (late spring to early summer) can be
+eaten raw or cooked after they have been carefully peeled. I start by removing the leaves and spines in the
+field with a knife, then peeling the thick skin. Midribs (spring through fall) of the leaves can be eaten raw or
+cooked after removing the leafy sides and accompanying spines; they are crisp, juicy, and a bit stringy, like
+celery. Flower buds (early to mid summer) can be peeled, and the tender centers eaten like artichoke hearts,
+but on most species they are too small and difficult to bother.
+",True,"Cirsium
+    
+    or
+
+    Carduus
+    
+    or
+
+    Onopordum
+    
+    or
+
+    Silybum",37
+0169_b.txt,"omposite e family).
+BASAL LEAVES PRESENT, LOBED STEM LEAVES
+SOW-THISTLE
+OR DIVIDED, ALTERNATE, SAP MILKY
+[I]
+NG-439
+genus Sonchus
+Asteraceae (Composite family)
+nowerheads UICK CHECK: in terminal Erect herbs clusters with of sharply 3-12. ID pointed difficulty teeth 1. or spines the
+","FOOD USE: Tender leaves can be gathered from spring through summer (most abundant in early summer) and
+eaten raw or cooked. Tender stems, primarily available in early summer, can be peeled and used as a vegetable
+",True,"Sonchus asteraceae
+     or
+     Sonchus diffusus
+     depending on the species mentioned in the text.",25
+0170_b.txt,"1cm
+BASAL LEAVES PRESENT, STEM LEAVES ALTERNATE,
+LOBED OR DIVIDED, SAP MILKY
+WILD
+LETTUCE
+NG-429
+genus
+Lactuca
+Asteraceae (Composite family)
+iall UICK stalk CHECK: with a panicle Dandelion-like of numerous leaves small and flowerheads. milky sap; midvein ID difficulty below 2. is keeled with arect hairs OF prickles:
+","FOOD USE: Tender leaves can be eaten raw or cooked in spring. The best are found in the upright cluster of
+new leaves in the center of the rosette just before the stem elongates (bolts); this is analogous to a ""head"" of
+domestic lettuce. Shoots can also be eaten in early summer. The flavor is highly variable among the species,
+but those with browning latex tend to taste better.
+",True,Lactuca iall UICK,3
+0187_b.txt,"mm
+cm
+BASAL LEAVES LOBED PRESENT, LEAVES
+OR DIVIDED, SAP ALTERNATE, NOT MILKY
+27 Common pepperweed
+Lepidium virginicum and L. densiflorum 2 3 Brassicaceae
+(Mustard family)
+spreading UICK CHECK: top with Shin-high plant with crowded, pinnately lobed basal leaves
+numerous racemes, tiny flowers, and disc-like pods. ID and difficulty a broad.
+","FOOD USE: The tender leaves and leafy shoots can be
+eaten cooked or raw in late spring; they are mild to average
+among mustards as far as hotness. The tender tip of each
+growing inflorescence (about half an inch) can be used as
+a hot seasoning. Mature seed pods can be gathered and
+ground as ""pepper"" but are not as peppery as the flower
+buds. Conserva-
+tion 1.
+",True,"Lepidium virginicum
+     or
+     Lepidium densiflorum",13
+0188_a.txt,"LEAVES PRESENT, LEAVES ALTERNATE,
+BASAL LOBED OR DIVIDED, SAP NOT MILKY
+3
+28 mustard
+Arabis Tower glabra Brassicaceae (Mustard family)
+CHECK. Straight, unbranched mustard, all parts 1. pointing vertically; entire,
+narrow. Basal leaves to 7"" (18 cm) long and 1.2"" (3 cm) nearly wide, to with the
+","FOOD USE: The shoots make a good vegetable
+in spring; raw they are acceptable, but steamed
+or briefly boiled they are excellent. Older growth
+quickly becomes too tough to eat. Leaves may
+remain tender even on flowering plants but are
+usually strong and bit-
+ter in flavor. Conserva-
+tion 2.
+",True,"Arabis toweria
+    
+    --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",10
+0190_b.txt,"prossicocede (Mustard f family)
+BASAL LEAVES PRESENT, LEAVES ALTERNATE,
+LOBED OR DIVIDED, SAP NOT MILKY
+are summer) also yellow. 9-13 mm Pods across long with four fan shaped yellow petals, each with
+and nearly appressed. Seeds and spherical narrow, and roundish light brown with 4 to ridges, reddish narrowed brown a or long and dark stalked beak-like base: 7' the the tip. 1 linear overlapping sena
+HABITAT: uilding sites, Disturbed compost soil, heaps, especially Introduced. where very rich and hilly. Commonly found in gray gardens. agricultural fields.
+FOOD raw or cooked-those USE: Young plants are found mostly from early to mid summer. Leaves and tender
+the stems. near the inflorescence are much hotter than lower parts. Leaves are more tips pungent are excellent than
+Ripe seeds can be collected by
+stripping the dry pods or beating the mature
+tops, then winnowing (see p.27). Black mus-
+tard is grown commercially for its hot seeds.
+COMMENTS: This giant mustard is locally
+abundant in rich soil. The flavor is great if
+you can handle the heat. (The uppermost
+greens are fire-in-the-sinus hot.) The seeds
+make my favorite wild mustard.
+Related edible:
+33 White mustard Sinapis alba
+A belly-high, yellow-flowered, summer-blooming weedy mustard with short, broad leaves
+with a few large lobes. The pods are curved and tapered with a halo of white hairs around
+the base. The tender greens can be collected from early summer through autumn, and
+the seeds can be used to make a condiment. This mustard is extremely easy to recognize
+in fruit. It is pure nose-burning hot, without any horseradish flavor or bitterness-one of
+the best hot greens.
+Widespread
+but sporadic
+411
+prossicocede (Mustard f family) BASAL LEAVES PRESENT, LEAVES ALTERNATE, LOBED OR DIVIDED, SAP NOT MILKY are summer) also yellow. 9-13 mm Pods across long with four fan shaped yellow petals, each with and nearly appressed. Seeds and spherical narrow, and roundish light brown with 4 to ridges, reddish narrowed brown a or long and dark stalked beak-like base: 7' the the tip. 1 linear overlapping sena HABITAT: uilding sites, Disturbed compost soil, heaps, especially Introduced. where very rich and hilly. Commonly found in gray gardens. agricultural fields. FOOD raw or cooked-those USE: Young plants are found mostly from early to mid summer. Leaves and tender the stems. near the inflorescence are much hotter than lower parts. Leaves are more tips pungent are excellent than Ripe seeds can be collected by stripping the dry pods or beating the mature tops, then winnowing (see p.27). Black mus- tard is grown commercially for its hot seeds. COMMENTS: This giant mustard is locally abundant in rich soil. The flavor is great if you can handle the heat. (The uppermost greens are fire-in-the-sinus hot.) The seeds make my favorite wild mustard. Related edible: 33 White mustard Sinapis alba A belly-high, yellow-flowered, summer-blooming weedy mustard with short, broad leaves with a few large lobes. The pods are curved and tapered with a halo of white hairs around the base. The tender greens can be collected from early summer through autumn, and the seeds can be used to make a condiment. This mustard is extremely easy to recognize in fruit. It is pure nose-burning hot, without any horseradish flavor or bitterness-one of the best hot greens. Widespread but sporadic 411 ","FOOD raw or cooked-those USE: Young plants are found mostly from early to mid summer. Leaves and tender
+the stems. near the inflorescence are much hotter than lower parts. Leaves are more tips pungent are excellent than
+Ripe seeds can be collected by
+stripping the dry pods or beating the mature
+tops, then winnowing (see p.27). Black mus-
+tard is grown commercially for its hot seeds.
+",True,"prossicocede
+     The text does not contain a clear mention of a genus and species for the plant in question. The text seems to be describing two different mustard plants: 'prossicocede' and 'White mustard' (Sinapis alba). The first one is described as a giant mustard with hot seeds, while the second one is described as a weedy mustard with hot greens. Both of them belong to the mustard family (Brassicaceae). However, without more context or a clear mention of the scientific name, it is impossible to extract a single binomial scientific name from the text.",98
+0197_b.txt,"mm
+0
+1cm
+BASAL ONCE LEAVES PRESENT,
+COMPOUND WITH LEAVES ALT LEAFLETS
+the leaflets pound distal occasionally side, Midveins have are short not depressed. petiolules. The Leaflets rachis are is often highly asymmetric with blade
+the peduncle umbels, round, one to smooth, a few, terminal thin, to or 9"" from (23 upper cm) long, branches deeper in than axils wide of reduced and channeled. leaves with inflorescer a clasning it the
+0-2 fl +-topped linear, drooping, in shade but become hemispheric in full sun, Great the umbels 3-8"" across, may r
+mostly well needle-tipped bracts with inrolled margins. rays rounded. Umbellets 1.5-5"" long, subti
+early fall) separated, subtended by 1-5 tiny, short, thread-thin bracts (hard 7-21, 8"" (13 20 mm
+the sharp petal on thread-thin tips incurved curved pedicels, not touching, 4 mm across, green in to the see) center Flowers with (late whit ;//
+almost touch making them look short and blunt. Petals roughly size and 1
+each other. Fruit dry upon maturity, 3-4 mm long, oval, flattened, are sharp equal edged. in
+similar CONFUSING SPECIES: Common water hemlock Cicuta maculata (p. 668) may share its habitat. and
+and far at a glance, but has regularly serrated leaf margins and multi-compound leaves with smaller
+more of them. The secondary veins are numerous, straight at first, and deeply depressed. T
+of water hemlock are entirely dissimilar. Bulblet water hemlock Cicuta bulbifera (p. 670) IS mostly
+and has multi-compound leaves with exclusively narrow leaflets, and bulblets in upper leaf axils. All
+springwater parsnip (p. 216) and water parsnip (p. 213), both edible.
+HABITAT: Seepages, ponds margins, marshes, wet meadows and stream edges, in rich, high-calc
+Grows in shade to full sun, but larger in sun. Native.
+WARNING: This is one of the three plants in this book that I consider the most likely for
+tification. Proceed with great caution!
+FOOD USE: The tubers can be used as a potato-like vegetable, best gathered from fall through spri
+are fantastic in any way you'd use a potato. Take a couple and replant the crown. Conservation 3.
+COMMENTS: Probably my favorite root vegetable: like a
+potato with a faint hint of carrot, but with a better texture
+and flavor than either. Widely and erroneously reported as
+poisonous to livestock; the name results from confusion with
+water hemlock. This vegetable, almost completely unknown
+to modern foragers, was eaten by the Cherokee (and probably
+many Native nations in our region) but its food tradition has
+been hanging by a thread for a century. Although you will find
+it listed as deadly poisonous in many sources, this is nonsense.
+I grow this vegetable, eat it as often as I can, and feed it to my
+guests, who have universally found it excellent. This is what
+the colonial destruction of food knowledge looks like. I have
+not listed the shoots or greens as edible due to the lack of eth-
+nographic information, but they are not poisonous. There are
+other species in this genus, the edibility of which are unknown
+to me. AKA stiff cowbane, pig potato.
+Leaflets may be entire or toothed.
+mm 0 1cm BASAL ONCE LEAVES PRESENT, COMPOUND WITH LEAVES ALT LEAFLETS the leaflets pound distal occasionally side, Midveins have are short not depressed. petiolules. The Leaflets rachis are is often highly asymmetric with blade the peduncle umbels, round, one to smooth, a few, terminal thin, to or 9"" from (23 upper cm) long, branches deeper in than axils wide of reduced and channeled. leaves with inflorescer a clasning it the 0-2 fl +-topped linear, drooping, in shade but become hemispheric in full sun, Great the umbels 3-8"" across, may r mostly well needle-tipped bracts with inrolled margins. rays rounded. Umbellets 1.5-5"" long, subti early fall) separated, subtended by 1-5 tiny, short, thread-thin bracts (hard 7-21, 8"" (13 20 mm the sharp petal on thread-thin tips incurved curved pedicels, not touching, 4 mm across, green in to the see) center Flowers with (late whit ;// almost touch making them look short and blunt. Petals roughly size and 1 each other. Fruit dry upon maturity, 3-4 mm long, oval, flattened, are sharp equal edged. in similar CONFUSING SPECIES: Common water hemlock Cicuta maculata (p. 668) may share its habitat. and and far at a glance, but has regularly serrated leaf margins and multi-compound leaves with smaller more of them. The secondary veins are numerous, straight at first, and deeply depressed. T of water hemlock are entirely dissimilar. Bulblet water hemlock Cicuta bulbifera (p. 670) IS mostly and has multi-compound leaves with exclusively narrow leaflets, and bulblets in upper leaf axils. All springwater parsnip (p. 216) and water parsnip (p. 213), both edible. HABITAT: Seepages, ponds margins, marshes, wet meadows and stream edges, in rich, high-calc Grows in shade to full sun, but larger in sun. Native. WARNING: This is one of the three plants in this book that I consider the most likely for tification. Proceed with great caution! FOOD USE: The tubers can be used as a potato-like vegetable, best gathered from fall through spri are fantastic in any way you'd use a potato. Take a couple and replant the crown. Conservation 3. COMMENTS: Probably my favorite root vegetable: like a potato with a faint hint of carrot, but with a better texture and flavor than either. Widely and erroneously reported as poisonous to livestock; the name results from confusion with water hemlock. This vegetable, almost completely unknown to modern foragers, was eaten by the Cherokee (and probably many Native nations in our region) but its food tradition has been hanging by a thread for a century. Although you will find it listed as deadly poisonous in many sources, this is nonsense. I grow this vegetable, eat it as often as I can, and feed it to my guests, who have universally found it excellent. This is what the colonial destruction of food knowledge looks like. I have not listed the shoots or greens as edible due to the lack of eth- nographic information, but they are not poisonous. There are other species in this genus, the edibility of which are unknown to me. AKA stiff cowbane, pig potato. Leaflets may be entire or toothed. ","FOOD USE: The tubers can be used as a potato-like vegetable, best gathered from fall through spri
+are fantastic in any way you'd use a potato. Take a couple and replant the crown. Conservation 3.
+",True,"None
+
+    The text does not contain a clear binomial scientific name.",14
+0209_a.txt,"BASAL LEAVES PRESENT, LEAVES ALTERNATE,
+MULTI-COMPOUND WITH DISTINCT LEAFLETS
+Purple angelica (continued)
+FOOD USE: Angelica has a very strong soapy flavor and will numb your tongue, especially if eaten raw. For th
+reason it IS typically used in moderation. more as a seasoning than a vegetable. However, the heart in sprin
+pale and wrapped in sheaths when 4-9"" (10-23 cm) tall, is not 50 soapy and can be used in soups or casserol
+like celery. Young stalks and petioles are strong but can be used as a flavoring and have been traditional
+candied. Seeds have also
+been used as a seasoning.
+Conservation 2/1.
+WARNING: The juice is
+phototoxic to the skin (see
+p. 23),
+COMMENTS: My friends at
+Prairie Moon Nursery aptly
+call them ""stately sentinels
+along stream beds."" Purple
+angelica is similar to the
+European Angelica archan-
+gelica, for which there is a
+rich tradition of medicinal
+and culinary use. In Scandi-
+navia, cultivars with milder
+flavor and solid stalks have
+been bred.
+BASAL LEAVES PRESENT, LEAVES ALTERNATE, MULTI-COMPOUND WITH DISTINCT LEAFLETS Purple angelica (continued) FOOD USE: Angelica has a very strong soapy flavor and will numb your tongue, especially if eaten raw. For th reason it IS typically used in moderation. more as a seasoning than a vegetable. However, the heart in sprin pale and wrapped in sheaths when 4-9"" (10-23 cm) tall, is not 50 soapy and can be used in soups or casserol like celery. Young stalks and petioles are strong but can be used as a flavoring and have been traditional candied. Seeds have also been used as a seasoning. Conservation 2/1. WARNING: The juice is phototoxic to the skin (see p. 23), COMMENTS: My friends at Prairie Moon Nursery aptly call them ""stately sentinels along stream beds."" Purple angelica is similar to the European Angelica archan- gelica, for which there is a rich tradition of medicinal and culinary use. In Scandi- navia, cultivars with milder flavor and solid stalks have been bred. ","FOOD USE: Angelica has a very strong soapy flavor and will numb your tongue, especially if eaten raw. For th
+reason it IS typically used in moderation. more as a seasoning than a vegetable. However, the heart in sprin
+pale and wrapped in sheaths when 4-9"" (10-23 cm) tall, is not 50 soapy and can be used in soups or casserol
+like celery. Young stalks and petioles are strong but can be used as a flavoring and have been traditional
+candied. Seeds have also
+been used as a seasoning.
+Conservation 2/1.
+",True,"Purple angelica
+
+     Note: The capitalization of the first letter of each word in the output is for readability only and does not affect the actual scientific name extraction.",32
+0210_b.txt,"0
+1cm
+BASAL-COMPOUNDESENTH LEAVES ALTERNATE,
+DISTINCT LEAFLETS
+spaced, only a pinhole alternate, hollow, progressively reaching 28-40"" smaller (70-102 on cm) in height and 12 mm thick Stem leaves form and
+umbellets not touching a nearly flat in bloom. compound umbel to 4.5"" (11 cm) wide with 18-30 channeled. thick stiff, and brittle
+Inflorescence shorter petioles, the sheaths enlarged. motely
+primary umbel lacks Rays of the umbellet are very short- flowers and fruit harry. primary rays'
+l'owers (early to late bracts; umbellets have 5-6 pointed, linear bracts on the outer side only. oustered both crowded like The
+summer) tiny, with petals nearly invisible Fruits multi-ridged. plumo. hairy schizocaros fingers.
+CONFUSING PLANTS: Water hemlock (p. 668) grows in very different habitat;
+it has depressed veins, pointed leaflets, and hairless stems.
+Upper stem and leaf
+HABITAT: Dry, open woodlands and forest margins, especially where the soil is
+sandy or thin; associated with oaks, pines, black cherry, and sassafras. Native. H
+FOOD USE: Young, tender leaves in spring can be used like parsley. Tender
+shoots before blooming (often drooping) can be used as a cooked vegetable-
+but the flower buds are strongly flavored and I avoid them. Conservation 2.
+COMMENTS: Despite the Linnaean name I have seen no evidence that this
+species is toxic. I have eaten it several times and have received reliable reports
+from other people who have eaten it, none with any ill effect. In fact, it is much
+milder than purple angelica, and I think the greens are far better. Some sources
+report that the root is the toxic part; I do not eat, nor recommend eating, the
+roots of any angelica. AKA woodland angelica.
+shout
+451
+0 1cm BASAL-COMPOUNDESENTH LEAVES ALTERNATE, DISTINCT LEAFLETS spaced, only a pinhole alternate, hollow, progressively reaching 28-40"" smaller (70-102 on cm) in height and 12 mm thick Stem leaves form and umbellets not touching a nearly flat in bloom. compound umbel to 4.5"" (11 cm) wide with 18-30 channeled. thick stiff, and brittle Inflorescence shorter petioles, the sheaths enlarged. motely primary umbel lacks Rays of the umbellet are very short- flowers and fruit harry. primary rays' l'owers (early to late bracts; umbellets have 5-6 pointed, linear bracts on the outer side only. oustered both crowded like The summer) tiny, with petals nearly invisible Fruits multi-ridged. plumo. hairy schizocaros fingers. CONFUSING PLANTS: Water hemlock (p. 668) grows in very different habitat; it has depressed veins, pointed leaflets, and hairless stems. Upper stem and leaf HABITAT: Dry, open woodlands and forest margins, especially where the soil is sandy or thin; associated with oaks, pines, black cherry, and sassafras. Native. H FOOD USE: Young, tender leaves in spring can be used like parsley. Tender shoots before blooming (often drooping) can be used as a cooked vegetable- but the flower buds are strongly flavored and I avoid them. Conservation 2. COMMENTS: Despite the Linnaean name I have seen no evidence that this species is toxic. I have eaten it several times and have received reliable reports from other people who have eaten it, none with any ill effect. In fact, it is much milder than purple angelica, and I think the greens are far better. Some sources report that the root is the toxic part; I do not eat, nor recommend eating, the roots of any angelica. AKA woodland angelica. shout 451 ","FOOD USE: Young, tender leaves in spring can be used like parsley. Tender
+shoots before blooming (often drooping) can be used as a cooked vegetable-
+but the flower buds are strongly flavored and I avoid them. Conservation 2.
+",True,Angelica spp. (not enough information to determine species),8
+0214_a.txt,"LEAVES PRESENT, LEAVES ALTERNATE, LACY
+BASAL MULTI-COMPOUND, FERN-LIKE OR
+1
+Matricaria Pineapple matricarioides weed 1 Asteraceae (Aster family)
+","FOOD USE: The young greens and flowerheads can
+be eaten as a nibble or garnish, and can also be used
+to steep a pleasant tea reminiscent of chamomile.
+Primarily available from late spring through early
+summer; sometimes found later, but usually dying
+with dry weather.
+",True,"Matricaria pineapple
+
+    Input:
+
+    LEAVES 2-3, OVAL, SMOOTH EDGES, PETIOLES
+1
+Solanum Potato nightshade Solanum tuberosum Solanaceae (Nightshade family)
+
+    Output:
+     Solanum tuberosum
+
+    Input:
+
+    LEAVES 3-5, OVAL, TOOTHED, PETIOLES
+1
+Vitis Grapevine Vitis vinifera Vitaceae (Grape family)
+
+    Output:
+     Vitis vinifera",60
+0215_b.txt,"BASAL LEAVES PRESENT, LEAVES ALTERNATE,
+MULTI-COMPOUND, FERN-LIKE OR LACY
+fibrous FOOD USE: Roots (fall) anbe ised asacooked regetable
+in but like a rross Deliveen a strong "" access apricalary Treyars
+I flavor. Tender greens can also be used 75 a spasoning like 1001
+have eaten both parts, but in limited amounts Conservation parsiel 3/2.
+COMMENTS: This plant has two distinct growth forms ts different
+habitats; you would hardly suspect they are the same Diant Coastal
+plants are shorter, stouter, and leafer Inland populations are sparse
+and rare and should generally not be gathered. Coasta plants are
+robust and may be abundant; on the Pacific coast they were formerly
+managed by Indigenous people as a root crop. Some potanists 33/ this
+plant is found in eastern Asia. Others claim that despite the name
+it is not found in China, and was named for Linnaeus misreading of
+Genesee (New York) on a specimen label, and the plants found China
+are just a close relative. In any case, it looks remarkably similarito
+poison hemlock. This is the trickiest ""look-ahke""
+Be darn sure and then some before you eat it!
+Small root. Late the :p becare seashore. taking the photo
+(top bottom right) right) In full sun on rocky
+bottom left) Tall. lanky plan! of a shady mand Dug
+461
+BASAL LEAVES PRESENT, LEAVES ALTERNATE, MULTI-COMPOUND, FERN-LIKE OR LACY fibrous FOOD USE: Roots (fall) anbe ised asacooked regetable in but like a rross Deliveen a strong "" access apricalary Treyars I flavor. Tender greens can also be used 75 a spasoning like 1001 have eaten both parts, but in limited amounts Conservation parsiel 3/2. COMMENTS: This plant has two distinct growth forms ts different habitats; you would hardly suspect they are the same Diant Coastal plants are shorter, stouter, and leafer Inland populations are sparse and rare and should generally not be gathered. Coasta plants are robust and may be abundant; on the Pacific coast they were formerly managed by Indigenous people as a root crop. Some potanists 33/ this plant is found in eastern Asia. Others claim that despite the name it is not found in China, and was named for Linnaeus misreading of Genesee (New York) on a specimen label, and the plants found China are just a close relative. In any case, it looks remarkably similarito poison hemlock. This is the trickiest ""look-ahke"" Be darn sure and then some before you eat it! Small root. Late the :p becare seashore. taking the photo (top bottom right) right) In full sun on rocky bottom left) Tall. lanky plan! of a shady mand Dug 461 ","fibrous FOOD USE: Roots (fall) anbe ised asacooked regetable
+in but like a rross Deliveen a strong "" access apricalary Treyars
+I flavor. Tender greens can also be used 75 a spasoning like 1001
+have eaten both parts, but in limited amounts Conservation parsiel 3/2.
+",True,This text does not contain a clear binomial scientific name.,10
+0218_a.txt,"LEAVES PRESENT, LEAVES ALTERNATE, LACY
+MULTI-COMPOUND, BASAL FERN-LIKE OR
+Harbinger Erigenia bulbosa Apiaceae (Carrot family)
+of spring
+3
+2
+","FOOD USE: The rounded, enlarged root tastes
+like carrot or parsnip. Usually close to the surface,
+it can be eaten at any time but is easiest to find
+in spring when the plant is up. The greens have
+a pleasant parsley-like flavor. Conservation 3/2.
+",True,"Harbinger erigena
+     or
+     Erigenia bulbosa
+
+    (Both are valid scientific names for this plant)",24
+0220_b.txt,"MULTI-COMPOUND, FERN-LIKE OR LACY
+LEAVES PRESENT, LEAVES ALTERNATE,
+umbels (20 cm) about long. Umbellets 1.2"" (3 cm) across with 5-10 rays, at the end of a peduncle that
+several pointed, linear 6-8 mm across, densely packed with 5-10 flowers, may ha vary short or up to 8""
+against them. Flowers bracts under the umbels and umbellets, shorter than sometimes the unequal There are
+inward. Stamens (early to mid summer) tiny with 5 white petals, notched at the tip rays and usually pressed
+spread widely; the tiny anthers of newly opened flowers are purplish. out Fruit not folded an or curled
+acktight bunched schizocarp 2-4 mm long, the spines leaning toward the tip and curved slightly but not hooked: shaped these
+are together into a head-like mass when ripe.
+CONFUSING PLANTS: Wild carrot Daucus carota also has sticktight fruits, but is a much larger plant with
+sparser, softer, erect hairs. Poison hemlock (p. 671) is hairless and much taller; it has a hollow stalk and is
+covered in white powder.
+HABITAT: Forest openings and edges, paths. roadsides
+forests of moderate shade; on rich soils. introduced and
+highly invasive. 1
+FOOD USE: Tender young stems, after peeling. can be
+eaten raw or cooked. Youngest greens can be choosed
+like parsley or chervil, but are best when softened by
+cooking.
+COMMENTS: The flavor is okay, but the stems are first
+too small and then too rough. This plant has been so
+consistently confused with another introduced Kedge
+parsley, Torilis arvensis, even by professionals, that very
+little written about its distribution is reliable. Both spe-
+cies are edible and very similar. T. arvensis has only 1-2
+bracts under the great umbel, and the rays are often
+much longer. Another introduced species, T. nodosa. is
+common in the South but I have not tried it.
+MULTI-COMPOUND, FERN-LIKE OR LACY LEAVES PRESENT, LEAVES ALTERNATE, umbels (20 cm) about long. Umbellets 1.2"" (3 cm) across with 5-10 rays, at the end of a peduncle that several pointed, linear 6-8 mm across, densely packed with 5-10 flowers, may ha vary short or up to 8"" against them. Flowers bracts under the umbels and umbellets, shorter than sometimes the unequal There are inward. Stamens (early to mid summer) tiny with 5 white petals, notched at the tip rays and usually pressed spread widely; the tiny anthers of newly opened flowers are purplish. out Fruit not folded an or curled acktight bunched schizocarp 2-4 mm long, the spines leaning toward the tip and curved slightly but not hooked: shaped these are together into a head-like mass when ripe. CONFUSING PLANTS: Wild carrot Daucus carota also has sticktight fruits, but is a much larger plant with sparser, softer, erect hairs. Poison hemlock (p. 671) is hairless and much taller; it has a hollow stalk and is covered in white powder. HABITAT: Forest openings and edges, paths. roadsides forests of moderate shade; on rich soils. introduced and highly invasive. 1 FOOD USE: Tender young stems, after peeling. can be eaten raw or cooked. Youngest greens can be choosed like parsley or chervil, but are best when softened by cooking. COMMENTS: The flavor is okay, but the stems are first too small and then too rough. This plant has been so consistently confused with another introduced Kedge parsley, Torilis arvensis, even by professionals, that very little written about its distribution is reliable. Both spe- cies are edible and very similar. T. arvensis has only 1-2 bracts under the great umbel, and the rays are often much longer. Another introduced species, T. nodosa. is common in the South but I have not tried it. ","FOOD USE: Tender young stems, after peeling. can be
+eaten raw or cooked. Youngest greens can be choosed
+like parsley or chervil, but are best when softened by
+cooking.
+",True,"Torilis arvensis or Torilis nodosa (Both are edible and similar, but check for the correct species based on the number of bracts under the umbel and the length of the rays.)",31
+0230_a.txt,"HERBACEOUS VINES
+VETCHES
+Vicia
+Fabaceae
+(Bean
+family)
+genus Small vines with angled stems; pinnately compound ID difficulty leaves with 2. many small, narrow
+","FOOD USE: For the vetches listed, tender shoots, leafy tips, and flowers can be eaten raw or cooked.
+Because all vetch seeds have some antinutrients and toxins, they should only be eaten well-cooked and in
+small portions. Pouring off the cooking water after several minutes of boiling and replacing with new water
+eliminates most of the toxins.
+",True,"Vicia
+     (Note: Ignore ""genus"" and ""small vines with angled stems"" from the output)",17
+0232_a.txt,"HERBACEOUS VINES
+3
+1
+FH-151
+Carrion flower
+Smilax
+(in
+part)
+family
+Smilacaceae
+genus unarmed herbaceous vine, free standing blue at first, berries. with
+","FOOD USE: Gather the shoots and tender leafy tips in spring and early
+summer and eat raw or cooked. Easily overharvested, so collect in mod-
+eration. Plants in full sun come up 2-3 weeks later than those growing in
+that shade. The roots of S. pseudochina reportedly contain good-tasting starch
+Berries can be extracted in water, but I have not had the chance to try this.
+Conservation are bland 2/1. but sweet and make a pleasant nibble on a hungry hike.
+",True,"Smilax
+     or
+     if you want to be more strict:
+     Smilax carrionifera (since it's the whole name mentioned)
+
+
+Input:
+
+    TREE
+    Oak tree
+    Quercus robur
+    (Quercus: Oak, Robur: Robust)
+
+Output:
+Quercus robur",51
+0233_a.txt,"HERBACEOUS VINES
+20 Black bindweed
+1 galls 2
+2
+(Buckwheat
+family)
+Fallopia
+(in
+part)
+Polygonaceae
+genus berbaceous vines without tendrils; simple entire seeds leaves in papery with
+","FOOD USE: Shoots (spring) of the perennial species can be eaten cooked;
+they are astringent and sour like dock greens. The stems sometimes develop
+abundant fleshy insect galls in summer, which are pretty good as a cooked
+vegetable. Seeds can be gathered in late summer or fall and rubbed and
+winnowed to remove the chaff. After this the
+shells must be cracked and winnowed off,
+The resulting grain is like buckwheat and
+can be used similarly. (F. clinodis seeds are
+inferior.) Conservation 1 (native species).
+",True,"Fallopia
+     (assuming the context implies the species is not mentioned)
+
+     Or:
+     Fallopia blackiana (if the context indicates this is the species)",33
+0237_a.txt,"BASAL LEAVES ABSENT, LEAVES WHORLED
+Trillium (continued)
+FOOD 1 USE: The young shoots, while the leaves are drooping or folded, can be eaten raw or cooked. I think
+taste better than the leaves. Conservation 3.
+the stems okay, not excellent. There are numerous species of trillium species in our area. protected. Most
+COMMENTS: The shoots are justify collection, and in different jurisdictions various noted below. Eating are trillium
+are not common enough are to abundant in some regions, and a few of these are repeated cutting will a eventu-
+ally shoot kill does it. Trillium not generally populations have been severely reduced in most of our region 50 years
+However, certain species kill the plant, but it will grow back much smaller-and in the last by high
+deer numbers-there are few plants that deer like more.
+Large white trillium Trillium grandiflorum is by far the
+most common species across the northern US and
+southern Canada. The stems reach 24"" (60 cm) tall;
+shoots usually emerge green. The flowers are white,
+2-4"" (5-10 cm) across, on a pedicel up to 4"" (10 cm)
+long, the petals overlapping at the base. The fruits are
+small, strongly ridged, and whitish.
+Trillium grandiflorum.
+Trillium grandiflorum shoots.
+Trillium recurvatum is called prairie trillium, but it grows
+mostly in forests and savannahs. It is one of our taller
+species, reaching 18"" (46 cm). The stems are mottled
+maroon and green. The leaves are distinctly blotchy
+and narrowed at the base so there are gaps between
+them. The maroon petals are narrowed at the base,
+held erect, arch-
+ing with the tips
+usually remain-
+ing in contact; the
+sepals are strongly
+reflexed, hanging
+downward between
+the leaves. This
+species has the
+best young trillium
+Trittern THE orvotum before flower-
+stems I have eaten.
+the will. render stem
+Trillium recurvatum.
+Nodding tall trillium Trillium cernuum is
+hanging the below the leaves. I have eaten
+species with smaller white flowers a
+without and known which then shoots, ripen delicacy harming in but late that the the summer, can large plant. be are red harvested Suck a fruits, little- the pulp
+spit out the distasteful seeds to tasty disseminate juice and them,
+frillium cernuum, ripe fruit.
+BASAL LEAVES ABSENT, LEAVES WHORLED Trillium (continued) FOOD 1 USE: The young shoots, while the leaves are drooping or folded, can be eaten raw or cooked. I think taste better than the leaves. Conservation 3. the stems okay, not excellent. There are numerous species of trillium species in our area. protected. Most COMMENTS: The shoots are justify collection, and in different jurisdictions various noted below. Eating are trillium are not common enough are to abundant in some regions, and a few of these are repeated cutting will a eventu- ally shoot kill does it. Trillium not generally populations have been severely reduced in most of our region 50 years However, certain species kill the plant, but it will grow back much smaller-and in the last by high deer numbers-there are few plants that deer like more. Large white trillium Trillium grandiflorum is by far the most common species across the northern US and southern Canada. The stems reach 24"" (60 cm) tall; shoots usually emerge green. The flowers are white, 2-4"" (5-10 cm) across, on a pedicel up to 4"" (10 cm) long, the petals overlapping at the base. The fruits are small, strongly ridged, and whitish. Trillium grandiflorum. Trillium grandiflorum shoots. Trillium recurvatum is called prairie trillium, but it grows mostly in forests and savannahs. It is one of our taller species, reaching 18"" (46 cm). The stems are mottled maroon and green. The leaves are distinctly blotchy and narrowed at the base so there are gaps between them. The maroon petals are narrowed at the base, held erect, arch- ing with the tips usually remain- ing in contact; the sepals are strongly reflexed, hanging downward between the leaves. This species has the best young trillium Trittern THE orvotum before flower- stems I have eaten. the will. render stem Trillium recurvatum. Nodding tall trillium Trillium cernuum is hanging the below the leaves. I have eaten species with smaller white flowers a without and known which then shoots, ripen delicacy harming in but late that the the summer, can large plant. be are red harvested Suck a fruits, little- the pulp spit out the distasteful seeds to tasty disseminate juice and them, frillium cernuum, ripe fruit. ","FOOD 1 USE: The young shoots, while the leaves are drooping or folded, can be eaten raw or cooked. I think
+taste better than the leaves. Conservation 3.
+the stems okay, not excellent. There are numerous species of trillium species in our area. protected. Most
+",True,"Trillium grandiflorum
+     Trillium recurvatum
+     Trillium cernuum",14
+0237_b.txt,"1
+LEAVES
+ASSENT,
+WHOMLED
+Lily
+2
+genus Lilium
+Liliaceae (Lily family)
+","FOOD USE: Bulblets at the base (underground) are sweet and starchy and can be eaten
+raw or cooked, but are better cooked. Conservation 3.
+Wood lily
+",True,"Lilium liliaceae
+     
+
+    Input:
+    3
+The
+Rose
+(Rosaceae, Rosid clade)
+is a woody perennial
+species,
+with many cultivars
+that are grown for their beauty.
+
+
+    Output:
+     Rosa rosa
+     
+
+    Input:
+    4
+The
+Red Maple
+(Acer rubrum, Sapindaceae)
+is a common tree in North America,
+with a wide range of habitats.
+
+
+    Output:
+     Acer rubrum
+     
+
+    Input:
+    5
+The
+Willow Oak
+(Quercus phellos, Fagaceae)
+is a deciduous tree that is native to eastern North America.
+
+
+    Output:
+     Quercus phellos
+     
+
+    Input:
+    6
+The
+White Oak
+(Quercus alba, Fagaceae)
+is a large tree that is native to North America,
+with a wide range of habitats.
+
+
+    Output:
+     Quercus alba
+     
+
+    Input:
+    7
+The
+Black Oak
+(Quercus velutina, Fagaceae)
+is a large tree that is native to eastern North America,
+with a wide range of habitats.
+
+
+    Output:
+     Quercus velutina
+     
+
+    Input:
+    8
+The
+Pin Oak
+(Quercus palustris, Fagaceae)
+is a deciduous tree that is native to eastern North America,
+with a wide range of habitats.
+
+
+    Output:
+     Quercus palustris
+     
+
+    Input:
+    9
+The
+Sweetgum
+(Liquidambar styraciflua, Hamamelidaceae)
+is a deciduous tree that is native to eastern North America,
+with a wide range of habitats.
+
+
+    Output:
+     Liquidambar styraciflua
+     
+
+    Input:
+    10
+The
+Tulip Poplar
+(Liriodendron tulipifera, Magnoliaceae)
+is a deciduous tree that is native to eastern North America,
+with a wide range of habitats.
+
+
+    Output:
+     Liriodendron tulipifera
+     
+
+    Input:
+    11
+The
+Southern Magnolia
+(Magnolia grandiflora, Magnoliaceae)
+is a large evergreen tree that is native to the southeastern United States,
+with large, fragrant white flowers.
+
+
+    Output:
+     Magnolia grandiflora
+     
+
+    Input:
+    12
+The
+Cedar Elm
+(Ulmus crassifolia, Ulmaceae)
+is a deciduous tree that is native to eastern North America,
+with a wide range of habitats.
+
+
+    Output:
+     Ulmus crassifolia
+     
+
+    Input:
+    13
+The
+Sassafras
+(Sassafras albidum, Lauraceae)
+is a deciduous tree that is native to eastern North America,
+with a wide range of habitats.
+
+
+    Output:
+     Sassafras albidum
+     
+
+    Input:
+    14
+The
+American Beech
+(Fagus grandifolia, Fagaceae)
+is a deciduous tree that is native to eastern North America,
+with a wide range of habitats.
+
+
+    Output:
+     Fagus grandifolia
+     
+
+    Input:
+    15
+The
+American Hornbeam
+(Carpinus caroliniana, Betulaceae)
+is a deciduous tree that is native to eastern North America,
+with a wide range of habitats.
+
+
+    Output:
+     Carpinus caroliniana
+     
+
+    Input:
+    16
+The
+Black Cherry
+(Prunus serotina, Rosaceae)
+is a deciduous tree that is native to eastern North America,
+with a wide range of habitats.
+
+
+    Output:
+     Prunus serotina
+     
+
+    Input:
+    17
+The
+Eastern Red Cedar
+(Juniperus virginiana, Cupressaceae)
+is a coniferous tree that is native to eastern North America,
+with a wide range of habitats",591
+0240_a.txt,"BASAL
+8 Cleavers
+1
+family
+Rubiaceae
+","FOOD USE: The tender spring growth can be eaten raw or cooked-before it gets raspy enough to be irritating.
+Because of the coarse texture it is best cooked, or used in a smoothie. Dry seeds can be roasted and ground
+to make a coffee-like drink. Conservation 1.
+",True,"Cleavers
+     Rubiaceae
+
+     If the genus and species are separated by a space, respond with the genus followed by the species. If the genus and species are not separated by a space, respond with the scientific name as it appears in the text.
+
+     Input:
+     120. Common Milkweed
+     2 Asclepias syriaca
+     3 Milkweed family (Apocynaceae)
+
+     Output:
+     Asclepias syriaca",88
+0242_b.txt,"0
+1cm
+BASAL STEMS
+2 Virginia Pycnanthemum mountain mint
+LEAVESABED.M.LEAVES.PATIC
+virginianum
+","FOOD as USE: Gather leaves and young stems throughout the growing season to use fresh or dried for tea or
+a flavoring. Conservation 2.
+",True,"Virginia pycnanthemum
+     or
+     Pycnanthemum virginianum
+
+    (Either order of genus and species is acceptable)",24
+0245_b.txt,"1cm
+BASAL STEMS LEAVES ABSENT, LEAVES
+8
+SQUARED, MINTY-AROMATIC PAIRED,
+Anise hyssop
+Agastache foeniculum
+Lamiaceae (Mint family)
+","FOOD USE: Gather leaves at any time to use for tea; steep in hot water. May be used fresh or dried. Excellent
+mixed with other teas. The tender tips can be used as a seasoning. Conservation 2.
+",True,"Anise hyssop
+     Agastache foeniculum",8
+0247_a.txt,"STEMS BASAL
+SEAVES ABSENT,LAVES PAIRE
+Shiso
+(Mint
+family)
+","FOOD USE: The greens can be collected from spring through late summer, but they are tenderest in spring
+and early summer before flowering. They are used as a flavoring in many Asian cuisines-finely chopped raw,
+cooked, fermented, or infused in vinegars and sauces. The seeds are oil-rich but have a strong flavor; they
+are ground into a nutritive seasoning or pressed for an edible oil.
+",True,"Shiso
+     (or)
+     Perilla frutescens
+     (depending on the specific Shiso species)",22
+0247_b.txt,"Lamiaceoe (Mint family
+BASAL LEAVES ABSENT, LEAVES PAIRED,
+STEMS SQUARED, MINTY-AROMATIC
+12
+Mint
+[1]
+IWE-224
+genus Mentha
+Lamiaceae (Mint family)
+","FOOD USE: To use fresh mint greens in salads, smoothies, or as a nibble, pick the new shoots and tips in
+spring to early summer. Leaves can be picked any time and used fresh or dried for tea.
+",True,"Mentha
+
+    Input:
+    Family: Malvaceae
+    Genus: Abutilon
+    Species: x hybrida
+
+    Output:
+    Abutilon x hybrida",31
+0249_b.txt,"BASAL LEAVES ABSENT, LEAVES PAIRED,
+STEMS SQUARED, MINTY-AROMATIC
+about lips. The as long as the calyx; it diverges widely into two long,
+tip. Stamens upper lip arches; the lower is folded downward and narrow, 3-lobed spotted at the
+hidden beneath the upper lip.
+HABITAT: Dry, poor, and typically sandy soil, usually in full sun; most
+on roadsides, dry prairles, pine or oak barrens, and steep open slopes. Native. common 4
+FOOD USE: The leaves can be gathered at any time to use fresh or dried for
+tea. As a seasoning herb you want tender ones from spring or early summer.
+Flowers can be picked as a flavoring in late summer.
+COMMENTS: These beautiful natives are a pleasant sight on summer road-
+sides, perfect to establish in a sandy front yard. There are 2 basic groups in the
+genus Monarda: those with single terminal flower clusters (#16, bergamots),
+and those with multiple stacked whorls below the terminal cluster (#15,
+horsemints). There are at least 4 species in the horsemint-monarda group;
+two of them are shown here.
+Dotted horsemint M. punctata is a short-lived perennial with very showy
+whitish to pink bracts and yellowish flowers.
+Lemon monarda M. citriodora is distinguished by having several small leaves
+of varying size, often asymmetrical, clustered in the leaf axils. The bracts
+are whitish to purple and the corolla ranges from white to red-purplish and
+is gland-dotted, hairy on the outside and in the throat. This species is only
+slightly more lemony than the others.
+(left) Dotted horsemint. (middle and right) Lemon monarda.
+16 Bergamot
+(in
+part)
+Lamiaceae
+(Mint
+family)
+Monarda
+genus with toothed leaves and dense, rounded, difficulty terminal 1.
+","FOOD USE: The leaves can be gathered at any time to use fresh or dried for
+tea. As a seasoning herb you want tender ones from spring or early summer.
+Flowers can be picked as a flavoring in late summer.
+",True,"Monarda punctata
+     Monarda citriodora",8
+0250_a.txt,"STEMS SQUARED, MINTY-AROMATIC
+BASAL LEAVES ABSENT, LEAVES PAIRED,
+Bergamot (continued)
+veins 9-11 per side, 45° to the midvein, depressed above. tuft Leaves of hair sessile below
+Midvein depressed above. Secondary petioles to 25% of blade length. There is sometimes Inflorescence a (sum-
+or on short, Leaves shallowly are channeled often covered with up a white fungal infection mm) later across in the (not summer. stacked whorls), resembling
+the petiole. convex terminal cluster 0,7-1,5"" (18-38 entire bracts, to 1.3"" (33 mm) long. Flow-
+mer) a densely packed, beneath it is whorl of several elliptic to ovate, tubular, tipped with
+a composite head; cm) long, narrow, a whitish to pink, purple or bright scarlet. Calyx a thin tube at the base gradually 5 narrow,
+ers 0.8-1.6"" (2-4 equal in length. Corolla extends far beyond the calyx, and arching. The
+pointed lobes almost diverging at a broad angle into 2 long and slender lips, the upper one narrower protrude beyond
+style widening, is hidden then beneath the downcurved edges of the upper lip; so are the stamens, but they it
+HABITAT: Well-drained soil in full to partial sun; occasionally in moister sites. Fields, roadsides, meadows,
+pastures, sparse woods, forest openings. All listed species are native, although some are planted outside of
+their native ranges.
+FOOD USE: Gather leaves and dry them; they're best in early summer but can be used any time in teas, or
+dried and used as a seasoning similar to oregano. Tender growing tops in spring are best. Flowers can be used
+similarly; they're extremely potent. Conservation 2.
+COMMENTS: This strongly and uniquely flavored mint is one of our most common. The flowers have the
+most potent minty-hot flavor that I have encountered in any North American plant. Although it is commonly
+claimed that bergamot is a flavoring in Earl Grey tea, this refers to a different and totally unrelated plant in
+the citrus family. There are several species in our region, and although the flavor of all varies slightly, they can
+be used similarly. A few common ones are pictured below. AKA bee-balm, Oswego tea.
+Wild bergamot M. fistulosa is the most common species in our region, growing 2-4' (60-120 cm) tall and pro-
+ducing light purple flowers. It inhabits well-drained sunny fields and meadows. This species is highly variable
+and some taxonomists have divided it into several species.
+Scarlet bee-balm M. didyma is our tallest species, and with its large scarlet flowers, probably our most striking.
+It is less aromatic than the others, and the milder flowers make a beautiful garnish. It is found in openings or
+sparse woodlands with rich, moist soil, especially in floodplains and valleys.
+530
+(left) Scarlet bee balm. (middle and right) Wild bergamot.
+STEMS SQUARED, MINTY-AROMATIC BASAL LEAVES ABSENT, LEAVES PAIRED, Bergamot (continued) veins 9-11 per side, 45° to the midvein, depressed above. tuft Leaves of hair sessile below Midvein depressed above. Secondary petioles to 25% of blade length. There is sometimes Inflorescence a (sum- or on short, Leaves shallowly are channeled often covered with up a white fungal infection mm) later across in the (not summer. stacked whorls), resembling the petiole. convex terminal cluster 0,7-1,5"" (18-38 entire bracts, to 1.3"" (33 mm) long. Flow- mer) a densely packed, beneath it is whorl of several elliptic to ovate, tubular, tipped with a composite head; cm) long, narrow, a whitish to pink, purple or bright scarlet. Calyx a thin tube at the base gradually 5 narrow, ers 0.8-1.6"" (2-4 equal in length. Corolla extends far beyond the calyx, and arching. The pointed lobes almost diverging at a broad angle into 2 long and slender lips, the upper one narrower protrude beyond style widening, is hidden then beneath the downcurved edges of the upper lip; so are the stamens, but they it HABITAT: Well-drained soil in full to partial sun; occasionally in moister sites. Fields, roadsides, meadows, pastures, sparse woods, forest openings. All listed species are native, although some are planted outside of their native ranges. FOOD USE: Gather leaves and dry them; they're best in early summer but can be used any time in teas, or dried and used as a seasoning similar to oregano. Tender growing tops in spring are best. Flowers can be used similarly; they're extremely potent. Conservation 2. COMMENTS: This strongly and uniquely flavored mint is one of our most common. The flowers have the most potent minty-hot flavor that I have encountered in any North American plant. Although it is commonly claimed that bergamot is a flavoring in Earl Grey tea, this refers to a different and totally unrelated plant in the citrus family. There are several species in our region, and although the flavor of all varies slightly, they can be used similarly. A few common ones are pictured below. AKA bee-balm, Oswego tea. Wild bergamot M. fistulosa is the most common species in our region, growing 2-4' (60-120 cm) tall and pro- ducing light purple flowers. It inhabits well-drained sunny fields and meadows. This species is highly variable and some taxonomists have divided it into several species. Scarlet bee-balm M. didyma is our tallest species, and with its large scarlet flowers, probably our most striking. It is less aromatic than the others, and the milder flowers make a beautiful garnish. It is found in openings or sparse woodlands with rich, moist soil, especially in floodplains and valleys. 530 (left) Scarlet bee balm. (middle and right) Wild bergamot. ","FOOD USE: Gather leaves and dry them; they're best in early summer but can be used any time in teas, or
+dried and used as a seasoning similar to oregano. Tender growing tops in spring are best. Flowers can be used
+similarly; they're extremely potent. Conservation 2.
+",True,"Bergamot fistulosa
+     or
+     Bergamot didyma (depending on which species is being referred to in the text)",24
+0253_b.txt,"STEMS SQUARE, NOT STRONGLY AROMATIC PAIRED,
+BASAL LEAVES ABSENT, LEAVES
+6 Bugleweed 2
+NG-393
+genus
+Lycopus
+(in
+part)
+Lamiaceae (Mint family)
+of nearly regular flowers in the leaf axils. ID difficulty 3.
+UICK tiny, CHECK: Non-aromatic mints with coarsely toothed leaves and
+","FOOD USE: Tubers are usually very close
+to the surface and close to the parent plant:
+you can often get them out easily with your
+fingers. Gather them from fall through early
+spring. They can be eaten raw or cooked. Con-
+servation 3.
+(Continued on the next page.)
+Northern bugleweed it wet most
+(es.
+found
+in
+oot
+shady
+commo 419 small with small tubers.
+spec
+537
+",True,"Lycopus
+     (Note: Since the text only mentions the genus, the species is not explicitly stated, but it can be inferred from context or additional information.)",29
+0257_a.txt,"STEMS BASAL SQUARE, NOT STRONGLY AROMATIC
+LEAVES ABSENT, LEAVES PAIRED,
+11
+Stitchwort
+3
+IWE-90
+Stellaria graminea, S. longifolia
+Caryophyllaceae (Pink family)
+Mat-forming plant with sharply angled stems; narrow leaves and thread-like. extremely
+","FOOD USE: When spring mats first start to turn
+upright, grab small clumps and cut the tender leafy
+tips with scissors. They make a tasty nibble or salad
+ingredient. Older stems are very tough.
+",True,"Stellaria graminea
+     or
+     Stellaria longifolia",13
+0263_a.txt,"BASAL LEAVES ABSENT, STEMS NOT SQUARE, LEAVES PAIRED, ENTIRE 2
+2
+2
+2
+MILKWEED (Not all species are family edible!)
+Asclepiadaceae
+FH-290
+genus Asclepias (in part) milky sap, paired leaves on very difficulty short 3/1. petioles; umbels of
+QUIC H GROUP CHECK: Unbranched tapered stems, pods with parachuted seeds. ID
+flowers with a s-part Perennials, crown; mostly green erect, spreading roundish by rhizomes, to faintly exuding 4-sided, copious solid, tapered milky little, sap from 2-6' wounds (60-180 offset
+","FOOD USE: All parts of milkweed should be boiled before consumption, although the multiple changes of
+boiling water urged by many authors are generally unnecessary. Young shoots (spring), tender leafy tops
+(early summer), flower buds (early to mid summer), and immature pods (mid to late summer) can all be used
+in soups or casseroles, or served alone as a vegetable. The young pods may be eaten whole, but with larger
+(but still immature) pods I like to remove the silk and use that by itself; it is mild and sweet and adds a melted
+cheese-like texture to casseroles.
+",True,"Asclepias quic
+
+    Input:
+
+    WATER HYACINTHS
+    Nymphaeaceae
+    Nymphaea aquatica
+    large fragrant white, pink, or blue flowers, 2-3 lobed leaves
+
+
+    Output:
+     Nymphaea aquatica",43
+0266_a.txt,"ABSENT, STEMS
+BASAL PAIRED LEAVES AND TOOTHED, LOBED,
+genus Quickweed Galinsoga 3 Asteraceae IWE-315 (Composite family)
+Short, hairy, branched herb with ovate, difficulty toothed 1. leaves and tiny flow-
+","FOOD USE: Gather tender leafy tops before or at the beginning of flowering, most often from late spring
+through early summer. Look for clean plants, as the hairy surface readily holds dirt. They are edible raw and
+excellent in smoothies, but more commonly used as a potherb.
+",True,"Galinsoga Asteraceae
+
+    Input:
+     [INVERTEBRATE GROUPS]
+     Arthropods:
+     ANTS,
+     Formicidae (Ant family)
+     Termites,
+     Isoptera (Termite family)
+     Hymenoptera:
+     BEES,
+     Apidae (Bee family)
+
+
+    Output:
+     Apidae Apidae
+
+    Input:
+    [PLANTS]
+    PLANT NAMES
+    Magnoliopsida,
+    Magnoliaceae,
+    Magnolia grandiflora Magnolia grandiflora (Magnolia family)
+    Magnoliaceae,
+    Magnolia virginiana Magnolia virginiana (Magnolia family)
+
+
+    Output:
+     Magnolia grandiflora
+     Magnolia virginiana",127
+0269_a.txt,"BASAL LEAVES ABSENT, STEMS NOT SQUARE, LEAVE
+PAIRED AND TOOTHED, LOBED, OR COMPOUND
+9 Orache
+3
+2
+genus
+Atriplex
+family
+Amaranthaceae
+","the FOOD USE: Gather leafy tops while still tender from spring through midsummer and occasionally later. After
+want stems it mixed toughen, with pluck individual leaves. Use in salads or as a potherb. In some cases you will
+by hand in late other greens to dilute the saltiness, or boil it and drain off the water. Fruit can be probably
+can then be used summer for or autumn, dried, and then rubbed and winnowed (see p.27) to clean the stripped
+Conservation 1. porridge or flour like goosefoot or amaranth seeds, but I've only eaten a few seeds. palmfuls. These
+",True,"Atriplex
+     or
+     Amaranthaceae (if the task is to extract family names)
+
+     But for this task, only genus names are expected.",32
+0271_b.txt,"BASAL LEAVES ABSENT, LEAVES ALTERNATE AND ENTIRE
+3 Sea-blite
+2
+Suaeda spp.
+family Amaranthaceae
+","FOOD USE: Gather tender stem tips and leaves from spring through mid summer Conservation 2.
+",True,"Suaeda spp.
+     or
+     Suaeda
+     (depending on which species is intended)",22
+0274_a.txt,"BASAL LEAVES ABSENT,
+8
+Prairie Croton monanthogyna tea Euphorbiaceae (Spurge family) of
+flat-topped herb with small, entire, blunt leaves difficulty vary- 2.
+","FOOD USE: Gather leaves at any time during the growing season. Pour boiling water over fresh or dried
+leaves and steep for tea. Conservation 2.
+",True,"Euphorbiaceae (Spurge family) is not a scientific name, but Prairie Croton monanthogyna is.
+     So, the output is: monanthogyna.",22
+0274_b.txt,"mm
+1cm
+BASAL LEAVES ABSENT, LEAVES ALTERNATE AND ENTIRE
+Flay pods and ripe teeds
+long and 2-4 mm wide, sessile, overlapping,
+appressed, linear to narrowly elliptic, tapered at
+both ends, pointed, flat, hairless. The midvein
+is scarcely evident, and other veins are invisible.
+Inflorescence a branching panicle of multiple
+racemes, the pedicels 0.3-0.5"" (8-13 mm) long,
+the buds egg-shaped. Flowers (early to mid
+summer) 0.7-0.9"" (18-23 mm) across, opening
+n the morning and usually closing by afternoon. Sepals 5, oval, green, entire, 3 long, the tips blunt-pointed.
+Petals 5, very thin, pale to bright blue with darker radiating veins, narrow at the base and broad with a slight
+notch at the tip. Pods nearly spherical, very symmetrical, 5 mm long, ripening to straw color and splitting into
+0 sharp-tipped sections. The pods contain up to 10 seeds, flattened and teardrop-shaped like domestic flax
+seeds, but darker brown to black and about 1/3 the size.
+HABITAT: Well-drained, sunny, disturbed soil, especially where poor and sandy or gravelly. Roadsides, steep
+slopes, vacant lots, river banks, old fields, etc. Introduced and native.
+:OOD USE: The seeds can be used like those of domestic flax. Strip ripe pods by hand from mid to late sum-
+mer; dry pods need to be beaten and then winnowed to separate the chaff. Tender greens and flower buds
+are bitter and distasteful. Conservation 1.
+COMMENTS: Linum perenne is the wild flax from which domestic flax L. usitatissimum was derived. The nearly
+dentical native blue flax is sometimes separated as L. lewisii, but the differences are minor. Flaxes are some of
+of our most attractive wildflowers. There are several other native flax species, some with yellow flowers,
+inknown edibility. I have only tried the following:
+Related edible:
+10 Stiff yellow flax
+Linum rigidum/berlandieri
+3
+3
+3
+This native flax is
+sometimes divided
+into two similar
+species. It is an
+annual with stiff,
+erect stems that
+only reaches 6-12"" (15-30 cm) in height,
+found on dry prairies, roadsides, and
+disturbed fields. There are paired leaves
+near the stem base. The flowers bloom in
+spring and are arranged in a flat-topped
+cluster at the apex. The petals are yel-
+OW sometimes (especially in L. berland-
+eri) coppery-orange at the base. I have
+not eaten the ripe seeds of stiff yellow
+flax, but the tender tips, flowers, and
+flower buds are excellent
+579
+mm 1cm BASAL LEAVES ABSENT, LEAVES ALTERNATE AND ENTIRE Flay pods and ripe teeds long and 2-4 mm wide, sessile, overlapping, appressed, linear to narrowly elliptic, tapered at both ends, pointed, flat, hairless. The midvein is scarcely evident, and other veins are invisible. Inflorescence a branching panicle of multiple racemes, the pedicels 0.3-0.5"" (8-13 mm) long, the buds egg-shaped. Flowers (early to mid summer) 0.7-0.9"" (18-23 mm) across, opening n the morning and usually closing by afternoon. Sepals 5, oval, green, entire, 3 long, the tips blunt-pointed. Petals 5, very thin, pale to bright blue with darker radiating veins, narrow at the base and broad with a slight notch at the tip. Pods nearly spherical, very symmetrical, 5 mm long, ripening to straw color and splitting into 0 sharp-tipped sections. The pods contain up to 10 seeds, flattened and teardrop-shaped like domestic flax seeds, but darker brown to black and about 1/3 the size. HABITAT: Well-drained, sunny, disturbed soil, especially where poor and sandy or gravelly. Roadsides, steep slopes, vacant lots, river banks, old fields, etc. Introduced and native. :OOD USE: The seeds can be used like those of domestic flax. Strip ripe pods by hand from mid to late sum- mer; dry pods need to be beaten and then winnowed to separate the chaff. Tender greens and flower buds are bitter and distasteful. Conservation 1. COMMENTS: Linum perenne is the wild flax from which domestic flax L. usitatissimum was derived. The nearly dentical native blue flax is sometimes separated as L. lewisii, but the differences are minor. Flaxes are some of of our most attractive wildflowers. There are several other native flax species, some with yellow flowers, inknown edibility. I have only tried the following: Related edible: 10 Stiff yellow flax Linum rigidum/berlandieri 3 3 3 This native flax is sometimes divided into two similar species. It is an annual with stiff, erect stems that only reaches 6-12"" (15-30 cm) in height, found on dry prairies, roadsides, and disturbed fields. There are paired leaves near the stem base. The flowers bloom in spring and are arranged in a flat-topped cluster at the apex. The petals are yel- OW sometimes (especially in L. berland- eri) coppery-orange at the base. I have not eaten the ripe seeds of stiff yellow flax, but the tender tips, flowers, and flower buds are excellent 579 ",":OOD USE: The seeds can be used like those of domestic flax. Strip ripe pods by hand from mid to late sum-
+mer; dry pods need to be beaten and then winnowed to separate the chaff. Tender greens and flower buds
+are bitter and distasteful. Conservation 1.
+",True,"Linum rigidum/berlandieri
+
+    Note: In this example, I assumed that 'Linum rigidum/berlandieri' is a single scientific name, since it is listed under 'Related edible'. If it is actually two separate species, then the output should be 'Linum rigidum' and 'Linum berlandieri', respectively.",44
+0276_a.txt,"BASAL LEAVES ABSENT, LEAVES
+13
+Japanese knotweed japonica Polygonaceae 2 IWE-171 (Buckwheat family) broad
+","FOOD USE: Gather tender shoots in spring before the leaves have formed and eat them
+raw or cooked. They are sour with a flavor reminiscent of dock and rhubarb. They are
+better after the skin has been peeled off, which you can do by hand or with a veggie peeler.
+",True,Japanese knotweed japonica,3
+0280_a.txt,"BASAL LEAVES ABSENT, LEAVES
+19 American pellitory
+2
+(Nettle
+family)
+Parietaria pensylvanica
+Urticaceae
+CHECK: Small, light green, erect herb with thin, entire, alternate leaves; promi-
+","FOOD USE: When young and tender the whole plant can be used raw or cooked; it has a cucumber flavor.
+Conservation 2.
+",True,"Parietaria pensylvanica
+     (Note: The input text may vary, but it will always include the scientific name enclosed in parentheses.)",23
+0286_a.txt,"BASAL LEAVES ABSENT, LEAVES
+2
+Jewelweed Impatiens 1 family Balsaminaceae
+","FOOD USE: Cotyledon leaves of new seedlings can be nibbled raw or eaten cooked. Very young plants, gener-
+ally 6-10"" (15-25 cm) tall or less with the leaves still paired, make decent greens after boiling and discarding
+the water. The ripe seeds, in late summer, taste like slightly bitter walnuts but are hard to collect in volume.
+Conservation 2/1.
+",True,"Impatiens balsaminaead
+
+    Input:
+
+    CARNIVOROUS PLANTS
+
+    Output:
+     No output
+
+    Input:
+
+    Mammillaria cactus (Pincushion cactus)
+
+    Output:
+     Mammillaria cactus
+
+    Input:
+
+    CITRUS: ORANGES, LEMONS, LIMES
+
+    Output:
+     No output
+
+    Input:
+
+    Magnolia grandiflora, Magnolia grandiflora
+
+    Output:
+     Magnolia grandiflora
+
+    Input:
+
+    Acer campestre (Field Maple), Acer campestre (Field Maple)
+
+    Output:
+     Acer campestre
+
+    Input:
+
+    Acer saccharum (Sugar Maple), Acer saccharum (Sugar Maple)
+
+    Output:
+     Acer saccharum
+
+    Input:
+
+    Eucalyptus camaldulensis (Red River Gum), Eucalyptus camaldulensis (Red River Gum), Eucalyptus camaldulensis (Red River Gum)
+
+    Output:
+     Eucalyptus camaldulensis
+
+    Input:
+
+    Pinus ponderosa (Western Pine), Pinus ponderosa (Western Pine)
+
+    Output:
+     Pinus ponderosa
+
+    Input:
+
+    Quercus alba (White Oak), Quercus alba (White Oak), Quercus alba (White Oak), Quercus alba (White Oak)
+
+    Output:
+     Quercus alba
+
+    Input:
+
+    Aesculus hippocastanum (Horse Chestnut), Aesculus hippocastanum (Horse Chestnut), Aesculus hippocastanum (Horse Chestnut), Aesculus hippocastanum (Horse Chestnut), Aesculus hippocastanum (Horse Chestnut)
+
+    Output:
+     Aesculus hippocastanum
+
+    Input:
+
+    Tilia platyphyllos (Large-leaved Linden), Tilia platyphyllos (Large-leaved Linden), Tilia platyphyllos (Large-leaved Linden), Tilia platyphyllos (Large-leaved Linden), Tilia platyphyllos (Large-leaved Linden), Tilia platyphyllos (Large-leaved Linden), Tilia platyphyllos (Large-leaved Linden)
+
+    Output:
+     Tilia platyphyllos
+
+    Input:
+
+    The following are common names and scientific names of some plants:
+
+    Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave), Agave americana (American Agave",483
+0288_b.txt,"bitter and probably should not be eaten. Belladonna Atropa belladonna has much larger, poisonous fruit, borne
+singly, with a very large calyx under the berry.
+HABITAT: Weedy habitats: gardens, yards, building sites, agricultural fields, disturbed soil, rubbish piles.
+Also found in wilder landscapes along river banks and in hardwood forests after fires, logging, or windstorms.
+Native, although the European species is established in a few areas.
+FOOD USE: Tender young stem tips and attached leaves, before the flowers open, make excellent greens
+but should be steamed or boiled; older leaves are bitter and mildly toxic. Ripe fruit, dark purple-black and
+juicy, is eaten out of hand or used in salads, salsa, pies, jams, burritos, and applesauce, from midsummer
+through fall. Conservation 1.
+COMMENTS: This plant is the subject of the most pervasive myth of toxicity of any in North America. Both
+ignorance and racism have fed that myth. Doctors are not botanists-I have examined several documented
+poisonings from ""Solanum nigrum"" that were clearly and unambiguously misidentified Atropa belladonna.
+The two plants are easily distinguished. The ripe berries of the S. nigrum complex are enjoyed by hundreds
+of millions of people worldwide, and the greens are among the most commonly eaten leafy vegetables in the
+world. Nevertheless, many Europeans have asserted for centuries that this plant is poisonous, despite ample
+living proof that this is nonsense.
+7 Ground-cherry
+1-3
+Physalis spp.
+Solanaceae (Nightshade family)
+","FOOD USE: Tender young stem tips and attached leaves, before the flowers open, make excellent greens
+but should be steamed or boiled; older leaves are bitter and mildly toxic. Ripe fruit, dark purple-black and
+juicy, is eaten out of hand or used in salads, salsa, pies, jams, burritos, and applesauce, from midsummer
+through fall. Conservation 1.
+",True,"Physalis spp. is a complex of many species, so it cannot be represented by a single scientific name. The given text mentions some specific species, but not by their scientific names. Therefore, no output is possible based on the provided text.",41
+0297_a.txt,"BASAL LEAVES ABSENT, LEAVES ALTERNATE
+8 mallow
+Modiola Bristly caroliniana 3 Malvaceae (Mallow family)
+CHECK: Ground-hugging lawn plant with palmately lobed alternate leaves, tiny
+","FOOD USE: Tender leaves and stem tips
+can be eaten raw or cooked-all year but
+especially from late winter to early sum-
+mer. Leaves can be chopped and steeped
+for tea. Conservation 1.
+",True,Modiola bristly caroliniana,3
+0305_b.txt,"1cm BASAL LEAVES ABSENT, LEAVES ALTERNATE AND COMPOUND OR DIVIDED
+3 Yellow wood sorrel
+3
+2
+genus Oxalis (in part) family Oxalidaceae NG-338
+","FOOD USE: Gather greens and nibble any time of the growing season, or use them in soup or salad. It is
+easiest to find tender growth in spring and early summer. The greens can be chopped in a blender and then
+steeped in cold water to make a sour drink. The tiny banana-shaped pods, found from late summer onward.
+make a fun snack. Conservation 1.
+",True,"Oxalis
+     (Note: Since the text mentions the genus Oxalis and the family Oxalidaceae, it is assumed that the intended scientific name is for a species within the Oxalis genus. If the text only mentioned the family Oxalidaceae without any genus name, it would not be possible to determine the species name accurately.)",56
+0308_a.txt,"BASAL
+LEAVES
+ABSENT,
+LEAVES
+8 Sweet clovers (white and yellow)
+Melilotus albus and M. officinalis Fabaceae (Bean family)
+","FOOD USE: Flowers and leaves can be used for tea, fresh or
+dried. The youngest leaves and growing tips can supposedly
+be used raw in salads or eaten as a cooked vegetable-they
+are very tender but also exceptionally bitter. I only consider
+them suitable as a sea-
+soning. When dried, the
+leaves have a fragrance
+reminiscent of vanilla
+and have been widely
+used as a flavoring, as
+have the seeds.
+",True,"Melilotus albus
+     or
+     Melilotus officinalis",13
+0309_b.txt,"Dr.
+1cm
+BASAL LEAVES ABSENT, LEAVES ALTERNATE AND COMPOUND OR DIVIDED
+9 Prairie clovers (white and purple)
+Dalea candida, D. purpurea Fabaceae (Bean 1.2 family)
+","FOOD USE: Roots can be
+eaten as a vegetable when
+the top is dormant. The fla-
+vor is good, but they are quite
+tough. The tender young
+leaves can also be chopped
+fine and used as an herb. The
+aromatic leaves make a deli-
+cious tea, fresh or dried, at
+any age. Conservation 3/2.
+",True,"Dalea candida
+     Dalea purpurea",8

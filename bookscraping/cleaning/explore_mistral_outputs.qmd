@@ -1,0 +1,113 @@
+
+
+# Import output data
+```{python}
+import pandas as pd
+import os
+
+back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+ed = pd.read_csv(os.path.join(back_dir,'outputs','mistral_appended_edibles.csv'))
+names = pd.read_csv(os.path.join(back_dir,'outputs','mistral_appended_names.csv'))
+names = pd.read_csv(os.path.join(back_dir,'outputs','mistral_reproccessed_names.csv'))
+
+print('Edible csv: ', ed.shape)
+print('Name csv: ', names.shape)
+
+print('Edible NA:')
+print(ed.isna().sum())
+print('Names NA:')
+print(names.isna().sum())
+```
+
+## Cleaning Names
+
+```{python}
+names['Mistral_scientific_name'] = names['Mistral_scientific_name'].str.strip()
+
+def count_words(string):
+    s = string.strip().split(' ')
+    return len(s)
+
+names['words_in_name'] = names['Mistral_scientific_name'].map(lambda x: count_words(x))
+print(names.groupby('words_in_name').count())
+```
+
+# Looking at the manual edited
+```{python}
+
+edits = pd.read_csv(os.path.join(back_dir,'outputs','gui','no_edibility_labels.csv'),names=['source','manual_name_data','manual_edible_data','multiple_species','spans_multiple_pages','unused'])
+edits['manual_name_data'] = edits['manual_name_data'].map(lambda x: x.strip().split(',') if pd.notna(x) else '')
+edits['manual_name_data'] = edits['manual_name_data'].map(lambda x: [word.strip() for word in x])
+edits['manual_edible_data'] = edits['manual_edible_data'].map(lambda x: x.strip().split(',') if pd.notna(x) else '')
+edits['manual_edible_data'] = edits['manual_edible_data'].map(lambda x: [word.strip() for word in x])
+
+edits = edits.explode('manual_name_data').reset_index(drop=True)
+
+mapping = {'Rhus': 'shoots,berries',
+ 'Ceanothus':'tea (leaves)',
+ 'Vitis':'tendrils,leaves,fruit',
+ 'Smilax':'tubers,shoots,greens',
+ 'Rosa':'petals,hips,tea (leaves)',
+ 'Rumex':'leaves,stem,seeds',
+ 'Viburnum':'berries',
+ 'Celtis':'fruit,cambium',
+ 'Quercus':'nuts',
+ 'Acer':'sap',
+ 'Arctium':'roots,stalks,petioles',
+ 'Asclepias':'shoots,leafy tops, flower buds, immature pods',
+ 'Cirsium':'taproots,shoots,midribs,flower buds',
+ 'Carduus':'taproots,shoots,midribs,flower buds',
+ 'Onopordum':'taproots,shoots,midribs,flower buds',
+ 'Silybum':'taproots,shoots,midribs,flower buds',
+ 'Lactuca':'leaves,shoots',
+ 'Vicia':'shoots,leafy tips,flowers,seeds',
+ 'Hydrophyllum':'leaves,shoots'}
+```
+
+# Searching for overlap
+```{python}
+pd.options.display.max_rows = None
+pd.options.display.max_columns = None
+overlap = edits.merge(names,left_on='manual_name_data',right_on='Mistral_scientific_name',how='inner')
+print(overlap.shape)
+# overlap.head()
+print(overlap['manual_name_data'].unique())
+display(overlap[['manual_name_data','manual_edible_data']])
+```
+
+
+```{python}
+names['Mistral_scientific_name'].unique()
+
+# Checking number of valid species
+names[names['words_in_name']==2].count()
+```
+
+
+# Joined
+```{python}
+print(names.shape)
+print(ed.shape)
+joined = names.merge(ed,on='source',how='inner')
+print(joined.shape)
+```
+
+```{python}
+joiny =joined[['source','name_data_x','food_data_x','found_edibilty_x','Mistral_scientific_name','words_in_name','Mistral_edibles']].rename(columns={'found_edibilty_x':'found_edibility','name_data_x':'name_data','food_data_x':'food_data'})
+```
+
+
+```{python}
+print(joiny.shape)
+print(joiny.columns)
+
+print(joiny['Mistral_edibles'].unique().flatten())
+
+
+```
+
+# Get those names with more than two words
+# Edibles with
+
+```{python}
+```
