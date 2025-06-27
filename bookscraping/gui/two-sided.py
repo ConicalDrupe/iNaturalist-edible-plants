@@ -1,125 +1,12 @@
 import tkinter as tk
 import pandas as pd
-from typing_extensions import IntVar
 from PIL import ImageTk, Image
 import os
 import csv
 import uuid
 from TextState import TextState
+from ImageState import ImageState
 
-def getImageList(ImagePath='/mnt/c/Users/C/Documents/DataProjects2025/SamThayerScan_v2/Final Organized Photos/'):
-    dir = [file for file in os.listdir(ImagePath) if file.endswith('.tif')]
-    return [os.path.join(ImagePath,file) for file in dir]
-
-def getImage(image_path,max_size=(1000,2000)):
-    img = Image.open(image_path)
-    img.thumbnail(max_size)
-    return ImageTk.PhotoImage(img)
-
-def create_gui():
-
-    window = tk.Tk()
-    window.geometry('1920x1080')
-    window.title("Data Verifyer")  # Set the window title
-
-
-    # For Image, place it in ttk.Frame first
-    # NOTE: be careful, by defauult the parent size is set by their children. We can change this by frame.pack_propogate(False)
-    # img_frame = tk.Frame(window, width=800,height=1000,borderwidth=10, relief=tk.RIDGE)
-    # img_frame.pack_propagate(False)
-    # img_frame.grid(row=0,column=0,columnspan=2,rowspan=2)
-    #
-    # text_frame = tk.Frame(window,width=800,height=800,borderwidth=10,relief=tk.RIDGE)
-    # text_frame.pack_propagate(False)
-    # text_frame.grid(row=0,column=3)
-    #
-    # label = tk.Label(img_frame,text="Image Placeholder")
-    # label.pack()
-    #
-    # label2 = tk.Label(text_frame,text="Lorus Ipsum this is tons of text!\n And multiple lines too!")
-    # label2.pack()
-
-
-
-
-    # # Create a Button widget
-    # next_button = tk.Button(window, text="Next", command=window.destroy)
-    # prev_button = tk.Button(window, text="Prev", command=window.destroy)
-    # submit_button = tk.Button(window, text="Submit", command=window.destroy)
-    # prev_button.grid(row=4,column=0)
-    # submit_button.grid(row=4,column=1)
-    # next_button.grid(row=4,column=2)
-
-    window.mainloop()
-
-def importData(file_name):
-    back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
-    path = os.path.join(back_dir,'outputs','txt_extract.csv')
-    df = pd.read_csv(path)
-
-    source_name = os.path.splitext(os.path.basename(file_name))[0]
-    s = df[df['source']==source_name]
-
-    return s['name_data'], s['food_data'], s['found_edibility']
-
-
-class ImageState:
-    def __init__(self,image_path,filter_ls=None,debug_mode=False,img_max_size=(1440,1080)):
-        self.index=0
-        if filter_ls:
-            self.image_ls = [os.path.join(image_path,file) for file in os.listdir(image_path) if file.endswith('.tif') and file.split('.')[0] in filter_ls]
-        else:
-            self.image_ls = [os.path.join(image_path,file) for file in os.listdir(image_path) if file.endswith('.tif')]
-        self.image_ls.sort()
-        self.image_path=self.image_ls[self.index]
-        self.img_max_size=img_max_size
-        self.length = len(self.image_ls)
-        self.file_name = os.path.splitext(os.path.basename(self.image_ls[self.index]))[0]
-        self.debug_mode=debug_mode
-
-        # self.currImg = self.getImage()
-
-    def setLabel(self,label):
-        self.label = label
-        return
-
-    def updateName(self):
-        file = self.image_ls[self.index]
-        self.image_path = file
-        self.file_name = os.path.splitext(os.path.basename(file))[0]
-
-        if self.debug_mode:
-            print('Name Updated! ',self.file_name)
-        return
-
-    def next(self):
-        # checks that we are not at last index
-        if self.index < self.length - 1:
-            self.index += 1
-            self.updateName()
-        else:
-            # If we hit next at last index, position to first element of list
-            self.index = 0
-            self.updateName()
-        if self.debug_mode:
-            print('Next Index:',self.index)
-
-    def prev(self):
-        # If we are at first index and hit prev, we go to last item in the list
-        if self.index == 0:
-            self.index = -1
-            self.updateName()
-        else:
-            self.index -= 1
-            self.updateName()
-
-        if self.debug_mode:
-            print('Previous Index:',self.index)
-
-    def getImage(self):
-        img = Image.open(self.image_path)
-        img.thumbnail(self.img_max_size)
-        return ImageTk.PhotoImage(img)
 
 
 
@@ -135,39 +22,36 @@ def gui2(file_filter=None):
     window.title("Data Verifyer")  # Set the window title
 
     # Two Major Frames
-    dframe = tk.Frame(window,height=1080,width=810,borderwidth=10,relief=tk.RIDGE) # display frame, 900x1600
-    cframe = tk.Frame(window,height=860,width=860,borderwidth=10,relief=tk.RIDGE)
-    iframe = tk.Frame(window,height=540,width=860,borderwidth=10,relief=tk.RIDGE) # input frame, 180,1600
+    dframe_l = tk.Frame(window,height=1080,width=810,borderwidth=10,relief=tk.RIDGE) # display frame, 900x1600
+    dframe_r = tk.Frame(window,height=1080,width=810,borderwidth=10,relief=tk.RIDGE) # display frame, 900x1600
+    iframe = tk.Frame(window,height=540,width=300,borderwidth=10,relief=tk.RIDGE) # input frame, 180,1600
     # iframe = tk.Frame(window,height=1080,width=860,borderwidth=10,relief=tk.RIDGE) # input frame, 180,1600
 
-    dframe.pack_propagate(False)
-    dframe.pack(side='left',padx=50) #top
+    dframe_l.pack_propagate(False)
+    dframe_l.pack(side='left')
+    dframe_r.pack_propagate(False)
+    dframe_r.pack(side='left')
 
-    cframe.pack_propagate(False)
-    cframe.pack()
     iframe.pack_propagate(False)
-    iframe.pack(side='bottom')
+    iframe.pack(side='right')
 
     # Display Frame - Showing Images
         # Image - change image on click
-    # ms = getImageList()
-    # img = getImage(ms[0],max_size=(1440,1080))
     img = Is.getImage()
-    img_label = tk.Label(dframe,image=img)
+    img_label = tk.Label(dframe_l,image=img)
     img_label.pack()
     # img_label.grid(row=0,column=0)
-
-
-    # CSV Frame - Json or CSV
-    txt = Ts.getText()
-    txt_label = tk.Label(cframe,text=txt)
-    txt_label.pack()
 
 
 
     # Click events
         # Image - change on click, depending on prev/next
         # Submit - append name, and text boxes to .csv
+    # Display Images
+    l_img = tk.Label(dframe_l,text=Is.file_name)
+    r_img = tk.Label(dframe_r,text=Is.file_name)
+    l_img.pack(side='top')
+    r_img.pack(side='top')
 
     # Entry Boxes
     l_species = tk.Label(iframe,text='Species')
