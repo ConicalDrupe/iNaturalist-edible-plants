@@ -33,85 +33,250 @@ def count_words(string):
 ```{python}
 new_names = names.merge(r_names,on='source',how='left')
 
+# Removing white spaces
+new_names['Mistral_name_redo'] = new_names['Mistral_name_redo'].str.strip()
+new_names['Mistral_scientific_name'] = new_names['Mistral_scientific_name'].str.strip()
+
 # Removing NaN
 new_names['Mistral_name_redo'] = new_names['Mistral_name_redo'].map(lambda x: x if pd.notna(x) else '')
+new_names['Mistral_scientific_name'] = new_names['Mistral_scientific_name'].map(lambda x: x if pd.notna(x) else '')
+
 
 new_names['n_words_1'] = new_names['Mistral_scientific_name'].map(lambda x: count_words(x))
 new_names['n_words_2'] = new_names['Mistral_name_redo'].map(lambda x: count_words(x))
 
 
 # Where Mistral_scientific_name wordlength > 2, replace with Mistral_name_redo
-new_names['cleaned_name'] = new_names['Mistral_scientific_name'].copy()
+new_names['cleaned_names'] = new_names['Mistral_scientific_name'].copy()
 
 # Replacing Scientific Name with redone names
 # Indexes where inital mistral names are greater than two
 idx = new_names[new_names['n_words_1']>2].index
 new_names.loc[idx,'cleaned_names'] = new_names.loc[idx,'Mistral_name_redo'].copy()
 
-new_names['Mistral_name_redo'] = new_names['Mistral_name_redo'].str.strip()
 
-new_names['n_words_3'] = new_names['Mistral_name_redo'].map(lambda x: count_words(x))
+new_names['n_words_3'] = new_names['cleaned_names'].map(lambda x: count_words(x))
 new_names.groupby('n_words_3')['n_words_3'].count()
 ```
 
-## Words in each name column
 
+# Looking at the manual edited - seeing overlaps
 ```{python}
 import numpy as np
-# new_names.groupby('n_words_1')['n_words_1'].count()
-new_names['n_words_2'].replace('',np.nan)
-new_names.groupby('n_words_2')['n_words_2'].count() # Make [] NaN
-
-# Number of words by frequency
-new_names.groupby(['Mistral_name_redo','n_words_2'])[['Mistral_name_redo','n_words_2']].count()
-```
-
-## Frequency plot of words and frequency
-```{python}
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-# plt.figure()
-
-mask = new_names['n_words_2']==2
-new_names['nr_clean'] = new_names['Mistral_name_redo'].replace('\n','')
-sns.barplot(new_names[['n_words_2','nr_clean']][mask],x='nr_clean',y='n_words_2')
-
-plt.show()
-
-```
-
-
-```{python}
-new_names[['n_words_2','nr_clean']][mask]
-```
-
-# Looking at the manual edited
-```{python}
 
 edits = pd.read_csv(os.path.join(back_dir,'outputs','gui','no_edibility_labels.csv'),names=['source','manual_name_data','manual_edible_data','multiple_species','spans_multiple_pages','unused'])
+
+edits['manual_name_data'] = edits['manual_name_data'].str.replace(r'\n','')
+
 edits['manual_name_data'] = edits['manual_name_data'].map(lambda x: x.strip().split(',') if pd.notna(x) else '')
 edits['manual_name_data'] = edits['manual_name_data'].map(lambda x: [word.strip() for word in x])
-edits['manual_edible_data'] = edits['manual_edible_data'].map(lambda x: x.strip().split(',') if pd.notna(x) else '')
-edits['manual_edible_data'] = edits['manual_edible_data'].map(lambda x: [word.strip() for word in x])
 
 edits = edits.explode('manual_name_data').reset_index(drop=True)
+```
+
+```{python}
+edits.shape
+display(edits)
 ```
 
 # Searching for overlap
 ```{python}
 pd.options.display.max_rows = None
 pd.options.display.max_columns = None
-overlap = edits.merge(names,left_on='manual_name_data',right_on='Mistral_scientific_name',how='inner')
+overlap = edits.merge(new_names,left_on='manual_name_data',right_on='cleaned_names',how='inner')
 print(overlap.shape)
 # overlap.head()
-print(overlap['manual_name_data'].unique())
-display(overlap[['manual_name_data','manual_edible_data']])
+# print(overlap['manual_name_data'].unique())
+# display(overlap[['manual_name_data','manual_edible_data']])
 ```
 
 
 # Get those names with more than two words
-# Edibles with
 
 ```{python}
+mask = new_names['n_words_3']>2
+# display(new_names[mask]['cleaned_names'])
+new_names[mask].shape
+```
+
+# GENERA -> Edible replacement
+
+## First Joining with edible data 
+- joined on source page
+- check for duplicates
+- nan
+
+- select columns to keep
+
+
+```{python}
+ed = pd.read_csv(os.path.join(back_dir,'outputs','mistral_appended_edibles.csv'))
+ed = ed[ed['found_edibilty']==True] # Removing those with false found edibility -> these are in no_ed_re
+
+# ed has shape (625,5)
+# new_names has shape (505,12)
+names_ed = new_names.merge(ed,on='source',how='outer')
+
+print(names_ed.isna().sum())
+
+# Columns to keep
+cols = ['source','name_data_x','cleaned_names','n_words_3','Mistral_edibles']
+names_ed = names_ed[cols].rename(columns={'name_data_x':'name_data','Mistral_edibles':'mistral_edibles'})
+print('Number of source duplicated (conflicting information)',names_ed[names_ed.duplicated(subset=['source'])].shape)
+```
+
+
+```{python}
+print(names_ed.columns)
+print(names_ed.isna().sum())
+# names_ed[names_ed['mistral_edibles'].isna()]
+```
+
+### Need to also combine processed (no_edility labels)
+- This is the 120 difference in original ediblity procesesd, and new ones.
+- there are several unused pages
+
+```{python}
+no_ed_re = pd.read_csv(os.path.join(back_dir,'outputs','gui','no_edibility_labels.csv'),names=['source','manual_name_data','manual_edible_data','multiple_species','spans_multiple_pages','unused'])
+no_ed_re['manual_name_data'] = no_ed_re['manual_name_data'].map(lambda x: x.strip().split(',') if pd.notna(x) else '')
+no_ed_re['manual_name_data'] = no_ed_re['manual_name_data'].map(lambda x: [word.strip() for word in x])
+no_ed_re['manual_edible_data'] = no_ed_re['manual_edible_data'].map(lambda x: x.strip().split(',') if pd.notna(x) else '')
+no_ed_re['manual_edible_data'] = no_ed_re['manual_edible_data'].map(lambda x: [word.strip() for word in x])
+
+no_ed_re = no_ed_re.explode('manual_name_data').reset_index(drop=True)
+
+print(no_ed_re[no_ed_re.duplicated(subset='manual_name_data')].shape)
+
+## USE THIS UNUSED PAGES LIST IN GUI FILTER!!
+unused_pages_ls = no_ed_re[no_ed_re['unused']==1]['source'].unique()
+
+# Writing unused pages to txt file
+with open(os.path.join(back_dir,'outputs','reprocessing','unused_pages_list.txt'),'w') as f:
+    for page in unused_pages_ls:
+        f.write(f'{page}\n')
+
+# Removing unused pages
+no_ed_re = no_ed_re[no_ed_re['unused']==0]
+
+```
+
+#### no_ed_re -> dropping duplicates and NaN
+
+```{python}
+print(no_ed_re.shape)
+# Dropping duplicate of genera Rosa (one has edibility, one does not)
+drop_mask = (no_ed_re['manual_name_data']=='Rosa') & (no_ed_re['manual_edible_data'].apply(len)==0)
+idx_to_drop = no_ed_re[drop_mask].index
+no_ed_re.drop(index=idx_to_drop,inplace=True)
+print(no_ed_re.shape)
+
+print(no_ed_re.isna().sum())
+# Drop na of missing manual_name_data
+no_ed_re.dropna(inplace=True,axis=0)
+```
+
+# Concatenating no_ed_re and names_ed
+- Filling in edibles where there is overlap
+- Cleaning edible column for easy display (removing \n and brackets)
+
+```{python}
+# Checking for scientific name overlap 
+overlap_mask = no_ed_re['manual_name_data'].isin(names_ed['cleaned_names'].unique())
+overlap_mask_2 = names_ed['cleaned_names'].isin(no_ed_re['manual_name_data'].unique())
+# 6 names overlap
+display(names_ed[overlap_mask_2][['cleaned_names','mistral_edibles']])
+display(no_ed_re[overlap_mask]['manual_name_data'])
+
+# checknig where missing manual_edible_data
+no_ed_re['manual_edible_data'] = no_ed_re['manual_edible_data'].map(lambda x: np.nan if len(str(x))==0 else x)
+print(no_ed_re.isna().sum())
+
+# Where manual_edible data is missing, fill in with Mistral_edibles
+    # Join first? on source? or on scientific name?
+    # no_ed_re['new_edibles'] = no_ed_re['Mistral_edibles'].copy()
+    # no_ed_re[''][no_ed_re.isna()]
+
+# cols_to_keep = 
+# final_joined = no_ed_re.merge(names_ed,left_on=['manual_name_data','source'],right_on=['cleaned_names','source'],how='outer')
+# print(final_joined.isna().sum())
+col_names_ed=['source','cleaned_names','mistral_edibles','llm_flag']
+col_no_ed_re=['source','manual_name_data','manual_edible_data','llm_flag']
+names_ed['llm_flag'] = 1
+no_ed_re['llm_flag'] = 0
+name_remap={'manual_name_data':'cleaned_names','mistral_edibles':'edibles','manual_edible_data':'edibles'}
+final_joined = pd.concat([names_ed[col_names_ed].rename(columns=name_remap),no_ed_re[col_no_ed_re].rename(columns=name_remap)])
+
+## Lets check their edibility data - and choose which one fits
+# j = no_ed_re.merge(names_ed,left_on='manual_name_data',right_on='cleaned_names',how='inner')
+# j[['manual_name_data','manual_edible_data','Mistral_edibles']]
+
+# Since Mistral_edibles has non empty values, we will choose these to display in the gui -> and will human verify
+
+# Clean the edible strings with the following ( for names_ed):
+final_joined['edibles']=final_joined['edibles'].str.replace('\n','').str.replace(r'[','').str.replace(r']','').str.replace(r"'",'').str.strip()
+
+# Clean Source String
+def clean_source_str(string):
+    if '.' in string:
+        return string.split('.')[0]
+    else:
+        return string
+
+final_joined['source'] = final_joined['source'].map(lambda x: clean_source_str(x))
+
+print(final_joined.shape)
+print(final_joined[final_joined.duplicated(subset='cleaned_names',keep=False)])
+
+# Drop duplicates that have NaN edibles
+idx_mask = (final_joined.duplicated(subset='cleaned_names',keep=False)) & final_joined['edibles'].isna()
+final_joined.drop(index=final_joined[idx_mask].index,inplace=True)
+```
+
+# Mapping the manual edits of names/edibiles into new column of joined table
+```{python}
+
+genera_map ={'Rhus': 'shoots,berries',
+ 'Ceanothus':'tea (leaves)',
+ 'Vitis':'tendrils,leaves,fruit',
+ 'Smilax':'tubers,shoots,greens',
+ 'Rosa':'petals,hips,tea (leaves)',
+ 'Rumex':'leaves,stem,seeds',
+ 'Viburnum':'berries',
+ 'Celtis':'fruit,cambium',
+ 'Quercus':'nuts',
+ 'Acer':'sap',
+ 'Arctium':'roots,stalks,petioles',
+ 'Asclepias':'shoots,leafy tops, flower buds, immature pods',
+ 'Cirsium':'taproots,shoots,midribs,flower buds',
+ 'Carduus':'taproots,shoots,midribs,flower buds',
+ 'Onopordum':'taproots,shoots,midribs,flower buds',
+ 'Silybum':'taproots,shoots,midribs,flower buds',
+ 'Lactuca':'leaves,shoots',
+ 'Vicia':'shoots,leafy tips,flowers,seeds',
+ 'Hydrophyllum':'leaves,shoots'}
+
+
+```
+
+
+
+```{python}
+sp_list = ['Rhus', 'Ceanothus', 'Vitis', 'Smilax', 'Rosa', 'Rumex', 'Viburnum', 'Celtis', 'Quercus', 'Acer', 'Arctium', 'Asclepias', 'Cirsium', 'Carduus', 'Onopordum', 'Silybum', 'Lactuca', 'Vicia', 'Hydrophyllum',]
+
+# final_joined[final_joined['cleaned_names'].isin(sp_list)]
+
+final_joined['first_name']=final_joined['cleaned_names'].map(lambda x: x.split(' ')[0] if len(x.split(' '))>1 else x )
+final_joined[final_joined['first_name'].isin(sp_list)]
+
+final_joined['edibles_two'] = final_joined['edibles'].copy()
+replace_mask = (final_joined['first_name'].isin(sp_list)) & (final_joined['edibles_two'].isna())
+replace_idx = final_joined[replace_mask].index
+final_joined.loc[replace_idx,'edibles_two'] = final_joined.loc[replace_idx,'first_name'].map(lambda x: genera_map[x] if x in genera_map.keys() else x)
+```
+
+
+# Saving final data to review
+```{python}
+final_joined = final_joined[['source','cleaned_names','edibles_two','llm_flag']].rename(columns={'edibles_two':'edibles'})
+final_joined.to_csv(os.path.join(back_dir,'outputs','reprocessing','final_to_review.csv'),index=False)
 ```
