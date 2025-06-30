@@ -226,9 +226,11 @@ def gui(file_filter=None):
             writer = csv.writer(file)
             writer.writerow(data)
 
+        # Visual Feedback is now replaced with going to the next page
+        next()
         # Enhanced visual feedback
-        submit_button.config(text="✓ Submitted!", bg='#059669', activebackground='#047857')
-        window.after(1500, lambda: submit_button.config(text="Submit", bg='#3b82f6', activebackground='#2563eb'))
+        # submit_button.config(text="✓ Submitted!", bg='#059669', activebackground='#047857')
+        # window.after(1500, lambda: submit_button.config(text="Submit", bg='#3b82f6', activebackground='#2563eb'))
 
 
     # Keyboard event handlers
@@ -275,8 +277,12 @@ def gui(file_filter=None):
     submit_button.grid(row=0, column=2, padx=8)
 
     # Key binds to text boxes
-    species_box.bind('<Return>', lambda event: submit_click())  # Add this line
-    edible_box.bind('<Return>', lambda event: submit_click())  # Add this line
+    species_box.bind('<Return>', lambda event: submit_click())  
+    edible_box.bind('<Return>', lambda event: submit_click())  
+    species_box.bind('<Right>', lambda event: next())  
+    edible_box.bind('<Right>', lambda event: next())  
+    species_box.bind('<Left>', lambda event: next())  
+    edible_box.bind('<Left>', lambda event: next())
 
     # Configure iframe grid weights for proper scaling
     iframe.grid_rowconfigure(0, weight=1)
