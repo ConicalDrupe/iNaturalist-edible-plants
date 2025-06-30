@@ -56,3 +56,7 @@ class CSVState:
     def getEdible(self):
         text_data = self.df.loc[self.index,self.edible_col]
         return text_data
+
+    def getPage(self):
+        page_data = self.df.loc[self.index,self.source_col]
+        return page_data

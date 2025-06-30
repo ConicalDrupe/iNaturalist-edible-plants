@@ -9,16 +9,15 @@ from CSVState import CSVState
 from ImageState import ImageState
 
 
-def gui2(file_filter=None):
+def gui(file_filter=None):
     # Need something that manages program state!
     back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
     
     # Create two separate ImageState objects
     Is_left = ImageState(image_path='/mnt/c/Users/C/Documents/DataProjects2025/SamThayerScan_v2/Final Organized Photos/', filter_ls=file_filter, debug_mode=True)
     Is_right = ImageState(image_path='/mnt/c/Users/C/Documents/DataProjects2025/SamThayerScan_v2/Final Organized Photos/', filter_ls=file_filter, debug_mode=True)
-    Is_right.next()  # Right image is one ahead
+    Is_left.prev()  # Left image is one behind
     
-    # Ts = TextState(txt_path=os.path.join(back_dir, 'outputs', 'txt_files'), filter_ls=file_filter, debug_mode=True)
     Ts = CSVState(csv_path=os.path.join(back_dir, 'outputs','reprocessing','final_to_review.csv'), filter_ls=file_filter,edible_col='edibles',name_col='cleaned_names', debug_mode=True)
 
     window = tk.Tk()
@@ -83,14 +82,17 @@ def gui2(file_filter=None):
     
     edible_txt = Ts.getEdible()
     name_txt = Ts.getName()
-    def createLabelText(name_txt,edible_txt):
+    page_name = Ts.getPage()
+    def createLabelText(name_txt,edible_txt,page_name):
         if len(name_txt) > 200:
             name_txt = name_txt[:100] + '...'
         if len(edible_txt) > 200:
             edible_txt = edible_txt[:100] + '...'
-        return name_txt + "\n" + edible_txt
 
-    txt_label = tk.Label(text_frame, text=createLabelText(name_txt,edible_txt),
+        formatted_text = f"PAGE: {page_name}\n\n" + "NAME:\n" + name_txt + "\n\n" + "EDIBLES:\n" + edible_txt
+        return formatted_text
+
+    txt_label = tk.Label(text_frame, text=createLabelText(name_txt,edible_txt,page_name),
                         wraplength=300, justify='left', bg='#ffffff', fg='#34495e')
     txt_label.pack()
 
@@ -154,7 +156,8 @@ def gui2(file_filter=None):
         # Update Text Display
         name_txt = Ts.getName()
         edible_txt = Ts.getEdible()
-        display_txt =createLabelText(name_txt,edible_txt) 
+        page_name = Ts.getPage()
+        display_txt =createLabelText(name_txt,edible_txt,page_name) 
         txt_label.config(text=display_txt)
 
         # Clear Text Boxes
@@ -246,4 +249,4 @@ if __name__ == "__main__":
             # filter_ls.append(line.strip())
     # print(filter_ls)
 
-    gui2(file_filter=filter_ls)
+    gui(file_filter=filter_ls)
