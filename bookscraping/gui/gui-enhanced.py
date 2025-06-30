@@ -226,12 +226,8 @@ def gui(file_filter=None):
             writer = csv.writer(file)
             writer.writerow(data)
 
-        # Visual Feedback is now replaced with going to the next page
+        # Submition moves us to next page
         next()
-        # Enhanced visual feedback
-        # submit_button.config(text="✓ Submitted!", bg='#059669', activebackground='#047857')
-        # window.after(1500, lambda: submit_button.config(text="Submit", bg='#3b82f6', activebackground='#2563eb'))
-
 
     # Keyboard event handlers
     def on_key_press(event):
@@ -246,10 +242,9 @@ def gui(file_filter=None):
             next()
         elif event.keysym == 'Return':
             submit_click()
-
     # Bind keyboard shortcuts to the window
     window.bind('<Key>', on_key_press)
-    window.focus_set()  # Ensure window can receive keyboard events
+    window.focus_set()  # Ensure window can receive keyboard event
     # Enhanced buttons section
     button_frame = tk.Frame(iframe, bg='#ffffff')
     button_frame.grid(row=3, column=0, columnspan=3, pady=30)
@@ -275,14 +270,13 @@ def gui(file_filter=None):
     submit_button = tk.Button(button_frame, text="Submit", command=submit_click, 
                              bg='#3b82f6', fg='white', activebackground='#2563eb', **button_style)
     submit_button.grid(row=0, column=2, padx=8)
-
-    # Key binds to text boxes
-    species_box.bind('<Return>', lambda event: submit_click())  
-    edible_box.bind('<Return>', lambda event: submit_click())  
-    species_box.bind('<Right>', lambda event: next())  
-    edible_box.bind('<Right>', lambda event: next())  
-    species_box.bind('<Left>', lambda event: next())  
-    edible_box.bind('<Left>', lambda event: next())
+    # Key binds to text boxe
+    species_box.bind('<Return>', lambda event: submit_click())
+    edible_box.bind('<Return>', lambda event: submit_click())
+    species_box.bind('<Right>', lambda event: next())
+    edible_box.bind('<Right>', lambda event: next())
+    species_box.bind('<Left>', lambda event: prev())
+    edible_box.bind('<Left>', lambda event: prev())
 
     # Configure iframe grid weights for proper scaling
     iframe.grid_rowconfigure(0, weight=1)
