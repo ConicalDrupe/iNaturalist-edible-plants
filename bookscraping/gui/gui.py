@@ -5,7 +5,7 @@ from PIL import ImageTk, Image
 import os
 import csv
 import uuid
-from TextState import TextState
+from CSVState import CSVState
 from ImageState import ImageState
 
 
@@ -18,7 +18,8 @@ def gui2(file_filter=None):
     Is_right = ImageState(image_path='/mnt/c/Users/C/Documents/DataProjects2025/SamThayerScan_v2/Final Organized Photos/', filter_ls=file_filter, debug_mode=True)
     Is_right.next()  # Right image is one ahead
     
-    Ts = TextState(txt_path=os.path.join(back_dir, 'outputs', 'txt_files'), filter_ls=file_filter, debug_mode=True)
+    # Ts = TextState(txt_path=os.path.join(back_dir, 'outputs', 'txt_files'), filter_ls=file_filter, debug_mode=True)
+    Ts = CSVState(csv_path=os.path.join(back_dir, 'outputs','reprocessing','final_to_review.csv'), filter_ls=file_filter,edible_col='edibles',name_col='cleaned_names', debug_mode=True)
 
     window = tk.Tk()
     session_id = uuid.uuid4()
@@ -80,8 +81,16 @@ def gui2(file_filter=None):
                               bg='#ffffff', fg='#2c3e50', padx=10, pady=10)
     text_frame.grid(row=0, column=0, columnspan=3, sticky='ew', pady=(0, 20))
     
-    txt = Ts.getText()
-    txt_label = tk.Label(text_frame, text=txt[:200] + "..." if len(txt) > 200 else txt, 
+    edible_txt = Ts.getEdible()
+    name_txt = Ts.getName()
+    def createLabelText(name_txt,edible_txt):
+        if len(name_txt) > 200:
+            name_txt = name_txt[:100] + '...'
+        if len(edible_txt) > 200:
+            edible_txt = edible_txt[:100] + '...'
+        return name_txt + "\n" + edible_txt
+
+    txt_label = tk.Label(text_frame, text=createLabelText(name_txt,edible_txt),
                         wraplength=300, justify='left', bg='#ffffff', fg='#34495e')
     txt_label.pack()
 
@@ -143,8 +152,9 @@ def gui2(file_filter=None):
         right_title.config(text=Is_right.file_name)
 
         # Update Text Display
-        txt = Ts.getText()
-        display_txt = txt[:200] + "..." if len(txt) > 200 else txt
+        name_txt = Ts.getName()
+        edible_txt = Ts.getEdible()
+        display_txt =createLabelText(name_txt,edible_txt) 
         txt_label.config(text=display_txt)
 
         # Clear Text Boxes
@@ -170,13 +180,16 @@ def gui2(file_filter=None):
 
     def submit_click():
         # Checking source name
-        source = Is_left.file_name
-        if '.' in source:
-            source = source.split('.')[0]
+        l_source = Is_left.file_name
+        r_source = Is_right.file_name
+        if '.' in l_source:
+            l_source = l_source.split('.')[0]
+        if '.' in r_source:
+            r_source = r_source.split('.')[0]
 
         # Creating data string
         # SCHEMA: source | name_data | food_data | multiple_species | several_pages | unused
-        data = [source, species_box.get(), edible_box.get(), 
+        data = [l_source,r_source, species_box.get(), edible_box.get(), 
                 multiple_species.get(), several_pages.get(), unused.get()]
 
         # Setting up csv path, write/append mode, and writer
@@ -205,11 +218,11 @@ def gui2(file_filter=None):
 
     submit_button = tk.Button(button_frame, text="Submit", command=submit_click, 
                              bg='#3498db', fg='white', **button_style)
-    submit_button.grid(row=0, column=1, padx=5)
+    submit_button.grid(row=0, column=2, padx=5)
 
     next_button = tk.Button(button_frame, text="Next ►", command=next, 
                            bg='#2ecc71', fg='white', **button_style)
-    next_button.grid(row=0, column=2, padx=5)
+    next_button.grid(row=0, column=1, padx=5)
 
     # Configure iframe grid weights
     iframe.grid_rowconfigure(0, weight=1)
@@ -225,8 +238,12 @@ if __name__ == "__main__":
     # Creating filter list
     import pandas as pd
     back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
-    df = pd.read_csv(os.path.join(back_dir, 'outputs', 'txt_extract.csv'))
-    df = df[df['found_edibilty'] == False]
-    filter_ls = df['source'].map(lambda x: x.split('.')[0]).to_list()
+    # filter_ls = []
+    with open(os.path.join(back_dir, 'outputs','reprocessing','unused_pages_list.txt'),'r') as f:
+        content = f.read()
+        filter_ls = content.split('\n')
+        # for line in content:
+            # filter_ls.append(line.strip())
+    # print(filter_ls)
 
-    gui2(file_filter=None)
+    gui2(file_filter=filter_ls)
