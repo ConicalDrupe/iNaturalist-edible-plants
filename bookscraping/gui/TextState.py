@@ -4,7 +4,7 @@ class TextState:
     def __init__(self,txt_path,filter_ls=None,debug_mode=False):
         self.index=0
         if filter_ls:
-            self.txt_ls = [os.path.join(txt_path,file) for file in os.listdir(txt_path) if file.endswith('.txt') and file.split('.')[0] in filter_ls]
+            self.txt_ls = [os.path.join(txt_path,file) for file in os.listdir(txt_path) if file.endswith('.txt') and file.split('.')[0] not in filter_ls]
         else:
             self.txt_ls = [os.path.join(txt_path,file) for file in os.listdir(txt_path) if file.endswith('.txt')]
         self.txt_ls.sort()

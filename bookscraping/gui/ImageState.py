@@ -5,7 +5,7 @@ class ImageState:
     def __init__(self,image_path,filter_ls=None,debug_mode=False,img_max_size=(1440,1080)):
         self.index=0
         if filter_ls:
-            self.image_ls = [os.path.join(image_path,file) for file in os.listdir(image_path) if file.endswith('.tif') and file.split('.')[0] in filter_ls]
+            self.image_ls = [os.path.join(image_path,file) for file in os.listdir(image_path) if file.endswith('.tif') and file.split('.')[0] not in filter_ls]
         else:
             self.image_ls = [os.path.join(image_path,file) for file in os.listdir(image_path) if file.endswith('.tif')]
         self.image_ls.sort()
