@@ -230,6 +230,24 @@ def gui(file_filter=None):
         submit_button.config(text="✓ Submitted!", bg='#059669', activebackground='#047857')
         window.after(1500, lambda: submit_button.config(text="Submit", bg='#3b82f6', activebackground='#2563eb'))
 
+
+    # Keyboard event handlers
+    def on_key_press(event):
+        # Check if focus is on an Entry widget to avoid interfering with text input
+        focused_widget = window.focus_get()
+        if isinstance(focused_widget, tk.Entry):
+            return
+        
+        if event.keysym == 'Left':
+            prev()
+        elif event.keysym == 'Right':
+            next()
+        elif event.keysym == 'Return':
+            submit_click()
+
+    # Bind keyboard shortcuts to the window
+    window.bind('<Key>', on_key_press)
+    window.focus_set()  # Ensure window can receive keyboard events
     # Enhanced buttons section
     button_frame = tk.Frame(iframe, bg='#ffffff')
     button_frame.grid(row=3, column=0, columnspan=3, pady=30)
@@ -255,6 +273,10 @@ def gui(file_filter=None):
     submit_button = tk.Button(button_frame, text="Submit", command=submit_click, 
                              bg='#3b82f6', fg='white', activebackground='#2563eb', **button_style)
     submit_button.grid(row=0, column=2, padx=8)
+
+    # Key binds to text boxes
+    species_box.bind('<Return>', lambda event: submit_click())  # Add this line
+    edible_box.bind('<Return>', lambda event: submit_click())  # Add this line
 
     # Configure iframe grid weights for proper scaling
     iframe.grid_rowconfigure(0, weight=1)
