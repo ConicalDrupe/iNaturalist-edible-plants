@@ -92,9 +92,9 @@ def gui(file_filter=None):
     page_name = Ts.getPage()
     
     def createLabelText(name_txt, edible_txt, page_name):
-        if len(name_txt) > 300:
+        if len(str(name_txt)) > 300:
             name_txt = name_txt[:150] + '...'
-        if len(edible_txt) > 300:
+        if len(str(edible_txt)) > 300:
             edible_txt = edible_txt[:150] + '...'
 
         formatted_text = f"PAGE: {page_name}\n\n" + "NAME:\n" + name_txt + "\n\n" + "EDIBLES:\n" + edible_txt
