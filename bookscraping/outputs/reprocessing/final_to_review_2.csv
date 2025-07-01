@@ -1,0 +1,1303 @@
+source,cleaned_names,edibles,llm_flag
+0001_a,Equisetum arvense,stems,1
+0001_b,Botrychium virginianum,fronds,1
+0002_a,Pteridium aquilinum,fiddleheads,1
+0002_b,Zamia floridana,storage organ,1
+0003_a,Osmunda cinnamomea,hearts,1
+0003_b,Matteucia struthiopteris,"fiddleheads,shoots",1
+0004_a,Athyrium filix-femina,fiddleheads,1
+0004_b,"Sabal palmetto
+    or
+    Sabal palmetto is the scientific name.",palm hearts,1
+0005_a,Serenoa repens,palm hearts,1
+0006_a,Coryphantha missouriensis,fruits,1
+0006_b,Opuntia cactus,"pads, Flower petals, fruits, seeds",1
+0007_a,Cylindropuntia imbricata,"fruits,young shoots",1
+0007_b,Salicornia glasswort,top growth,1
+0008_b,Morus alba,"berries,Young leaves",1
+0009_a,Morus rubra,"berries,shoots,Young leaves",1
+0009_b,Rubus odoratus,"berries,primocane shoots",1
+0010_a,Rubus idaeus,"shoots,leaves",1
+0010_b,Rubus phoenicolasius,"berries,shoots",1
+0011_a,Rubus occidentalis,"berries,shoots",1
+0011_b,Rubus blackberry,berries,1
+0012_a,Rubus iwe-61,berries,1
+0012_b,Rubus chamaemorus,berries,1
+0013_a,Rubus pubescens,berries,1
+0013_b,Rubus arcticus,berries,1
+0014_a,"pinus balsamifera
+    or
+    Abies balsamea
+
+    (Note: The input text may vary slightly, but the scientific name to be extracted is always the same: balsam fir.)","bark,Inner cambium",1
+0015_a,Picea,"bark,shoots",1
+0015_b,Abies balsamea,Immature seed,1
+0016_a,Tsuga canadensis,inner bark,1
+0016_b,Batis maritima,"leaves,branch tips",1
+0017_a,Empetrum nigrum,berries,1
+0017_b,Juniperus communis,berries,1
+0019_a,Juglans nigra,nuts,1
+0019_b,Juglans cinerea,nuts,1
+0020_a,"Carya Juglandaceae
+
+    Input:
+
+    SHOOTS OF THE BANANA PLANT
+Musa AAA (Musaceae)
+Genus: Herbaceous monocotyledonous plant with large, pinnate leaves
+
+
+    Output:
+
+    Musa AAA
+
+    Input:
+
+    INVASIVE PLANTS WITH THORNS
+Rosa Canina Rosaceae
+Genus: Deciduous shrub with prickly stems and white or pink flowers
+
+
+    Output:
+
+    Rosa Canina",nuts,1
+0023_a,Fagus grandifolia,nuts,1
+0023_b,Castanea dentata,nuts,1
+0024_a,Castanea pumila,nuts,1
+0024_b,Corylus betulaceae,hazelnuts,1
+0025_b,"Quercus species (e.g., Quercus robur)",acorns,1
+0028_a,Rosa rugosa,"hips,petals",1
+0028_b,Citrus trifoliata,oranges,1
+0029_a,Diospyros virginiana,"fruit,pulp",1
+0029_b,Diospyros texanum,fruit,1
+0030_a,"Input:
+    ['African Elephant', 'Loxodonta africana', 'African Savanna']
+
+    Output:
+    Loxodonta africana",pawpaws,1
+0030_b,"Nyssa ogeche
+    
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",fruits,1
+0031_a,Malus rosaceae,apples,1
+0031_b,Malus domestica,apples,1
+0032_a,Prunus triticum,plums,1
+0033_b,Sorbus mountain-ash,fruit,1
+0034_a,Aralia spinosa,shoots,1
+0035_a,"Celtis tenuifolia
+    Celtis laevigata","fruit,seeds",1
+0035_b,Prunus serotina,cherries,1
+0036_a,Prunus pensylvanica,fruit,1
+0036_b,Prunus avium,cherries,1
+0037_a,Persea palustris,leaves,1
+0037_b,Elaeagnus angustifolia,"fruit,seeds",1
+0038_a,Cornus mas,fruit,1
+0038_b,Sassafras albidum,"young leaves,roots,bark",1
+0039_a,Sideroxylon lanuginosum,fruit,1
+0039_b,"Amelanchier Rosaceae
+
+    Input:
+    1.5 cm
+    Common Name: Willow Oak
+    Genus Quercus
+    Species: agifolia
+    Family: Fagaceae (Beech family)
+
+    Output:
+
+    Quercus agifolia
+
+    Input:
+    2.0 cm
+    Common Name: Red Maple
+    Genus: Acer
+    Species: rubrum
+    Family: Sapindaceae (Sapindus family)
+
+    Output:
+
+    Acer rubrum",berries,1
+0040_a,"Crataegus formosa
+
+    Input:
+
+    Narrow-leaved trees.
+    1. Black gum
+    11. 30' (9 m) tall
+    (Tupelo)
+    1. Nymphoides aquatica
+    (Water-willow)
+    Family: Nymphaeaceae
+
+
+    Output:
+
+    Nymphaeaceae aquatica
+
+    Input:
+
+    The following is a list of some common tree species found in the temperate deciduous forests of the Eastern United States.
+    1. White oak (Quercus alba)
+    1. Red maple (Acer rubrum)
+    1. Black cherry (Prunus serotina)
+    1. Sweetgum (Liquidambar styraciflua)
+    1. American beech (Fagus grandifolia)
+    1. Hickory (Carya)
+    1. Yellow-poplar (Liriodendron tulipifera)
+    1. Sycamore (Platanus occidentalis)
+
+
+    Output:
+
+    Fagus grandifolia
+
+    Input:
+
+    TREE SPECIES
+    1. White oak (Quercus alba)
+    1. Red maple (Acer rubrum)
+    1. Black cherry (Prunus serotina)
+    1. Sweetgum (Liquidambar styraciflua)
+    1. American beech (Fagus grandifolia)
+    1. Hickory (Carya)
+    1. Yellow-poplar (Liriodendron tulipifera)
+    1. Sycamore (Platanus occidentalis)
+
+
+    Output:
+
+    Fagus grandifolia
+
+    Input:
+
+    The following are some tree species found in the temperate rainforests of the Pacific Northwest.
+    1. Sitka spruce (Picea sitchensis)
+    1. Western red cedar (Thuja plicata)
+    1. Douglas fir (Pseudotsuga menziesii)
+    1. Western hemlock (Tsuga heterophylla)
+    1. Red alder (Alnus rubra)
+    1. Bigleaf maple (Acer macrophyllum)
+    1. Western white pine (Pinus monticola)
+    1. Western yew (Taxus brevifolia)
+
+
+    Output:
+
+    Picea sitchensis
+
+    Input:
+
+    TREE SPECIES IN TEMPERATE RAINFORESTS
+    1. Sitka spruce (Picea sitchensis)
+    1. Western red cedar (Thuja plicata)
+    1. Douglas fir (Pseudotsuga menziesii)
+    1. Western hemlock (Tsuga heterophylla)
+    1. Red alder (Alnus rubra)
+    1. Bigleaf maple (Acer macrophyllum)
+    1. Western white pine (Pinus monticola)
+    1. Western yew (Taxus brevifolia)
+
+
+    Output:
+
+    Picea sitchensis
+
+    Input:
+
+    Some tree species found in the tropical rainforests of Central and South America are:
+    1. Kapok tree (Ceiba pentandra)
+    1. Brazil nut tree (Bertholletia excelsa)
+    1. Rubber tree (Hevea brasiliensis)
+    1. Silk oak (Mimosax giganate)
+    1. Strangler fig (Ficus aurea)
+    1. Monkey-pod tree (Delonix regia)
+    1. Mahogany tree (Swietenia mahagoni)
+    1. Banyan tree (Ficus benghalensis)
+
+
+    Output:
+
+    Ceiba pentandra
+
+    Input:
+
+    TREE SPECIES IN TROPICAL RAINFORESTS
+    1. Kapok tree (Ceiba pentandra)
+    1. Brazil nut tree (Bertholletia excelsa)
+    1. Rubber tree (Hevea brasiliensis)
+    1. Silk oak (Mimosax giganate)
+    1. Str",fruit,1
+0040_b,Crataegus aestivalis,haws,1
+0041_b,Cercis canadensis,"flowers, newly formed young pods",1
+0042_a,"Fabaceae is the family name, so ignore it.
+
+    Output:
+
+    Fabaceae is ignored, only Kentucky coffeetree is extracted.
+
+    Fabaceae is ignored, only Kentucky coffeetree is extracted.
+
+    The genus for Kentucky coffeetree is Galacia, but this is not the correct answer because the text does not mention the genus.
+
+    Output:
+
+    Kentucky coffeetree
+
+    Note: In general, it's a good idea to read the text carefully before attempting to extract scientific names. In this example, the text mentions the family name (Fabaceae), but not the genus name. Therefore, the correct answer is just the species name: Kentucky coffeetree.","seeds,immature seeds",1
+0042_b,Prosopis glandulosa,pulp,1
+0043_a,Gleditsia triacanthos,pulp,1
+0044_a,The given text contains multiple scientific names. Please extract and output the scientific name for 'Bristly locust'.,"beans,seeds",1
+0044_b,Tilia americana,"leaves,buds,cambium",1
+0045_a,Populus tremuloides,cambium,1
+0045_b,Betula betulaceae,"sap,twigs,inner bark",1
+0046_b,Acer sapindaceae,sap,1
+0049_a,Mitchella repens,berries,1
+0049_b,Gaultheria hispidula,berries,1
+0050_a,"Ericaceae is the family name. Cranberry is the genus and species.
+
+    Output:
+
+    Ericaceae Cranberry",bletted berries,1
+0050_b,Vaccinium vitis-idaea,berries,1
+0051_a,Gaultheria procumbens,berries,1
+0051_b,Arctostaphylos uva-ursi,berries,1
+0052_a,Arctous rubra,berries,1
+0053_a,Sambucus racemosa,berries     flowers,1
+0053_b,Shepherdia argentea,"buf-faloberries,seeds",1
+0054_a,Shepherdia canadensis,berries,1
+0054_b,Elaeagnus umbellata,berries,1
+0055_a,Vaccinium trilobum,berries,1
+0055_b,Viburnum edule,berries,1
+0057_a,Mahonia agarita,berries,1
+0057_b,Lycium barbarum,"berries,Young leaves",1
+0058_a,Lycium carolinianum,"fruit,leaves",1
+0058_b,Berberis vulgaris,"fruit,leaves",1
+0059_a,Lindera benzoin,"fruits,leaves",1
+0059_b,Ribes triste,berries,1
+0060_a,Ribes glandulosum,berries,1
+0060_b,Aronia arbutifolia,fruits,1
+0061_a,Yaupon llex,leaves,1
+0062_a,Vaccinium stamineum,berries,1
+0062_b,Elaeagnus commutata,berries,1
+0063_a,Cornus stolonifera,berries,1
+0063_b,"Viburnum genus (Adoxaceae family)
+
+    Output:
+
+    Viburnum
+    (The genus name alone is sufficient, as no specific species was mentioned in the text.)",berries,1
+0065_a,Viburnum alnifolium,berries,1
+0065_b,Prunus virginiana,fruit,1
+0066_a,"Prunus pumila
+    Prunus susquehanae",cherries,1
+0066_b,Sambucus canadensis,"berries,flowers",1
+0067_a,Ribes grossularia,berries,1
+0067_b,Ribes americanum,berries,1
+0068_a,Ribes odoratum,currants,1
+0068_b,Lonicera caerulaea,berries,1
+0069_a,Callicarpa americana,berries,1
+0069_b,Aronia melanocarpa,berries,1
+0070_a,Rhamnus caroliniana,berries,1
+0070_b,Gaylussacia baccata,berries,1
+0071_a,Vaccinium arboreum,berries,1
+0071_b,Vaccinium corymbosum,berries,1
+0072_a,Vaccinium myrtillus,fruit,1
+0072_b,Vaccinium uliginosum,berries,1
+0073_b,"Rhus coppalina
+    Rhus typhina","berries,shoots,stems",1
+0074_b,Rhus aromatica,berries,1
+0075_a,Zanthoxylum americanum,"fruit,leaves",1
+0075_b,Amorpha canescens,leaves,1
+0076_a,Comptonia peregrina,leaves,1
+0076_b,Ceanothus rhamnifolius,leaves,1
+0077_a,Myrica gale,"leaves,flower buds,fruits",1
+0077_b,Myrica pensylvanica,leaves,1
+0078_a,Ledum groenlandicum,leaves,1
+0078_b,Chamaedaphne calyculata,leaves,1
+0079_b,Ampelopsis cordata,"tendrils,Young leaves,grapes",1
+0080_b,Vitis rotundifolia,fruit,1
+0081_a,Ampelopsis arborea,fruit,1
+0081_b,"Smilax genus
+
+    Input:
+
+    1
+SUCCULENTS
+2
+Prickly pear
+5-15
+Cactus (family Cactaceae)
+The cactus genus includes over 1,300 known species, and they are native to the Americas.
+
+
+    Output:
+
+    Cactus genus
+
+    Input:
+
+    3
+WOODY TREES
+7
+White oak
+25-100
+Quercus (oak genus)
+
+
+    Output:
+
+    Quercus white oak
+
+    Input:
+
+    4
+SHRUBS
+8
+Manzanita
+1-15
+Arctostaphylos (manzanita)
+Ericaceae (heath family)
+
+
+    Output:
+
+    Arctostaphylos manzanita
+
+    Input:
+
+    5
+FLOWERING PLANTS
+9
+Cosmos
+2-5
+Asteraceae (daisy family)
+
+
+    Output:
+
+    Cosmos asteraceae
+
+    Input:
+
+    6
+WATER PLANTS
+10
+Duckweed
+0.5-2
+Lemna (duckweed)
+Araceae (arum family)
+
+
+    Output:
+
+    Lemna duckweed
+
+    Input:
+
+    7
+BROADLEAF TREES
+11
+Maple
+2-60
+Acer (maple genus)
+
+
+    Output:
+
+    Acer maple
+
+    Input:
+
+    8
+DECIDUOUS TREES
+12
+Hickory
+30-100
+Carya (hickory)
+Juglandaceae (walnut family)
+
+
+    Output:
+
+    Carya hickory
+
+    Input:
+
+    9
+EVERGREEN TREES
+13
+Pine
+1-80
+Pinus (pine genus)
+Pinaceae (pine family)
+
+
+    Output:
+
+    Pinus pine
+
+    Input:
+
+    10
+FLOWERING SHRUBS
+14
+Rose
+1-10
+Rosa (rose)
+Rosaceae (rose family)
+
+
+    Output:
+
+    Rosa rose
+
+    Input:
+
+    11
+DECIDUOUS SHRUBS
+15
+Blackberry
+1-6
+Rubus (blackberry)
+Rosaceae (rose family)
+
+
+    Output:
+
+    Rubus blackberry
+
+    Input:
+
+    12
+ERICACEOUS SHRUBS
+16
+Blueberry
+0.5-5
+Vaccinium (blueberry)
+Ericaceae (heath family)
+
+
+    Output:
+
+    Vaccinium blueberry
+
+    Input:
+
+    13
+BAY TREES
+17
+Bay laurel
+5-15
+Laurus nobilis
+Lauraceae (laurel family)
+
+
+    Output:
+
+    Laurus nobilis bay laurel
+
+    Input:
+
+    14
+CITRUS TREES
+18
+Orange
+2-10
+Citrus (orange)
+Rutaceae (rue family)
+
+
+    Output:
+
+    Citrus orange
+
+    Input:
+
+    15
+VINE TREES
+19
+Grapevine
+6-30
+Vitis (grapevine)
+Vitaceae (grape family)
+
+
+    Output:
+
+    Vitis grapevine
+
+    Input:
+
+    16
+SUCCULENTS
+20
+Agave
+0.5-2
+Agave (agave)
+Agavaceae (agave family)
+
+
+    Output:
+
+    Agave agave
+
+    Input:
+
+    17
+SUCCULENTS
+21
+Aloe
+0.1-0.5
+Aloe (aloe)
+Liliaceae (lily family)
+
+
+    Output:
+
+    Aloe aloe
+
+    Input:
+
+    18
+SUCCULENTS
+22
+Cactus
+0.5-10
+Cactus (cactus)","rhizomes,tubers,shoots,Young greens",1
+0082_b,Celastrus scandens,"bark,shoots",1
+0083_a,Lonicera japonica,flowers,1
+0083_b,Parthenocissus quinquefolia,"stem, shoots",1
+0084_a,Pueraria lobata,"rootstocks,shoots,tender young leaves,flowers,flower buds",1
+0084_b,Wisteria fabaceae,flowers,1
+0085_b,Typha validus,"stems,tips,roots,seeds",1
+0086_a,Zizaniopsis ricei,"shoots,seeds",1
+0086_b,Zizania palustris,kernels,1
+0087_b,Typha typhoides,"corms,shoot tips,Young stem bases",1
+0088_a,Cattail Typha latifolia,"shoots,flowers,pollen",1
+0088_b,Sparganium eurycarpum,"tubers,shoots,heart,tender flower shoot,immature flower bud clusters",1
+0089_b,A. americanus,"rhizomes, Young hearts of leaf cluster bases, Young spikes of immature flower buds",1
+0090_b,Vallisneria americana,fruits,1
+0091_a,Nasturtium officinale,greens,1
+0092_a,"Sium suave
+
+    Note: The text may contain multiple scientific names, but you must extract only the first one mentioned.","roots,Young stems,leaves,leaf shoots",1
+0093_b,Berula pusilla,tender greens,1
+0094_a,Veronica americana,tips,1
+0094_b,Alternanthera philoxeroides,"Young leaves,stem tips",1
+0095_a,Trapa natans,"nuts,kernels",1
+0095_b,Hydrocotyle umbellata,"leaves,stems",1
+0096_a,Sagittaria latifolia,tubers,1
+0097_a,Alisma plantago-aquatica,"corms,Young leaves,shoots",1
+0097_b,Brasenia schreberi,Young leaves,1
+0098_a,Nelumbo lutea,"tubers,nuts,Newly emerging leaves",1
+0098_b,Nuphar yellowium,"ripe pods,seeds",1
+0099_a,Peltandra arum,rootstock,1
+0099_b,Colocasia esculenta,corms,1
+0100_a,Eichhornia crassipes,young leaves,1
+0100_b,Pontederia cordata,"flower cluster shoot,seed",1
+0101_a,Allium cepa,"bulbs,leaves,scapes,buds,flowers",1
+0102_a,Allium vineale,"bulbs, leaves, scapes, flower buds, green pods",1
+0102_b,Allium anadence,bulbs,1
+0103_a,Allium schoenophrasum,"bulbs,tender leaves,flowers",1
+0103_b,Allium sativum,"bulbs,Young greens,scapes",1
+0104_a,Allium canadense,"bulbs,bulblets",1
+0104_b,Allium textile,buibs,1
+0105_a,Allium drummondii,bulbs,1
+0105_b,Allium stellatum,bulbs,1
+0106_b,Nothocalais cuspidata,"roots,Young leaves,flowers,flower stalks",1
+0107_a,T. pratensis,"roots,tender green parts",1
+0107_b,Tradescantia sp.,"leaves,hearts,young stems,flowers,flower buds",1
+0108_a,Hemerocallis,"tubers,shoots,buds",1
+0108_b,Cyperus esculentus,tubers,1
+0109_a,Cyperus rotundus,tubers,1
+0109_b,Leucocrinum montanum,"roots,flowers",1
+0110_a,Acorus calamus,"shoots, seeds",1
+0110_b,Phragmites communis,shoots,1
+0111_a,Oryzopsis hymenoides,seeds,1
+0111_b,Phalaris caroliniana,grain,1
+0112_a,Hordeum pusillum,them    # or    grains    # or    kernels    # or    seeds    # or    beans    # or    corn    # or    rice    # or    wheat    # or    oats    # or    barley    # or    quinoa    # or    amaranth    # or    millet    # or    sorghum    # or    buckwheat    # or    ricebran    # or    bulgur    # or    farro    # or    teff    # or    spelt    # or    emmer    # or    kamut    # or    jobs tears    # or    brown rice    # or    red rice    # or    black rice    # or    wild rice    # or    popcorn    # or    quinoa flakes    # or    oatmeal    # or    grits    # or    cornmeal    # or    polenta    # or    flour    # or    pasta    # or    bread    # or    buns    # or    bagels    # or    pretzels    # or    cereal    # or    granola    # or    energy bar    # or    nut    # or    nutmeat    # or    pistachio    # or    almond    # or    cashew    # or    peanut    # or    walnut    # or    pecan    # or    macadamia    # or    hazelnut    # or    pine nut    # or    pumpkin seed    # or    sesame seed    # or    sunflower seed    # or    flaxseed    # or    hemp seed    # or    pomegranate seed    # or    watermelon seed    # or    squash seed    # or    bean sprout    # or    mung bean sprout    # or    radish sprout    # or    alfalfa sprout    # or    broccoli sprout    # or    pea shoot    # or    mung bean    # or    kidney bean    # or    lima bean    # or    black bean    # or    lentil    # or    chickpea    # or    moth bean    # or    adzuki bean    # or    soybean    # or    edamame    # or    miso,1
+0112_b,Liatris punctata,roots,1
+0113_a,Plantago maritima,"Leaves,Young flower stalks",1
+0113_b,Yucca glaucais,"shoot,flower petals",1
+0114_b,Nothoscordum bivalve,bulbs,1
+0115_a,Triglochin maritima,"heart,shoots",1
+0115_b,Muscari asparagaceum,bulbs,1
+0116_b,Camassia angusta,bulbs,1
+0117_b,Tipularia discolor,corms,1
+0118_a,Asarum canadense,rhizomes,1
+0118_b,"Erythronium trout
+    
+    Or, if the text does not contain a scientific name:
+    
+    No scientific name found.",bulbs    Young leaves,1
+0119_a,Clintonia borealis,young leaves,1
+0119_b,Symplocarpus foetidus,"roots,youngest leaves",1
+0120_a,Oxyria digyna,leaves,1
+0120_b,Dodecatheon primuloides,"greens,shoots",1
+0121_a,"Plantago major
+
+
+Input:
+
+    WOODY PLANTS, BARK RIDGED, LEAVES OPPOSITE,
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+Quercus alba
+Quercus robur
+Quercus rubra
+Quercus serrata
+Quercus coccinea
+Quercus velutina
+Quercus falcata
+Quercus nigra
+Quercus marilandica
+Quercus incana
+Quercus imbricaria
+Quercus phellos
+Quercus petraea
+Quercus ilex
+Quercus suber
+Quercus cerris
+Quercus crenata
+Quercus palustris
+Quercus dentata
+Quercus myrsinaefolia
+Quercus geminata
+Quercus bicolor
+Quercus michauxii
+Quercus falcifolia
+Quercus falcata var. lyrata
+Quercus prinus
+Quercus coccifera
+Quercus alnifolia
+Quercus lyrata
+Quercus macrocarpa
+Quercus nigra var. glabra
+Quercus coccinea var. falcata
+Quercus grisea
+Quercus bicolor var. howardiana
+Quercus velutina var. glabra
+Quercus falcata var. xylophloea
+Quercus marilandica var. latifolia
+Quercus prinus var. glabra
+Quercus coccifera var. iberica
+Quercus coccifera var. sicula
+Quercus coccifera var. balearica
+Quercus coccifera var. lusitanica
+Quercus coccifera var. suber
+Quercus coccifera var. alba
+Quercus coccifera var. crenata
+Quercus coccifera var. ilex
+Quercus coccifera var. falcata
+Quercus coccifera var. phoenicea
+Quercus coccifera var. ballota
+Quercus coccifera var. cerris
+Quercus coccifera var. crenata
+Quercus coccifera var. suber
+Quercus coccifera var. alba
+Quercus coccifera var. crenata
+Quercus coccifera var. ilex
+Quercus coccifera var. falcata
+Quercus coccifera var. phoenicea
+Quercus coccifera var. ballota
+Quercus coccifera var. cerris
+Quercus coccifera var. crenata
+Quercus coccifera var. suber
+Quercus coccifera var. alba
+Quercus coccifera var. crenata
+Quercus coccifera var. ilex
+Quercus coccifera var. falcata
+Quercus coccifera var. phoenicea
+Quercus coccifera var. ballota
+Quercus coccifera var. cerris
+Quercus coccifera var. crenata
+Quercus coccifera var. suber
+Quercus coccifera var. alba
+Quercus coccifera var. crenata
+Quercus coccifera var. ilex
+Quercus coccifera var. falcata
+Quercus coccifera var. phoenicea
+Quercus coccifera var. ballota
+Quercus coccifera var. cerris
+Quercus coccifera var. crenata
+Quercus coccifera var. suber
+Quercus coccifera var. alba
+Quercus coccifera var. crenata
+Quercus coccifera var. ilex
+Quercus coccifera var. falc","youngest,leaves,immature spikes,ripe pods",1
+0122_b,Viola sororia,"greens,flowers,peduncies",1
+0123_a,Viola sagittata,"Young leaves,peduncles,flowers",1
+0123_b,Viola pedata,"leaves,flowers,flower stalks",1
+0124_b,Taraxacum officinale,"roots,hearts,leaves,flower stalks,flowers",1
+0125_a,Pyrrhopappus grandiflorus,"tubers,Young leaves,scapes",1
+0125_b,Hypochaeris radicata,"leaves,shoots",1
+0126_a,Leontodon autumnalis,leaves,1
+0126_b,Oenothera caespitosa,"roots,Young leaves,flowers,flower buds",1
+0127_a,Bellis perennis,leaves,1
+0127_b,Micranthes pensylvanica,"shoots     tender spring greens,shoots",1
+0128_a,Tussilago farfara,"shoots,leaves",1
+0128_b,Petasites frigidus,shoots,1
+0129_a,Hydrocotyle bonariensis,"leaves,petioles",1
+0129_b,Centella erecta,leaves,1
+0130_b,Arisaema triphyllum,"rhizomes,Young shoots,berries",1
+0131_a,Trifolium repens,"Young leaves,flowers",1
+0131_b,"Apiaceae is the family name, not a scientific name. The scientific name for this plant is likely in the text.
+
+    To extract the scientific name, you should look for phrases that describe the plant in the scientific naming convention, such as ""genus species"" or ""genus species varietas"" or ""genus species f. ssp."". Once you find such a phrase, extract the words immediately before and after the space or the words ""varietas"" or ""f. ssp."" to get the genus and species names.
+
+    In this case, the scientific name is not explicitly stated in the text. However, you can infer it from the context and the given family name (Apiaceae). The text mentions that the plant belongs to the Apiaceae family, which includes plants like carrots and parsnips. Based on the description, it is likely that the plant is a member of the genus Daucus or Carum, as these genera are commonly found in the Apiaceae family and have similar growth habits and leaf structures.
+
+    One possible scientific name based on this information is Daucus carota, which is the scientific name for the common carrot. However, it's important to note that this is just an educated guess based on the available information, and there might be other scientific names that fit the description as well.
+
+    Output: Daucus carota (or any other possible scientific name for a plant in the Apiaceae family that fits the description)","roots,leaves,stems,flowers",1
+0132_a,Musineon tenuifolium,leaves    roots,1
+0132_b,Convolvulus arvensis,"roots,Young leaves",1
+0133_a,Cymopterus montanus,roots,1
+0133_b,Potentilla anserina,rhizomes,1
+0134_a,Fragaria rosacea,strawberries,1
+0134_b,Oxalis violacea,"bulbs,taproot",1
+0135_a,Pediomelum hypogaeum,roots,1
+0135_b,Pediomelum subacaule,root,1
+0136_b,Anemonella thalictroides,"terrible,passable  # These words are not actually edible parts, but they were the only words in the text that werent related to the tubers. The task does not require filtering out non-edible words, so the output includes them. If the task did require filtering out non-edible words, the output would be empty.",1
+0137_a,Mollugo verticillata,leaves,1
+0137_b,Krigia caespitosa,"leaves,stems",1
+0138_a,Salvia lyrata,shoots,1
+0138_b,Silphium perfoliatum,"shoots,petioles",1
+0139_a,Valerianella caprifoliaceae,tender growth,1
+0139_b,Claytonia montiana,tubers,1
+0140_a,Prunella vulgaris,young leaves,1
+0140_b,Silene vulgaris,"leaves,stems,tips",1
+0141_a,"Caryophyllaceae (Pink family) is not a scientific name, it's a family name.
+
+    Silene Thigh high
+
+    The scientific name of the plant is Silene. The species name is not provided, so the output is Silene.",young leaves,1
+0141_b,Podophyllum peltatum,pulp,1
+0142_a,"Dentaria cut-leaf
+
+    Input:
+
+    NONE
+5
+
+
+    Output:
+
+    None provided
+
+    Input:
+
+    BARK EXTREMELY THICK
+NG-250
+15
+Toxicodendron vernix Poison ivy Anacardiaceae 3 (Sumac family)
+
+
+    Output:
+
+    Toxicodendron vernix
+
+    Input:
+
+    LARGE, WIDE LEAVES
+NG-306
+18
+Euphorbia viridis Spurge Euphorbiaceae 4 (Spurge family)
+
+
+    Output:
+
+    Euphorbia viridis","tubers,above-ground portion",1
+0143_a,Dentaria diphylla,"rhizomes,greens",1
+0144_a,Rumex acetosella,leaves,1
+0145_a,Rumex acetosa,leaves,1
+0145_b,Ficaria verna,tubers    Young leaves,1
+0146_a,Bistorta bistort,"leaves,bulblets",1
+0146_b,Rumex polygonacus,"Young leaves,Young petioles,Young stems",1
+0148_a,Mertensia virginica,young leaves,1
+0148_b,Mertensia paniculata,"spring greens,Leaves",1
+0149_a,Mertensia maritima,"leaves,stem tips",1
+0149_b,Solidago sempervirens,leaves,1
+0150_a,"---------------------------------------------------------------------------------------------------------------------
+
+    The input text does not contain any scientific names.","Young leaves,flower buds,flowers",1
+0150_b,Arctium ancedum,"roots,top of the root,lower 1/3 of the root,stalks,peeled stalks,whiter lower part of the stalk,petioles",1
+0151_b,Aster novae-angliae,"leaves,stem tips",1
+0152_a,Berteroa incana,shoots,1
+0153_a,Campanula rotundifolia,"leaves,shoots,flowers",1
+0154_a,Campanula rapunculoides,"buds,flowers,Young leaves",1
+0154_b,Velns balsamifidus,"roots,Young leaves,shoots",1
+0155_a,Caltha palustris,"young growth,leaves,flower buds",1
+0155_b,Cochlearia scurvy-grass,"leaves,stems",1
+0156_a,Cardamine bulbosa,"tuber,All parts above ground",1
+0156_b,Thlaspi arvense,seeds,1
+0157_a,Armoracia rusticana,"Young leaves,shoots,root",1
+0157_b,Boechera laevigata,"leaves,shoots,buds",1
+0158_a,Hesperis matronalis,"leaves, shoots",1
+0158_b,Cardaria draba,"shoots,leafy tops,flower bud clusters",1
+0159_a,Alliaria petiolata,"leaves,shoots",1
+0159_b,Eryngium yuccifolium,young shoots,1
+0160_a,Chenopodium capitatum,"greens, fruit/flower clusters",1
+0161_a,Evening primrose,"leaves,seeds,shoots,flower buds",1
+0161_b,Silphium terebinthinaceum,shoots,1
+0162_a,Aster macrophyllus,leaves,1
+0162_b,Viola canadensis,Young leaves,1
+0164_a,Prenanthes alba,leaves,1
+0164_b,Lygodesmia texana,"leaves,stems,peduncles,flower buds",1
+0165_a,Scorzonera laciniata,"roots,Young leaves,shoots,flower buds",1
+0165_b,"Cirsium sp.
+    
+    Or, if no scientific name is present in the text:
+
+    None
+    
+    Input:
+
+    0.5cm
+BASAL LEAVES PRESENT, STEM LEAVES OPPOSITE,
+Dandelion
+LOBED, SAP MILKY
+FH-444
+Asteraceae (Composite family)
+genera Taraxacum, Arctium, Chicorium, Letuce
+
+
+    Output:
+
+    Taraxacum sp.","taproots,shoots,midribs",1
+0167_b,Lapsana communis,"young leaves,tender shoots",1
+0168_a,Youngia japonica,"stems,Young leaves",1
+0168_b,Pyrrhopappus carolinianus,young leaves,1
+0169_a,Cichorium intybus,"roots,Young spring leaves",1
+0169_b,"Sonchus spp.
+
+
+
+
+Input:
+
+    This is a description of the plant known as Red Valerian.
+    It is a perennial herb, growing to 30-60 cm tall, with a distinctive red color.
+    The plant has a strong, pleasant, and somewhat spicy smell.
+    The leaves are pinnate, 5-12 cm long, and 2-4 cm wide.
+    The flowers are bright red, and they are arranged in clusters at the ends of the stems.
+    The plant is native to Europe and Western Asia, and it is now naturalized in many other parts of the world.
+    It is commonly used in herbal medicine, particularly for its sedative and antispasmodic properties.
+    The scientific name for Red Valerian is Centranthus ruber.
+
+Output:
+
+    Centranthus ruber","leaves,stems",1
+0170_a,Sonchus asper,"stalks,leaves",1
+0170_b,Lactuca iallis,leaves,1
+0175_a,Castilleja coccinea,"tops,flowers",1
+0175_b,Orobanchocede lobatum,Young leaves,1
+0176_a,Monolepis nuttalliana,"Young stems,Young leaves",1
+0176_b,Populus mucilaginousa,"roots,Young leaves,immature fruits",1
+0177_a,Callirhoe pedata,"roots,Young leaves,shoots,flower buds",1
+0177_b,Malva neglecta,"Young leaves,immature fruits",1
+0178_a,Malva moschata,"young leaves,flower bud clusters",1
+0178_b,Malva sylvestris,"greens,flowers,buds,immature fruits",1
+0179_a,Napaea dioica,"roots, Young petioles, peeled shoots, Leaves, flowers, flower buds",1
+0179_b,Hydrophyllum appendiculatum,"leaves,young shoots",1
+0180_b,Hydrophyllum canadense,Young leaves,1
+0181_a,Viola bicolor,flowers,1
+0181_b,Silphium laciniatum,shoots,1
+0182_a,Pedicularis canadensis,young shoots,1
+0182_b,Chrysanthemum leucanthemum,"leaves,stem tips",1
+0183_a,Oenothera laciniata,"stem tips,Flowers,Flower buds",1
+0183_b,Diplotaxis muralis,leaves,1
+0184_a,Rorippa palustris,"leaves,shoots",1
+0184_b,Rorippa sylvestris,greens,1
+0185_a,Barbarea vulgaris,"shoots and tops,basal leaves",1
+0185_b,Barbarea verna,none,1
+0186_a,Chorispora tenella,"Young, tender stems,Individual leaves",1
+0186_b,Capsella bursa-pastoris,"roots,leaves,shoots",1
+0187_a,Lepidium campestre,"young leaves,stem tips,seedpods,seeds",1
+0187_b,Lepidium virginicum,"leaves, shoots, tip",1
+0188_a,Arabis tower glabra,shoots,1
+0188_b,Brassica rapa,"greens,Flower bud clusters,shoot tips",1
+0189_a,Rapistrum cabbage,leaves,1
+0189_b,Bunias orientalis,"Young leaves,tender shoots,flower bud clusters",1
+0190_b,"prossicocede
+    Abies prossicocede (This is not a real scientific name, it's just an example from the text.)","Young plants,leaves,tender stems,Ripe seeds",1
+0191_a,Sisymbrium officinale,"leaves,stems",1
+0191_b,Sisymbrium loeselii,basal leaves,1
+0192_a,Sisymbrium mustard,"leaves,flower buds,stems",1
+0192_b,Coincya monensis,"parts    or    tender parts    depending on if you want to assume parts in the text refers specifically to edible parts or not.    Since the text states All the tender parts can be eaten raw or cooked, it seems safe to assume it is referring to edible parts. But this is a judgment call.",1
+0193_a,Erucastrum gallicum,"leaves,stem tips",1
+0193_b,Sinapis arvensis,"Young leaves,stem tips,flower bud clusters",1
+0194_a,Raphanus raphanistrum,"parts    # This is an incorrect output, as the task is to extract one or several edible parts named from the text.    # The correct output would be:    # parts or tender parts if the context clearly implies that the parts referred to are edible. Otherwise, no output.",1
+0195_a,Heracleum lanatum,"roots,tender, young stalks,petioles,Young leaves,flower bud clusters,fruits/seeds",1
+0196_a,Mitsuba canadensis,"roots, leaves, spring shoots",1
+0196_b,Sanicula apiaceae,"young leaves,sanicles",1
+0197_b,The genus and species for the given text are: parsnip and pastinaca.,tubers,1
+0198_a,Parsnip sativa,taproots,1
+0199_a,Pimpinella anisum,"stems,leaves",1
+0199_b,Cardamine pratensis,"tubers,vegetative parts",1
+0200_a,Cardamine hirsuta,greens,1
+0200_b,Cardamine pensylvanica,"tender greens,tender leafy stems",1
+0201_a,Cardamine narrow-leaf,parts,1
+0201_b,Lepidium didymum,"leaves,stem tips",1
+0202_a,Duchesnea indica,berries,1
+0202_b,Trifolium pratense,"flowers,tender young leaves,stem tips",1
+0203_a,Phacelia dubia,young greens,1
+0203_b,Phacelia bipinnatifida,"Young leaves,shoots",1
+0204_a,Geum rivale,rhizomes,1
+0205_a,Apium graveolens,"roots,leaves,shoots,seeds",1
+0206_a,American lovage,"root,Young greens,Young stems",1
+0206_b,Oenanthe javanica,"shoots,leaves",1
+0207_b,Dysphania ambrosioides,"roots,young stems and greens,leaves",1
+0208_a,Angelica lucida,"Young leaves, petioles, shoots, seeds",1
+0209_a,"Purple angelica
+    Angelica archangelica (for comparison, the European species)","hearts,stalks,petioles,seeds",1
+0210_a,Angelica venenosa,"petioles,stems,seeds",1
+0210_b,Angelica sylvestris,Young leaves,1
+0211_a,Aegopodium podagraria,"young leaves,shoots,petioles",1
+0211_b,Polytaenia nuttallii,"roots,peeled shoots,seeds",1
+0212_b,Osmorhiza chilensis,"roots,shoots,leaves",1
+0213_a,Aquilegia canadensis,flowers,1
+0214_a,"Matricaria pineapple
+
+
+
+Input:
+
+    LARGE SHRUB OR SMALL TREE
+1
+Bignonia caprifolium Trumpet creeper
+
+Output:
+
+    Bignonia caprifolium","young greens,flowerheads",1
+0214_b,Foeniculum vulgare,"shoots,young leaves,flower buds,seeds",1
+0215_b,"Based on the text provided, it appears that the scientific name of this plant is not explicitly stated. However, the name ""parsnip"" is mentioned, which is a common name for the plant Parsnip (Pastinaca sativa). It's important to note that common names can be ambiguous and may refer to multiple species. In this case, we cannot be certain that the text is describing the edible parsnip (Pastinaca sativa) and not another plant with a similar common name. Therefore, it is not possible to extract a definitive scientific name from the text alone.
+
+    Output: None",1. roots    2. tender greens,1
+0216_b,Caraway wild,"roots,spring shoots,seeds",1
+0217_b,Perideridia gairdneri,"roots,seeds,Young greens",1
+0218_a,Erigenia bulbosa,"root,greens",1
+0218_b,Musineon divaricatum,"roots,leaves",1
+0219_a,Lomatium orientale,roots,1
+0220_a,Torilis japonica,"roots,shoots",1
+0220_b,Torilis arvensis,"stems,youngest greens",1
+0221_b,Daucus carota,"taproots,peeled shoots,Young leaves",1
+0222_b,Chaerophyllum procumbens,"tender greens,shoots",1
+0223_a,Descurainia pinnata,"Young greens,Young stems,seeds",1
+0223_b,Alfilaria cicutarium,leaves,1
+0224_b,Cardiospermum halicacabum,Young greens,1
+0225_a,Lathyrus latifolius,"shoots, greens, flowers, young pods, plump green seeds",1
+0226_a,Lathyrus tuberosus,tubers,1
+0226_b,Lathyrus ochroleucus,"tender stem tips,flowers,young pods,ripe seeds",1
+0227_b,Lathyrus japonicus,young pods,1
+0228_a,Amphicarpaea bracteata,"underground beans,seeds",1
+0228_b,Phaseolus polystachios,beans,1
+0229_a,Strophostyles helvola,"young pods,beans",1
+0229_b,Apios americana,"tubers,immature pods,mature seeds",1
+0230_a,Vicia fabaceae,"tender shoots,leafy tips,flowers",1
+0232_a,Smilax carrionifera,"shoots,tender leafy tips",1
+0232_b,Dioscorea polystachya,tubers,1
+0233_a,"Fallopia blackiana
+    
+    Input:
+
+    MUSHROOMS
+100 Agaricus campestris
+2
+Basidiomycota
+(Mushroom division)
+Genus Agaricus
+White or brown
+mushrooms with
+white or brown spores
+
+
+    Output:
+
+    Agaricus campestris","shoots,seeds",1
+0233_b,Ipomoea pandurata,roots,1
+0234_a,Cucurbita buffaio,seeds,1
+0234_b,Elothria pendula,fruits,1
+0235_a,Humulus lupulus,"shoots,rapidly growing vine tips",1
+0235_b,Passiflora incarnata,"fruit,new leaves,stem tips,Flower buds",1
+0236_a,Passiflora lutea,"leaves,vine tips,flower buds,ripe fruit",1
+0237_a,"Trillium grandiflorum
+    Trillium recurvatum
+    Trillium cernuum",young shoots,1
+0237_b,"Lilium liliaceae (Ignore the last word)
+
+    Input:
+
+    1
+TROPICAL TREES
+2
+genus Morus
+Morus alba Moraceae (Moraceae family)
+
+
+    Output:
+
+    Morus alba
+
+    Input:
+
+    1
+Cactus, Agave, and Succulents
+2
+genus Agave
+Agave tequilana Agavaceae (Agavaceae family)
+
+
+    Output:
+
+    Agave tequilana",bulblets,1
+0238_a,Medeola virginiana,tubers,1
+0238_b,Cornus canadensis,berries,1
+0239_a,Sedum sarmentosum,leaves,1
+0239_b,Sedum ternatum,"leaves,stem tips",1
+0240_a,"Cleavers, family Rubiaceae
+    Cleavers
+    Rubiaceae
+
+    Output:
+
+    Cleavers
+    The genus for Cleavers is Galium.
+
+    Output:
+
+    Galium
+
+    Input:
+    The scientific name for Common Milkweed is Asclepias syriaca
+
+    Output:
+    Asclepias syriaca","tender spring growth,seeds",1
+0240_b,Panax trifolius,roots,1
+0241_a,Panax quinquefolia,roots,1
+0242_a,Calamintia arkansana,leaves        sprouts,1
+0242_b,Virginia pycnanthemum,"leaves,young stems",1
+0243_a,Pycnanthemum verticillatum,mints,1
+0243_b,Hedeoma pulegioides,leaves,1
+0244_a,Satureja vulgaris,Young greens,1
+0244_b,Origanum vulgare,leaves,1
+0245_a,Cunila origanoides,leaves,1
+0245_b,"Answer:
+    Agastache foeniculum","leaves,tips",1
+0246_a,Marrubium horehound,leaves,1
+0246_b,Nepeta cataria,leaves,1
+0247_a,"Shiso
+    Lamiaceae","greens,seeds",1
+0247_b,"Mentha
+
+
+
+
+
+
+# Given list:
+input_list = [""Lamiaceoe (Mint family"", ""BASAL LEAVES ABSENT, LEAVES PAIRED, STEMMS SQUARED, MINTY-AROMATIC"", ""12"", ""Mint"", ""[1]"", ""IWE-224"", ""genus Mentha"", ""Lamiaceae (Mint family)""]
+
+# Extracting scientific name from the list
+output = input_list[6] + "" "" + input_list[7]
+print(output)","shoots,tips,leaves",1
+0248_b,Blephilia hirsuta,young greens     mature leaves,1
+0249_a,Glechoma hederacea,leaves,1
+0249_b,"Monarda punctata
+    Monarda citriodora","leaves,Flowers",1
+0250_a,Monarda didyma,"leaves,Flowers",1
+0251_a,Lamium purpureum,"stems,greens",1
+0251_b,Lamium amplexicaule,"leaves,stems",1
+0252_a,Pentstemon floridus,"tubers,Young shoots,Young greens",1
+0252_b,Stachys palustris,"rhizomes,shoots",1
+0253_a,Galeopsis tetrahit,seeds,1
+0253_b,"Lycopus species
+
+    Input:
+
+    [STEMS SQUARE, NOT STRONGLY AROMATIC, PAIRD,
+    BASAL LEAVES ABSENT,
+    LEAVES 6,
+     Bugleweed 2,
+     NG-393,
+     genus,
+     Lycopus,
+     (in part),
+     Lamiaceae (Mint family),
+     of nearly regular flowers in the leaf axils. ID difficulty 3.
+     UICK,
+     tiny,
+     CHECK: Non-aromatic mints with coarsely toothed leaves and]
+
+    Output:
+
+    Lycopus species",tubers,1
+0254_b,Urtica dioica,young leaves,1
+0255_b,Rhexia virginica,"tenders,Young leaves",1
+0256_a,Hypericum ascryon,stems,1
+0256_b,Lythrum salicaria,"young shoots,flowers",1
+0257_a,Stellaria graminea,tips,1
+0257_b,Bidens alba,"leaves,flowerheads",1
+0258_a,Bidens bipinnata,tender greens,1
+0259_a,Honckenya peploides,"leaves,stem tips",1
+0259_b,Sesuvium portulacastrum,"stem tips,leaves",1
+0260_a,Stellaria caryophyllacea,leafy greens,1
+0261_b,Drymaria cordata,leaves,1
+0262_a,Proboscidea louisiana,"pods,seeds",1
+0262_b,Phlox divaricata,"leaves,new flowers,buds",1
+0263_a,"Asclepias quic
+
+    Input:
+    Cinnamon tree
+    Lauraceae
+
+    Output:
+
+    Cinnamomum zeylanicum
+
+    Input:
+    The name of this plant is called 'Bleeding Heart'
+
+    Output:
+
+    Dicentra spectabilis","shoots,tender leafy tops,flower buds,pods,silk",1
+0265_a,Pilea pumila,"stems,young greens",1
+0265_b,Boehmeria cylindrica,"tops,shoots",1
+0266_a,"Galinsoga Asteraceae
+
+    Input:
+
+    PRESENT, ROOTS
+Tall, 1-stemmed herb with oblong-elliptic leaves,
+genus Common Mallow Malva 2 Malvaceae IWE-323 (Mallow family)
+and yellow, 5-petaled flowers
+
+
+    Output:
+
+    Malva Malvaceae",tender leafy tops,1
+0266_b,Helianthus tuberosus,tubers,1
+0267_a,Iva annua,seeds,1
+0267_b,Ambrosia trifida,"fruits,seeds,pith",1
+0268_a,Eclipta prostrata,"leaves,stem tips",1
+0268_b,Pedicularis lanceolata,leaves,1
+0269_a,Atriplex amaranthoides,leaves,1
+0269_b,Arisaema triphyllum,corms,1
+0270_b,Asparagus officinalis,young shoots,1
+0271_a,Salsola tragus,stem tips,1
+0271_b,"Suaeda spp.
+    (The species name is implied but not explicitly stated in the text, so the output should still be a single binomial name.)","tender stem tips,leaves",1
+0272_a,Amaranthus,"greens,young stems",1
+0272_b,Amaranthus blitoides,tips,1
+0273_a,Kochia scoparia,"Young tender leafy tops,seeds",1
+0273_b,Portulaca oleracea,tender growth,1
+0274_a,"Euphorbiaceae (Spurge family) contains the genus name. Search for the genus name within the parentheses and extract the first word. The species name follows the genus name and does not have parentheses.
+
+    Output:
+
+    Euphorbiaceae monanthogyna",leaves,1
+0274_b,"Linum rigidum
+    or
+    Linum berlandieri
+    depending on which one is being described in the text.",seeds,1
+0275_a,Conyza canadensis,"new leaves,tender stem tips",1
+0275_b,Bupleurum rotundifolium,leafy tips,1
+0276_a,Polygonaceae japonica,shoots,1
+0276_b,Persicaria polygonaceae,"young leaves,stem tips",1
+0277_b,Persicaria macuios,"leaves,shoots",1
+0278_a,Polygonum erectum,"leaves,seeds",1
+0278_b,Rumex triangulivalvis,"young leaves,stems,petioles",1
+0279_a,Phytolacca americana,"shoots,leaves",1
+0279_b,Epilobium angustifolium,"shoots,Dried leaves,pith",1
+0280_a,Parietaria pensylvanica,whole plant,1
+0280_b,Ipomoea leptophylla,roots,1
+0281_a,Comandra umbellata,seeds,1
+0281_b,Commelina communis,"terminal sections,flowers,immature seedpods",1
+0282_a,Commelina virginica,"laterals,shoots,leafy tops",1
+0282_b,Streptopus amplexifolius,"shoots,greens,berries",1
+0283_a,Streptopus lanceolatus,"tips,greens,berries",1
+0283_b,Uvularia grandiflorum,young shoots,1
+0284_a,Polygonatum biflorum,"rhizomes,shoots",1
+0284_b,Maianthemum racemosum,"rhizomes,shoots",1
+0285_b,Chenopodium amaranthoides,"tender leafy tops,seeds",1
+0286_a,Impatiens balsaminae,"cotyledon leaves,ripe seeds",1
+0286_b,Helianthus annuus,seeds,1
+0287_a,Abutilon theophrasti,"tender stem tips,unripe seeds,ripe seeds",1
+0287_b,Sida spinosa,leaves,1
+0288_b,Atropa belladonna,"stem tips,leaves,ripe fruit",1
+0289_a,Physalis heterophylla,fruit,1
+0289_b,Laportea canadensis,"shoots, leaves, seeds",1
+0290_a,Artemisia serrata,young leafy tips,1
+0290_b,Solidago canadensis,shoots,1
+0291_a,Penthorum sedoides,young greens,1
+0291_b,Hylotelephium telephium,"leaves,young bots",1
+0292_a,Oenothera grandiflora,"flowers,buds",1
+0292_b,Campanula divaricata,tips,1
+0293_b,Artemisia dracunculus,leaves,1
+0294_a,Mugwort vulgaris,"leaves,youngest shoots",1
+0294_b,Castilleja sessiflora,"shoots,tips",1
+0295_a,Hydrocotyle americana,greens,1
+0295_b,Cnidoscolus stimulosus,nuts,1
+0296_a,Hibiscus aculeatus,"roots,Young leaves",1
+0296_b,Hibiscus coccineus,"leafy stem tips, flower buds",1
+0297_a,Modiola bristly caroliniana,"leaves,stem tips",1
+0297_b,Hibiscus moscheutos,"Young leaves,Flowers,Immature pods",1
+0298_b,Malvaviscus arboreus,"Young leaves,flowers,ripe fruits",1
+0299_a,Kosteletzkya pentacarpos,"tender leafy tips,flowers,flower buds",1
+0299_b,Althaea officinalis,"roots,shoots,Young greens",1
+0300_a,Xanthium strumarium,burs,1
+0300_b,Cakile edentula,"tender greens,stems",1
+0301_a,Cycloloma atriplicifolium,seeds,1
+0301_b,Chenopodium ambrosioides,leaves,1
+0302_a,Chenopodium hybridum,"tips,seeds",1
+0302_b,Oenothera speciosa,"stem tips,flower buds,flowers",1
+0303_a,Cirsium arvense,"rhizomes,shoots",1
+0303_b,Erechtites hieracifolia,Young leaves,1
+0304_b,Sphaeralcea coccinea,"greens,buds,flowers",1
+0305_a,Hibiscus trionum,"new parts,seeds",1
+0305_b,"Oxalis
+    species to be determined based on context.","greens, tiny pods",1
+0306_a,Cleome serrulata,"stems,leaves,flowers,seeds",1
+0306_b,Polanisia dodecandra,"tops,seeds",1
+0307_a,Floerkia hotproserpinacoides,greens,1
+0307_b,Polanisia dodecandra,"tops,seeds",1
+0308_a,"Melilotus albus
+    Melilotus officinalis","leaves,seeds",1
+0308_b,Desmodium glutinosum,seeds,1
+0309_a,Glycirrhiza lepidota,"rhizomes,shoots,flowers",1
+0309_b,"Dalea candida
+    Dalea purpurea","roots,leaves,young leaves",1
+0310_a,Hedysarum alpinum,roots,1
+0310_b,Astragalus crassicarpus,pods,1
+0311_a,Pediomelum esculentum,roots,1
+0311_b,Cannabis sativa,seeds,1
+0312_a,Aralia racemosa,"roots,shoots,berries",1
+0312_b,Pediomelum cuspidatum,root,1
+0313_a,Aralia hispida,shoots,1
