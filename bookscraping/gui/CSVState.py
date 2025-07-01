@@ -20,6 +20,7 @@ class CSVState:
         # Ensure cleaning of image_name_ls
         def process_image_path(img_path):
             return os.path.basename(img_path).split('.')[0] if '.' in img_path else img_path
+
         image_name_ls = [process_image_path(img) for img in image_name_ls]
         sources_to_append = [source for source in image_name_ls if source not in csv_sources]
         fillers = ['Enter Manually' for i in range(len(sources_to_append))]
@@ -76,3 +77,17 @@ class CSVState:
     def getPage(self):
         page_data = self.df.loc[self.index,self.source_col]
         return page_data
+
+    def jumpTo(self,name):
+        name = name.strip()
+        if name not in self.df[self.source_col].unique():
+            print(rf"[ERROR] CSVState has no image name {name}")
+            print(name)
+            return 0
+        else:
+            idx = self.df[self.df[self.source_col]==name].index
+            self.index = idx
+            self.updateName()
+            return 1
+
+

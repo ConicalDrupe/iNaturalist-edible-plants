@@ -15,6 +15,8 @@ class ImageState:
         self.file_name = os.path.splitext(os.path.basename(self.image_ls[self.index]))[0]
         self.debug_mode=debug_mode
 
+        self.base_img_names = [os.path.basename(img).split('.')[0] for img in self.image_ls]
+
         # self.currImg = self.getImage()
 
     def setLabel(self,label):
@@ -58,3 +60,14 @@ class ImageState:
         img = Image.open(self.image_path)
         img.thumbnail(self.img_max_size)
         return ImageTk.PhotoImage(img)
+
+    # Used to jump to a particular Image name - like '0001_a'
+    def jumpTo(self,name):
+        if name not in self.base_img_names:
+            print(rf"[ERROR] ImageState has no image name {name}")
+            return 0
+        else:
+            idx = self.base_img_names.index(name)
+            self.index = idx
+            self.updateName()
+            return 1
