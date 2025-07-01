@@ -18,7 +18,7 @@ def gui(file_filter=None):
     Is_right = ImageState(image_path='/mnt/c/Users/C/Documents/DataProjects2025/SamThayerScan_v2/Final Organized Photos/', filter_ls=file_filter, debug_mode=True)
     Is_left.prev()  # Left image is one behind
     
-    Ts = CSVState(csv_path=os.path.join(back_dir, 'outputs','reprocessing','final_to_review.csv'), filter_ls=file_filter,edible_col='edibles',name_col='cleaned_names', debug_mode=True)
+    Ts = CSVState(csv_path=os.path.join(back_dir, 'outputs','reprocessing','final_to_review_2.csv'), filter_ls=file_filter,edible_col='edibles',name_col='cleaned_names',image_name_ls=Is_left.image_ls,debug_mode=True)
 
     window = tk.Tk()
     session_id = uuid.uuid4()
@@ -97,7 +97,7 @@ def gui(file_filter=None):
         if len(str(edible_txt)) > 300:
             edible_txt = edible_txt[:150] + '...'
 
-        formatted_text = f"PAGE: {page_name}\n\n" + "NAME:\n" + name_txt + "\n\n" + "EDIBLES:\n" + edible_txt
+        formatted_text = f"PAGE: {page_name}\n\n" + "NAME:\n" + str(name_txt) + "\n\n" + "EDIBLES:\n" + str(edible_txt)
         return formatted_text
 
     # Enhanced text label with better formatting
@@ -161,6 +161,18 @@ def gui(file_filter=None):
     input_frame.columnconfigure(1, weight=1)
     checkbox_frame.columnconfigure(0, weight=1)
 
+    def check_image_csv_id():
+        csv_page = Ts.getPage()
+        if Is_right.file_name != csv_page and Is_right.file_name not in file_filter:
+            name_txt = Ts.getName()
+            edible_txt = Ts.getEdible()
+            page_name = Ts.getPage()
+            display_txt = createLabelText(name_txt, edible_txt, Is_right.file_name) 
+            txt_label.config(text=display_txt)
+            print(f"{Is_right.file_name} not found in Extracted CSV. Append this page manually!!!")
+        else:
+            return
+
     # Functions
     def update():
         # Update Left Image Display
@@ -182,6 +194,12 @@ def gui(file_filter=None):
         display_txt = createLabelText(name_txt, edible_txt, page_name) 
         txt_label.config(text=display_txt)
 
+        # Check alignment of Image Display and Text Display
+        # How would we compensate for duplicate sources in the CSV?
+        # If Next CSV source is the same as before; do not go to next image...
+            # Ensure match ups on Image Names and Source name
+        # check_image_csv_id()
+
         # Clear Text Boxes
         species_box.delete(0, tk.END)
         edible_box.delete(0, tk.END)
@@ -190,6 +208,8 @@ def gui(file_filter=None):
         multiple_species.set(0)
         several_pages.set(0)
         unused.set(0)
+
+
 
     def next():
         Is_left.next()

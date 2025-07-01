@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 class CSVState:
-    def __init__(self,csv_path,edible_col,name_col,source_col='source',filter_ls=None,debug_mode=False):
+    def __init__(self,csv_path,edible_col,name_col,image_name_ls,source_col='source',filter_ls=None,debug_mode=False):
         self.index=0
         self.edible_col = edible_col
         self.name_col = name_col
@@ -10,13 +10,29 @@ class CSVState:
 
         self.csv_path = csv_path
         self.df = pd.read_csv(csv_path)
+        self.df = self.df[[self.source_col,self.name_col,self.edible_col]]
         self.length = self.df.shape[0]
 
         self.debug_mode=debug_mode
 
+        # Adding extra rows for image sources not in csv
+        csv_sources = self.df[self.source_col].unique()
+        # Ensure cleaning of image_name_ls
+        def process_image_path(img_path):
+            return os.path.basename(img_path).split('.')[0] if '.' in img_path else img_path
+        image_name_ls = [process_image_path(img) for img in image_name_ls]
+        sources_to_append = [source for source in image_name_ls if source not in csv_sources]
+        fillers = ['Enter Manually' for i in range(len(sources_to_append))]
+        append_df = pd.DataFrame({self.source_col:sources_to_append,self.name_col:fillers,self.edible_col:fillers})
+        self.df = pd.concat([self.df,append_df])
+
         # Filter out
         if filter_ls:
-            self.df = self.df.iloc[~self.df[self.source_col].isin(filter_ls).index]
+            self.df = self.df[~self.df[self.source_col].isin(filter_ls)]
+
+        # Sort Values and reset index
+        self.df = self.df.sort_values(self.source_col,ascending=True)
+        self.df.reset_index(drop=True,inplace=True)
 
     def updateName(self):
         self.source_name = self.df.loc[self.index,self.source_col]
