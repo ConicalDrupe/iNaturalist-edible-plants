@@ -161,18 +161,6 @@ def gui(file_filter=None):
     input_frame.columnconfigure(1, weight=1)
     checkbox_frame.columnconfigure(0, weight=1)
 
-    def check_image_csv_id():
-        csv_page = Ts.getPage()
-        if Is_right.file_name != csv_page and Is_right.file_name not in file_filter:
-            name_txt = Ts.getName()
-            edible_txt = Ts.getEdible()
-            page_name = Ts.getPage()
-            display_txt = createLabelText(name_txt, edible_txt, Is_right.file_name) 
-            txt_label.config(text=display_txt)
-            print(f"{Is_right.file_name} not found in Extracted CSV. Append this page manually!!!")
-        else:
-            return
-
     # Functions
     def update():
         # Update Left Image Display
@@ -193,12 +181,6 @@ def gui(file_filter=None):
         page_name = Ts.getPage()
         display_txt = createLabelText(name_txt, edible_txt, page_name) 
         txt_label.config(text=display_txt)
-
-        # Check alignment of Image Display and Text Display
-        # How would we compensate for duplicate sources in the CSV?
-        # If Next CSV source is the same as before; do not go to next image...
-            # Ensure match ups on Image Names and Source name
-        # check_image_csv_id()
 
         # Clear Text Boxes
         species_box.delete(0, tk.END)
@@ -316,8 +298,5 @@ if __name__ == "__main__":
     with open(os.path.join(back_dir, 'outputs','reprocessing','unused_pages_list.txt'),'r') as f:
         content = f.read()
         filter_ls = content.split('\n')
-        # for line in content:
-            # filter_ls.append(line.strip())
-    # print(filter_ls)
 
     gui(file_filter=filter_ls)
