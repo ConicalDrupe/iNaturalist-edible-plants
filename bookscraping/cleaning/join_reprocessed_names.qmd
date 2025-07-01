@@ -61,6 +61,8 @@ new_names.groupby('n_words_3')['n_words_3'].count()
 
 
 # Looking at the manual edited - seeing overlaps
+- This is where duplicates come into play, we want to keep multiple species on one page - for manual review!!
+- On keeping of multiple species in one row - we need to check for duplicates on the pages
 ```{python}
 import numpy as np
 
@@ -71,12 +73,18 @@ edits['manual_name_data'] = edits['manual_name_data'].str.replace(r'\n','')
 edits['manual_name_data'] = edits['manual_name_data'].map(lambda x: x.strip().split(',') if pd.notna(x) else '')
 edits['manual_name_data'] = edits['manual_name_data'].map(lambda x: [word.strip() for word in x])
 
-edits = edits.explode('manual_name_data').reset_index(drop=True)
+# Let's not explode, instead let's replace "," with "|"
+# edits = edits.explode('manual_name_data').reset_index(drop=True)
+edits['manual_name_data'] = edits['manual_name_data'].str.replace(r',','|')
 ```
 
+## Checking duplicate source rows in edits
 ```{python}
-edits.shape
-display(edits)
+print(edits.shape, edits['source'].nunique())
+display(edits[edits.duplicated(subset='source',keep=False)])
+
+# These are no good rows, lets drop
+edits = edits.drop_duplicates(subset='source',keep='last')
 ```
 
 # Searching for overlap
@@ -143,7 +151,11 @@ no_ed_re['manual_name_data'] = no_ed_re['manual_name_data'].map(lambda x: [word.
 no_ed_re['manual_edible_data'] = no_ed_re['manual_edible_data'].map(lambda x: x.strip().split(',') if pd.notna(x) else '')
 no_ed_re['manual_edible_data'] = no_ed_re['manual_edible_data'].map(lambda x: [word.strip() for word in x])
 
-no_ed_re = no_ed_re.explode('manual_name_data').reset_index(drop=True)
+# Replacining explode method
+# no_ed_re = no_ed_re.explode('manual_name_data').reset_index(drop=True)
+no_ed_re['manual_name_data'] = no_ed_re['manual_name_data'].str.replace(r',','|')
+no_ed_re = no_ed_re.drop_duplicates(subset='source',keep='last')
+no_ed_re=no_ed_re.reset_index(drop=True)
 
 print(no_ed_re[no_ed_re.duplicated(subset='manual_name_data')].shape)
 
@@ -278,5 +290,5 @@ final_joined.loc[replace_idx,'edibles_two'] = final_joined.loc[replace_idx,'firs
 # Saving final data to review
 ```{python}
 final_joined = final_joined[['source','cleaned_names','edibles_two','llm_flag']].rename(columns={'edibles_two':'edibles'})
-final_joined.to_csv(os.path.join(back_dir,'outputs','reprocessing','final_to_review.csv'),index=False)
+final_joined.to_csv(os.path.join(back_dir,'outputs','reprocessing','final_to_review_2.csv'),index=False)
 ```
