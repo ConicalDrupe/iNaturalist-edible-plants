@@ -238,6 +238,8 @@ def gui(file_filter=None):
         
         # Try to jump to the specified name in both ImageState objects and CSVState
         left_result = Is_left.jumpTo(search_term)
+        if left_result:
+            Is_left.prev()
         right_result = Is_right.jumpTo(search_term)
         csv_result = Ts.jumpTo(search_term)
         

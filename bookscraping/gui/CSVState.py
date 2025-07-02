@@ -11,7 +11,6 @@ class CSVState:
         self.csv_path = csv_path
         self.df = pd.read_csv(csv_path)
         self.df = self.df[[self.source_col,self.name_col,self.edible_col]]
-        self.length = self.df.shape[0]
 
         self.debug_mode=debug_mode
 
@@ -26,6 +25,9 @@ class CSVState:
         fillers = ['Enter Manually' for i in range(len(sources_to_append))]
         append_df = pd.DataFrame({self.source_col:sources_to_append,self.name_col:fillers,self.edible_col:fillers})
         self.df = pd.concat([self.df,append_df])
+
+        # Define shape after append
+        self.length = self.df.shape[0]
 
         # Filter out
         if filter_ls:
@@ -57,7 +59,11 @@ class CSVState:
     def prev(self):
         # If we are at first index and hit prev, we go to last item in the list
         if self.index == 0:
-            self.index = -1
+            # self.index = -1
+            self.index=self.length-1
+            self.updateName()
+        elif self.index == -1:
+            self.index=self.length-1
             self.updateName()
         else:
             self.index -= 1
