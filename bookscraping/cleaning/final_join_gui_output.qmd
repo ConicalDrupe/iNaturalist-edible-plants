@@ -1,0 +1,421 @@
+
+# Functions for cleaning strings + packing/unpacking lists
+
+```{python}
+def clean_string(string):
+    s = string.strip().lower()
+    s = s.replace(r'[','')
+    s = s.replace(r']','')
+    s = s.replace(r'\n','')
+    return s
+
+def convert_string_to_list(string,delimiter):
+    ls = string.split(delimiter)
+    return [clean_string(item) for item in ls if item != '' and item !='nan']
+
+def explode_df(dataframe,col,verify_col):
+    df = dataframe.copy()
+    df = df.explode(col)
+    dupes =df[df.duplicated(by=verify_col,keep=False)] 
+    print(dupes)
+    print(f'{dupes.shape[0]} duplicates on {verify_col} found')
+
+```
+
+# Loading Data
+
+```{python}
+import pandas as pd
+import os
+
+back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+
+gui_output = os.path.join(back_dir,'outputs','gui')
+output_ls = [os.path.join(gui_output,file) for file in os.listdir(gui_output) if file.endswith('.csv') and 'labels' not in file]
+
+verified_df = pd.DataFrame()
+for path in output_ls:
+    df = pd.read_csv(path,names=['l_source','r_source','name','edibles','multiple_species','spans_pages','unused'])
+    verified_df = pd.concat([verified_df,df])
+    print(verified_df.shape)
+
+verified_df = verified_df.sort_values('l_source',ascending=True)
+verified_df.reset_index(drop=True,inplace=True)
+```
+
+## Check duplicates 
+
+```{python}
+pd.options.display.max_rows = None
+pd.options.display.max_columns = None
+dupe_idx = verified_df[verified_df.duplicated(subset=['l_source','r_source'],keep='last')].index
+#filter out unused
+verifed_df = verified_df.drop(index=dupe_idx).reset_index(drop=True)
+```
+
+
+```{python}
+verifed_df[(verified_df.duplicated(subset='name')) & (verifed_df['name'].notna())].sort_values('name')
+```
+
+### Getting only where pages are unused
+```{python}
+
+print('Before Drop:',verified_df.shape)
+verified_df = verified_df[verified_df['unused']!=1]
+print('After Drop:',verified_df.shape)
+```
+
+### Cleaned Verified Dataframe
+
+```{python}
+
+def df_create_clean_ls(dataframe,name_col,edible_col,delimiter='|'):
+    df = dataframe.copy()
+    df[edible_col]=df[edible_col].astype(str).apply(clean_string)
+    df[name_col]=df[name_col].astype(str).apply(clean_string)
+
+    df[f'{edible_col}_ls'] = df[edible_col].astype(str).apply(convert_string_to_list,args=delimiter)
+    df[f'{name_col}_ls'] = df[name_col].astype(str).apply(convert_string_to_list,args=delimiter)
+    df = df.reset_index(drop=True)
+    return df
+
+clean_verify_df = df_create_clean_ls(verified_df,name_col='name',edible_col='edibles',delimiter='|')
+```
+
+
+# Importing and cleaning Mistral Dataset
+- next join and compare
+
+```{python}
+mistral_df = pd.read_csv(os.path.join(back_dir,'outputs','reprocessing','final_to_review_2.csv'))
+mistral_df.head(40)
+
+mistral_df.rename(columns={'cleaned_names':'mistral_names','edibles':'mistral_edibles'},inplace=True)
+clean_mistral_df = df_create_clean_ls(mistral_df,name_col='mistral_names',edible_col='mistral_edibles',delimiter='|')
+```
+
+
+# Joining both datasets and choosing columns
+1) If mistral output is correct (all verify columns will be NaN)
+2) If an edit was made, not all verify columns will be NaN. 
+    - For verify columns that are NaN, fill with their source counterpart
+
+As a later step we will explode the lists on clean edibles and clean names
+
+```{python}
+import numpy as np
+# Need to clean string columns before doing join on both datasets
+# app_df.merge(verified_df,left_on='source',right_on='r_source')
+col_to_keep = ['source','l_source','r_source','mistral_names_ls','mistral_edibles_ls','name_ls','edibles_ls','llm_flag']
+merged = clean_mistral_df.merge(clean_verify_df,how='outer',left_on='source',right_on='r_source')[col_to_keep]
+print(merged.shape)
+# merged.head(20)
+merged.iloc[10]
+
+def replace_empty_ls(ls):
+    if type(ls)==float:
+        return np.nan
+    elif len(ls)==0:
+        return np.nan
+    else:
+        return ls
+
+merged['name_ls'] = merged['name_ls'].apply(replace_empty_ls)
+merged['edibles_ls'] = merged['edibles_ls'].apply(replace_empty_ls)
+merged['mistral_names_ls'] = merged['mistral_names_ls'].apply(replace_empty_ls)
+merged['mistral_edibles_ls'] = merged['mistral_edibles_ls'].apply(replace_empty_ls)
+```
+
+## Checking duplicates
+-only four entries
+
+```{python}
+# merged[merged.duplicated(['l_source','source'],keep=False)]
+print('DUPLICATES:')
+merged[(merged.duplicated('source',keep=False)) & (merged['source'].notna())]
+# merged[merged.duplicated('mistral_names_ls',keep=False) & (merged['mistral_names_ls'].notna() & merged['mistral_names_ls'] is not None)].shape
+
+print('Shape before:',merged.shape)
+drop_idx  = merged[(merged.duplicated('source',keep='first')) & (merged['source'].notna())].index
+# print(merged.iloc[drop_idx])
+merged.drop(index=drop_idx,inplace=True)
+print('Shape after:',merged.shape)
+```
+
+## Calculate number of names editted, and number of edibles eddited
+- Calculate accuracy % on extracting correct text
+- move 10% to extraction for margin
+
+```{python}
+# Names
+num_man_names = merged['name_ls'].isna().sum() # manually entered
+num_succ_names = merged['name_ls'].notna().sum()
+name_perc = num_succ_names/merged.shape[0]
+print('Number of manual name entries:', num_man_names)
+print('Number of correct name entries:', num_succ_names)
+print(f'Name extraction accuracy: {name_perc:.2%}')
+ # = merged['mistral_names_ls'].shape # automatically generated
+
+print('\n')
+
+# Edibles
+num_man_ed = merged['edibles_ls'].isna().sum() # manually entered
+num_succ_ed = merged['edibles_ls'].notna().sum() 
+# merged['mistral_edibles_ls'] # automatically generated
+ed_perc = num_succ_ed/merged.shape[0]
+print('Number of manual edibles entries:', num_man_ed)
+print('Number of correct edibles entries:', num_succ_ed)
+print(f'Edible extraction accuracy: {ed_perc:.2%}')
+```
+
+### Fill in correct data
+These are the rules as before:
+1) If mistral output is correct (all verify columns will be NaN)
+2) If an edit was made, not all verfy columns will be NaN. 
+    - For verify columns that are NaN, fill with their source counterpart
+
+```{python}
+# Names
+merged['clean_names'] = merged['name_ls'].copy()
+# Where replaces when value is false.
+merged['clean_names'] = merged['clean_names'].where(~merged['name_ls'].isna(),merged['mistral_names_ls'])
+merged['clean_names'] = merged['clean_names'].where(~merged['name_ls'].notna(),merged['name_ls'])
+
+# Edibles
+    # Ensure [] or '' is replaced with np.nan
+# merged['clean_edibles'] = merged.case_when([(merged['edibles_ls'].isna(),merged['mistral_edibles_ls']),
+                                           # (merged['edibles_ls'].notna(),merged['edibles_ls'])])
+merged['clean_edibles'] = merged['edibles_ls'].copy()
+merged['clean_edibles'] = merged['clean_edibles'].where(~merged['edibles_ls'].isna(),merged['mistral_edibles_ls'])
+merged['clean_edibles'] = merged['clean_edibles'].where(~merged['edibles_ls'].notna(),merged['edibles_ls'])
+
+# Checking
+display(merged[['clean_names','name_ls','mistral_names_ls']].head(20))
+print('\n\n\n')
+display(merged[['clean_edibles','edibles_ls','mistral_edibles_ls']].head(20))
+```
+
+
+```{python}
+print(merged['clean_names'].isna().sum())
+print(merged['clean_edibles'].isna().sum())
+
+print('Before: ',merged.shape)
+merged = merged.dropna(how='all',subset=['clean_names','clean_edibles','mistral_names_ls','edibles_ls'])
+print('After: ',merged.shape)
+print(merged['clean_names'].isna().sum())
+print(merged['clean_edibles'].isna().sum())
+```
+
+# Explode Strategy
+- Going to need an iter-rows approach and explode
+    - Iterate through and assert lengths of lists are the same (if not flag for later processing)
+    - Append to new data frame name/edible from ordered lists
+- For remaining explode on names
+    - If they share edible list, then this will be final list
+- check for empty string in outputs
+
+## Making sure the two list columns are of the same length
+
+```{python}
+# test = merged.explode(['clean_names','clean_edibles'])
+
+# Checking that both columns have appropiate length
+merged['len_name']= merged['clean_names'].map(lambda x: len(x) if type(x)!=float else 0)
+merged['len_edible']= merged['clean_edibles'].map(lambda x: len(x) if type(x)!=float else 0)
+
+mask = (merged['len_name']!=merged['len_edible'])
+
+# The rows below are the ones that will be exploded!
+display(merged[mask][['clean_names','clean_edibles','len_name','len_edible']])
+
+# merged.loc[mask,'clean_edibles'] = merged.loc[mask,'clean_edibles']*merged.loc[mask,'len_name']
+# test = merged.loc[mask,'clean_edibles']*merged.loc[mask,'len_name']
+
+```
+
+### Iterate through dataframe
+
+```{python}
+
+# Dynamically get columns indexes, create temporary lists, and iterate through dataframe to decompose list
+
+clean_ed_idx = merged.columns.get_loc('clean_edibles')
+clean_name_idx = merged.columns.get_loc('clean_names')
+s_idx = merged.columns.get_loc('source')
+ls_idx = merged.columns.get_loc('l_source')
+rs_idx = merged.columns.get_loc('r_source')
+llm_idx = merged.columns.get_loc('llm_flag')
+
+name_ls=[]
+edible_ls=[]
+source_ls=[]
+l_source_ls=[]
+r_source_ls=[]
+llm_ls=[]
+
+for idx,row in merged.iterrows():
+    ed = row.iloc[clean_ed_idx]
+    name = row.iloc[clean_name_idx]
+    s = row.iloc[s_idx]
+    ls = row.iloc[ls_idx]
+    rs = row.iloc[rs_idx]
+    llmf = row.iloc[llm_idx]
+    if len(ed) != len(name): 
+        print(f'{idx} have incompatable list lengths')
+        continue
+    else:
+        for i in range(len(ed)):
+            name_ls.append(name[i])
+            edible_ls.append(ed[i])
+            source_ls.append(s)
+            l_source_ls.append(ls)
+            r_source_ls.append(rs)
+            llm_ls.append(llmf)
+        # break
+
+from pprint import pprint
+# pprint(master_dict)
+print(len(name_ls))
+print(len(edible_ls))
+
+cleaned_edibles = pd.DataFrame({'clean_names':name_ls,'clean_edibles':edible_ls,'source':source_ls,'l_source':l_source_ls,'r_source':r_source_ls,'llm_flag':llm_ls})
+cleaned_edibles.isna().sum()
+
+```
+
+
+```{python}
+
+rest = merged[merged['len_name']!=merged['len_edible']]
+
+print(rest.shape)
+rest = rest.explode('clean_names')
+print(rest.shape)
+rest['name_len'] = rest['clean_names'].map(lambda x: len(x.strip().split(' ')) if pd.notna(x) else 0)
+print(rest['name_len'].unique())
+print(rest[rest['name_len']>2][['clean_names','clean_edibles','l_source','r_source','source']])
+
+
+# Converting list column into string column
+rest['clean_edibles'] = rest['clean_edibles'].map(lambda x: ','.join(x))
+
+# Now clean collect columns
+rest = rest[['clean_names','clean_edibles','source','l_source','r_source','llm_flag']]
+rest.isna().sum()
+# display(rest)
+
+# Clean columns
+rest['source'] = rest['source'].fillna(rest['r_source'])
+
+# At this point drop where name length greater than two - these pages also have l_source and r_source nan
+# drop_idx = test[(test['name_len']>2) & test['l_source'].isna() & test['r_source'].isna()].index
+# print(drop_idx)
+# test.drop(index=drop_idx,inplace=True)
+```
+
+### Combine Exploded dataframes into final
+
+```{python}
+print(cleaned_edibles.shape)
+print(rest.shape)
+combined = pd.concat([cleaned_edibles,rest],axis=0)
+print(combined.shape)
+combined.isna().sum()
+
+print(combined[combined.duplicated('clean_names',keep=False)].shape)
+combined[combined.duplicated('clean_names',keep=False)]
+# print(combined[combined.duplicated('clean_names',keep=False) & (combined['r_source'].notna())].shape)
+# print(combined[combined.duplicated('clean_names',keep=False) & (combined['source'].isna())].shape)
+
+# Dropping duplicates -> From llm scraped book vs. manul
+# Those that have manual entry and llm entry. Drop the llm entry
+print('Before: ',combined.shape)
+drop_idx =  combined[combined.duplicated('clean_names',keep=False) & combined['r_source'].isna() & combined['source'].notna()].index
+combined.drop(index=drop_idx,inplace=True)
+combined.reset_index(drop=True,inplace=True)
+print('After: ',combined.shape)
+
+
+# Those that have no llm enthry but a manual entry
+print('Before: ',combined.shape)
+drop_idx =  combined[combined.duplicated('clean_names',keep=False) & (combined['r_source'].notna() & combined['source'].isna())].index
+combined.drop(index=drop_idx,inplace=True)
+combined.reset_index(drop=True,inplace=True)
+print('After: ',combined.shape)
+
+# Drop remainging, while keeping first
+print('Before: ',combined.shape)
+combined.drop_duplicates('clean_names',keep='first',inplace=True)
+print('After: ',combined.shape)
+
+print('Unique names: ',combined['clean_names'].nunique())
+```
+
+### Data Tests
+- name length
+- edible names (unique-ness)
+    - there will be duplicates since we exploded on names
+    - should we explode on edibles first?
+
+```{python}
+```
+
+
+### Final Fill
+- Image source
+- llm_flag (output of llm or not)
+- rename
+- save
+
+```{python}
+# na_mask = (combined['source'].isna( )) & (combined['r_source'].isna())
+combined['source'] = combined['source'].fillna(combined['r_source'])
+# mask = (combined['source']!=combined['r_source']) & (combined['source'].notna()) & (combined['source'].notna())
+# combined[mask][['source','r_source']]
+combined['llm_flag']=combined['llm_flag'].fillna(0)
+combined.isna().sum()
+```
+
+### Renaming and Datatypes
+
+```{python}
+col_map = {'clean_names':'name','clean_edibles':'edibles'}
+final = combined.rename(columns=col_map)[['source','name','edibles','llm_flag']]
+
+print(final.duplicated(subset='name',keep='first').shape)
+print(final.dtypes)
+print(final.isna().sum())
+print(final.shape)
+
+# Data type
+# final['name'].astype()
+final['len_edibles']= final['edibles'].map(lambda x: len(x.split(',')) if type(x)!=float else 0)
+final['len_name']= final['name'].map(lambda x: len(x.split(' ')) if type(x)!=float else 0)
+
+extra_names_idx = final[final['len_name']>2].index
+final = final.drop(index=extra_names_idx)
+```
+
+Finding entries that are a list instead of a string!
+
+```{python}
+ed_idx = final.columns.get_loc('edibles')
+count = 0
+for idx,row in final.iterrows():
+    ed = row.iloc[ed_idx]
+    if type(ed)!=str:
+        print(f'{idx} is not of type string')
+        count+=1
+print(f'Total number of indices found {count}')
+```
+
+### Saving
+
+```{python}
+save_path_parquet = os.path.join(back_dir,'outputs','reprocessing','final_665_species.parquet')
+save_path = os.path.join(back_dir,'outputs','reprocessing','final_665_species.csv')
+final.to_csv(save_path,index=False)
+final.to_parquet(save_path_parquet,index=False)
+```
