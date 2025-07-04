@@ -1,0 +1,45 @@
+0225_a,0225_b,Lathyrus sylvestris,"shoots,greens,flowers,young pods,seeds",0,0,0
+0226_b,0227_a,Lathyrus palustris|Lathyrus venosus,"stemp tips,flowers,young pods,seeds",1,0,0
+0229_b,0230_a,Vicia|Vicia sativa,"shoots,leafy tips, flowers,seeds|shoots,leafy tips,flowers,seeds",1,0,0
+0230_a,0230_b,Vicia caroliniana|Vicia americana,"shoots,leafy tips,flowers,seeds|shoots,leafy tips,flowers,seeds",1,0,0
+0230_b,0231_a,Vicia villosa,"shoots,leafy tips,flowers,seeds|",0,0,0
+0231_a,0231_b,Vicia cracca,"shoots,leafy tips,flowers,seeds|",0,0,0
+0231_b,0232_a,Smilax,"shoots,tender leafy tips,root,berries",0,0,0
+0232_b,0233_a,Fallopia,"shoots,galls,seeds",0,0,0
+0233_b,0234_a,Cucurbita foetidissima|Cucurbita pepo,"seeds,flowers|seeds,flowers",1,0,0
+0234_b,0235_a,,"shoots,fruit",0,0,0
+0235_a,0235_b,,"fruit,flower buds",0,0,0
+0236_a,0236_b,Trillium,young shoots,0,1,0
+0236_b,0237_a,,,0,0,1
+0237_a,0237_b,Lilium,bulblets,0,0,0
+0238_a,0238_b,Cornus canadensis|Cornus suecicia,berries|berries,1,0,0
+0239_b,0240_a,Gallium aparine,"leaves,stem,seeds",0,0,0
+0241_a,0242_a,,leaves,0,0,0
+0242_a,0242_b,Virginia pycnanthemum|Pycnanthemum,"leaves,young stems|leaves,young stems",1,1,0
+0242_b,0243_a,,,0,0,1
+0245_a,0245_b,Agastache foeniculum,"leaves,tips",0,0,0
+0246_b,0247_a,Perilla frutescens,,0,0,0
+0247_a,0247_b,Mentha|Mentha arvensis|Mentha spicata|Mentha piperata,"greens,shoots|greens,shoots|greens,shoots|greens,shoots",1,1,0
+0247_b,0248_a,,,0,0,1
+0248_a,0248_b,,greens,0,0,0
+0248_b,0249_a,Glechoma hederacea|Monarda,"leaves|leaves,flowers",1,1,0
+0249_a,0249_b,,,0,0,1
+0249_b,0250_a,,,0,0,1
+0251_b,0252_a,Stachys floridana,,0,0,0
+0252_b,0253_a,,"seeds, young greens",0,0,0
+0253_a,0253_b,Lycopus,tubers,0,1,0
+0254_b,0255_a,Urtica chamaedryoides|Urtica urens,leaves|leaves,1,0,0
+0255_b,0256_a,,shoots,0,0,0
+0256_a,0256_b,,"young shoots,leaves,flowers",0,0,0
+0257_b,0258_a,,"greens,flowers",0,0,0
+0259_a,0259_b,Sesuvium portulacastrum|Sesuvium verrucosum,"stem tips,leaves|stem tips,leaves",1,0,0
+0259_b,0260_a,Stellaria|Stellaria media,leafy greens|leafy greens,1,1,0
+0260_a,0260_b,Stellaria pubera,leafy greens,0,0,0
+0260_b,0261_a,Stellaria aqatica|Cerastium fontanum,leafy greens|young leaves,1,1,0
+0261_b,0262_a,,"immature pods,seeds",0,0,0
+0262_a,0262_b,Phlox divaricata|Phlox pilosa,leaves|leaves,1,0,0
+0262_b,0263_a,Asclapias syriaca|Asclepias speciosa|Asclepias viridiflora|Asclepias arenaria|Asclepias exaltata,"flower buds,shoots,leafy tops,immature pods|flower buds,shoots,leafy tops,immature pods|flower buds,shoots,leafy tops,immature pods|flower buds,shoots,leafy tops,immature pods|flower buds,shoots,leafy tops,immature pods",1,1,0
+0263_a,0263_b,,,1,1,0
+0263_b,0264_a,,,1,1,0
+0265_b,0266_a,Galinsoga,leafy tops,0,0,0
+0267_a,0267_b,,"seeds,pith",0,0,0

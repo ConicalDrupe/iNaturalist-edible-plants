@@ -1,0 +1,155 @@
+0100_b,0101_a,Allium,"bulbs,leaves,scapes,buds,flowers",0,0,0
+0101_a,0101_b,Allium tricoccum|Allium burdickii,"bulbs,greens,scapes,buds,flowers",0,0,0
+0101_b,0102_a,,,0,1,0
+0102_a,0102_b,,,0,0,1
+0103_b,0104_a,,"bulbs,greens",0,0,0
+0104_a,0104_b,,"bulbs,leaves",0,0,0
+0104_b,0105_a,Allium drummondii|Allium cernuum,"bulbs,leaves|bulbs,leaves",1,1,0
+0105_a,0105_b,,"bulbs,leaves",0,0,0
+0105_b,0106_b,Nothocalais cuspidata|Tragopogon,"roots,leaves,flowers,flower stalk|roots,leaves,shoots,flower buds,flower stalk",1,1,0
+0106_b,0107_a,,,0,0,1
+0107_a,0107_b,Tradescantia,,0,0,0
+0107_b,0108_a,Hemerocallis fulva,"tubers,heart,shoots,flower buds,flowers",0,0,0
+0109_a,0109_b,Leucocrinum montanum|Arundinaria gigantea,"roots,flowers|shoots,seeds",1,1,0
+0109_b,0110_a,,,0,0,1
+0111_a,0111_b,,seed,0,0,0
+0111_b,0112_a,,seeds,0,0,0
+0112_b,0113_a,,"leaves,flower,stalks",0,0,0
+0113_a,0113_b,Yucca,"shoots,flower petals,fruit,seed",0,0,0
+0115_a,0115_b,Muscari,"bulb,flower",0,0,0
+0115_b,0116_a,Camassia,"bulbs,shoots,greens",0,1,0
+0116_a,0116_b,,,0,0,1
+0116_b,0117_a,Aplectrum hyemale,tubers,0,0,0
+0117_a,0117_b,,tubers,0,0,0
+0118_a,0118_b,Erythronium,"bulbs,young leaves",0,0,0
+0120_a,0120_b,Dodecatheon,,0,0,0
+0120_b,0121_a,Plantago major|Plantago rugelii,"leaves,flower buds,seeds|leaves,flower buds,seeds",1,0,0
+0121_a,0121_b,Plantago lanceolata,"leaves,flowerbuds,seeds",0,0,0
+0121_b,0122_a,,,0,0,1
+0122_a,0122_b,,"greens,flowers,stems",0,0,0
+0123_b,0124_a,Taraxacum officinale,"roots,heart,leaves,flower stalks,flowers",0,1,0
+0124_a,0124_b,Krigia dandelion,"tubers,greens,flowers",0,1,0
+0126_b,0127_a,Bellis perennis|Saxifraga pensylvanica,"leaves,flowers|shoots,young leaves",1,1,0
+0127_a,0127_b,Saxifraga micranthidifolia,"greens,shoots",0,0,0
+0128_a,0128_b,,"leaves,shoots",0,0,0
+0128_b,0129_a,,"leaves (tea),",0,0,0
+0129_b,0130_a,Aralia nudicaulis,"rhizomes,young shoots,berries",0,1,0
+0130_a,0130_b,,,0,0,1
+0130_b,0131_a,Trifolium repens|Lomatium foeniculaceum,"leaves,flowers|roots,young leaves,stems,flowers",1,1,0
+0131_a,0131_b,,,0,0,1
+0131_b,0132_a,,"leaves,roots",0,0,0
+0132_a,0132_b,Cymopterus acaulis,"roots,young leaves",0,0,0
+0132_b,0133_a,,"roots,leaves",0,0,0
+0133_b,0134_a,Fragaria|Fragaria virginiana|Fragaria vesca,berries|berries|berries,1,0,0
+0134_a,0134_b,,"bulb,taproot,leaves,flowers,fruit",0,0,0
+0135_b,0136_b,Anemonella thalictroides,tubers,0,0,0
+0138_a,0138_b,,"shoots,petioles,leaves",0,0,0
+0138_b,0139_a,Valerianella,leaves,0,0,0
+0139_a,0139_b,Claytonia,"tubers,greens",0,0,0
+0140_a,0140_b,Silene vulgaris|Silene cserii,"leaves,stems|leaves,stems",1,0,0
+0140_b,0141_a,Silene alba,,0,0,0
+0141_b,0142_a,Dentaria laciniata,"tubers,greens",0,0,0
+0142_a,0142_b,Dentaria multifida|Dentaria heterophylla,"tubers,greens|tubers,greens",1,0,0
+0144_a,0144_b,Rumex hastatalus,leaves,0,0,0
+0145_a,0145_b,,"tubers,young leaves",0,0,0
+0145_b,0146_a,Bistorta vivipara,"rhizomes,young leaves,bulblets",0,0,0
+0146_a,0146_b,Rumex|Rumex crispus,"young leaves,young petioles,stems,seeds|young leaves,young petioles,stems,seeds",1,0,0
+0146_b,0147_a,Rumex longifolius,"young leaves,young petioles,stems,seeds",0,0,0
+0147_a,0147_b,Rumex fueginus|Rumex patientia|Rumex obtusifolius,"young leaves,young petioles,stems,seeds|young leaves,young petioles,stems,seeds|young leaves,young petioles,stems,seeds",1,0,0
+0148_a,0148_b,,greens,0,0,0
+0149_a,0149_b,,"leaves,shoots",0,0,0
+0149_b,0150_a,Symphtum officinale,,0,0,0
+0150_a,0150_b,Arctium,"roots,stalks,petioles",0,0,0
+0150_b,0151_a,Arctium lappa|Arctium minus|Arctium tomentosa,"roots,stalks,petioles|roots,stalks,petioles|roots,stalks,petioles",1,0,0
+0151_b,0152_a,,"shoots,seeds",0,0,0
+0153_a,0153_b,Campanula americana,"shoots,leaves,flower buds,flowers",0,1,0
+0153_b,0154_a,,"roots,leaves,shoots,flowers,flower buds",0,1,0
+0154_a,0154_b,,,0,0,1
+0154_b,0155_a,,"young leaves,young stem",0,0,0
+0155_a,0155_b,Cochlearia,"leaves,stems",0,0,0
+0155_b,0156_a,,"tuber,leaves,stem,flowers,seeds",0,0,0
+0156_a,0156_b,Thlaspi arvense|Thlaspi alliaceum,"leaves,flower buds,seeds|leaves,flower buds,seeds",1,1,0
+0157_b,0158_a,,"leaves,shoots,flower buds,flower",0,0,0
+0158_b,0159_a,,"root,leaves,shoots",0,0,0
+0159_b,0160_a,,"greens,fruits,flowers",0,0,0
+0160_a,0160_b,Oenothera biennis,"roots,leaves,shoots,flower buds,flowers,seeds",0,1,0
+0160_b,0161_a,,,0,0,1
+0162_b,0163_a,Viola pubescens,young leaves,0,0,0
+0163_a,0164_a,,"leaves,shoots",0,0,0
+0165_a,0165_b,Cirsium|Carduus|Onopordum|Silybum|Cirsium discolor,"taproot,shoots,midribs,flowerbuds|taproot,shoots,midribs,flowerbuds|taproot,shoots,midribs,flowerbuds|taproot,shoots,midribs,flowerbuds|taproot,shoots,midribs,flowerbuds",1,1,0
+0165_b,0166_a,Cirsium altissimum|Cirsium horridulum,"taproot,shoots,midribs,flowerbuds|taproot,shoots,midribs,flowerbuds",1,0,0
+0166_a,0166_b,Cirsium vulgare|Cirsium muticum|Onopordum acanthium,"taproot,shoots,midribs,flowerbuds|midrib,taproot|root",1,0,0
+0166_b,0167_a,Carduus nutans|Silybum marianum,"root,midrib,flower heart|midrib,root",1,0,0
+0169_a,0169_b,Sonchus oleroceus,"leaves,stems",0,0,0
+0169_b,0170_a,Sonchus asper|Sonchus arvensis,"stalks,leaves|tender leaves",1,0,0
+0170_a,0170_b,Lactuca|Lactuca canadensis,"tender leaves,shoots|tender leaves,shoots",1,0,0
+0170_b,0171_a,Lactuca hirsuta,"tender leaves,shoots",0,0,0
+0171_a,0171_b,Lactuca floridana,"leaves,shoots",0,0,0
+0171_b,0172_a,Lactuca biennis,"tender leaves, stem",0,0,0
+0172_a,0172_b,Lactuca pulchella|Lactuca saligna,"tender leaves,stems|tender leaves,stems",1,0,0
+0172_b,0173_a,Lactuca serriola,"tender leaves,stem",0,0,0
+0173_a,0173_b,Lactuca ludoviciana,"tender leaves,stem",0,0,0
+0173_b,0175_a,Castilleja coccinea|Rudbeckia laciniata,"tender tops,flowers|leaves,shoots",1,1,0
+0175_a,0175_b,,,0,0,1
+0175_b,0176_a,Monolepis nuttalliana|Callirhoe involucrata,"tender stems,tender leaves|roots,young leaves,flowers,immature fruits",1,1,0
+0176_a,0176_b,,,0,0,1
+0179_b,0180_a,Hydrophyllum canadense|Hydrophyllum virginianum,"leaves,shoots|young leaves,shoots",1,1,0
+0180_a,0180_b,Hydrophyllum macrophyllum,"young leaves,shoots",0,0,0
+0180_b,0181_a,,"leaves,stems,flowers",0,0,0
+0181_a,0181_b,,"shoots,sap",0,0,0
+0181_b,0182_a,,"young shoots,leaves",0,0,0
+0184_b,0185_a,,"shoots,flower buds,leaves",0,0,0
+0185_a,0185_b,,"shoots,flower buds,leaves",0,0,0
+0185_b,0186_a,,"stem,leaves",0,0,0
+0187_a,0187_b,,"leaves,shoots,flower buds,seeds",0,0,0
+0187_b,0188_a,Arabis glabra,"shoots,leaves",0,0,0
+0188_b,0189_a,,"leaves,tops,shoots",0,0,0
+0189_b,0190_a,Brassica nigra,"leaves,tender tips,seeds",0,1,0
+0190_a,0190_b,Sinapis alba,"leaves,tender tips,seeds",0,0,0
+0191_a,0191_b,,"leaves,stem tips",0,0,0
+0191_b,0192_a,Sisymbrium altissimum,,0,0,0
+0192_a,0192_b,,"leaves,stem,flowers,flower buds,seeds",0,0,0
+0193_a,0193_b,,"leaves,stems,flower buds,flowers,seeds",0,0,0
+0193_b,0194_a,,"leaves,stem,flower buds,flowers,seeds",0,0,0
+0194_a,0195_a,,"roots,stalks,leaves,flower buds, fruts,seeds",0,0,0
+0195_a,0195_b,Heracleum mantegazzianum,"leaves,stems",0,0,0
+0195_b,0196_a,Cryptotaenia canadensis,,0,0,0
+0196_a,0196_b,Sanicula,"young greens,sheets",0,0,0
+0196_b,0197_a,Oxypolis rigidior,tubers,0,1,0
+0197_a,0197_b,,,0,0,1
+0198_a,0198_b,Pimpinella saxifraga,"tender stems,tender leaves",0,1,0
+0198_b,0199_a,,,0,0,1
+0199_a,0199_b,,"tubers,leaves,stems",0,0,0
+0200_b,0201_a,Cardamine imaptiens,"leaves,stems,flowers,flower buds",0,0,0
+0201_a,0201_b,,"leaves,stems,flowers,flower buds",0,0,0
+0204_a,0205_a,Taenidia integerrima,,0,0,0
+0205_a,0205_b,Ligusticum canadense,"root,young greens,stems",0,1,0
+0205_b,0206_a,,,0,0,1
+0206_a,0206_b,,,0,1,0
+0206_b,0207_a,Ligusticum scoticum,"roots,stem,greens",0,1,0
+0207_a,0207_b,,,0,0,1
+0208_a,0208_b,Angelica atropurpurea,"heart,young stalks,young stems,seeds",0,1,0
+0208_b,0209_a,,,0,0,1
+0209_a,0209_b,Angelica triquinata,"young leaves,petioles,stems,seeds",0,1,0
+0209_b,0210_a,,"leaves,shoots",0,1,0
+0210_a,0210_b,,,0,0,1
+0211_a,0211_b,,"roots,shoots,seeds,leaves",0,0,0
+0211_b,0212_a,Osmorhiza longistylis,"roots,shoots,leaves",0,1,0
+0212_a,0212_b,Osmorhiza claytonii,,0,0,0
+0213_a,0214_a,Matricaria matricarioides,"greens,flowers",0,0,0
+0214_a,0214_b,,"shoots,young leaves,flower buds,flowers,fruits,seeds",0,0,0
+0214_b,0215_a,Conioselinum chinense,"roots (fall),tender greens",0,1,0
+0215_a,0215_b,,,0,0,1
+0215_b,0216_a,Carum carvi,"roots,shoots,young leaves,seeds",0,1,0
+0216_a,0216_b,,,0,0,1
+0216_b,0217_a,Perideridia americana,"roots,young greens",0,1,0
+0217_a,0217_b,,,0,0,1
+0218_b,0219_a,,"roots,greens",0,0,0
+0219_a,0219_b,Anthriscus sylvestris,"roots,tender greens,shoots",0,1,0
+0219_b,0220_a,,"young stems,young greens",0,1,0
+0220_a,0220_b,,,0,0,1
+0220_b,0221_a,Daucus carota,"taproot,young leaves, peeled shoots",0,1,0
+0221_a,0221_b,,,0,0,1
+0221_b,0222_a,Chaerophyllum tainturieri,"tender greens,shoots",0,1,0
+0222_b,0223_a,Descurainia pinnata|Descurainia sophia,"young greens,young stems,seeds|young greens,young stems,seeds",1,0,0
+0223_a,0223_b,Erodium cicutarium,,0,0,0

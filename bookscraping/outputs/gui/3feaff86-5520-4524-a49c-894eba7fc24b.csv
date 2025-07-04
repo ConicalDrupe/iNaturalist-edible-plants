@@ -1,0 +1,41 @@
+0267_a,0267_b,,"seeds,pith",0,0,0
+0268_b,0269_a,Artiplex,"leafy tops,leaves",0,0,0
+0271_a,0271_b,Suaeda,,0,0,0
+0272_a,0272_b,,leaves,0,0,0
+0272_b,0273_a,,"young leaves,seeds",0,0,0
+0273_a,0273_b,,"leaves,stems,seeds",0,0,0
+0273_b,0274_a,Croton monathogyna|Linum perenne,leaves|seeds,1,1,0
+0274_a,0274_b,Linum rigidum|Linum berlandieri,seeds|seeds,1,0,0
+0276_a,0276_b,Persicaria|Persicaria lapathifolia,"young leaves,stem tips|young leaves,stem tips",1,1,0
+0276_b,0277_a,Persicaria maculosa|Persicaria hydropiper,"leaves,stem|leaves",1,1,0
+0277_a,0277_b,Persicaria amphibia|Persicaria coccinea,"shoots,young leaves|shoots,young leaves",1,0,0
+0278_a,0278_b,Rumex triangulivalvis|Phytolacca americana,"leaves,stems,petioles|shoots,leaves",1,1,0
+0278_b,0279_a,,,0,0,1
+0279_a,0279_b,,"shoots,leaves,pith",0,0,0
+0279_b,0280_a,,"leaves,stem,seeds,root",0,0,0
+0281_a,0281_b,,"leaves,stems,flowers,immature seedpods",0,0,0
+0281_b,0282_a,Commelina virginica|Commelina erecta,"leaves,shoots|leaves,shoots",1,0,0
+0283_a,0283_b,,"young shoots,greens",0,0,0
+0284_a,0284_b,,"rhizomes,shoots,berries",0,0,0
+0284_b,0285_b,Chenopodium,"leaves,stem,seeds",0,0,0
+0285_b,0286_a,Impatiens capensis|Impatiens pallida,"young leaves,young stems,greens,seeds|young leaves,young stems,greens,seeds",1,0,0
+0286_a,0286_b,,"seeds,flower buds",0,0,0
+0286_b,0287_a,,"leaves,stem,unripe seeds,seeds",0,0,0
+0287_b,0288_a,Solanum nigrum,"young stem, young leaves,fruit",0,1,0
+0288_a,0288_b,Physalis,fruit,0,1,0
+0288_b,0289_a,,,0,0,1
+0290_a,0290_b,,"shoots,leaves (tea)",0,0,0
+0291_a,0291_b,Hylotelephium telephium|Sedum roseum,"leaves,roots|leaves,roots",1,0,0
+0292_a,0292_b,,"young stem,young leaves",0,0,0
+0294_b,0295_a,Hydrocotyle americana|Cnidoscolus texanum,greens|nuts,1,1,0
+0295_b,0296_a,,"roots,stem tips, young leaves,flowers",0,0,0
+0296_a,0296_b,,"leavy stem tips,flower buds, flowers",0,0,0
+0296_b,0297_a,Modiola caroliniana,,0,0,0
+0297_a,0297_b,,"young leaves,flower buds,flowers,immature pods",0,0,0
+0297_b,0298_a,Hibiscus laevis,"young leaves,flowers,flower buds,immature pods",0,0,0
+0299_a,0299_b,,"roots,shoots,young leaves,flowers,fruits",0,0,0
+0299_b,0300_a,,seed,0,0,0
+0304_b,0305_a,,"young leaves,young stems,flower buds,seeds",0,0,0
+0305_a,0305_b,Oxalis,"greens,flowers,pods",0,0,0
+0307_b,0308_a,Melilotus albus|Melilotus officinalis,"leaves,seeds|leaves,seeds",1,0,0
+0309_a,0309_b,Dalea candida|Dalea purpurea,"roots,young leaves|roots,young leaves",1,0,0

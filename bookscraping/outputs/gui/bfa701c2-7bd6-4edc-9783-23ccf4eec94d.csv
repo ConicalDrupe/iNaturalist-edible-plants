@@ -1,0 +1,98 @@
+0017_a,0017_b,Juniperus communis | Juniperus virginiana,"berries,branch tips,needles (tea)|berries,branch tips,needles (tea)",1,0,0
+0017_b,0018_a,Taxus canadensis,berries,0,0,0
+0018_a,0019_a,,"nuts,immature fruits (pickled),sap (syrup)",0,0,0
+0019_a,0019_b,,"nuts,immature nuts (pickle),sap (syrup)",0,0,0
+0019_b,0020_a,Carya,nuts,0,0,0
+0020_a,0020_b,Carya illinoinensis | Carya aquatica,nuts,1,0,0
+0020_b,0021_a,Carya cordiformis | Carya ovata,nuts,1,0,0
+0021_a,0021_b,Carya laciniosa,nuts,0,0,0
+0021_b,0022_a,Carya tomentosa|Carya texana,nuts,1,0,0
+0022_a,0022_b,Carya glabra,nuts,0,0,0
+0022_b,0023_a,Fagus grandifolia,"nuts, young leaves",0,0,0
+0024_a,0024_b,Corylus|Corylus cornuta,nuts|nuts,1,0,0
+0024_b,0025_a,Corylus americana,nuts,0,0,0
+0025_a,0025_b,Quercus,acorns,0,0,0
+0025_b,0026_a,Quercus nigra|Quercus imbricaria,"nuts,nuts",1,0,0
+0026_a,0026_b,Quercus rubra|Quercus alba,nuts|nuts,1,0,0
+0026_b,0027_a,Quercus macrocarpa|Quercus michauxii,nuts|nuts,0,0,0
+0027_a,0027_b,Quercus montana|Quercus virginiana,nuts|nuts,1,0,0
+0027_b,0028_a,Rosa,"hips,flower petals",0,0,0
+0029_a,0029_b,,,0,1,0
+0029_b,0030_a,Asimina triloba,fruit,0,0,0
+0030_a,0030_b,Nyssa ogeche,fruit,0,0,0
+0030_b,0031_a,Malus,fruit,0,0,0
+0031_b,0032_a,Prunus,"fruit,peels(oil)",0,0,0
+0032_a,0033_b,Sorbus,fruit,0,0,0
+0034_a,0034_b,Celtis occidentalis,"fruit,nut,inner cambium",0,0,0
+0034_b,0035_a,Celtis laevigata,"fruit,nuts,inner cambium",0,0,0
+0036_b,0037_a,Persea borbonia | Persea palustris,leaves,1,0,0
+0037_a,0037_b,,fruit,0,0,0
+0039_a,0039_b,Amelanchier,berries,0,0,0
+0039_b,0040_a,Crataegus,fruit,0,0,0
+0040_a,0040_b,Crataegus aestivalis|Crataegus aestivalis,fruit,1,0,0
+0041_b,0042_a,Gymnocladus dioicus,"immature seeds,nuts (coffee)",0,0,0
+0042_a,0042_b,,seeds (flour),0,0,0
+0042_b,0043_a,,fruit (pulp),0,0,0
+0043_a,0043_b,Robinia pseudoacacia,"fruit,seeds,flowers",0,1,0
+0043_b,0044_a,Robinia viscosa|Robinia hispida|Robinia neomexicana,"fruit,seeds,flowers|fruit,seeds,flowers|fruit,seeds,flowers",1,0,0
+0044_a,0044_b,,"leaves,buds,cambium,flowers,seeds",0,0,0
+0045_a,0045_b,Betula|Betula papyrifera,"sap (syrup),twigs (tea),bark (tea),cambium|sap (syrup)sap (syrup),twigs (tea),bark (tea),cambium",1,0,0
+0045_b,0046_a,Betula nigra|Betula alleghaniensis|Betula lenta,"sap (syrup),twigs (tea),bark (tea),cambium|sap (syrup),twigs (tea),bark (tea),cambium|sap (syrup),twigs (tea),bark (tea),cambium",1,0,0
+0046_a,0046_b,Acer|Acer saccharum,Sap (syrup)|sap (syrup),1,0,0
+0046_b,0047_a,Acer rubrum|Acer saccharinum|Acer negundo,"sap (syrup)|sap (syrup),fruit|sap (syrup)",1,0,0
+0047_a,0047_b,Ulmus rubra,"inner bark,cambium,unrip fruit,seeds",0,0,0
+0047_b,0048_a,Ulmus pumila,"inner bark,cambium,unrip fruit, seeds",0,0,0
+0048_a,0048_b,Epigaea repens,flowers,1,0,0
+0048_b,0049_a,Epigaea repens,flower,0,1,0
+0049_b,0050_a,Vaccinium|Vaccinium macrocarpon|Vaccinium oxycoccus,fruit|fruit|fruit,1,0,0
+0051_b,0052_a,Arctous rubra|Arctous alpina,berries|berries,1,0,0
+0052_a,0053_a,,"berries,flowers",0,0,0
+0053_a,0053_b,,fruit,0,0,0
+0055_b,0056_a,Rosa,"petals,hips,young leaves (tea)",0,1,0
+0056_a,0056_b,,,0,0,1
+0056_b,0057_a,Mahonia trifoliata,,0,0,0
+0058_b,0059_a,Berberis thunbergii|Lindera benzoin,"fruit,leaves|fruit,twigs (tea),leaves",1,0,0
+0060_b,0061_a,Ilex vomitoria,leaves (tea),0,0,0
+0063_a,0063_b,Viburnum|Viburnum lentago,berries|berries,1,0,0
+0063_b,0064_a,Viburnum cassinoides|Viburnum nudum|Viburnum prunifolium,berries|berries|berries,1,0,0
+0064_a,0064_b,Viburnum rufidulum|Viburnum obovatum,berries|berries,1,0,0
+0065_b,0066_a,Prunus pumilia|Prunus susquehanae,,1,0,0
+0066_b,0067_a,Ribes,berries,0,0,0
+0067_b,0068_a,,fruit,0,0,0
+0071_b,0072_a,Vaccinium,fruit,0,0,0
+0072_a,0072_b,Vaccinium elliotti|Vaccinium uliginosum,berries|berries,1,0,0
+0072_b,0073_a,Rhus,"shoots,berries",0,1,0
+0073_a,0073_b,Rhus coppalina|Rhus typhina,"shoots,berries|shoots,berries",1,0,0
+0073_b,0074_a,Rhus glabra,"shoots,berries",0,0,0
+0075_a,0075_b,,leaves (tea),0,0,0
+0075_b,0076_a,,leaves (tea),0,0,0
+0076_a,0076_b,Ceanothus|Ceanothus americanus|Ceanothus herbaceus,leaves (tea),1,0,0
+0076_b,0077_a,,"leaves (tea), flower buds, fruit",0,0,0
+0077_b,0078_a,,leaves (tea),0,0,0
+0078_a,0078_b,,leaves (tea),0,0,0
+0078_b,0079_a,Vitis,"tips,young leaves,fruit",0,1,0
+0079_a,0079_b,,,0,0,1
+0081_a,0081_b,Smilax,"tubers,young shoots, young greens",0,0,0
+0083_a,0083_b,Parthenocissus quinquefolia|Parthenocissus vitacea,"inner bark,shoots|inner bark,shoots",1,0,0
+0084_a,0084_b,Wisteria,,0,0,0
+0084_b,0085_a,Scirpus validus,"rhizome tips,stem bases,pollen,seeds",0,1,0
+0085_a,0085_b,,,0,0,1
+0085_b,0086_a,Zizaniopsis miliaceae,"stem bases,shoots,seeds",0,0,0
+0086_a,0086_b,Zizania palustris|Zizania aquatica,seeds|seeds,1,0,0
+0086_b,0087_a,Bolboschoenus fluviatilis,"young corms,shoot tips,stem",0,1,0
+0087_a,0087_b,Typha,"rhizome,lateral shoots,green flower,pollen",0,1,0
+0087_b,0088_a,,,0,0,1
+0088_b,0089_a,Acorus,"rhizomes,hearts,immature flower",0,1,0
+0089_a,0089_b,,,0,0,1
+0089_b,0090_b,,"fruits,leaves",0,0,0
+0091_a,0091_b,Sium suave,"roots, stems, leaves,shoots",0,1,0
+0091_b,0092_a,,,0,0,1
+0092_a,0093_a,Berula erecta,greens,0,1,0
+0093_a,0093_b,,,0,0,1
+0094_b,0095_a,,nuts,0,0,0
+0095_b,0096_a,,,0,1,0
+0096_a,0096_b,Sagittaria rigida,"tubers,shoots,leaves,shoots",0,0,0
+0097_b,0098_a,,"tubers,nuts,leaves",0,0,0
+0098_a,0098_b,Nuphar,"rhizomes,seeds",0,0,0
+0098_b,0099_a,Peltandra virginica,rootstock,0,0,0
+0100_a,0100_b,,"shoot,fruit,seed",0,0,0
