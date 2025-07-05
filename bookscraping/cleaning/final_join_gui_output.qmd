@@ -411,6 +411,22 @@ for idx,row in final.iterrows():
 print(f'Total number of indices found {count}')
 ```
 
+### Cleaning scientific names
+
+
+```{python}
+species_idx = final[final['len_name']>=2].index
+final.loc[species_idx,'name'] = final.loc[species_idx,'name'].apply(lambda x: x.split(' ')[0].title() +' ' +' '.join(x.split(' ')[1:]))
+
+# display(final[['t1','name']].head())
+
+genera_idx = final[final['len_name']==1].index
+final.loc[genera_idx,'name'] = final.loc[genera_idx,'name'].str.title()
+# display(final.loc[genera_idx,['t2','name']])
+
+display(final.head(40))
+```
+
 ### Saving
 
 ```{python}
