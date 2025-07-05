@@ -1,0 +1,64 @@
+searchedName,canonicalName,scientificName,rank,usageKey,match_confidence,matchType
+Opuntia,Opuntia,Opuntia Mill.,GENUS,3084187,97,EXACT
+Rubus,Rubus,Rubus L.,GENUS,2988638,98,EXACT
+Pinus,Pinus,Pinus L.,GENUS,2684241,98,EXACT
+Picea,Picea,Picea A.Dietr.,GENUS,7606064,97,EXACT
+Carya,Carya,Carya Nutt.,GENUS,3054287,98,EXACT
+Corylus,Corylus,Corylus L.,GENUS,2875967,98,EXACT
+Quercus,Quercus,Quercus L.,GENUS,2877951,98,EXACT
+Rosa,Rosa,Rosa L.,GENUS,8395064,98,EXACT
+Malus,Malus,Malus Mill.,GENUS,3001068,98,EXACT
+Prunus,Prunus,Prunus L.,GENUS,3020559,98,EXACT
+Sorbus,Sorbus,Sorbus L.,GENUS,3012146,98,EXACT
+Amelanchier,Amelanchier,Amelanchier Medik.,GENUS,3023817,98,EXACT
+Crataegus,Crataegus,Crataegus L.,GENUS,3013395,98,EXACT
+Betula,Betula,Betula L.,GENUS,2875008,98,EXACT
+Acer,Acer,Acer L.,GENUS,3189834,97,EXACT
+Vaccinium,Vaccinium,Vaccinium L.,GENUS,2882813,98,EXACT
+Viburnum,Viburnum,Viburnum L.,GENUS,2888580,98,EXACT
+Ribes,Ribes,Ribes L.,GENUS,2986095,98,EXACT
+Rhus,Rhus,Rhus L.,GENUS,3190534,98,EXACT
+Vitis,Vitis,Vitis L.,GENUS,7467468,98,EXACT
+Smilax,Smilax,Smilax L.,GENUS,2740627,98,EXACT
+Wisteria,Wisteria,Wisteria Nutt.,GENUS,2977309,98,EXACT
+Typha,Typha,Typha L.,GENUS,2702102,98,EXACT
+Acorus,Acorus,Acorus L.,GENUS,2730063,98,EXACT
+Nuphar,Nuphar,Nuphar Sm.,GENUS,2882408,98,EXACT
+Allium,Allium,Allium L.,GENUS,9624496,97,EXACT
+Tragopogon,Tragopogon,Tragopogon L.,GENUS,3092408,98,EXACT
+Tradescantia,Tradescantia,Tradescantia Ruppius ex L.,GENUS,2765096,98,EXACT
+Yucca,Yucca,Yucca L.,GENUS,2775496,98,EXACT
+Muscari,Muscari,Muscari Mill.,GENUS,2772004,98,EXACT
+Camassia,Camassia,Camassia Lindl.,GENUS,2769068,98,EXACT
+Erythronium,Erythronium,Erythronium L.,GENUS,2740136,98,EXACT
+Dodecatheon,Dodecatheon,Dodecatheon L.,GENUS,7597718,98,EXACT
+Fragaria,Fragaria,Fragaria L.,GENUS,3029779,98,EXACT
+Valerianella,Valerianella,Valerianella Mill.,GENUS,2888767,97,EXACT
+Claytonia,Claytonia,Claytonia L.,GENUS,3084729,97,EXACT
+Rumex,Rumex,Rumex L.,GENUS,2888942,98,EXACT
+Arctium,Arctium,Arctium L.,GENUS,8106066,96,EXACT
+Cochlearia,Cochlearia,Cochlearia L.,GENUS,3040481,98,EXACT
+Cirsium,Cirsium,Cirsium Mill.,GENUS,3112554,96,EXACT
+Carduus,Carduus,Carduus L.,GENUS,3114511,98,EXACT
+Onopordum,Onopordum,Onopordum L.,GENUS,3094883,98,EXACT
+Silybum,Silybum,Silybum Vaill. ex Adans.,GENUS,3145213,97,EXACT
+Lactuca,Lactuca,Lactuca L.,GENUS,3140231,96,EXACT
+Sanicula,Sanicula,Sanicula L.,GENUS,3034831,98,EXACT
+Vicia,Vicia,Vicia L.,GENUS,2974751,98,EXACT
+Fallopia,Fallopia,Fallopia Adans.,GENUS,2889418,96,EXACT
+Trillium,Trillium,Trillium L.,GENUS,2742182,98,EXACT
+Lilium,Lilium,Lilium Tourn. ex L.,GENUS,2752977,98,EXACT
+Pycnanthemum,Pycnanthemum,Pycnanthemum Michx.,GENUS,2927338,97,EXACT
+Mentha,Mentha,Mentha L.,GENUS,2927173,98,EXACT
+Monarda,Monarda,Monarda L.,GENUS,2926838,98,EXACT
+Lycopus,Lycopus,Lycopus L.,GENUS,2927122,98,EXACT
+Stellaria,Stellaria,Stellaria L.,GENUS,3085667,96,EXACT
+Galinsoga,Galinsoga,Galinsoga Ruiz & Pav.,GENUS,3132547,98,EXACT
+Artiplex,Atriplex,Atriplex L.,GENUS,10651755,89,FUZZY
+Suaeda,Suaeda,Suaeda Scop.,GENUS,7677792,97,EXACT
+Amaranthus,Amaranthus,Amaranthus L.,GENUS,3085074,97,EXACT
+Persicaria,Persicaria,Persicaria (L.) Mill.,GENUS,6390748,96,EXACT
+Chenopodium,Chenopodium,Chenopodium L.,GENUS,3083823,98,EXACT
+Physalis,Physalis,Physalis L.,GENUS,2928907,98,EXACT
+Oxalis,Oxalis,Oxalis L.,GENUS,2891642,98,EXACT
+Ceanothus,Ceanothus,Ceanothus L.,GENUS,3039297,98,EXACT
