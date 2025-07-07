@@ -19,6 +19,7 @@ print('Columns:\n',ddf.columns)
 pd.options.display.max_rows=None
 pd.options.display.max_columns=None
 
+# Day,Month,Year is occurrence day,month,year
 columns = ['gbifID','occurrenceID','family','genus','species','scientificName','verbatimScientificName','stateProvince','occurrenceStatus','individualCount','decimalLatitude','decimalLongitude','coordinateUncertaintyInMeters','coordinatePrecision','elevation','elevationAccuracy','depth','eventDate','day','month','year','taxonKey','dateIdentified','rightsHolder']
 ddf = ddf[columns]
 print(ddf.head())
@@ -28,7 +29,7 @@ print(ddf.head())
 # Rename Columns
 
 ```{python}
-col_map={'scientificName':'accepted_name','verbatimScientificName':'scientific_name','stateProvidence':'state_providence','occurrenceStatus':'occurrence_status','individualCount':'individual_count','decimalLatitude':'lat','decimalLongitude':'lon','coordinateUncertaintyInMeters':'coord_uncertainty','coordinatePrecision':'coord_precision','elevationAccuracy':'elevation_accuracy','eventDate':'occurrence_date','dateIdentified':'identification_date'}
+col_map={'scientificName':'accepted_name','verbatimScientificName':'scientific_name','stateProvince':'state_providence','occurrenceStatus':'occurrence_status','individualCount':'individual_count','decimalLatitude':'lat','decimalLongitude':'lon','coordinateUncertaintyInMeters':'coord_uncertainty','coordinatePrecision':'coord_precision','elevationAccuracy':'elevation_accuracy','eventDate':'occurrence_date','dateIdentified':'identification_date'}
 ddf = ddf.rename(columns=col_map)
 ```
 
@@ -36,12 +37,15 @@ ddf = ddf.rename(columns=col_map)
 
 ```{python}
 ddf.dtypes
+
+ddf['identification_date'] = dd.to_datetime(ddf['identification_date'],format="ISO8601")
+ddf['occurrence_date'] = dd.to_datetime(ddf['occurrence_date'],format="ISO8601")
 ```
 
 # Save as Parquet
 
 ```{python}
 parquet_path = os.path.join(back_dir,'hidden','processed-inat-6mil.parquet')
-ddf.to_parquet(parquet_path)
+ddf.to_parquet(parquet_path,engine='pyarrow')
 ```
 
