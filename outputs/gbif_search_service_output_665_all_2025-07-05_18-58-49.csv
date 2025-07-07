@@ -1,0 +1,666 @@
+searchedName,canonicalName,scientificName,rank,usageKey,match_confidence,matchType
+Equisetum arvense,Equisetum arvense,Equisetum arvense L.,SPECIES,7924597,100,EXACT
+Botrychium virginianum,Botrychium virginianum,"Botrychium virginianum Hook.f., 1850",SPECIES,7917024,99,EXACT
+Pteridium aquilinum,Pteridium aquilinum,Pteridium aquilinum (L.) Kuhn,SPECIES,5275012,100,EXACT
+Zamia floridana,Zamia floridana,Zamia floridana A.DC.,SPECIES,5284056,100,EXACT
+Osmunda cinnamomea,Osmunda cinnamomea,Osmunda cinnamomea L.,SPECIES,2651326,100,EXACT
+Matteucia struthiopteris,Matteuccia struthiopteris,Matteuccia struthiopteris (L.) Tod.,SPECIES,2650999,89,FUZZY
+Athyrium filix-femina,Athyrium filix-femina,Athyrium filix-femina (L.) Roth,SPECIES,5275044,99,EXACT
+Sabal palmetto,Sabal palmetto,Sabal palmetto (Walter) Lodd. ex Schult. & Schult.f.,SPECIES,4925538,99,EXACT
+Serenoa repens,Serenoa repens,Serenoa repens (W.Bartram) Small,SPECIES,2735055,100,EXACT
+Sabal minor,Sabal minor,Sabal minor (Jacq.) Pers.,SPECIES,2732511,100,EXACT
+Coryphantha missouriensis,Coryphantha missouriensis,Coryphantha missouriensis (Sweet) Britton & Rose,SPECIES,6382387,100,EXACT
+Opuntia,Opuntia,Opuntia sp.,SPECIES,9502688,98,HIGHERRANK
+Cylindropuntia imbricata,Cylindropuntia imbricata,Cylindropuntia imbricata (Haw.) F.M.Knuth,SPECIES,6381277,100,EXACT
+Salicornia glasswort,Salicornia,Salicornia L.,GENUS,3083796,95,HIGHERRANK
+Morus alba,Morus alba,Morus alba L.,SPECIES,5361889,99,EXACT
+Morus rubra,Morus rubra,Morus rubra L.,SPECIES,5361886,99,EXACT
+Rubus odoratus,Rubus odoratus,Rubus odoratus L.,SPECIES,2994912,100,EXACT
+Rubus idaeus,Rubus idaeus,Rubus idaeus L.,SPECIES,2993094,99,EXACT
+Rubus phoenicolasius,Rubus phoenicolasius,Rubus phoenicolasius Maxim.,SPECIES,2995149,100,EXACT
+Rubus occidentalis,Rubus occidentalis,Rubus occidentalis L.,SPECIES,2991466,99,EXACT
+Rubus,Rubus,Rubus L.,GENUS,2988638,96,HIGHERRANK
+Rubus (dewberry),Rubus,Rubus L.,GENUS,2988638,96,HIGHERRANK
+Rubus chamaemorus,Rubus chamaemorus,Rubus chamaemorus L.,SPECIES,2998290,99,EXACT
+Rubus pubescens,Rubus pubescens,Rubus pubescens Raf.,SPECIES,2989228,99,EXACT
+Rubus arcticus,Rubus arcticus,Rubus arcticus L.,SPECIES,2992051,99,EXACT
+Pinus,Pinus,Pinus L.,GENUS,2684241,80,HIGHERRANK
+Picea,Picea,Picea A.Dietr.,GENUS,7606064,95,HIGHERRANK
+Abies balsamea,Abies balsamea,Abies balsamea (L.) Mill.,SPECIES,2685383,100,EXACT
+Tsuga canadensis,Tsuga canadensis,Tsuga canadensis (L.) Carrière,SPECIES,2687182,100,EXACT
+Batis maritima,Batis maritima,Batis maritima L.,SPECIES,5414196,100,EXACT
+Empetrum nigrum,Empetrum nigrum,Empetrum nigrum L.,SPECIES,8925249,100,EXACT
+Juniperus communis,Juniperus communis,Juniperus communis L.,SPECIES,2684709,99,EXACT
+Juniperus virginiana,Juniperus virginiana,Juniperus virginiana L.,SPECIES,2684391,99,EXACT
+Taxus canadensis,Taxus canadensis,Taxus canadensis Marshall,SPECIES,5284570,99,EXACT
+Juglans nigra,Juglans nigra,Juglans nigra L.,SPECIES,3054357,99,EXACT
+Juglans cinerea,Juglans cinerea,Juglans cinerea L.,SPECIES,3054352,100,EXACT
+Carya,Carya,Carya Nutt.,GENUS,3054287,80,HIGHERRANK
+Carya laciniosa,Carya laciniosa,Carya laciniosa (F.Michx.) Loudon,SPECIES,7915743,99,EXACT
+Carya glabra,Carya glabra,Carya glabra (Mill.) Sweet,SPECIES,3054325,100,EXACT
+Fagus grandifolia,Fagus grandifolia,Fagus grandifolia Ehrh.,SPECIES,2882274,100,EXACT
+Castanea dentata,Castanea dentata,Castanea dentata (Marshall) Borkh.,SPECIES,5333230,99,EXACT
+Castanea pumila,Castanea pumila,Castanea pumila (L.) Mill.,SPECIES,5333212,99,EXACT
+Corylus,Corylus,Corylus L.,GENUS,2875967,80,HIGHERRANK
+Corylus cornuta,Corylus cornuta,Corylus cornuta Marshall,SPECIES,2876032,99,EXACT
+Corylus americana,Corylus americana,Corylus americana Walter,SPECIES,2876060,99,EXACT
+Quercus,Quercus,Quercus L.,GENUS,2877951,80,HIGHERRANK
+Quercus rubra,Quercus rubra,Quercus rubra L.,SPECIES,2880539,99,EXACT
+Quercus alba,Quercus alba,Quercus alba L.,SPECIES,2879737,99,EXACT
+Quercus macrocarpa,Quercus macrocarpa,Quercus macrocarpa Michx.,SPECIES,2878213,99,EXACT
+Quercus michauxii,Quercus michauxii,Quercus michauxii Nutt.,SPECIES,2880340,99,EXACT
+Quercus montana,Quercus montana,Quercus montana Willd.,SPECIES,2881118,99,EXACT
+Quercus virginiana,Quercus virginiana,Quercus virginiana Mill.,SPECIES,2878092,100,EXACT
+Rosa,Rosa,Rosa spec Lej.,SPECIES,11360568,97,HIGHERRANK
+Citrus trifoliata,Citrus trifoliata,Citrus trifoliata L.,SPECIES,3190129,99,EXACT
+Diospyros virginiana,Diospyros virginiana,Diospyros virginiana L.,SPECIES,3032986,100,EXACT
+Diospyros texanum,Diospyros texana,Diospyros texana Scheele,SPECIES,3032981,98,FUZZY
+Asimina triloba,Asimina triloba,Asimina triloba (L.) Dunal,SPECIES,3158040,99,EXACT
+Nyssa ogeche,Nyssa ogeche,Nyssa ogeche W.Bartram ex Marshall,SPECIES,5383722,99,EXACT
+Malus,Malus,Malus Mill.,GENUS,3001068,80,HIGHERRANK
+Malus domestica,Malus domestica,Malus domestica (Suckow) Borkh.,SPECIES,3001244,99,EXACT
+Prunus,Prunus,"Prunus spec (Mill.) D.A.Webb, 1967",SPECIES,11580994,97,HIGHERRANK
+Sorbus,Sorbus,Sorbus L.,GENUS,3012146,80,HIGHERRANK
+Aralia spinosa,Aralia spinosa,Aralia spinosa L.,SPECIES,3036972,100,EXACT
+Celtis occidentalis,Celtis occidentalis,Celtis occidentalis L.,SPECIES,2984481,99,EXACT
+Celtis laevigata,Celtis laevigata,Celtis laevigata Willd.,SPECIES,2984491,99,EXACT
+Prunus serotina,Prunus serotina,Prunus serotina Ehrh.,SPECIES,3021850,99,EXACT
+Prunus pensylvanica,Prunus pensylvanica,Prunus pensylvanica L.fil.,SPECIES,8202030,100,EXACT
+Prunus avium,Prunus avium,Prunus avium (L.) L.,SPECIES,3020791,99,EXACT
+Elaeagnus angustifolia,Elaeagnus angustifolia,Elaeagnus angustifolia L.,SPECIES,3039269,99,EXACT
+Cornus mas,Cornus mas,Cornus mas L.,SPECIES,3082263,100,EXACT
+Sassafras albidum,Sassafras albidum,Sassafras albidum (Nutt.) Nees,SPECIES,3034002,100,EXACT
+Sideroxylon lanuginosum,Sideroxylon lanuginosum,Sideroxylon lanuginosum Michx.,SPECIES,2887069,100,EXACT
+Amelanchier,Amelanchier,Amelanchier Medik.,GENUS,3023817,80,HIGHERRANK
+Crataegus,Crataegus,Crataegus L.,GENUS,3013395,80,HIGHERRANK
+Cercis canadensis,Cercis canadensis,Cercis canadensis L.,SPECIES,5353583,99,EXACT
+Gymnocladus dioicus,Gymnocladus dioicus,Gymnocladus dioicus (L.) K.Koch,SPECIES,2944215,100,EXACT
+Prosopis glandulosa,Prosopis glandulosa,Prosopis glandulosa Torr.,SPECIES,5358457,100,EXACT
+Gleditsia triacanthos,Gleditsia triacanthos,Gleditsia triacanthos L.,SPECIES,2959443,100,EXACT
+Robinia pseudoacacia,Robinia pseudoacacia,Robinia pseudoacacia L.,SPECIES,5352251,100,EXACT
+Robinia viscosa,Robinia viscosa,Robinia viscosa Michx. ex Vent.,SPECIES,5352245,99,EXACT
+Robinia hispida,Robinia hispida,Robinia hispida L.,SPECIES,5352221,100,EXACT
+Robinia neomexicana,Robinia neomexicana,Robinia neomexicana A.Gray,SPECIES,5352212,100,EXACT
+Tilia americana,Tilia americana,Tilia americana L.,SPECIES,3152042,99,EXACT
+Populus tremuloides,Populus tremuloides,Populus tremuloides Michx.,SPECIES,3040215,99,EXACT
+Betula,Betula,Betula sp.,SPECIES,9596658,96,HIGHERRANK
+Betula papyrifera,Betula papyrifera,Betula papyrifera Marshall,SPECIES,5332120,99,EXACT
+Betula nigra,Betula nigra,Betula nigra L.,SPECIES,5331532,99,EXACT
+Betula alleghaniensis,Betula alleghaniensis,Betula alleghaniensis Britton,SPECIES,5331779,100,EXACT
+Betula lenta,Betula lenta,Betula lenta L.,SPECIES,5331709,99,EXACT
+Acer,Acer,"Acer spec Linnaeus, 1753",SPECIES,11599995,98,HIGHERRANK
+Acer saccharum,Acer saccharum,Acer saccharum Marshall,SPECIES,3189859,100,EXACT
+Acer rubrum,Acer rubrum,Acer rubrum L.,SPECIES,3189883,99,EXACT
+Acer saccharinum,Acer saccharinum,Acer saccharinum L.,SPECIES,3189837,99,EXACT
+Acer negundo,Acer negundo,Acer negundo L.,SPECIES,3189866,100,EXACT
+Ulmus rubra,Ulmus rubra,Ulmus rubra Muhl.,SPECIES,5361867,99,EXACT
+Ulmus pumila,Ulmus pumila,Ulmus pumila L.,SPECIES,5361877,99,EXACT
+Epigaea repens,Epigaea repens,Epigaea repens L.,SPECIES,2882805,100,EXACT
+Gaultheria hispidula,Gaultheria hispidula,Gaultheria hispidula (L.) Muhl. ex Bigelow,SPECIES,2882756,99,EXACT
+Vaccinium,Vaccinium,Vaccinium L.,GENUS,2882813,80,HIGHERRANK
+Vaccinium macrocarpon,Vaccinium macrocarpon,Vaccinium macrocarpon Aiton,SPECIES,2882841,100,EXACT
+Vaccinium oxycoccus,Vaccinium oxycoccus,Vaccinium oxycoccus L.,SPECIES,2882949,99,EXACT
+Vaccinium vitis-idaea,Vaccinium vitis-idaea,Vaccinium vitis-idaea L.,SPECIES,2882835,100,EXACT
+Gaultheria procumbens,Gaultheria procumbens,Gaultheria procumbens L.,SPECIES,2882753,100,EXACT
+Arctostaphylos uva-ursi,Arctostaphylos uva-ursi,Arctostaphylos uva-ursi (L.) Spreng.,SPECIES,2882580,100,EXACT
+Arctous rubra,Arctous rubra,Arctous rubra (Rehder & E.H.Wilson) Nakai,SPECIES,2882597,100,EXACT
+Arctous alpina,Arctous alpina,Arctous alpina (L.) Nied.,SPECIES,2882527,100,EXACT
+Sambucus racemosa,Sambucus racemosa,Sambucus racemosa L.,SPECIES,2888723,99,EXACT
+Shepherdia argentea,Shepherdia argentea,Shepherdia argentea (Pursh) Nutt.,SPECIES,5372429,99,EXACT
+Shepherdia canadensis,Shepherdia canadensis,Shepherdia canadensis (L.) Nutt.,SPECIES,5372427,100,EXACT
+Elaeagnus umbellata,Elaeagnus umbellata,Elaeagnus umbellata Thunb.,SPECIES,3039267,99,EXACT
+Vaccinium trilobum,Vaccinium,Vaccinium L.,GENUS,2882813,96,HIGHERRANK
+Viburnum edule,Viburnum edule,Viburnum edule (Michx.) Raf.,SPECIES,2888613,100,EXACT
+Mahonia trifoliata,Berberidaceae,Berberidaceae,FAMILY,6673,99,HIGHERRANK
+Lycium barbarum,Lycium barbarum,Lycium barbarum L.,SPECIES,2928835,99,EXACT
+Lycium carolinianum,Lycium carolinianum,Lycium carolinianum Walter,SPECIES,2928830,100,EXACT
+Berberis vulgaris,Berberis vulgaris,Berberis vulgaris L.,SPECIES,3033894,99,EXACT
+Berberis thunbergii,Berberis thunbergii,Berberis thunbergii DC.,SPECIES,3033896,100,EXACT
+Lindera benzoin,Lindera benzoin,Lindera benzoin (L.) Blume,SPECIES,5371740,99,EXACT
+Ribes triste,Ribes triste,Ribes triste Pall.,SPECIES,2986159,99,EXACT
+Ribes glandulosum,Ribes glandulosum,Ribes glandulosum Grauer,SPECIES,2986208,99,EXACT
+Aronia arbutifolia,Aronia arbutifolia,Aronia arbutifolia (L.) Pers.,SPECIES,5363629,99,EXACT
+Ilex vomitoria,Ilex vomitoria,Ilex vomitoria Aiton,SPECIES,5414250,100,EXACT
+Vaccinium stamineum,Vaccinium stamineum,Vaccinium stamineum L.,SPECIES,2882913,100,EXACT
+Elaeagnus commutata,Elaeagnus commutata,Elaeagnus commutata Bernh. ex Rydb.,SPECIES,3039274,99,EXACT
+Cornus stolonifera,Cornus stolonifera,Cornus stolonifera Michx.,SPECIES,6427418,100,EXACT
+Viburnum,Viburnum,Viburnum L.,GENUS,2888580,80,HIGHERRANK
+Viburnum lentago,Viburnum lentago,Viburnum lentago L.,SPECIES,2888586,99,EXACT
+Viburnum cassinoides,Viburnum cassinoides,Viburnum cassinoides L.,SPECIES,6369862,99,EXACT
+Viburnum nudum,Viburnum nudum,Viburnum nudum L.,SPECIES,2888627,100,EXACT
+Viburnum prunifolium,Viburnum prunifolium,Viburnum prunifolium L.,SPECIES,2888608,100,EXACT
+Viburnum rufidulum,Viburnum rufidulum,Viburnum rufidulum Raf.,SPECIES,2888590,100,EXACT
+Viburnum obovatum,Viburnum obovatum,Viburnum obovatum Walter,SPECIES,2888620,99,EXACT
+Viburnum alnifolium,Viburnum alnifolium,Viburnum alnifolium Marshall,SPECIES,2888603,100,EXACT
+Prunus virginiana,Prunus virginiana,Prunus virginiana L.,SPECIES,3022668,99,EXACT
+Sambucus canadensis,Sambucus canadensis,Sambucus canadensis L.,SPECIES,6369819,99,EXACT
+Ribes,Ribes,Ribes L.,GENUS,2986095,80,HIGHERRANK
+Ribes americanum,Ribes americanum,Ribes americanum Mill.,SPECIES,2986121,99,EXACT
+Ribes odoratum,Ribes odoratum,Ribes odoratum Schlecht. ex Hemsl.,SPECIES,7510171,99,EXACT
+Lonicera caerulaea,Lonicera caerulea,Lonicera caerulea L.,SPECIES,5334269,95,FUZZY
+Callicarpa americana,Callicarpa americana,Callicarpa americana L.,SPECIES,5341129,99,EXACT
+Aronia melanocarpa,Aronia melanocarpa,Aronia melanocarpa (Michx.) Elliott,SPECIES,5363627,99,EXACT
+Rhamnus caroliniana,Rhamnaceae,Rhamnaceae,FAMILY,2407,99,HIGHERRANK
+Gaylussacia baccata,Gaylussacia baccata,Gaylussacia baccata (Wangenh.) K.Koch,SPECIES,2882739,100,EXACT
+Vaccinium arboreum,Vaccinium arboreum,Vaccinium arboreum Marshall,SPECIES,2882828,99,EXACT
+Vaccinium corymbosum,Vaccinium corymbosum,Vaccinium corymbosum L.,SPECIES,2882849,99,EXACT
+Vaccinium elliotti,Vaccinium elliottii,Vaccinium elliottii Chapm.,SPECIES,2882911,97,FUZZY
+Vaccinium uliginosum,Vaccinium uliginosum,Vaccinium uliginosum L.,SPECIES,8073364,100,EXACT
+Rhus,Rhus,Rhus L.,GENUS,3190534,80,HIGHERRANK
+Rhus coppalina,Rhus copallina,Rhus copallina L.,SPECIES,3190557,97,FUZZY
+Rhus typhina,Rhus typhina,Rhus typhina L.,SPECIES,3190538,100,EXACT
+Rhus glabra,Rhus glabra,Rhus glabra L.,SPECIES,3190544,100,EXACT
+Rhus aromatica,Rhus aromatica,Rhus aromatica Aiton,SPECIES,3190558,100,EXACT
+Zanthoxylum americanum,Zanthoxylum americanum,Zanthoxylum americanum Mill.,SPECIES,3190089,100,EXACT
+Amorpha canescens,Amorpha canescens,Amorpha canescens Pursh,SPECIES,5357388,99,EXACT
+Comptonia peregrina,Comptonia peregrina,Comptonia peregrina (L.) J.M.Coult.,SPECIES,5414197,100,EXACT
+Myrica gale,Myrica gale,Myrica gale L.,SPECIES,5414202,100,EXACT
+Myrica pensylvanica,Morella,Morella Lour.,GENUS,7780807,99,HIGHERRANK
+Ledum groenlandicum,Ledum groenlandicum,Ledum groenlandicum Oeder,SPECIES,2882982,99,EXACT
+Chamaedaphne calyculata,Chamaedaphne calyculata,Chamaedaphne calyculata (L.) Moench,SPECIES,5333436,99,EXACT
+Vitis,Vitis,Vitis L.,GENUS,7467468,80,HIGHERRANK
+Ampelopsis cordata,Ampelopsis cordata,Ampelopsis cordata Michx.,SPECIES,3039183,100,EXACT
+Vitis rotundifolia,Vitis rotundifolia,Vitis rotundifolia Michx.,SPECIES,5372394,99,EXACT
+Ampelopsis arborea,Ampelopsis arborea,"Ampelopsis arborea Kochne, 1893",SPECIES,8363567,99,EXACT
+Smilax,Smilax,Smilax L.,GENUS,2740627,80,HIGHERRANK
+Celastrus scandens,Celastrus scandens,Celastrus scandens L.,SPECIES,3169171,99,EXACT
+Lonicera japonica,Lonicera japonica,Lonicera japonica Thunb.,SPECIES,5334240,99,EXACT
+Parthenocissus quinquefolia,Parthenocissus quinquefolia,Parthenocissus quinquefolia (L.) Planch.,SPECIES,3039194,100,EXACT
+Parthenocissus vitacea,Parthenocissus vitacea,Parthenocissus vitacea (Knerr) Hitchc.,SPECIES,3039193,100,EXACT
+Pueraria lobata,Pueraria lobata,Pueraria lobata (Willd.) Ohwi,SPECIES,2977654,99,EXACT
+Wisteria,Wisteria,Wisteria Nutt.,GENUS,2977309,80,HIGHERRANK
+Scirpus validus,Cyperaceae,Cyperaceae,FAMILY,7708,99,HIGHERRANK
+Typha validus,Typha,Typha L.,GENUS,2702102,96,HIGHERRANK
+Zizaniopsis miliaceae,Zizaniopsis miliacea,Zizaniopsis miliacea (Michx.) Döll & Asch.,SPECIES,2703487,97,FUZZY
+Zizania palustris,Zizania palustris,Zizania palustris L.,SPECIES,2703230,100,EXACT
+Zizania aquatica,Zizania aquatica,Zizania aquatica L.,SPECIES,2703228,100,EXACT
+Bolboschoenus fluviatilis,Bolboschoenus fluviatilis,Bolboschoenus fluviatilis (Torr.) Soják,SPECIES,7953794,99,EXACT
+Typha,Typha,Typha L.,GENUS,2702102,80,HIGHERRANK
+Sparganium eurycarpum,Sparganium eurycarpum,Sparganium eurycarpum Engelm.,SPECIES,2702394,99,EXACT
+Acorus,Acorus,"Acorus spec Linnaeus, 1753",SPECIES,11457635,98,HIGHERRANK
+A. americanus,Plantae,Plantae,KINGDOM,6,99,HIGHERRANK
+Vallisneria americana,Vallisneria americana,Vallisneria americana Michx.,SPECIES,2865501,100,EXACT
+Nasturtium officinale,Nasturtium officinale,Nasturtium officinale R.Br.,SPECIES,7701037,99,EXACT
+Sium suave,Sium suave,Sium suave Walter,SPECIES,3034526,100,EXACT
+Berula erecta,Berula erecta,Berula erecta (Huds.) Coville,SPECIES,3034699,100,EXACT
+Berula pusilla,Berula pusilla,Berula pusilla (Nutt.) Fernald,SPECIES,8594625,100,EXACT
+Veronica americana,Veronica americana,Veronica americana (Raf.) Schwein. ex Benth.,SPECIES,3172084,99,EXACT
+Alternanthera philoxeroides,Alternanthera philoxeroides,Alternanthera philoxeroides (Mart.) Griseb.,SPECIES,3084923,100,EXACT
+Trapa natans,Trapa natans,Trapa natans L.,SPECIES,3188757,99,EXACT
+Hydrocotyle umbellata,Hydrocotyle umbellata,Hydrocotyle umbellata L.,SPECIES,3034614,100,EXACT
+Sagittaria latifolia,Sagittaria latifolia,Sagittaria latifolia Willd.,SPECIES,5328909,100,EXACT
+Sagittaria rigida,Sagittaria rigida,Sagittaria rigida Pursh,SPECIES,5329027,100,EXACT
+Alisma plantago-aquatica,Alisma plantago-aquatica,Alisma plantago-aquatica L.,SPECIES,2865100,100,EXACT
+Brasenia schreberi,Brasenia schreberi,Brasenia schreberi J.F.Gmel.,SPECIES,2882446,100,EXACT
+Nelumbo lutea,Nelumbo lutea,Nelumbo lutea (Willd.) Pers.,SPECIES,7503234,99,EXACT
+Nuphar,Nuphar,Nuphar Sm.,GENUS,2882408,80,HIGHERRANK
+Peltandra virginica,Peltandra virginica,Peltandra virginica (L.) Schott,SPECIES,5330182,99,EXACT
+Colocasia esculenta,Colocasia esculenta,Colocasia esculenta (L.) Schott,SPECIES,5330776,100,EXACT
+Eichhornia crassipes,Eichhornia crassipes,Eichhornia crassipes (Mart.) Solms,SPECIES,2765940,100,EXACT
+Pontederia cordata,Pontederia cordata,Pontederia cordata L.,SPECIES,2766030,99,EXACT
+Allium,Allium,"Allium spec Boiss.Following Stearn, 1882",SPECIES,11893016,97,HIGHERRANK
+Allium vineale,Allium vineale,Allium vineale L.,SPECIES,7792960,99,EXACT
+Allium anadence,Allium,Allium L.,GENUS,9624496,95,HIGHERRANK
+Allium schoenophrasum,Allium schoenoprasum,Allium schoenoprasum L.,SPECIES,2855860,96,FUZZY
+Allium sativum,Allium sativum,Allium sativum L.,SPECIES,2856681,100,EXACT
+Allium canadense,Allium canadense,Allium canadense L.,SPECIES,2855611,99,EXACT
+Allium textile,Allium textile,Allium textile A.Nelson & J.F.Macbr.,SPECIES,2855724,100,EXACT
+Allium drummondii,Allium drummondii,Allium drummondii Regel,SPECIES,2856855,100,EXACT
+Allium cernuum,Allium cernuum,Allium cernuum Roth,SPECIES,2856745,99,EXACT
+Allium stellatum,Allium stellatum,Allium stellatum Nutt. ex Ker Gawl.,SPECIES,2856866,99,EXACT
+Nothocalais cuspidata,Nothocalais cuspidata,Nothocalais cuspidata (Pursh) Greene,SPECIES,3130419,100,EXACT
+Tragopogon,Tragopogon,Tragopogon L.,GENUS,3092408,80,HIGHERRANK
+T. pratensis,Plantae,Plantae,KINGDOM,6,99,HIGHERRANK
+Tradescantia,Tradescantia,Tradescantia Ruppius ex L.,GENUS,2765096,80,HIGHERRANK
+Hemerocallis fulva,Hemerocallis fulva,Hemerocallis fulva (L.) L.,SPECIES,2781074,100,EXACT
+Cyperus esculentus,Cyperus esculentus,Cyperus esculentus L.,SPECIES,2716226,99,EXACT
+Cyperus rotundus,Cyperus rotundus,Cyperus rotundus L.,SPECIES,2714818,99,EXACT
+Leucocrinum montanum,Leucocrinum montanum,Leucocrinum montanum Nutt. ex A.Gray,SPECIES,2770873,99,EXACT
+Arundinaria gigantea,Arundinaria gigantea,Arundinaria gigantea (Walter) Muhl.,SPECIES,2705964,99,EXACT
+Acorus calamus,Acorus calamus,Acorus calamus L.,SPECIES,2873769,100,EXACT
+Phragmites communis,Phragmites communis,Phragmites communis Trin.,SPECIES,5290153,100,EXACT
+Oryzopsis hymenoides,Oryzopsis hymenoides,Oryzopsis hymenoides (Roem. & Schult.) Ricker ex Piper,SPECIES,2703429,99,EXACT
+Phalaris caroliniana,Phalaris caroliniana,Phalaris caroliniana Walter,SPECIES,5289760,100,EXACT
+Hordeum pusillum,Hordeum pusillum,Hordeum pusillum Nutt.,SPECIES,2706070,100,EXACT
+Liatris punctata,Liatris punctata,Liatris punctata Hook.,SPECIES,3104349,100,EXACT
+Plantago maritima,Plantago maritima,Plantago maritima L.,SPECIES,3189755,99,EXACT
+Yucca,Yucca,Yucca L.,GENUS,2775496,80,HIGHERRANK
+Nothoscordum bivalve,Nothoscordum bivalve,Nothoscordum bivalve (L.) Britton,SPECIES,2855600,100,EXACT
+Triglochin maritima,Triglochin maritima,Triglochin maritima L.,SPECIES,2865368,99,EXACT
+Muscari,Muscari,Muscari Mill.,GENUS,2772004,80,HIGHERRANK
+Camassia,Camassia,Camassia Lindl.,GENUS,2769068,80,HIGHERRANK
+Camassia angusta,Camassia angusta,Camassia angusta (Engelm. & A.Gray) Blank.,SPECIES,2769080,100,EXACT
+Aplectrum hyemale,Aplectrum hyemale,Aplectrum hyemale (Muhl. ex Willd.) Torr.,SPECIES,7585836,99,EXACT
+Tipularia discolor,Tipularia discolor,Tipularia discolor (Pursh) Nutt.,SPECIES,5308378,100,EXACT
+Asarum canadense,Asarum canadense,Asarum canadense L.,SPECIES,2873947,100,EXACT
+Erythronium,Erythronium,Erythronium L.,GENUS,2740136,80,HIGHERRANK
+Clintonia borealis,Clintonia borealis,Clintonia borealis (Aiton) Raf.,SPECIES,2753574,100,EXACT
+Symplocarpus foetidus,Symplocarpus foetidus,Symplocarpus foetidus (L.) Salisb. ex W.P.C.Barton,SPECIES,2870117,99,EXACT
+Oxyria digyna,Oxyria digyna,Oxyria digyna (L.) Hill,SPECIES,2889358,100,EXACT
+Dodecatheon,Dodecatheon,Dodecatheon L.,GENUS,7597718,80,HIGHERRANK
+Plantago major,Plantago major,Plantago major L.,SPECIES,3189767,99,EXACT
+Plantago rugelii,Plantago rugelii,Plantago rugelii Decne.,SPECIES,3189781,100,EXACT
+Plantago lanceolata,Plantago lanceolata,Plantago lanceolata L.,SPECIES,8208358,99,EXACT
+Viola sororia,Viola sororia,Viola sororia Willd.,SPECIES,5331238,100,EXACT
+Viola sagittata,Viola sagittata,Viola sagittata Aiton,SPECIES,5331364,100,EXACT
+Viola pedata,Viola pedata,Viola pedata L.,SPECIES,5331278,100,EXACT
+Taraxacum officinale,Taraxacum officinale,Taraxacum officinale Weber ex F.H.Wigg.,SPECIES,5394163,99,EXACT
+Krigia dandelion,Krigia dandelion,Krigia dandelion (L.) Nutt.,SPECIES,3132416,100,EXACT
+Pyrrhopappus grandiflorus,Pyrrhopappus grandiflorus,Pyrrhopappus grandiflorus (Nutt.) Nutt.,SPECIES,3145231,100,EXACT
+Hypochaeris radicata,Hypochaeris radicata,Hypochaeris radicata L.,SPECIES,3093702,100,EXACT
+Leontodon autumnalis,Leontodon autumnalis,"Leontodon autumnalis Oeder, 1816",SPECIES,8058115,99,EXACT
+Oenothera caespitosa,Onagraceae,Onagraceae,FAMILY,2430,99,HIGHERRANK
+Bellis perennis,Bellis perennis,Bellis perennis L.,SPECIES,3117424,100,EXACT
+Saxifraga pensylvanica,Saxifraga pensylvanica,Saxifraga pensylvanica L.,SPECIES,3032700,100,EXACT
+Saxifraga micranthidifolia,Saxifraga micranthidifolia,Saxifraga micranthidifolia (Haw.) Steud.,SPECIES,3032853,99,EXACT
+Tussilago farfara,Tussilago farfara,Tussilago farfara L.,SPECIES,3149879,100,EXACT
+Petasites frigidus,Petasites frigidus,Petasites frigidus (L.) Fr.,SPECIES,3088323,100,EXACT
+Hydrocotyle bonariensis,Hydrocotyle bonariensis,Hydrocotyle bonariensis Comm. ex Lam.,SPECIES,3034611,99,EXACT
+Centella erecta,Centella erecta,Centella erecta (L.fil.) Fernald,SPECIES,8598241,100,EXACT
+Aralia nudicaulis,Aralia nudicaulis,Aralia nudicaulis L.,SPECIES,3037021,99,EXACT
+Trifolium repens,Trifolium repens,Trifolium repens L.,SPECIES,5358748,99,EXACT
+Lomatium foeniculaceum,Lomatium foeniculaceum,Lomatium foeniculaceum (Nutt.) J.M.Coult. & Rose,SPECIES,3034267,100,EXACT
+Musineon tenuifolium,Musineon tenuifolium,Musineon tenuifolium Nutt.,SPECIES,7658142,99,EXACT
+Cymopterus acaulis,Cymopterus acaulis,Cymopterus acaulis Raf.,SPECIES,3034473,99,EXACT
+Cymopterus montanus,Cymopterus montanus,Cymopterus montanus Nutt.,SPECIES,7911387,99,EXACT
+Potentilla anserina,Potentilla anserina,Potentilla anserina L.,SPECIES,5366829,99,EXACT
+Fragaria,Fragaria,Fragaria L.,GENUS,3029779,80,HIGHERRANK
+Fragaria virginiana,Fragaria virginiana,Fragaria virginiana Duchesne,SPECIES,7950792,99,EXACT
+Fragaria vesca,Fragaria vesca,Fragaria vesca L.,SPECIES,3029817,99,EXACT
+Oxalis violacea,Oxalis violacea,Oxalis violacea L.,SPECIES,2891708,99,EXACT
+Pediomelum hypogaeum,Pediomelum hypogaeum,Pediomelum hypogaeum (Nutt.) Rydb.,SPECIES,2944196,100,EXACT
+Pediomelum subacaule,Pediomelum subacaule,Pediomelum subacaule (Torr. & A.Gray) Rydb.,SPECIES,2959964,100,EXACT
+Anemonella thalictroides,Anemonella thalictroides,Anemonella thalictroides (L.) Spach,SPECIES,3033115,99,EXACT
+Mollugo verticillata,Mollugo verticillata,Mollugo verticillata L.,SPECIES,3084611,99,EXACT
+Krigia caespitosa,Krigia caespitosa,Krigia caespitosa (Raf.) K.L.Chambers,SPECIES,4273501,100,EXACT
+Salvia lyrata,Salvia lyrata,Salvia lyrata L.,SPECIES,2927027,100,EXACT
+Silphium perfoliatum,Silphium perfoliatum,Silphium perfoliatum L.,SPECIES,3092576,100,EXACT
+Valerianella,Valerianella,Valerianella spec Boiss. & Balansa,SPECIES,11070217,97,HIGHERRANK
+Claytonia,Claytonia,Claytonia L.,GENUS,3084729,95,HIGHERRANK
+Prunella vulgaris,Prunella vulgaris,Prunella vulgaris L.,SPECIES,5341297,99,EXACT
+Silene vulgaris,Silene vulgaris,Silene vulgaris (Moench) Garcke,SPECIES,9172281,100,EXACT
+Silene cserii,Silene csereii,Silene csereii Baumg.,SPECIES,5384782,95,FUZZY
+Silene alba,Silene,Silene L.,GENUS,3085897,99,HIGHERRANK
+Podophyllum peltatum,Podophyllum peltatum,Podophyllum peltatum L.,SPECIES,3033839,100,EXACT
+Dentaria laciniata,Dentaria laciniata,Dentaria laciniata Muhl.,SPECIES,5374824,99,EXACT
+Dentaria multifida,Dentaria multifida,Dentaria multifida Muhl. ex Elliott,SPECIES,5374763,99,EXACT
+Dentaria heterophylla,Dentaria heterophylla,Dentaria heterophylla Nutt.,SPECIES,5374774,100,EXACT
+Dentaria diphylla,Dentaria diphylla,Dentaria diphylla Michx.,SPECIES,5374767,100,EXACT
+Rumex acetosella,Rumex acetosella,Rumex acetosella L.,SPECIES,2888995,99,EXACT
+Rumex hastatalus,Rumex hastatulus,Rumex hastatulus Baldwin ex Elliott,SPECIES,7840099,95,FUZZY
+Rumex acetosa,Rumex acetosa,Rumex acetosa L.,SPECIES,2888951,100,EXACT
+Ficaria verna,Ficaria verna,Ficaria verna Huds.,SPECIES,9094061,100,EXACT
+Bistorta vivipara,Bistorta vivipara,Bistorta vivipara (L.) Delarbre,SPECIES,2889299,99,EXACT
+Rumex,Rumex,Rumex L.,GENUS,2888942,80,HIGHERRANK
+Rumex crispus,Rumex crispus,Rumex crispus L.,SPECIES,8195144,99,EXACT
+Rumex longifolius,Rumex longifolius,Rumex longifolius DC.,SPECIES,2888946,99,EXACT
+Rumex fueginus,Rumex fueginus,Rumex fueginus Phil.,SPECIES,2888982,100,EXACT
+Rumex patientia,Rumex patientia,Rumex patientia L.,SPECIES,2889019,99,EXACT
+Rumex obtusifolius,Rumex obtusifolius,Rumex obtusifolius L.,SPECIES,2889011,99,EXACT
+Mertensia virginica,Mertensia virginica,Mertensia virginica (L.) Pers. ex Link,SPECIES,5341242,99,EXACT
+Mertensia paniculata,Mertensia paniculata,Mertensia paniculata (Aiton) G.Don,SPECIES,5341214,100,EXACT
+Mertensia maritima,Mertensia maritima,Mertensia maritima (L.) Gray,SPECIES,5341246,100,EXACT
+Solidago sempervirens,Solidago sempervirens,Solidago sempervirens L.,SPECIES,5388927,99,EXACT
+Symphtum officinale,Symphytum officinale,Symphytum officinale L.,SPECIES,7558421,89,FUZZY
+Arctium,Arctium,"Arctium spec Linnaeus, 1753",SPECIES,11572432,98,HIGHERRANK
+Arctium lappa,Arctium lappa,Arctium lappa L.,SPECIES,7353729,99,EXACT
+Arctium minus,Arctium minus,Arctium minus (Hill) Bernh.,SPECIES,5393103,99,EXACT
+Arctium tomentosa,Arctium tomentosum,Arctium tomentosum Mill.,SPECIES,5393080,98,FUZZY
+Aster novae-angliae,Aster novae-angliae,Aster novae-angliae L.,SPECIES,5406425,100,EXACT
+Berteroa incana,Berteroa incana,Berteroa incana (L.) DC.,SPECIES,3053522,100,EXACT
+Campanula rotundifolia,Campanula rotundifolia,Campanula rotundifolia L.,SPECIES,5410907,99,EXACT
+Campanula americana,Campanula americana,"Campanula americana hort. ex Steud., 1840",SPECIES,7639571,99,EXACT
+Campanula rapunculoides,Campanula rapunculoides,Campanula rapunculoides L.,SPECIES,5410436,99,EXACT
+Velns balsamifidus,Plantae,Plantae,KINGDOM,6,99,HIGHERRANK
+Caltha palustris,Caltha palustris,Caltha palustris L.,SPECIES,5371685,100,EXACT
+Cochlearia,Cochlearia,Cochlearia L.,GENUS,3040481,80,HIGHERRANK
+Cardamine bulbosa,Cardamine bulbosa,"Cardamine bulbosa (Schreb. ex Muhl.) Britton, Sterns & Poggenb.",SPECIES,3045907,100,EXACT
+Thlaspi arvense,Thlaspi arvense,Thlaspi arvense L.,SPECIES,3052680,100,EXACT
+Thlaspi alliaceum,Thlaspi alliaceum,Thlaspi alliaceum L.,SPECIES,3052738,100,EXACT
+Armoracia rusticana,Armoracia rusticana,"Armoracia rusticana P.Gaertn., B.Mey. & Scherb.",SPECIES,3041022,99,EXACT
+Boechera laevigata,Boechera laevigata,Boechera laevigata (Muhl. ex Willd.) Al-Shehbaz,SPECIES,3043265,100,EXACT
+Hesperis matronalis,Hesperis matronalis,Hesperis matronalis L.,SPECIES,3042291,100,EXACT
+Cardaria draba,Cardaria draba,Cardaria draba (L.) Desv.,SPECIES,3052311,100,EXACT
+Alliaria petiolata,Alliaria petiolata,Alliaria petiolata (M.Bieb.) Cavara & Grande,SPECIES,5376075,100,EXACT
+Eryngium yuccifolium,Eryngium yuccifolium,Eryngium yuccifolium Michx.,SPECIES,3034408,100,EXACT
+Chenopodium capitatum,Chenopodium capitatum,"Chenopodium capitatum (Linnaeus, 1753) Ach.",SPECIES,11379590,99,EXACT
+Oenothera biennis,Oenothera biennis,Oenothera biennis L.,SPECIES,3188924,99,EXACT
+Evening primrose,Plantae,Plantae,KINGDOM,6,99,HIGHERRANK
+Silphium terebinthinaceum,Silphium terebinthinaceum,Silphium terebinthinaceum Jacq.,SPECIES,7475866,99,EXACT
+Aster macrophyllus,Aster macrophyllus,Aster macrophyllus L.,SPECIES,5396109,100,EXACT
+Viola canadensis,Viola canadensis,Viola canadensis L.,SPECIES,5331231,100,EXACT
+Viola pubescens,Viola pubescens,Viola pubescens Aiton,SPECIES,5331338,100,EXACT
+Prenanthes alba,Nabalus,Nabalus Cass.,GENUS,3123761,99,HIGHERRANK
+Lygodesmia texana,Lygodesmia texana,Lygodesmia texana (Torr. & A.Gray) Greene ex Small,SPECIES,7811240,99,EXACT
+Scorzonera laciniata,Scorzonera laciniata,Scorzonera laciniata L.,SPECIES,8286501,99,EXACT
+Cirsium,Cirsium,Cirsium Mill.,GENUS,3112554,95,HIGHERRANK
+Carduus,Carduus,"Carduus spec (Linnaeus, 1767) Gren.",SPECIES,11666629,97,HIGHERRANK
+Onopordum,Onopordum,Onopordum L.,GENUS,3094883,80,HIGHERRANK
+Silybum,Silybum,Silybum Vaill. ex Adans.,GENUS,3145213,95,HIGHERRANK
+Cirsium discolor,Cirsium discolor,Cirsium discolor (Muhl. ex Willd.) Spreng.,SPECIES,3112737,99,EXACT
+Cirsium altissimum,Cirsium altissimum,Cirsium altissimum (L.) Spreng.,SPECIES,8078803,99,EXACT
+Cirsium horridulum,Cirsium horridulum,Cirsium horridulum Michx.,SPECIES,3112777,99,EXACT
+Cirsium vulgare,Cirsium vulgare,Cirsium vulgare (Savi) Ten.,SPECIES,3112801,99,EXACT
+Cirsium muticum,Cirsium muticum,Cirsium muticum Michx.,SPECIES,3113181,100,EXACT
+Onopordum acanthium,Onopordum acanthium,Onopordum acanthium L.,SPECIES,3094900,100,EXACT
+Carduus nutans,Carduus nutans,Carduus nutans L.,SPECIES,8185959,99,EXACT
+Silybum marianum,Silybum marianum,Silybum marianum (L.) Gaertn.,SPECIES,3145214,100,EXACT
+Lapsana communis,Lapsana communis,Lapsana communis L.,SPECIES,3134857,100,EXACT
+Youngia japonica,Youngia japonica,Youngia japonica (L.) DC.,SPECIES,5387974,100,EXACT
+Pyrrhopappus carolinianus,Pyrrhopappus carolinianus,Pyrrhopappus carolinianus (Walter) DC.,SPECIES,3145236,100,EXACT
+Cichorium intybus,Cichorium intybus,Cichorium intybus L.,SPECIES,5392252,100,EXACT
+Sonchus oleroceus,Sonchus oleraceus,Sonchus oleraceus L.,SPECIES,8228544,95,FUZZY
+Sonchus asper,Sonchus asper,Sonchus asper (L.) Hill,SPECIES,3105782,99,EXACT
+Sonchus arvensis,Sonchus arvensis,Sonchus arvensis L.,SPECIES,3105813,100,EXACT
+Lactuca,Lactuca,Lactuca L.,GENUS,3140231,94,HIGHERRANK
+Lactuca canadensis,Lactuca canadensis,Lactuca canadensis L.,SPECIES,3140315,99,EXACT
+Lactuca hirsuta,Lactuca hirsuta,Lactuca hirsuta Muhl. ex Nutt.,SPECIES,7521930,99,EXACT
+Lactuca floridana,Lactuca floridana,Lactuca floridana (L.) Gaertn.,SPECIES,3140423,100,EXACT
+Lactuca biennis,Lactuca biennis,Lactuca biennis (Moench) Fernald,SPECIES,3140515,100,EXACT
+Lactuca pulchella,Lactuca pulchella,Lactuca pulchella (Pursh) DC.,SPECIES,3140419,100,EXACT
+Lactuca saligna,Lactuca saligna,Lactuca saligna L.,SPECIES,3140467,100,EXACT
+Lactuca serriola,Lactuca serriola,Lactuca serriola L.,SPECIES,3140490,100,EXACT
+Lactuca ludoviciana,Lactuca ludoviciana,Lactuca ludoviciana (Nutt.) Riddell,SPECIES,3140324,100,EXACT
+Castilleja coccinea,Castilleja coccinea,Castilleja coccinea (L.) Spreng.,SPECIES,3170660,99,EXACT
+Rudbeckia laciniata,Rudbeckia laciniata,Rudbeckia laciniata L.,SPECIES,3114229,100,EXACT
+Orobanchocede lobatum,Plantae,Plantae,KINGDOM,6,99,HIGHERRANK
+Monolepis nuttalliana,Monolepis nuttalliana,Monolepis nuttalliana (Roem. & Schult.) Greene,SPECIES,5383905,100,EXACT
+Callirhoe involucrata,Callirhoe involucrata,Callirhoe involucrata (Nutt. ex Torr. & A.Gray) A.Gray,SPECIES,5406702,100,EXACT
+Populus mucilaginousa,Populus,Populus L.,GENUS,3040183,96,HIGHERRANK
+Callirhoe pedata,Callirhoe pedata,Callirhoe pedata (Nutt. ex Hook.) A.Gray,SPECIES,5406705,100,EXACT
+Malva neglecta,Malva neglecta,Malva neglecta Wallr.,SPECIES,3152373,100,EXACT
+Malva moschata,Malva moschata,Malva moschata L.,SPECIES,3152379,99,EXACT
+Malva sylvestris,Malva sylvestris,Malva sylvestris L.,SPECIES,3152374,100,EXACT
+Napaea dioica,Napaea dioica,Napaea dioica L.,SPECIES,5406715,100,EXACT
+Hydrophyllum appendiculatum,Hydrophyllum appendiculatum,Hydrophyllum appendiculatum Michx.,SPECIES,2928279,100,EXACT
+Hydrophyllum canadense,Hydrophyllum canadense,Hydrophyllum canadense L.,SPECIES,2928284,100,EXACT
+Hydrophyllum virginianum,Hydrophyllum virginianum,Hydrophyllum virginianum L.,SPECIES,2928281,100,EXACT
+Hydrophyllum macrophyllum,Hydrophyllum macrophyllum,Hydrophyllum macrophyllum Nutt.,SPECIES,2928283,100,EXACT
+Viola bicolor,Viola,Viola L.,GENUS,2874237,99,HIGHERRANK
+Silphium laciniatum,Silphium laciniatum,Silphium laciniatum L.,SPECIES,3092583,99,EXACT
+Pedicularis canadensis,Pedicularis canadensis,Pedicularis canadensis L.,SPECIES,3171674,100,EXACT
+Chrysanthemum leucanthemum,Chrysanthemum leucanthemum,Chrysanthemum leucanthemum L.,SPECIES,3134125,100,EXACT
+Oenothera laciniata,Oenothera laciniata,Oenothera laciniata Hill,SPECIES,3188867,100,EXACT
+Diplotaxis muralis,Diplotaxis muralis,Diplotaxis muralis (L.) DC.,SPECIES,5376337,99,EXACT
+Rorippa palustris,Rorippa palustris,Rorippa palustris (L.) Besser,SPECIES,3053168,99,EXACT
+Rorippa sylvestris,Rorippa sylvestris,Rorippa sylvestris (L.) Besser,SPECIES,3053376,100,EXACT
+Barbarea vulgaris,Barbarea vulgaris,Barbarea vulgaris (L.) W.T.Aiton,SPECIES,5708780,99,EXACT
+Barbarea verna,Barbarea verna,Barbarea verna (Mill.) Asch.,SPECIES,5374672,100,EXACT
+Chorispora tenella,Chorispora tenella,Chorispora tenella (Pall.) DC.,SPECIES,3044349,100,EXACT
+Capsella bursa-pastoris,Capsella bursa-pastoris,Capsella bursa-pastoris (L.) Medik.,SPECIES,5375388,100,EXACT
+Lepidium campestre,Lepidium campestre,Lepidium campestre (L.) W.T.Aiton,SPECIES,7703116,99,EXACT
+Lepidium virginicum,Lepidium virginicum,Lepidium virginicum L.,SPECIES,5376648,99,EXACT
+Arabis glabra,Arabis glabra,Arabis glabra (L.) Bernh.,SPECIES,5376011,100,EXACT
+Brassica rapa,Brassica rapa,Brassica rapa L.,SPECIES,7903057,99,EXACT
+Rapistrum cabbage,Rapistrum,Rapistrum Crantz,GENUS,8306649,95,HIGHERRANK
+Bunias orientalis,Bunias orientalis,Bunias orientalis L.,SPECIES,3050364,100,EXACT
+Brassica nigra,Brassica nigra,Brassica nigra (L.) W.D.J.Koch,SPECIES,3042658,99,EXACT
+Sinapis alba,Sinapis alba,Sinapis alba L.,SPECIES,3047621,100,EXACT
+Sisymbrium officinale,Sisymbrium officinale,Sisymbrium officinale (L.) Scop.,SPECIES,3046890,100,EXACT
+Sisymbrium loeselii,Sisymbrium loeselii,Sisymbrium loeselii L.,SPECIES,3046875,99,EXACT
+Sisymbrium altissimum,Sisymbrium altissimum,Sisymbrium altissimum L.,SPECIES,3046736,99,EXACT
+Coincya monensis,Coincya monensis,Coincya monensis (L.) Greuter & Burdet,SPECIES,3040600,100,EXACT
+Erucastrum gallicum,Erucastrum gallicum,Erucastrum gallicum (Willd.) O.E.Schulz,SPECIES,5375547,100,EXACT
+Sinapis arvensis,Sinapis arvensis,Sinapis arvensis L.,SPECIES,3047598,99,EXACT
+Raphanus raphanistrum,Raphanus raphanistrum,Raphanus raphanistrum L.,SPECIES,3040983,99,EXACT
+Heracleum lanatum,Heracleum lanatum,Heracleum lanatum Michx.,SPECIES,3034828,100,EXACT
+Heracleum mantegazzianum,Heracleum mantegazzianum,Heracleum mantegazzianum Sommier & Levier,SPECIES,3034825,100,EXACT
+Cryptotaenia canadensis,Cryptotaenia canadensis,Cryptotaenia canadensis (L.) DC.,SPECIES,3034433,100,EXACT
+Sanicula,Sanicula,Sanicula L.,GENUS,3034831,80,HIGHERRANK
+Oxypolis rigidior,Oxypolis rigidior,Oxypolis rigidior (L.) Raf.,SPECIES,3034755,100,EXACT
+Parsnip sativa,Plantae,Plantae,KINGDOM,6,99,HIGHERRANK
+Pimpinella saxifraga,Pimpinella saxifraga,Pimpinella saxifraga L.,SPECIES,7622278,99,EXACT
+Pimpinella anisum,Pimpinella anisum,Pimpinella anisum L.,SPECIES,8080300,99,EXACT
+Cardamine pratensis,Cardamine pratensis,Cardamine pratensis L.,SPECIES,7972010,99,EXACT
+Cardamine hirsuta,Cardamine hirsuta,Cardamine hirsuta L.,SPECIES,3046258,99,EXACT
+Cardamine pensylvanica,Cardamine pensylvanica,Cardamine pensylvanica Muhl.,SPECIES,3045880,99,EXACT
+Cardamine imaptiens,Cardamine impatiens,Cardamine impatiens L.,SPECIES,3046187,96,FUZZY
+Lepidium didymum,Lepidium didymum,Lepidium didymum L.,SPECIES,5377060,100,EXACT
+Duchesnea indica,Duchesnea indica,Duchesnea indica (Andrews) Focke,SPECIES,3031919,99,EXACT
+Trifolium pratense,Trifolium pratense,Trifolium pratense L.,SPECIES,8324121,100,EXACT
+Phacelia dubia,Phacelia dubia,Phacelia dubia (L.) Trel.,SPECIES,2928259,100,EXACT
+Phacelia bipinnatifida,Phacelia bipinnatifida,Phacelia bipinnatifida Michx.,SPECIES,2928138,99,EXACT
+Geum rivale,Geum rivale,Geum rivale L.,SPECIES,5369701,99,EXACT
+Taenidia integerrima,Taenidia integerrima,Taenidia integerrima (L.) Drude,SPECIES,5371759,100,EXACT
+Ligusticum canadense,Ligusticum canadense,Ligusticum canadense (L.) Britton,SPECIES,3034793,99,EXACT
+American lovage,Plantae,Plantae,KINGDOM,6,99,HIGHERRANK
+Oenanthe javanica,Oenanthe javanica,Oenanthe javanica (Blume) DC.,SPECIES,5371886,100,EXACT
+Ligusticum scoticum,Ligusticum scoticum,"Ligusticum scoticum Lour., 1790",SPECIES,9199378,100,EXACT
+Dysphania ambrosioides,Dysphania ambrosioides,Dysphania ambrosioides (L.) Mosyakin & Clemants,SPECIES,5568446,100,EXACT
+Angelica lucida,Angelica lucida,Angelica lucida L.,SPECIES,5371791,100,EXACT
+Angelica atropurpurea,Angelica atropurpurea,Angelica atropurpurea L.,SPECIES,5371822,100,EXACT
+Angelica triquinata,Angelica triquinata,Angelica triquinata Michx.,SPECIES,5371789,99,EXACT
+Angelica venenosa,Angelica venenosa,Angelica venenosa (Greenway) Fernald,SPECIES,5371819,100,EXACT
+Angelica sylvestris,Angelica sylvestris,Angelica sylvestris L.,SPECIES,5371818,100,EXACT
+Aegopodium podagraria,Aegopodium podagraria,Aegopodium podagraria L.,SPECIES,3034620,100,EXACT
+Polytaenia nuttallii,Polytaenia nuttallii,Polytaenia nuttallii DC.,SPECIES,5371857,100,EXACT
+Osmorhiza longistylis,Osmorhiza longistylis,Osmorhiza longistylis (Torr.) DC.,SPECIES,3034155,100,EXACT
+Osmorhiza claytonii,Osmorhiza claytonii,Osmorhiza claytonii (Michx.) C.B.Clarke,SPECIES,3034145,99,EXACT
+Aquilegia canadensis,Aquilegia canadensis,Aquilegia canadensis L.,SPECIES,3033197,99,EXACT
+Matricaria matricarioides,Matricaria matricarioides,"Matricaria matricarioides (Less.) Porter, 1894",SPECIES,3103805,99,EXACT
+Foeniculum vulgare,Foeniculum vulgare,Foeniculum vulgare Mill.,SPECIES,3034922,99,EXACT
+Conioselinum chinense,Conioselinum chinense,"Conioselinum chinense (L.) Britton, Sterns & Poggenb.",SPECIES,3034690,100,EXACT
+Carum carvi,Carum carvi,Carum carvi L.,SPECIES,3034714,100,EXACT
+Caraway wild,Plantae,Plantae,KINGDOM,6,99,HIGHERRANK
+Perideridia americana,Perideridia americana,Perideridia americana (Nutt. ex DC.) Rchb.,SPECIES,7827848,99,EXACT
+Perideridia gairdneri,Perideridia gairdneri,Perideridia gairdneri (Hook. & Arn.) Mathias,SPECIES,3034543,100,EXACT
+Erigenia bulbosa,Erigenia bulbosa,Erigenia bulbosa (Michx.) Nutt.,SPECIES,3034769,100,EXACT
+Musineon divaricatum,Musineon divaricatum,Musineon divaricatum (Pursh) Nutt.,SPECIES,3034880,99,EXACT
+Lomatium orientale,Lomatium orientale,Lomatium orientale J.M.Coult. & Rose,SPECIES,3034346,100,EXACT
+Anthriscus sylvestris,Anthriscus sylvestris,Anthriscus sylvestris (L.) Hoffm.,SPECIES,5371742,100,EXACT
+Torilis japonica,Torilis japonica,Torilis japonica (Houtt.) DC.,SPECIES,3034820,100,EXACT
+Torilis arvensis,Torilis arvensis,Torilis arvensis (Huds.) Link,SPECIES,3034823,100,EXACT
+Daucus carota,Daucus carota,Daucus carota L.,SPECIES,3034742,99,EXACT
+Chaerophyllum tainturieri,Chaerophyllum tainturieri,Chaerophyllum tainturieri Hook. & Arn.,SPECIES,3034651,100,EXACT
+Chaerophyllum procumbens,Chaerophyllum procumbens,Chaerophyllum procumbens (L.) Crantz,SPECIES,3034652,100,EXACT
+Descurainia pinnata,Descurainia pinnata,Descurainia pinnata (Walter) Britton,SPECIES,3044133,100,EXACT
+Descurainia sophia,Descurainia sophia,Descurainia sophia (L.) Webb ex Prantl,SPECIES,3044318,99,EXACT
+Erodium cicutarium,Erodium cicutarium,Erodium cicutarium (L.) L'Hér.,SPECIES,9485490,99,EXACT
+Cardiospermum halicacabum,Cardiospermum halicacabum,Cardiospermum halicacabum L.,SPECIES,3189939,100,EXACT
+Lathyrus latifolius,Lathyrus latifolius,Lathyrus latifolius L.,SPECIES,5356517,99,EXACT
+Lathyrus sylvestris,Lathyrus sylvestris,Lathyrus sylvestris L.,SPECIES,5356623,100,EXACT
+Lathyrus tuberosus,Lathyrus tuberosus,Lathyrus tuberosus L.,SPECIES,5356522,100,EXACT
+Lathyrus ochroleucus,Lathyrus ochroleucus,Lathyrus ochroleucus Hook.,SPECIES,5356371,99,EXACT
+Lathyrus japonicus,Lathyrus japonicus,Lathyrus japonicus Willd.,SPECIES,5356714,100,EXACT
+Amphicarpaea bracteata,Amphicarpaea bracteata,Amphicarpaea bracteata (L.) Fernald,SPECIES,2960161,99,EXACT
+Phaseolus polystachios,Phaseolus polystachios,"Phaseolus polystachios (L.) Britton, Sterns & Poggenb.",SPECIES,5350430,100,EXACT
+Strophostyles helvola,Strophostyles helvola,Strophostyles helvola (L.) Elliott,SPECIES,3912996,100,EXACT
+Apios americana,Apios americana,Apios americana Medik.,SPECIES,2966796,100,EXACT
+Vicia,Vicia,Vicia L.,GENUS,2974751,80,HIGHERRANK
+Vicia sativa,Vicia sativa,Vicia sativa L.,SPECIES,2975014,99,EXACT
+Vicia caroliniana,Vicia caroliniana,Vicia caroliniana Walter,SPECIES,2975000,100,EXACT
+Vicia americana,Vicia americana,Vicia americana Muhl. ex Willd.,SPECIES,2975204,99,EXACT
+Vicia villosa,Vicia villosa,Vicia villosa Roth,SPECIES,9182154,99,EXACT
+Vicia cracca,Vicia cracca,Vicia cracca L.,SPECIES,2975287,99,EXACT
+Dioscorea polystachya,Dioscorea polystachya,Dioscorea polystachya Turcz.,SPECIES,2754732,100,EXACT
+Fallopia,Fallopia,Fallopia Adans.,GENUS,2889418,95,HIGHERRANK
+Ipomoea pandurata,Ipomoea pandurata,Ipomoea pandurata (L.) G.Mey.,SPECIES,2928514,99,EXACT
+Cucurbita foetidissima,Cucurbita foetidissima,Cucurbita foetidissima Kunth,SPECIES,2874521,100,EXACT
+Cucurbita pepo,Cucurbita pepo,Cucurbita pepo L.,SPECIES,2874508,99,EXACT
+Elothria pendula,Plantae,Plantae,KINGDOM,6,99,HIGHERRANK
+Humulus lupulus,Humulus lupulus,Humulus lupulus L.,SPECIES,2984535,99,EXACT
+Passiflora incarnata,Passiflora incarnata,Passiflora incarnata L.,SPECIES,2874218,99,EXACT
+Passiflora lutea,Passiflora lutea,Passiflora lutea L.,SPECIES,2874220,99,EXACT
+Trillium,Trillium,Trillium L.,GENUS,2742182,80,HIGHERRANK
+Lilium,Lilium,Lilium Tourn. ex L.,GENUS,2752977,80,HIGHERRANK
+Medeola virginiana,Medeola virginiana,Medeola virginiana L.,SPECIES,2750658,100,EXACT
+Cornus canadensis,Cornus canadensis,Cornus canadensis L.,SPECIES,3082270,99,EXACT
+Cornus suecicia,Cornus suecica,Cornus suecica L.,SPECIES,3082246,96,FUZZY
+Sedum sarmentosum,Sedum sarmentosum,Sedum sarmentosum Bunge,SPECIES,5362004,100,EXACT
+Sedum ternatum,Sedum ternatum,Sedum ternatum Michx.,SPECIES,5362037,100,EXACT
+Gallium aparine,Galium aparine,Galium aparine L.,SPECIES,2913548,89,FUZZY
+Panax trifolius,Panax trifolius,Panax trifolius L.,SPECIES,5372277,100,EXACT
+Panax quinquefolia,Panax quinquefolius,Panax quinquefolius L.,SPECIES,5372246,97,FUZZY
+Calamintia arkansana,Calamintha arkansana,Calamintha arkansana (Nutt.) Shinners,SPECIES,5341435,88,FUZZY
+Virginia pycnanthemum,Plantae,Plantae,KINGDOM,6,99,HIGHERRANK
+Pycnanthemum,Pycnanthemum,Pycnanthemum Michx.,GENUS,2927338,95,HIGHERRANK
+Pycnanthemum verticillatum,Pycnanthemum verticillatum,Pycnanthemum verticillatum (Michx.) Pers.,SPECIES,2927363,99,EXACT
+Hedeoma pulegioides,Hedeoma pulegioides,Hedeoma pulegioides (L.) Pers.,SPECIES,2926704,100,EXACT
+Satureja vulgaris,Clinopodium,Clinopodium L.,GENUS,2926907,99,HIGHERRANK
+Origanum vulgare,Origanum vulgare,Origanum vulgare L.,SPECIES,2926612,99,EXACT
+Cunila origanoides,Cunila origanoides,Cunila origanoides (L.) Britton,SPECIES,5341316,100,EXACT
+Agastache foeniculum,Agastache foeniculum,Agastache foeniculum (Pursh) Kuntze,SPECIES,2926406,100,EXACT
+Marrubium horehound,Marrubium,Marrubium L.,GENUS,2927068,96,HIGHERRANK
+Nepeta cataria,Nepeta cataria,Nepeta cataria L.,SPECIES,5341499,100,EXACT
+Perilla frutescens,Perilla frutescens,Perilla frutescens (L.) Britton,SPECIES,5341394,99,EXACT
+Mentha,Mentha,Mentha L.,GENUS,2927173,80,HIGHERRANK
+Mentha arvensis,Mentha arvensis,Mentha arvensis L.,SPECIES,2927192,100,EXACT
+Mentha spicata,Mentha spicata,Mentha spicata L.,SPECIES,2927175,99,EXACT
+Mentha piperata,Mentha piperata,"Mentha piperata Stokes, 1812",SPECIES,3897162,99,EXACT
+Blephilia hirsuta,Blephilia hirsuta,Blephilia hirsuta (Pursh) Benth.,SPECIES,2926501,100,EXACT
+Glechoma hederacea,Glechoma hederacea,Glechoma hederacea L.,SPECIES,2926557,100,EXACT
+Monarda,Monarda,Monarda L.,GENUS,2926838,80,HIGHERRANK
+Monarda didyma,Monarda didyma,Monarda didyma L.,SPECIES,5341407,100,EXACT
+Lamium purpureum,Lamium purpureum,Lamium purpureum L.,SPECIES,2926682,100,EXACT
+Lamium amplexicaule,Lamium amplexicaule,Lamium amplexicaule L.,SPECIES,2926679,100,EXACT
+Stachys floridana,Stachys floridana,Stachys floridana Shuttlew. ex Benth.,SPECIES,2927237,99,EXACT
+Stachys palustris,Stachys palustris,Stachys palustris L.,SPECIES,2927245,99,EXACT
+Galeopsis tetrahit,Galeopsis tetrahit,Galeopsis tetrahit L.,SPECIES,5341300,100,EXACT
+Lycopus,Lycopus,Lycopus L.,GENUS,2927122,80,HIGHERRANK
+Urtica dioica,Urtica dioica,Urtica dioica L.,SPECIES,7960979,99,EXACT
+Urtica chamaedryoides,Urtica chamaedryoides,Urtica chamaedryoides Pursh,SPECIES,5361812,100,EXACT
+Urtica urens,Urtica urens,Urtica urens L.,SPECIES,5361815,99,EXACT
+Rhexia virginica,Rhexia virginica,Rhexia virginica L.,SPECIES,6370198,100,EXACT
+Hypericum ascryon,Hypericum ascyron,Hypericum ascyron L.,SPECIES,3189479,95,FUZZY
+Lythrum salicaria,Lythrum salicaria,Lythrum salicaria L.,SPECIES,3188736,100,EXACT
+Stellaria graminea,Stellaria graminea,Stellaria graminea L.,SPECIES,5384616,99,EXACT
+Bidens alba,Bidens alba,Bidens alba (L.) DC.,SPECIES,5391861,100,EXACT
+Bidens bipinnata,Bidens bipinnata,Bidens bipinnata L.,SPECIES,5389402,99,EXACT
+Honckenya peploides,Honckenya peploides,Honckenya peploides (L.) Ehrh.,SPECIES,3085776,100,EXACT
+Sesuvium portulacastrum,Sesuvium portulacastrum,Sesuvium portulacastrum (L.) L.,SPECIES,3084883,100,EXACT
+Sesuvium verrucosum,Sesuvium verrucosum,Sesuvium verrucosum Raf.,SPECIES,3084886,100,EXACT
+Stellaria,Stellaria,"Stellaria spec (Linnaeus, 1753) Vill.",SPECIES,11500071,98,HIGHERRANK
+Stellaria media,Stellaria media,Stellaria media (L.) Vill.,SPECIES,5384604,99,EXACT
+Stellaria pubera,Stellaria pubera,Stellaria pubera Michx.,SPECIES,5384664,100,EXACT
+Stellaria aqatica,Stellaria,Stellaria L.,GENUS,3085667,95,HIGHERRANK
+Cerastium fontanum,Cerastium fontanum,Cerastium fontanum Baumg.,SPECIES,3085458,100,EXACT
+Drymaria cordata,Drymaria cordata,Drymaria cordata (L.) Willd. ex Schult.,SPECIES,5384509,99,EXACT
+Proboscidea louisiana,Proboscidea louisiana,Proboscidea louisiana (Mill.) Wooton & Standl.,SPECIES,5415102,99,EXACT
+Phlox divaricata,Phlox divaricata,Phlox divaricata L.,SPECIES,2927730,99,EXACT
+Phlox pilosa,Phlox pilosa,Phlox pilosa L.,SPECIES,2927734,99,EXACT
+Asclapias syriaca,Asclepias syriaca,Asclepias syriaca L.,SPECIES,3170247,86,FUZZY
+Asclepias speciosa,Asclepias speciosa,Asclepias speciosa Torr.,SPECIES,3170260,100,EXACT
+Asclepias viridiflora,Asclepias viridiflora,Asclepias viridiflora Raf.,SPECIES,3170313,99,EXACT
+Asclepias arenaria,Asclepias arenaria,Asclepias arenaria Torr.,SPECIES,3170290,100,EXACT
+Asclepias exaltata,Asclepias exaltata,Asclepias exaltata L.,SPECIES,3170307,99,EXACT
+Pilea pumila,Pilea pumila,Pilea pumila (L.) A.Gray,SPECIES,5361818,99,EXACT
+Boehmeria cylindrica,Boehmeria cylindrica,Boehmeria cylindrica (L.) Sw.,SPECIES,2984345,99,EXACT
+Galinsoga,Galinsoga,Galinsoga Ruiz & Pav.,GENUS,3132547,80,HIGHERRANK
+Helianthus tuberosus,Helianthus tuberosus,Helianthus tuberosus L.,SPECIES,3119175,99,EXACT
+Iva annua,Iva annua,Iva annua L.,SPECIES,5402627,99,EXACT
+Ambrosia trifida,Ambrosia trifida,Ambrosia trifida L.,SPECIES,3110588,100,EXACT
+Eclipta prostrata,Eclipta prostrata,Eclipta prostrata (L.) L.,SPECIES,5384950,99,EXACT
+Pedicularis lanceolata,Pedicularis lanceolata,Pedicularis lanceolata Michx.,SPECIES,3171676,100,EXACT
+Artiplex,Atriplex,"Atriplex spec Linnaeus, 1755",SPECIES,11477817,86,HIGHERRANK
+Asparagus officinalis,Asparagus officinalis,Asparagus officinalis L.,SPECIES,2768885,99,EXACT
+Salsola tragus,Salsola tragus,Salsola tragus L.,SPECIES,3083945,100,EXACT
+Suaeda,Suaeda,Suaeda Scop.,GENUS,7677792,95,HIGHERRANK
+Amaranthus,Amaranthus,"Amaranthus spec Linnaeus, 1753",SPECIES,11706057,98,HIGHERRANK
+Amaranthus blitoides,Amaranthus blitoides,Amaranthus blitoides S.Watson,SPECIES,5384395,100,EXACT
+Kochia scoparia,Kochia scoparia,Kochia scoparia (L.) Schrad.,SPECIES,8904738,100,EXACT
+Portulaca oleracea,Portulaca oleracea,Portulaca oleracea L.,SPECIES,3084719,100,EXACT
+Croton monathogyna,Croton monanthogynus,Croton monanthogynus Michx.,SPECIES,3057700,95,FUZZY
+Linum perenne,Linum perenne,Linum perenne L.,SPECIES,2873878,99,EXACT
+Linum rigidum,Linum rigidum,Linum rigidum Pursh,SPECIES,2873856,99,EXACT
+Linum berlandieri,Linum berlandieri,Linum berlandieri Hook.,SPECIES,2873932,100,EXACT
+Conyza canadensis,Conyza canadensis,Conyza canadensis (L.) Cronquist,SPECIES,5404801,100,EXACT
+Bupleurum rotundifolium,Bupleurum rotundifolium,Bupleurum rotundifolium L.,SPECIES,3034554,99,EXACT
+Polygonaceae japonica,Polygonaceae,Polygonaceae,FAMILY,2416,96,HIGHERRANK
+Persicaria,Persicaria,Persicaria (L.) Mill.,GENUS,6390748,95,HIGHERRANK
+Persicaria lapathifolia,Persicaria lapathifolia,Persicaria lapathifolia (L.) Gray,SPECIES,2889262,99,EXACT
+Persicaria maculosa,Persicaria maculosa,Persicaria maculosa Gray,SPECIES,6391194,100,EXACT
+Persicaria hydropiper,Persicaria hydropiper,Persicaria hydropiper (L.) Spach,SPECIES,8323622,99,EXACT
+Persicaria amphibia,Persicaria amphibia,Persicaria amphibia (L.) Gray,SPECIES,6391648,99,EXACT
+Persicaria coccinea,Persicaria coccinea,Persicaria coccinea (Muhl. ex Willd.) Greene,SPECIES,6391528,100,EXACT
+Polygonum erectum,Polygonum erectum,Polygonum erectum L.,SPECIES,5334437,99,EXACT
+Rumex triangulivalvis,Rumex triangulivalvis,Rumex triangulivalvis (Danser) Rech.fil.,SPECIES,6391377,100,EXACT
+Phytolacca americana,Phytolacca americana,Phytolacca americana L.,SPECIES,3084015,100,EXACT
+Epilobium angustifolium,Chamaenerion,Chamaenerion Seguier,GENUS,8406741,99,HIGHERRANK
+Parietaria pensylvanica,Parietaria pensylvanica,Parietaria pensylvanica Muhl. ex Willd.,SPECIES,5361796,99,EXACT
+Ipomoea leptophylla,Ipomoea leptophylla,Ipomoea leptophylla Torr.,SPECIES,2928569,100,EXACT
+Comandra umbellata,Comandra umbellata,Comandra umbellata (L.) Nutt.,SPECIES,2889777,100,EXACT
+Commelina communis,Commelina communis,Commelina communis L.,SPECIES,2764179,99,EXACT
+Commelina virginica,Commelina virginica,Commelina virginica L.,SPECIES,2764028,99,EXACT
+Commelina erecta,Commelina erecta,Commelina erecta L.,SPECIES,2764389,99,EXACT
+Streptopus amplexifolius,Streptopus amplexifolius,Streptopus amplexifolius (L.) DC.,SPECIES,2752734,100,EXACT
+Streptopus lanceolatus,Streptopus lanceolatus,Streptopus lanceolatus (Aiton) Reveal,SPECIES,2752779,100,EXACT
+Uvularia grandiflorum,Uvularia,Uvularia L.,GENUS,2740309,93,HIGHERRANK
+Polygonatum biflorum,Polygonatum biflorum,Polygonatum biflorum (Walter) Elliott,SPECIES,2770039,100,EXACT
+Maianthemum racemosum,Maianthemum racemosum,Maianthemum racemosum (L.) Link,SPECIES,2769457,100,EXACT
+Chenopodium,Chenopodium,Chenopodium spec Bontei Aell.,SPECIES,9708769,97,HIGHERRANK
+Impatiens capensis,Impatiens capensis,Impatiens capensis Meerb.,SPECIES,2891774,99,EXACT
+Impatiens pallida,Impatiens pallida,Impatiens pallida Nutt.,SPECIES,2891767,100,EXACT
+Helianthus annuus,Helianthus annuus,Helianthus annuus L.,SPECIES,9206251,100,EXACT
+Abutilon theophrasti,Abutilon theophrasti,Abutilon theophrasti Medik.,SPECIES,3152614,100,EXACT
+Sida spinosa,Sida spinosa,Sida spinosa L.,SPECIES,5406741,99,EXACT
+Solanum nigrum,Solanum nigrum,Solanum nigrum L.,SPECIES,9150405,99,EXACT
+Physalis,Physalis,Physalis L.,GENUS,2928907,80,HIGHERRANK
+Physalis heterophylla,Physalis heterophylla,Physalis heterophylla Nees,SPECIES,5341783,99,EXACT
+Laportea canadensis,Laportea canadensis,Laportea canadensis (L.) Wedd.,SPECIES,2984463,99,EXACT
+Artemisia serrata,Artemisia serrata,Artemisia serrata Nutt.,SPECIES,3121361,100,EXACT
+Solidago canadensis,Solidago canadensis,Solidago canadensis L.,SPECIES,5389029,100,EXACT
+Penthorum sedoides,Penthorum sedoides,Penthorum sedoides L.,SPECIES,2985709,100,EXACT
+Hylotelephium telephium,Hylotelephium telephium,Hylotelephium telephium (L.) H.Ohba,SPECIES,2985865,100,EXACT
+Sedum roseum,Sedum roseum,Sedum roseum Steven,SPECIES,8408721,100,EXACT
+Oenothera grandiflora,Oenothera grandiflora,Oenothera grandiflora L'Her.,SPECIES,8106009,99,EXACT
+Campanula divaricata,Campanula divaricata,Campanula divaricata Michx.,SPECIES,5410780,100,EXACT
+Artemisia dracunculus,Artemisia dracunculus,Artemisia dracunculus L.,SPECIES,3121581,99,EXACT
+Mugwort vulgaris,Plantae,Plantae,KINGDOM,6,99,HIGHERRANK
+Castilleja sessiflora,Castilleja sessiliflora,Castilleja sessiliflora Pursh,SPECIES,3170616,95,FUZZY
+Hydrocotyle americana,Hydrocotyle americana,Hydrocotyle americana L.,SPECIES,3034603,99,EXACT
+Cnidoscolus texanum,Cnidoscolus texanus,Cnidoscolus texanus (Müll.Arg.) Small,SPECIES,3073704,98,FUZZY
+Cnidoscolus stimulosus,Cnidoscolus stimulosus,Cnidoscolus stimulosus (Michx.) Engelm. & A.Gray,SPECIES,3073687,100,EXACT
+Hibiscus aculeatus,Hibiscus aculeatus,Hibiscus aculeatus Walter,SPECIES,3152544,99,EXACT
+Hibiscus coccineus,Hibiscus coccineus,Hibiscus coccineus (Medik.) Walter,SPECIES,3152566,100,EXACT
+Modiola caroliniana,Modiola caroliniana,Modiola caroliniana (L.) G.Don,SPECIES,8338793,99,EXACT
+Hibiscus moscheutos,Hibiscus moscheutos,Hibiscus moscheutos L.,SPECIES,3152596,100,EXACT
+Hibiscus laevis,Hibiscus laevis,Hibiscus laevis All.,SPECIES,3152576,99,EXACT
+Malvaviscus arboreus,Malvaviscus arboreus,Malvaviscus arboreus Cav.,SPECIES,3152775,100,EXACT
+Kosteletzkya pentacarpos,Kosteletzkya pentacarpos,Kosteletzkya pentacarpos (L.) Ledeb.,SPECIES,4939647,100,EXACT
+Althaea officinalis,Althaea officinalis,Althaea officinalis L.,SPECIES,3152520,100,EXACT
+Xanthium strumarium,Xanthium strumarium,Xanthium strumarium L.,SPECIES,3089154,99,EXACT
+Cakile edentula,Cakile edentula,Cakile edentula (Bigelow) Hook.,SPECIES,3048882,99,EXACT
+Cycloloma atriplicifolium,Cycloloma atriplicifolium,Cycloloma atriplicifolium (Spreng.) J.M.Coult.,SPECIES,3083565,100,EXACT
+Chenopodium ambrosioides,Amaranthaceae,Amaranthaceae,FAMILY,3064,99,HIGHERRANK
+Chenopodium hybridum,Chenopodium hybridum,Chenopodium hybridum L.,SPECIES,3083901,99,EXACT
+Oenothera speciosa,Oenothera speciosa,Oenothera speciosa Nutt.,SPECIES,3188859,100,EXACT
+Cirsium arvense,Cirsium arvense,Cirsium arvense (L.) Scop.,SPECIES,3113414,100,EXACT
+Erechtites hieracifolia,Erechtites hieracifolia,Erechtites hieracifolia (L.) Raf.,SPECIES,7852981,99,EXACT
+Sphaeralcea coccinea,Sphaeralcea coccinea,Sphaeralcea coccinea (Nutt.) Rydb.,SPECIES,3152438,100,EXACT
+Hibiscus trionum,Hibiscus trionum,Hibiscus trionum L.,SPECIES,3152560,100,EXACT
+Oxalis,Oxalis,Oxalis L.,GENUS,2891642,80,HIGHERRANK
+Cleome serrulata,Cleomaceae,Cleomaceae,FAMILY,3845332,99,HIGHERRANK
+Floerkia hotproserpinacoides,Plantae,Plantae,KINGDOM,6,99,HIGHERRANK
+Melilotus albus,Melilotus albus,Melilotus albus Medik.,SPECIES,2971095,99,EXACT
+Melilotus officinalis,Melilotus officinalis,Melilotus officinalis (L.) Lam.,SPECIES,8193111,99,EXACT
+Desmodium glutinosum,Desmodium glutinosum,Desmodium glutinosum (Muhl. ex Willd.) Alph.Wood,SPECIES,2967416,99,EXACT
+Glycirrhiza lepidota,Glycyrrhiza lepidota,Glycyrrhiza lepidota Pursh,SPECIES,2965778,86,FUZZY
+Dalea candida,Dalea candida,Dalea candida Willd.,SPECIES,5353279,100,EXACT
+Dalea purpurea,Dalea purpurea,Dalea purpurea Vent.,SPECIES,5353342,100,EXACT
+Hedysarum alpinum,Hedysarum alpinum,Hedysarum alpinum L.,SPECIES,2949263,99,EXACT
+Astragalus crassicarpus,Astragalus crassicarpus,Astragalus crassicarpus Nutt.,SPECIES,5343637,99,EXACT
+Pediomelum esculentum,Pediomelum esculentum,Pediomelum esculentum (Pursh) Rydb.,SPECIES,2944105,100,EXACT
+Cannabis sativa,Cannabis sativa,Cannabis sativa L.,SPECIES,5361880,100,EXACT
+Aralia racemosa,Aralia racemosa,Aralia racemosa L.,SPECIES,3036958,100,EXACT
+Pediomelum cuspidatum,Pediomelum cuspidatum,Pediomelum cuspidatum (Pursh) Rydb.,SPECIES,2944165,100,EXACT
+Aralia hispida,Aralia hispida,Aralia hispida Vent.,SPECIES,3037033,99,EXACT
+Carya illinoinensis,Carya illinoinensis,Carya illinoinensis (Wangenh.) K.Koch,SPECIES,3054289,100,EXACT
+Carya aquatica,Carya aquatica,Carya aquatica (F.Michx.) Nutt.,SPECIES,8246850,99,EXACT
+Carya cordiformis,Carya cordiformis,Carya cordiformis (Wangenh.) K.Koch,SPECIES,3054299,99,EXACT
+Carya ovata,Carya ovata,Carya ovata (Mill.) K.Koch,SPECIES,3054296,99,EXACT
+Carya tomentosa,Carya tomentosa,Carya tomentosa (Lam.) Nutt.,SPECIES,3054304,100,EXACT
+Carya texana,Carya texana,Carya texana Buckley,SPECIES,3054314,99,EXACT
+Quercus nigra,Quercus nigra,Quercus nigra L.,SPECIES,2879328,99,EXACT
+Quercus imbricaria,Quercus imbricaria,Quercus imbricaria Michx.,SPECIES,2881106,99,EXACT
+Persea borbonia,Persea borbonia,Persea borbonia (L.) Spreng.,SPECIES,3034048,99,EXACT
+Persea palustris,Persea palustris,Persea palustris (Raf.) Sarg.,SPECIES,3034052,100,EXACT
+Crataegus aestivalis,Crataegus aestivalis,Crataegus aestivalis (Walter) Torr. & A.Gray,SPECIES,3013483,99,EXACT
+Prunus pumilia,Prunus pumilio,Prunus pumilio Batsch,SPECIES,3020593,97,FUZZY
+Prunus susquehanae,Prunus susquehanae,Prunus susquehanae Willd.,SPECIES,3853672,100,EXACT
+Ceanothus,Ceanothus,Ceanothus L.,GENUS,3039297,80,HIGHERRANK
+Ceanothus americanus,Ceanothus americanus,Ceanothus americanus L.,SPECIES,3039318,99,EXACT
+Ceanothus herbaceus,Ceanothus herbaceus,Ceanothus herbaceus Raf.,SPECIES,3039322,100,EXACT
+Allium tricoccum,Allium tricoccum,Allium tricoccum Aiton,SPECIES,2856301,99,EXACT
+Allium burdickii,Allium burdickii,Allium burdickii (Hanes) A.G.Jones,SPECIES,2857170,100,EXACT
+Lathyrus palustris,Lathyrus palustris,Lathyrus palustris L.,SPECIES,5356412,99,EXACT
+Lathyrus venosus,Lathyrus venosus,Lathyrus venosus Muhl. ex Willd.,SPECIES,5356511,99,EXACT

@@ -24,6 +24,7 @@ def search(predicate_path):
         return
 
 if __name__ == "__main__":
-    predicate = '/home/ubuntu/iNaturalist-edible-plants/outputs/317_taxonKeys_query.json'
+    predicate = '/home/boon/Projects/iNaturalist-edible-plants/outputs/650all_taxonKeys_query.json'
     result = search(predicate)
-    pprint(result["results"])
+    print('Total Number of Occurances found: ',result["count"])
+    # pprint(result["results"])

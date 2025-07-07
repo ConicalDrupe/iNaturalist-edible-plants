@@ -16,9 +16,9 @@ class NpEncoder(json.JSONEncoder):
         return super(NpEncoder, self).default(obj)
 
 
-def createQuery(taxon_key_list,save_dir='/home/ubuntu/iNaturalist-edible-plants/outputs',template_path='/home/ubuntu/iNaturalist-edible-plants/apis/inat_usa_predicate_template.json',name_flag=""):
+def createQuery(taxon_key_list,save_dir='/home/boon/Projects/iNaturalist-edible-plants/outputs',template_path='/home/boon/Projects/iNaturalist-edible-plants/apis/inat_usa_predicate_template.json',name_flag=""):
     """
-    Create a Json Header Parameter, with nubKey list no larger 100, for GBIF query request.
+    Create a Json Header Parameter, with nubKey list no larger 100,000 for GBIF query request.
     """
 
     with open(template_path,'r') as j:
@@ -35,7 +35,14 @@ def createQuery(taxon_key_list,save_dir='/home/ubuntu/iNaturalist-edible-plants/
     return save_path
 
 if __name__ == '__main__':
-    df = pd.read_csv('/home/ubuntu/iNaturalist-edible-plants/outputs/gbif_search_service_output_317_2025-02-23_03-39-18.csv')
-    print(df.columns)
-    taxon_key_ls = df['usageKey'].to_list()
-    createQuery(taxon_key_ls)
+    # df = pd.read_csv('/home/ubuntu/iNaturalist-edible-plants/outputs/gbif_search_service_output_317_2025-02-23_03-39-18.csv')
+    # print(df.columns)
+    df = pd.read_csv('/home/boon/Projects/iNaturalist-edible-plants/outputs/gbif_search_service_output_665_all_2025-07-05_18-58-49.csv')
+    # Supressing kingdom observations
+    df = df[df['rank']!='KINGDOM']
+    
+    taxon_key_ls = df['usageKey'].unique()
+    print(f'Dataframe has {df.shape[0]} rows')
+    print(f'Number of unique keys found: {len(taxon_key_ls)}')
+    save_path = createQuery(taxon_key_ls,name_flag='all')
+    print('Predicate saved at: ',save_path)

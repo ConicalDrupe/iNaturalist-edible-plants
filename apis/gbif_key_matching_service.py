@@ -11,13 +11,14 @@ parser = argparse.ArgumentParser(prog='GBIF Key Matching Service',
 
 parser.add_argument('-s','--species',help='Species Rank',action=argparse.BooleanOptionalAction)
 parser.add_argument('-g','--genus',help='Genus Rank',action=argparse.BooleanOptionalAction)
+parser.add_argument('-a','--all',help='Run all as Species Rank',action=argparse.BooleanOptionalAction)
 
 args = parser.parse_args()
 
 def match(name):
     url = "https://api.gbif.org/v1/species/match"
 
-    if args.species:
+    if args.species or args.all:
         params = {
             "name":name,
             "rank": "SPECIES",
@@ -30,7 +31,7 @@ def match(name):
             "kingdom":"Plantae",
         }
     else:
-        print('-s or -g flag required')
+        print('-s or -g or -a flag required')
         exit()
 
     response = requests.get(url, params=params,auth=(g.user,g.p))
@@ -88,6 +89,8 @@ def run_match_service(file_to_match='/home/boon/Projects/iNaturalist-edible-plan
     elif args.genus:
         df = df[df['name_len']==1]
         file_flag='genus'
+    elif args.all:
+        file_flag='all'
     else:
         print('-s or -g flag required')
         exit()
