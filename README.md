@@ -12,3 +12,10 @@ Name extraction accuracy: 35.82%
 Number of manual edibles entries: 294
 Number of correct edibles entries: 295
 Edible extraction accuracy: 50.08%
+
+# PostgresSQL
+
+## Extensions
+
+- PostGIS
+- pg_parquet
