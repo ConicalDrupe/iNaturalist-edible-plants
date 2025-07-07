@@ -1,0 +1,47 @@
+# Load 4GB csv in chunks using dask
+- Filter columns
+
+```{python}
+import os
+import pandas as pd
+import dask.dataframe as dd
+
+back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+csv_path = os.path.join(back_dir,'hidden','inat-6mil-obs.csv')
+
+
+ddf = dd.read_csv(csv_path,blocksize='25MB',delimiter=r'\t',dtype={'speciesKey':'float64','infraspecificEpithet':'object'})
+
+print('Columns:\n',ddf.columns)
+# print('\n')
+# print(ddf.head())
+
+pd.options.display.max_rows=None
+pd.options.display.max_columns=None
+
+columns = ['gbifID','occurrenceID','family','genus','species','scientificName','verbatimScientificName','stateProvince','occurrenceStatus','individualCount','decimalLatitude','decimalLongitude','coordinateUncertaintyInMeters','coordinatePrecision','elevation','elevationAccuracy','depth','eventDate','day','month','year','taxonKey','dateIdentified','rightsHolder']
+ddf = ddf[columns]
+print(ddf.head())
+
+```
+
+# Rename Columns
+
+```{python}
+col_map={'scientificName':'accepted_name','verbatimScientificName':'scientific_name','stateProvidence':'state_providence','occurrenceStatus':'occurrence_status','individualCount':'individual_count','decimalLatitude':'lat','decimalLongitude':'lon','coordinateUncertaintyInMeters':'coord_uncertainty','coordinatePrecision':'coord_precision','elevationAccuracy':'elevation_accuracy','eventDate':'occurrence_date','dateIdentified':'identification_date'}
+ddf = ddf.rename(columns=col_map)
+```
+
+# Datatypes
+
+```{python}
+ddf.dtypes
+```
+
+# Save as Parquet
+
+```{python}
+parquet_path = os.path.join(back_dir,'hidden','processed-inat-6mil.parquet')
+ddf.to_parquet(parquet_path)
+```
+
