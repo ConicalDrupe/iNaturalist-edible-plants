@@ -4,4 +4,4 @@ set_environment_vars.py
 /apis/gbif_password.py
 __pycache__
 .venv
-
+/hidden/
