@@ -47,5 +47,37 @@ ddf['occurrence_date'] = dd.to_datetime(ddf['occurrence_date'],format="ISO8601")
 ```{python}
 parquet_path = os.path.join(back_dir,'hidden','processed-inat-6mil.parquet')
 ddf.to_parquet(parquet_path,engine='pyarrow')
+
+csv_path = os.path.join(back_dir,'hidden','processed-inat-6mil.csv')
+ddf.to_csv(csv_path)
+
+```
+
+# Load into postgres database
+
+```{python}
+from sqlalchemy import URL
+
+db = os.environ['POSTGRES_DB']
+db_host = os.environ['POSTGRES_HOST']
+db_user = os.environ['POSTGRES_USER']
+db_pass = os.environ['POSTGRES_PASS']
+
+url_obj = URL.create(
+    "postgresql+psycopg2",
+    username=db_user,
+    password=db_pass,
+    host=db_host,
+    port='5433',
+    database=db
+)
+# engine = create_engine(url_obj)
+
+
+#
+# for n in n_partitions:
+# ddf.get_partition(n)
+# OR
+ddf.to_sql(name='raw_obs',uri=url_obj,schema='raw_obs',method='multi',chunksize=40000,index=False)
 ```
 
