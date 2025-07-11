@@ -19,3 +19,22 @@ models:
       - name: centroid
         tests:
           - not_null
+
+  - name: stg_species_info
+    columns:
+      - name: taxon_key
+        data_type: bigint
+        contstraints:
+          - type: primary_key
+      - name: scientific_name
+        data_type: varchar(32)
+        tests:
+          - not_null
+      - name: taxon_rank
+        data_type: varchar(8)
+        tests:
+          - not_null
+      - name: edibles
+        data_type: varchar(128)
+        tests:
+          - not_null
