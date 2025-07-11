@@ -36,3 +36,4 @@ models:
 
 seeds:
   schema: raw
+  +quote_columns: false
