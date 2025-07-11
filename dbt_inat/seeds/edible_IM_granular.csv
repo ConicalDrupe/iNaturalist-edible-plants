@@ -1,4 +1,4 @@
-source,name,edibles,e_stem,e_leaves,e_fiddleheads,e_root,e_heart,e_shoots,e_fruit,e_flower,e_seeds,e_cambium,e_needles,e_pollen,e_bark,e_immature seed,e_tips,e_nuts,e_immature fruit,e_sap,e_peel,e_immature seeds,e_buds,e_immature flower,e_shoot,e_stems,e_immature buds,e_flowerbuds,e_fruits,e_roots,e_beans,e_galls,e_stalks,e_flowers,e_pith,e_immature seedpods,e_immature fruits
+source,name,edibles,e_stem,e_leaves,e_fiddleheads,e_root,e_heart,e_shoots,e_fruit,e_flower,e_seeds,e_cambium,e_needles,e_pollen,e_bark,e_immature_seed,e_tips,e_nuts,e_immature_fruit,e_sap,e_peel,e_immature_seeds,e_buds,e_immature_flower,e_shoot,e_stems,e_immature_buds,e_flowerbuds,e_fruits,e_roots,e_beans,e_galls,e_stalks,e_flowers,e_pith,e_immature_seedpods,e_immature_fruits
 0001_a,Equisetum arvense,stems,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0001_b,Botrychium virginianum,fronds,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0002_a,Pteridium aquilinum,"fiddleheads,rhizomes",0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

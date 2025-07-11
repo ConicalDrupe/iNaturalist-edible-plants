@@ -116,14 +116,14 @@ granular_im = granular_im[['source','name','edibles','stems_shoots','leaves_gree
 granular_im = granular_im .rename(columns={'roots_underground':'roots'})
 for col in granular_im.columns:
     if col in ['stems_shoots','leaves_greens','specialized','roots','fruits','pods','flowers_buds','seeds_nuts','bark_sap']:
-        granular_im.rename(columns={col:col.upper()},inplace=True)
+        granular_im.rename(columns={col:col.upper().strip().replace(' ','_')},inplace=True)
 
 im = im[['source', 'name', 'edibles','stem', 'leaves', 'fiddleheads', 'root', 'heart', 'shoots', 'fruit', 'flower', 'seeds', 'cambium', 'needles', 'pollen', 'bark', 'immature seed', 'tips', 'nuts', 'immature fruit', 'sap', 'peel', 'immature seeds', 'buds', 'immature flower', 'shoot', 'stems', 'immature buds', 'flowerbuds','fruits', 'roots', 'beans', 'galls', 'stalks', 'flowers', 'pith', 'immature seedpods', 'immature fruits']]
 
 # Create edible signifier for table
 for col in im.columns:
     if col in ['stem', 'leaves', 'fiddleheads', 'root', 'heart', 'shoots', 'fruit', 'flower', 'seeds', 'cambium', 'needles', 'pollen', 'bark', 'immature seed', 'tips', 'nuts', 'immature fruit', 'sap', 'peel', 'immature seeds', 'buds', 'immature flower', 'shoot', 'stems', 'immature buds', 'flowerbuds','fruits', 'roots', 'beans', 'galls', 'stalks', 'flowers', 'pith', 'immature seedpods', 'immature fruits']:
-        im.rename(columns={col:f'e_{col}'},inplace=True)
+        im.rename(columns={col:f'e_{col.strip().replace(' ','_')}'},inplace=True)
 
 granular_im.columns
 im.columns
