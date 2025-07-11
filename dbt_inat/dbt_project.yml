@@ -33,3 +33,6 @@ models:
   dbt_inat:
     staging:
       +materialized: view
+
+seeds:
+  schema: raw
