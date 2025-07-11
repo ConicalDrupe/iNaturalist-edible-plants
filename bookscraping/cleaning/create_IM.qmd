@@ -1,74 +1,143 @@
 
 ```{python}
 import pandas as pd
-from edible_map import edible_map
+from edible_map_new import edible_map, edible_map_granular
 from ast import literal_eval
 import os
 
-path = os.path.join(os.getcwd(),'final_species_list.csv')
+back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+path = os.path.join(back_dir,'outputs','reprocessing','final_665_species.csv')
 df = pd.read_csv(path)
 df.columns
-
-df = df.drop(columns=['Unnamed: 0'])
-df = df.rename(columns={'Mistral_edibles':'edibility'})
-df['edibility'] = df['edibility'].str.lower()
 ```
 
 
-
-
+## Checking unique edibel names
 
 ```{python}
 import re
+
 def get_unique_edible_names(s):
-  # Get series of unique edible parts
-  s = s.apply(literal_eval) #ensure list gets evaluated as a list
+  # raw = s.str.split(',')
   ed = pd.Series(s.explode().unique()).str.strip()
   # Remove young prefix and (nuts) post fix
-  clean_ed = ed.str.replace('young ',' ').str.replace(' (acorns)',' ').str.strip()
+  # clean_ed = ed.str.replace('young ',' ').str.replace(' (acorns)',' ').str.strip()
   # Map names
-  clean_ed = clean_ed.apply(lambda x: edible_map[x] if x in edible_map.keys() else x)
+  # clean_ed = clean_ed.apply(lambda x: edible_map[x] if x in edible_map.keys() else x)
   # print(clean_ed)
-  names = pd.Series(clean_ed.unique()).str.lower().tolist() 
+  # names = pd.Series(clean_ed.unique()).str.lower().tolist() 
+  names = pd.Series(ed.unique()).str.lower().tolist() 
   return names
 
-s = df['edibility']
+s = df['edibles'].str.split(',')
 unique_names = get_unique_edible_names(s)
 print(unique_names)
+print('Number of unique names: ',len(unique_names))
 ```
 
+
 ```{python}
-def create_indicator_matrix_via_proxy(df,mapping=edible_map):
-    df['temp'] = df['edibility']
-    df['temp'] = df['temp'].apply(literal_eval)
 
-    df['temp'] = df['temp'].apply(lambda l: [x.replace('young ','').strip() for x in l])
-    df['temp'] = df['temp'].apply(lambda l: [x.replace(' (acorns)',' ').strip() for x in l])
-    df['temp'] = df['temp'].apply(lambda l: [mapping[x] if x in list(mapping.keys()) else x for x in l])
+mapping = edible_map
+df['temp']=df['edibles'].copy()
+df['temp'] = df['temp'].apply(lambda l: [mapping[x] if x in mapping.keys() else x for x in l.split(',')])
+df['temp'] = df['temp'].apply(lambda l: ','.join(l))
+df['temp'].head(40)
+```
 
-    names = get_unique_edible_names(df['edibility'])
+## Removed adjectives
+stems,fiddleheads,leaves,root,hearts,shoots,fruits,nuts,flower buds,immature fruits,immature seeds,bark,cambium,tips,beans,pith,galls,pollen
+
+# Schema
+- taxon_key
+- scientific_name
+- edible_ls : string of edibles as a list
+
+
+- leaves,flowers,buds,stem,immature fruit
+- fruit
+- seed
+- pulp
+- root
+- tips
+- fiddleheads
+- pollen
+-> greens = leaves,stems
+- petioles=stems
+- uses: (beans, tea ,syrup, oil, flour, pickles,grapes)
+- pith=fruit
+- tendrils: tips
+
+```{python}
+def create_indicator_matrix_via_proxy(dataframe,edible_col='edibles',mapping=edible_map):
+    df = dataframe.copy()
+    df['temp'] = df[edible_col]
+
+    # Map definitions, then rejoin, and turn back into a list
+    df['temp'] = df['temp'].apply(lambda l: [mapping[x.strip()] if x.strip() in mapping.keys() else x for x in l.split(',')])
+    df['temp'] = df['temp'].apply(lambda l: ','.join(l))
+    df['temp'] = df['temp'].apply(lambda l: [x.strip() for x in l.split(',')])
+
+    names = get_unique_edible_names(df['temp'])
     for name in names:
-      df[name] = 0
+        df[name] = 0
 
     cols = names.copy()
-    cols.append('edibility')
+    cols.append(edible_col)
 
     for index, value in df['temp'].items():
-      for val in value:
-        for name in names:
-          match = re.search(name,val,re.IGNORECASE)
-          if match:
-            df.loc[index,name] = 1
+        for val in value:
+            for name in names:
+                match = re.search(name,val,re.IGNORECASE)
+                if match:
+                    df.loc[index,name] = 1
 
-    df = df.rename(columns={'nut':'Nuts','leave':'Leaves','seed':'Seeds','fruit':'Fruits','flower':'Flowers','shoot':'Shoots','bud':'Flower Buds','twig':'Twigs','needle':'Needles','bark':'Bark','seedcones':'Seedcones','sap':'Sap','heart':'Heart','pollen':'Pollen','root':'Root','tips':'Tips','fiddleheads':'Fiddleheads','pulp':'Pulp','stem':'Stem','stalk':'stalk','above-ground portion':'above_ground_portion','whole plant':'whole_plant','pith':'Pith','stalk':'Stalk'})
-    df = df.drop(['edibility','source','temp'],axis=1)
+    # df = df.drop(['edibility','source','temp'],axis=1)
     return df
 
 im = create_indicator_matrix_via_proxy(df)
+im.columns
+
+# source
+# name
+# edibles -> raw_edibles
+```
+
+
+```{python}
+granular_im = create_indicator_matrix_via_proxy(df,mapping=edible_map_granular)
+granular_im.columns
+```
+
+
+# Two seperate tables
+```{python}
+granular_im = granular_im[['source','name','edibles','stems_shoots','leaves_greens','specialized','roots_underground','fruits','pods','flowers_buds','seeds_nuts','bark_sap']]
+granular_im = granular_im .rename(columns={'roots_underground':'roots'})
+for col in granular_im.columns:
+    if col in ['stems_shoots','leaves_greens','specialized','roots','fruits','pods','flowers_buds','seeds_nuts','bark_sap']:
+        granular_im.rename(columns={col:col.upper()},inplace=True)
+
+im = im[['source', 'name', 'edibles','stem', 'leaves', 'fiddleheads', 'root', 'heart', 'shoots', 'fruit', 'flower', 'seeds', 'cambium', 'needles', 'pollen', 'bark', 'immature seed', 'tips', 'nuts', 'immature fruit', 'sap', 'peel', 'immature seeds', 'buds', 'immature flower', 'shoot', 'stems', 'immature buds', 'flowerbuds','fruits', 'roots', 'beans', 'galls', 'stalks', 'flowers', 'pith', 'immature seedpods', 'immature fruits']]
+
+# Create edible signifier for table
+for col in im.columns:
+    if col in ['stem', 'leaves', 'fiddleheads', 'root', 'heart', 'shoots', 'fruit', 'flower', 'seeds', 'cambium', 'needles', 'pollen', 'bark', 'immature seed', 'tips', 'nuts', 'immature fruit', 'sap', 'peel', 'immature seeds', 'buds', 'immature flower', 'shoot', 'stems', 'immature buds', 'flowerbuds','fruits', 'roots', 'beans', 'galls', 'stalks', 'flowers', 'pith', 'immature seedpods', 'immature fruits']:
+        im.rename(columns={col:f'e_{col}'},inplace=True)
+
+granular_im.columns
 im.columns
 ```
 
 
 ```{python}
-im.to_csv(os.path.join(os.getcwd(),'edible_wild_IM.csv'),index=False)
+im.to_csv(os.path.join(back_dir,'outputs','edible_wild_IM_granular.csv'),index=False)
+granular_im.to_csv(os.path.join(back_dir,'outputs','edible_wild_IM_broad.csv'),index=False)
+```
+
+# Max length of edible string
+- 82
+```{python}
+import numpy as np
+np.max(im['edibles'].apply(lambda x: len(x)))
 ```
