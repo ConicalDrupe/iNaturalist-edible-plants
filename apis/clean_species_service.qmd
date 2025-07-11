@@ -1,0 +1,29 @@
+
+```{python}
+import pandas as pd
+import os
+
+back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+csv_path = os.path.join(back_dir,'outputs','gbif_search_service_output_665_all_2025-07-05_18-58-49.csv')
+
+df = pd.read_csv(csv_path)
+```
+
+
+```{python}
+df[df.duplicated(subset='usageKey',keep=False)]
+```
+
+# Dropping based on index and KINGDOM
+```{python}
+idx_to_drop =[21,110,171]
+
+df.drop(labels=idx_to_drop,inplace=True,axis=0)
+
+df = df[df['rank']!='KINGDOM']
+```
+
+```{python}
+save_dir = os.path.join(back_dir,'outputs','gbif_species_match_650_clean.csv')
+df.to_csv(save_dir,index=False)
+```
