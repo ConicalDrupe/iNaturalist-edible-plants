@@ -1,0 +1,21 @@
+---
+version: 1
+
+models:
+  - name: stg_county_centroids
+    columns:
+      - name: geoid
+        data_type: varchar(5)
+        contstraints:
+          - type: primary_key
+      - name: state_fips
+        data_type: varchar(2)
+        tests:
+          - not_null
+      - name: county_fips
+        data_type: varchar(3)
+        tests:
+          - not_null
+      - name: centroid
+        tests:
+          - not_null
