@@ -10,7 +10,7 @@ back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
 csv_path = os.path.join(back_dir,'hidden','inat-6mil-obs.csv')
 
 
-ddf = dd.read_csv(csv_path,blocksize='25MB',delimiter=r'\t',dtype={'speciesKey':'float64','infraspecificEpithet':'object'})
+ddf = dd.read_csv(csv_path,blocksize='50MB',delimiter=r'\t',dtype={'speciesKey':'float64','infraspecificEpithet':'object'})
 
 print('Columns:\n',ddf.columns)
 # print('\n')
@@ -63,14 +63,16 @@ db_host = os.environ['POSTGRES_HOST']
 db_user = os.environ['POSTGRES_USER']
 db_pass = os.environ['POSTGRES_PASS']
 
-url_obj = URL.create(
-    "postgresql+psycopg2",
-    username=db_user,
-    password=db_pass,
-    host=db_host,
-    port='5433',
-    database=db
-)
+# url_obj = URL.create(
+#     "postgresql+psycopg2",
+#     username=db_user,
+#     password=db_pass,
+#     host=db_host,
+#     port='5433',
+#     database=db
+# )
+
+uri = f"postgresql+psycopg2://{db_user}:{db_pass}@{db_host}:5433/{db}"
 # engine = create_engine(url_obj)
 
 
@@ -78,6 +80,6 @@ url_obj = URL.create(
 # for n in n_partitions:
 # ddf.get_partition(n)
 # OR
-ddf.to_sql(name='raw_obs',uri=url_obj,schema='raw_obs',method='multi',chunksize=40000,index=False)
+ddf.to_sql(name='raw_obs',uri=uri,schema='public_raw',method='multi',chunksize=80000,index=False)
 ```
 
