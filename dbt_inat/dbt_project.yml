@@ -3,7 +3,7 @@
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
 name: 'dbt_inat'
-version: '1.0.0'
+version: '1.5.0'
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'dbt_inat'
@@ -34,6 +34,12 @@ models:
     staging:
       +materialized: view
       +schema: staging
+    census:
+      +materialized: table
+      +schema: census
+    plants:
+      +materialized: table
+      +schema: plants
 
 seeds:
   +schema: raw
