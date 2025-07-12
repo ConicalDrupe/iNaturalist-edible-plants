@@ -38,3 +38,24 @@ models:
         data_type: varchar(128)
         tests:
           - not_null
+
+# See model for indexes, materialization strategy
+  - name: stg_observations
+    config:
+      materialized: table
+    +indexes:
+      - columns: ['geo_loc']
+        type: gist
+    columns:
+      - name: gbifID
+        data_type: bigint
+        contstraints:
+          - type: primary_key
+      - name: geo_loc
+        data_type: geometry
+        tests:
+          - not_null
+      - name: taxon_key
+        data_type: bigint
+        tests:
+          - not_null
