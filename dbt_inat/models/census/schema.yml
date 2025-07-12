@@ -1,0 +1,28 @@
+---
+version: 1
+
+models:
+  - name: counties
+    config:
+      materialized: table
+    +indexes:
+      - columns: ['centroid','geom']
+        type: gist
+    columns:
+      - name: geoid
+        data_type: varchar(5)
+        constraints:
+          - type: primary_key
+      - name: state_fips
+        data_type: varchar(2)
+      - name: county_fips
+        data_type: varchar(4)
+        tests:
+          - not_null
+      - name: county_name
+        data_type: varchar(24)
+      - name: centroid
+        tests:
+          - not_null
+      - name: geom
+        data_type: geography
