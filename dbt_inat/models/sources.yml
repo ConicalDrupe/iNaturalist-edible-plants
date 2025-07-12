@@ -1,7 +1,7 @@
 ---
 version: 1
 sources:
-  - name: census_source
+  - name: census
     schema: public_raw
     database: iNat
     loader: shp2pgsql
@@ -20,5 +20,22 @@ sources:
             - not_null
         - name: statefp
           data_type: varchar(4)
+          tests:
+            - not_null
+
+  - name: gbif
+    schema: public_raw
+    database: iNat
+    loader: dask
+    tables:
+      - name: raw_obs
+        description: "Raw Research Grade observations from GBIF API "
+        columns:
+        - name: gbifID
+          data_type: bigint
+          constraints:
+            - type: primary_key
+        - name: taxonKey
+          data_type: bigint
           tests:
             - not_null
