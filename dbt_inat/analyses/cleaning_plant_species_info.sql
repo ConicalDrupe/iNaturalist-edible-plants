@@ -1,5 +1,3 @@
--- Goal: create a lookup table for species on key or name. 
--- Has family,genus,species name, taxon_key, rank, and edible parts
 with observed_taxon_keys as (
     SELECT 
     DISTINCT 
@@ -7,7 +5,7 @@ with observed_taxon_keys as (
     species,
     genus,
     family
-    from {{ ref('stg_observations') }}
+    from public_staging.stg_observations
 ),
 
 -- TODO:
@@ -27,7 +25,7 @@ backfill_candidates as (
         obs.species as obs_species,
         obs.genus as obs_genus,
         obs.family as obs_family
-    from {{ ref('stg_species_info') }} info
+    from public_staging.stg_species_info info
     RIGHT JOIN observed_taxon_keys obs -- Full outer join to see what species were not found!
     ON info.taxon_key = obs.taxon_key
     ),
@@ -99,7 +97,7 @@ taxons_to_union as (
         ,T2.e_immature_fruits
         ,T2.source
     from (Select * from backfill_candidates where info_tk is null) T1
-    RIGHT JOIN (select * from {{ ref('stg_species_info') }} where taxon_rank='GENUS') T2
+    RIGHT JOIN (select * from public_staging.stg_species_info where taxon_rank='GENUS') T2
     ON T1.obs_genus = T2.scientific_name 
     where T1.obs_tk is not null
 ),
@@ -162,10 +160,38 @@ final as (
         from (
                 Select * from taxons_to_union
                 UNION
-                Select * from {{ ref('stg_species_info') }}
+                Select * from public_staging.stg_species_info
              ) M
         LEFT JOIN backfill_candidates T2
         on M.taxon_key = T2.obs_tk
 )
 
 select * from final
+
+-- 5030 are null
+-- select
+-- count(*) 
+-- from backfill_candidates
+-- where info_tk is null or obs_tk is null
+
+-- select
+-- *
+-- from public_staging.stg_species_info info
+-- where taxon_rank= 'GENUS';
+
+-- Select *
+-- from backfill_candidates
+-- where obs_tk is null
+
+-- Select *
+-- from backfill_candidates
+-- where obs_tk is null or info_tk is null 
+
+-- Select count(*)
+-- from backfill_candidates
+-- where info_tk is null 
+-- UNION
+-- Select count(*)
+-- from backfill_candidates
+-- where obs_tk is null
+
