@@ -6,7 +6,7 @@ models:
     columns:
       - name: geoid
         data_type: varchar(5)
-        contstraints:
+        constraints:
           - type: primary_key
       - name: state_fips
         data_type: varchar(2)
@@ -24,7 +24,7 @@ models:
     columns:
       - name: taxon_key
         data_type: bigint
-        contstraints:
+        constraints:
           - type: primary_key
       - name: scientific_name
         data_type: varchar(32)
@@ -49,7 +49,7 @@ models:
     columns:
       - name: gbifID
         data_type: bigint
-        contstraints:
+        constraints:
           - type: primary_key
       - name: geo_loc
         data_type: geometry
