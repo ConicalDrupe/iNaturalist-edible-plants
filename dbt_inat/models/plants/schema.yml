@@ -1,0 +1,10 @@
+---
+version: 1
+
+models:
+  - name: observations
+    columns:
+      - name: gbif_id
+        data_type: bigint
+        constraints:
+          - type: primary_key
