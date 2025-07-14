@@ -6,6 +6,7 @@ with reverse_geocoded as
     ,obs.species
     ,obs.taxon_key
     ,obs.state as ob_state
+    ,c.geoid
     ,c.state
     ,c.county
     ,c.state_fips
@@ -30,6 +31,7 @@ SELECT
     ,ob_state
     ,state
     ,county
+    ,geoid
     ,state_fips
     ,county_fips
     ,coordinate_uncertainty_meters
