@@ -6,8 +6,8 @@ sources:
     database: iNat
     loader: shp2pgsql
     tables:
-      - name: counties_shp
-        description: "raw US County mappings with geometry"
+      - name: counties_20m_shp
+        description: "raw US County mappings with geometry. 1:20,000,000 resolution"
         columns:
         - name: geoid
           data_type: int
@@ -37,5 +37,27 @@ sources:
             - type: primary_key
         - name: taxonKey
           data_type: bigint
+          tests:
+            - not_null
+
+  - name: census
+    schema: public_raw
+    database: iNat
+    loader: shp2pgsql
+    tables:
+      - name: counties_5m_shp
+        description: "raw US County mappings with geometry. At a 1:5,000,000 resolution"
+        columns:
+        - name: geoid
+          data_type: int
+          tests:
+            - unique
+            - not_null
+        - name: countyfp
+          data_type: varchar(4)
+          tests:
+            - not_null
+        - name: statefp
+          data_type: varchar(4)
           tests:
             - not_null
