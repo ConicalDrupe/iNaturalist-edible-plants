@@ -1,15 +1,21 @@
 ---
-version: 1
+version: 2
 
 models:
-  - name: observations
+  - name: fct_observations
     columns:
       - name: gbifid
         data_type: bigint
         constraints:
           - type: primary_key
+      - name: taxon_key
+        data_type: bigint
+        constraints:
+          - type: foreign_key
+            to: ref('dim_species')
+            to_columns: [taxon_key]
 
-  - name: species_lookup
+  - name: dim_species
     columns:
       - name: taxon_key
         data_type: bigint
