@@ -20,6 +20,7 @@ models:
       - name: county_name
         data_type: varchar(24)
       - name: centroid
+        data_type: geography
         tests:
           - not_null
       - name: geom
