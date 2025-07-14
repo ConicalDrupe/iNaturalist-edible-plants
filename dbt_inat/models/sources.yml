@@ -36,6 +36,7 @@ sources:
           constraints:
             - type: primary_key
         - name: taxonKey
+          quote: true
           data_type: bigint
           tests:
             - not_null

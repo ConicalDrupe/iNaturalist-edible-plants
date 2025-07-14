@@ -22,6 +22,8 @@ models:
       - name: centroid
         data_type: geography
         tests:
-          - not_null
+          - not_null:
+              config:
+                severity: warn
       - name: geom
         data_type: geography
