@@ -40,6 +40,9 @@ models:
     plants:
       +materialized: table
       +schema: plants
+    analytics:
+      +materialized: table
+      +schema: analytics
 
 seeds:
   +schema: raw
