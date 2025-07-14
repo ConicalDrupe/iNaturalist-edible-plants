@@ -1,6 +1,10 @@
 -- Goal: Convert lat/lon to point and create gist indexes
-
-
+{{ config(
+    indexes=[
+        {'columns': ['geo_loc'], 'type':'gist'}
+    ]
+) 
+}}
 
 
 with renamed as (

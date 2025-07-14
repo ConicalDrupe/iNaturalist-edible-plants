@@ -1,3 +1,9 @@
+{{ config(
+    indexes=[
+        {'columns': ['centroid','geom'], 'type':'gist'}
+    ]
+) 
+}}
 
 with joined as (
 SELECT 
@@ -9,7 +15,7 @@ SELECT
     ,A.centroid
     ,ST_TRANSFORM(B.geom,4326) as geom --translate to EPSG:4326
     from {{ ref('stg_county_centroids') }} A
-    RIGHT JOIN {{ source('census', 'counties_shp') }} B 
+    RIGHT JOIN {{ source('census', 'counties_5m_shp') }} B 
     ON A.geoid = B.geoid
 ),
 

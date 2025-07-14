@@ -1,13 +1,11 @@
 ---
 version: 1
 
+# Indexes created in model file
 models:
   - name: counties
     config:
       materialized: table
-    +indexes:
-      - columns: ['centroid','geom']
-        type: gist
     columns:
       - name: geoid
         data_type: varchar(5)
