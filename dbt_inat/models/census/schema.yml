@@ -1,5 +1,5 @@
 ---
-version: 1
+version: 2
 
 # Indexes created in model file
 models:
@@ -13,6 +13,8 @@ models:
           - type: primary_key
       - name: state_fips
         data_type: varchar(2)
+        tests:
+          - not_null
       - name: county_fips
         data_type: varchar(4)
         tests:
