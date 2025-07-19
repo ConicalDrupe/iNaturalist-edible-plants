@@ -3,27 +3,83 @@
 import pandas as pd
 import os
 
+
 back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
 csv_path = os.path.join(back_dir,'outputs','gbif_search_service_output_665_all_2025-07-05_18-58-49.csv')
 
 df = pd.read_csv(csv_path)
 ```
 
+# Checking Duplicates
 
 ```{python}
-df[df.duplicated(subset='usageKey',keep=False)]
+# Duplications of species matched
+# display(df[df.duplicated(subset='usageKey',keep=False)])
+
+# Matches with Family rank
+df[df['rank']=='FAMILY']
+
 ```
 
-# Dropping based on index and KINGDOM
+## Dropping based on index and KINGDOM/FAMILY
+
 ```{python}
 idx_to_drop =[21,110,171]
 
 df.drop(labels=idx_to_drop,inplace=True,axis=0)
 
-df = df[df['rank']!='KINGDOM']
+df = df[(df['rank']!='KINGDOM') & (df['rank']!='FAMILY')]
 ```
 
+# Checking num of spaces in searched name vs canonicalname
+- Keep Salicorniao, Viola,etc. drop the others
 ```{python}
-save_dir = os.path.join(back_dir,'outputs','gbif_species_match_650_clean.csv')
+df['searched_sp'] = df['searchedName'].str.strip().apply(lambda x: len(x.split(' ')))
+df['matched_sp'] = df['canonicalName'].str.strip().apply(lambda x: len(x.split(' ')))
+
+unequal = df[df['searched_sp']!=df['matched_sp']]
+unequal.head(20)
+```
+
+
+```{python}
+idx_to_drop = [156,281,331,367,585]
+df.drop(labels=idx_to_drop,inplace=True,axis=0)
+
+df.shape
+```
+
+
+# Checking searchedName with scientificName (use this for test)
+- White space cleaning!
+- Genus
+- And Non genus pass
+```{python}
+# df['searchedName'] != df['scientificName'].str.apply(lambda x: x.srip.split(' ')[0])
+
+df['first_of_searched'] = df['searchedName'].apply(lambda x: x.strip().split(' ')[0])
+df['first_of_binomial'] = df['scientificName'].apply(lambda x: x.strip().split(' ')[0])
+df['first_of_canonical'] = df['canonicalName'].apply(lambda x: x.strip().split(' ')[0])
+mask1= (df['first_of_searched']!=df['first_of_canonical'])
+mask2= (df['first_of_binomial']!=df['first_of_canonical'])
+mask3 = (df['rank']=='GENUS')
+# df[mask1 & mask3].head(20)
+df[mask1].head(20)
+# display(df[df['first_of_binomial']!=df['first_of_canonical']])
+```
+
+
+```{python}
+pd.options.display.max_rows = None
+pd.options.display.max_columns = None
+col_ls = ['searchedName','canonicalName','scientificName','first_of_searched','first_of_binomial','first_of_canonical']
+print(df[col_ls][mask1].head())
+# print(df[col_ls][mask2].head())
+```
+
+
+```{python}
+# save_dir = os.path.join(back_dir,'outputs','gbif_species_match_650_clean.csv')
+save_dir = os.path.join(back_dir,'outputs',f'gbif_species_match_{df.shape[0]}_clean.csv')
 df.to_csv(save_dir,index=False)
 ```
