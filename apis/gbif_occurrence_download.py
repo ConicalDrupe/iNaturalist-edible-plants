@@ -24,4 +24,5 @@ def download(predicate_path):
 
 if __name__ == '__main__':
     # download('/home/ubuntu/iNaturalist-edible-plants/outputs/317_taxonKeys_query.json')
-    download('/home/boon/Projects/iNaturalist-edible-plants/outputs/650all_taxonKeys_query.json')
+    # download('/home/boon/Projects/iNaturalist-edible-plants/outputs/650all_taxonKeys_query.json')
+    download('/home/boon/Projects/iNaturalist-edible-plants/outputs/638all_taxonKeys_query.json')
