@@ -37,9 +37,10 @@ def createQuery(taxon_key_list,save_dir='/home/boon/Projects/iNaturalist-edible-
 if __name__ == '__main__':
     # df = pd.read_csv('/home/ubuntu/iNaturalist-edible-plants/outputs/gbif_search_service_output_317_2025-02-23_03-39-18.csv')
     # print(df.columns)
-    df = pd.read_csv('/home/boon/Projects/iNaturalist-edible-plants/outputs/gbif_search_service_output_665_all_2025-07-05_18-58-49.csv')
+    # df = pd.read_csv('/home/boon/Projects/iNaturalist-edible-plants/outputs/gbif_search_service_output_665_all_2025-07-05_18-58-49.csv')
+    df = pd.read_csv('/home/boon/Projects/iNaturalist-edible-plants/outputs/gbif_species_match_638_clean.csv')
     # Supressing kingdom observations
-    df = df[df['rank']!='KINGDOM']
+    # df = df[df['rank']!='KINGDOM']
     
     taxon_key_ls = df['usageKey'].unique()
     print(f'Dataframe has {df.shape[0]} rows')
