@@ -1,27 +1,6 @@
 ---
-version: 1
+version: 2
 sources:
-  - name: census
-    schema: public_raw
-    database: iNat
-    loader: shp2pgsql
-    tables:
-      - name: counties_20m_shp
-        description: "raw US County mappings with geometry. 1:20,000,000 resolution"
-        columns:
-        - name: geoid
-          data_type: int
-          tests:
-            - unique
-            - not_null
-        - name: countyfp
-          data_type: varchar(4)
-          tests:
-            - not_null
-        - name: statefp
-          data_type: varchar(4)
-          tests:
-            - not_null
 
   - name: gbif
     schema: public_raw
@@ -49,15 +28,12 @@ sources:
       - name: gbif_species_match_service
         description: "Outputs from Book species matched with gbif species/match api v1"
         columns:
-        - name: gbifID
+        - name: usageKey
+          description: "Taxon Key used in GBIF backbone. Due to historical reasons, some species have multiple distinct usageKeys"
+          quote: true
           data_type: bigint
           constraints:
             - type: primary_key
-        - name: taxonKey
-          quote: true
-          data_type: bigint
-          tests:
-            - not_null
 
   - name: census
     schema: public_raw
@@ -66,6 +42,28 @@ sources:
     tables:
       - name: counties_5m_shp
         description: "raw US County mappings with geometry. At a 1:5,000,000 resolution"
+        columns:
+        - name: geoid
+          data_type: int
+          tests:
+            - unique
+            - not_null
+        - name: countyfp
+          data_type: varchar(4)
+          tests:
+            - not_null
+        - name: statefp
+          data_type: varchar(4)
+          tests:
+            - not_null
+
+  - name: census
+    schema: public_raw
+    database: iNat
+    loader: shp2pgsql
+    tables:
+      - name: counties_20m_shp
+        description: "raw US County mappings with geometry. 1:20,000,000 resolution"
         columns:
         - name: geoid
           data_type: int
