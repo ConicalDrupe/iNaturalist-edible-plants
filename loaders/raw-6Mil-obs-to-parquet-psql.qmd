@@ -7,7 +7,7 @@ import pandas as pd
 import dask.dataframe as dd
 
 back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
-csv_path = os.path.join(back_dir,'hidden','inat-6mil-obs.csv')
+csv_path = os.path.join(back_dir,'hidden','inat-6mil-obs_runv2.csv')
 
 
 ddf = dd.read_csv(csv_path,blocksize='50MB',delimiter=r'\t',dtype={'speciesKey':'float64','infraspecificEpithet':'object'})
