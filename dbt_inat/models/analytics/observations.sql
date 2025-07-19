@@ -2,6 +2,8 @@
     materialized='table'
 )}}
 
+-- ~49k observations have dim_species values are null, signify a failed reverse geocode. Plotting these observations shows boundaries with the ocean. Likely the high resolution shapefile does not stretch this far.
+-- Observations are filtered to where coordinate uncertainty is under 5 miles.
 SELECT
     obs.gbifid
     ,obs.taxon_key
@@ -59,9 +61,13 @@ SELECT
     ,sp.e_pith
     ,sp.e_immature_seedpods
     ,sp.e_immature_fruits
-    -- ,obs.coordinate_uncertainty_meters
-    -- ,obs.elevation
-    -- ,obs.elevation_accuracy
+    ,obs.coordinate_uncertainty_meters
+    ,obs.elevation
+    ,obs.elevation_accuracy
 from {{ref('fct_observations')}} obs
 Left Join {{ref('dim_species')}} sp
 ON obs.taxon_key = sp.taxon_key
+WHERE 1=1
+    AND obs.county_fips is not null -- Where dim_species values are null, signify a failed reverse geocode. Plotting these observations shows boundaries with the ocean. Likely the high resolution shapefile does not stretch this far.
+    AND obs.coordinate_uncertainty_meters < 8049 -- coordinate uncertainty is under 5 miles
+
