@@ -1,5 +1,5 @@
 ---
-version: 1
+version: 2
 
 models:
   - name: stg_county_centroids
@@ -34,6 +34,8 @@ models:
         data_type: varchar(8)
         tests:
           - not_null
+          - accepted_values:
+              values: ['GENUS','SPECIES']
       - name: edibles
         data_type: varchar(128)
         tests:
@@ -54,5 +56,11 @@ models:
           - not_null
       - name: taxon_key
         data_type: bigint
+        tests:
+          - not_null
+      - name: family
+        tests:
+          - not_null
+      - name: genus
         tests:
           - not_null
