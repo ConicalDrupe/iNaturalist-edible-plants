@@ -41,6 +41,24 @@ sources:
           tests:
             - not_null
 
+  - name: gbif
+    schema: public_raw
+    database: iNat
+    loader: psql-cli
+    tables:
+      - name: gbif_species_match_service
+        description: "Outputs from Book species matched with gbif species/match api v1"
+        columns:
+        - name: gbifID
+          data_type: bigint
+          constraints:
+            - type: primary_key
+        - name: taxonKey
+          quote: true
+          data_type: bigint
+          tests:
+            - not_null
+
   - name: census
     schema: public_raw
     database: iNat
