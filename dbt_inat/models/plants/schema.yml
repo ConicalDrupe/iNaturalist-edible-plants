@@ -3,6 +3,7 @@ version: 2
 
 models:
   - name: fct_observations
+    description: "Observation Table where Geocoding is done. This table will contain observations that fail to geocode - likely due to bounday issues"
     columns:
       - name: gbifid
         data_type: bigint
@@ -14,6 +15,25 @@ models:
           - type: foreign_key
             to: ref('dim_species')
             to_columns: [taxon_key]
+      - name: state_fips
+        data_type: varchar(2)
+        tests:
+          - not_null
+      - name: county_fips
+        data_type: varchar(4)
+        tests:
+          - not_null
+      - name: geoid
+        tests:
+          - not_null
+      - name: lat
+        data_type: real
+        tests:
+          - not_null
+      - name: lon
+        data_type: real
+        tests:
+          - not_null
 
   - name: dim_species
     columns:

@@ -15,6 +15,8 @@ with reverse_geocoded as
     ,obs.elevation
     ,obs.elevation_accuracy
     ,obs.identification_date
+    ,obs.lon
+    ,obs.lat
     ,obs.occurrence_link
     ,obs.rights_holder
     ,ST_DISTANCE(obs.geo_loc,c.geom) as calculated_distance
@@ -38,6 +40,8 @@ SELECT
     ,elevation
     ,elevation_accuracy
     ,identification_date
+    ,lon
+    ,lat
     ,occurrence_link
     ,rights_holder
 from reverse_geocoded
