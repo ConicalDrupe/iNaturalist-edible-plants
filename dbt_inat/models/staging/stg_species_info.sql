@@ -48,10 +48,22 @@ SELECT
     t1.e_pith::smallint, 
     t1.e_immature_seedpods::smallint, 
     t1.e_immature_fruits::smallint,
-    t1.source
+    t1.source as edible_source
     from {{ ref('edible_IM_granular') }} as t1
     inner join {{ ref('edible_IM_broad') }} as t2
     ON t1.name=t2.name
+),
+
+matches_backfill_genus_rank as (
+    SELECT
+    usageKey,
+    canonicalname,
+    searchedName,
+    CASE WHEN first_of_canonical=canonicalname and "rank"<>'FAMILY' THEN 'GENUS'
+         ELSE "rank"
+         END as taxon_rank,
+    first_of_canonical
+    from {{ ref('gbif_species_match_service') }}
 ),
 
 -- right join to filter out un-matched names and duplicates, that have been cleaned from the species match service
@@ -59,10 +71,11 @@ appended_taxon_keys as (
 SELECT
     gbif.usageKey as taxon_key,
     gbif.canonicalname as scientific_name,
-    gbif."rank" as taxon_rank,
+    gbif.first_of_canonical,
+    gbif.taxon_rank,
     t1.*
     from all_edible_flags t1
-    right join {{ ref('gbif_species_match_service') }} as gbif
+    right join matches_backfill_genus_rank as gbif
     ON gbif.searchedName = t1.book_name
 )
 
