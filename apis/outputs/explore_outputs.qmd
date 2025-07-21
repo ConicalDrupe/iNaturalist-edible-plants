@@ -1,0 +1,29 @@
+
+```{python}
+import pandas as pd
+import os
+
+
+back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+two_back_dir = os.path.normpath(back_dir + os.sep + os.pardir)
+csv1_path= os.path.join(two_back_dir,'outputs','gbif_species_match_638_clean.csv')
+csv2_path= os.path.join(os.getcwd(),f'gbif_species_match_638_clean.csv')
+
+df1 = pd.read_csv(csv1_path)
+df2 = pd.read_csv(csv2_path)
+```
+
+
+```{python}
+print(df1.columns)
+print(df2.columns)
+```
+
+
+# Confirming the two captured the same species
+```{python}
+columns=['searchedName','canonicalName','rank','usageKey']
+
+total = pd.concat([df1[columns],df2[columns]],axis=0)
+total[total.duplicated(subset=columns,keep='first')].shape
+```
