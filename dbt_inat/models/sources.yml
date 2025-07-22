@@ -23,10 +23,25 @@ sources:
   - name: gbif
     schema: public_raw
     database: iNat
-    loader: psql-cli
+    loader: dbt-seed
     tables:
       - name: gbif_species_match_service
         description: "Outputs from Book species matched with gbif species/match api v1"
+        columns:
+        - name: usageKey
+          description: "Taxon Key used in GBIF backbone. Due to historical reasons, some species have multiple distinct usageKeys"
+          quote: true
+          data_type: bigint
+          constraints:
+            - type: primary_key
+
+  - name: gbif
+    schema: public_raw
+    database: iNat
+    loader: dbt-seed
+    tables:
+      - name: gbif_species_unknown_matchback
+        description: "Species that were matched from referncing species that were in raw_obs but not in gbif_species_match_service"
         columns:
         - name: usageKey
           description: "Taxon Key used in GBIF backbone. Due to historical reasons, some species have multiple distinct usageKeys"

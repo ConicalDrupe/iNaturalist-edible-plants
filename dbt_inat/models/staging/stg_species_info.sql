@@ -62,7 +62,13 @@ matches_backfill_genus_rank as (
     CASE WHEN first_of_canonical=canonicalname and "rank"<>'FAMILY' THEN 'GENUS'
          ELSE "rank"
          END as taxon_rank,
-    first_of_canonical
+    first_of_canonical,
+    family,
+    family_key,
+    genus,
+    genus_key,
+    species,
+    species_key
     from {{ ref('gbif_species_match_service') }}
 ),
 
@@ -73,6 +79,12 @@ SELECT
     gbif.canonicalname as scientific_name,
     gbif.first_of_canonical,
     gbif.taxon_rank,
+    gbif.family,
+    gbif.family_key,
+    gbif.genus,
+    gbif.genus_key,
+    gbif.species,
+    gbif.species_key,
     t1.*
     from all_edible_flags t1
     right join matches_backfill_genus_rank as gbif
