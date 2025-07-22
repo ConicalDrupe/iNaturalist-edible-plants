@@ -1,0 +1,93 @@
+
+# Strategy
+1) Check keys that are in raw_obs but not in original gbif_species_match_service used to create the predicate
+2) For keys in 1), crossreference first name in searchedName/canonicalName (gbif_species_match_service) to see if there is a match in either column for raw_obs key
+
+# Import data to matchback
+
+```{python}
+import os
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder \
+     .config("spark.jars",r"/home/boon/temp/postgresql-42.7.7.jar") \
+     .master("local") \
+     .getOrCreate()
+
+df = spark.read \
+    .format("jdbc") \
+    .option("url",f"jdbc:postgresql://{os.environ['POSTGRES_HOST']}:5433/{os.environ['POSTGRES_DB']}") \
+    .option("dbtable","public_raw.gbif_species_match_service") \
+    .option("user",f"{os.environ['POSTGRES_USER']}") \
+    .option("password",f"{os.environ['POSTGRES_PASS']}") \
+    .option("driver","org.postgresql.Driver") \
+    .load()
+
+df.createOrReplaceTempView("matches")
+
+df2 = spark.read \
+    .format("jdbc") \
+    .option("url",f"jdbc:postgresql://{os.environ['POSTGRES_HOST']}:5433/{os.environ['POSTGRES_DB']}") \
+    .option("dbtable","public_raw.raw_obs") \
+    .option("user",f"{os.environ['POSTGRES_USER']}") \
+    .option("password",f"{os.environ['POSTGRES_PASS']}") \
+    .option("driver","org.postgresql.Driver") \
+    .load()
+
+df2.createOrReplaceTempView("obs")
+
+# df.head()
+df2.printSchema()
+res = spark.sql("Select DISTINCT taxonKey,scientific_name from obs where taxonKey not in (Select Distinct usageKey from matches)")
+res.show()
+
+# spark.stop()
+```
+
+
+## Splitting column for obs. Match table already has first_name_canonical
+```{python}
+from pyspark.sql.functions import split
+from pyspark.sql.functions import col
+
+name_split = split(res['scientific_name'],' ')
+new_taxon_map = res.withColumn("first_name_matched",name_split.getItem(0))
+new_taxon_map.show()
+
+new_taxon_map.createOrReplaceTempView('taxon_map')
+```
+
+# Creating the mapping
+
+```{python}
+res2 = spark.sql("SELECT T1.*,T2.usageKey,T2.canonicalName,T2.first_of_canonical from taxon_map T1 LEFT JOIN matches T2 on T1.first_name_matched = T2.first_of_canonical WHERE T2.rank = 'GENUS'")
+res2.show()
+
+res2.createOrReplaceTempView("map")
+```
+
+## Checking nullity of join
+- Results in 0, so all had proper join!
+```{python}
+from pyspark.sql.functions import isnan, when, count, col
+
+# res2.select([count(when(isnan(c), c)).alias(c) for c in res2.columns]).show()
+res3 = spark.sql("Select count(*) from map where first_of_canonical is null")
+res3.show()
+```
+
+## Checking duplicates of join
+- It is possible that scientific_name, has several first name matches to canonical
+- All good!, matching on GENUS was sufficient
+
+```{python}
+res4 = spark.sql("Select scientific_name from map group by scientific_name having count(scientific_name)>1")
+res4.show()
+```
+
+# Create final matchback table
+- For each unique scientific_name, or taxon_key? It is possible that a species has multiple taxon_key for the same name...
+
+```{python}
+spark.stop()
+```

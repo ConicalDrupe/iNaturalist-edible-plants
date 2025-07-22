@@ -1,0 +1,112 @@
+
+# USE
+- For taxon_keys in raw_obs but not in init_species_matches.
+- Use the gbif_species_matching_service_v2.py to get new matches -> mnfst_species_matches
+- Then join to genus, if the genus has edibility.
+
+# EVERYTHING BELOW THIS IS OLD
+## COULD LATER BE A AIRFLOW DAG -> Using xcoms for table/csv location communication between tasks
+
+# Schema
+- Should this gbif_species_match_service table be a SCD?
+
+# Strategy
+1) Check keys that are in raw_obs but not in original gbif_species_match_service used to create the predicate
+2) for keys found in 1), run the species_matching service. Store this in the species_matchback_mnfst table
+3) Using these two species_matching tables, RIGHT/LEFT join on genus, where the entire genus is edible, to obtain edibility information.
+
+# Import data to matchback
+
+```{python}
+import os
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder \
+     .config("spark.jars",r"/home/boon/temp/postgresql-42.7.7.jar") \
+     .master("local") \
+     .getOrCreate()
+
+df = spark.read \
+    .format("jdbc") \
+    .option("url",f"jdbc:postgresql://{os.environ['POSTGRES_HOST']}:5433/{os.environ['POSTGRES_DB']}") \
+    .option("dbtable","public_raw.gbif_species_match_service") \
+    .option("user",f"{os.environ['POSTGRES_USER']}") \
+    .option("password",f"{os.environ['POSTGRES_PASS']}") \
+    .option("driver","org.postgresql.Driver") \
+    .load()
+
+df.createOrReplaceTempView("matches")
+
+df2 = spark.read \
+    .format("jdbc") \
+    .option("url",f"jdbc:postgresql://{os.environ['POSTGRES_HOST']}:5433/{os.environ['POSTGRES_DB']}") \
+    .option("dbtable","public_raw.raw_obs") \
+    .option("user",f"{os.environ['POSTGRES_USER']}") \
+    .option("password",f"{os.environ['POSTGRES_PASS']}") \
+    .option("driver","org.postgresql.Driver") \
+    .load()
+
+df2.createOrReplaceTempView("obs")
+
+# df.head()
+df2.printSchema()
+res = spark.sql("Select DISTINCT taxonKey,scientific_name as name from obs where taxonKey not in (Select Distinct usageKey from matches)")
+res.show()
+
+# spark.stop()
+```
+
+## Turning result into csv
+
+```{python}
+import datetime as dt
+stamp = dt.datetime.now().strftime("%Y-%m-%d-%H-%M-%s")
+saved_csv= os.path.join(os.getcwd(),'outputs',f'unknown_taxon_keys_{stamp}.csv')
+
+# Convert to pandas dataframe, so we can save without directory/metadata
+temp = res.toPandas()
+temp['taxonKey'] = temp['taxonKey'].astype('int64')
+temp.to_csv(saved_csv,index=False)
+```
+
+
+```{python}
+spark.stop()
+```
+
+# Running matching service
+```{python}
+import sys
+import subprocess
+
+output_dir = os.path.join(os.getcwd(),'outputs')
+
+sys.path.insert(0,'/home/boon/Projects/iNaturalist-edible-plants/apis/')
+
+subprocess.run(f'python3 gbif_key_matching_service_v2.py -a -f {saved_csv} -d {output_dir}')
+```
+
+
+```{python}
+# saved_csv
+import pandas as pd
+import numpy  as np
+csv_path = r'/home/boon/Projects/iNaturalist-edible-plants/src/matchback_engine/outputs/gbif_search_service_output_2336_all_2025-07-21_17-38-45.csv'
+
+csv = pd.read_csv(csv_path)
+print(csv.head())
+
+for col in csv.columns:
+    if csv[col].dtype == object:
+        csv[col] = csv[col].replace('',np.nan)
+
+print(csv.isna().sum())
+```
+
+## Now we also have to clean the output of this manifest
+
+```{python}
+pd.options.display.max_rows=None
+pd.options.display.max_columns=None
+csv[csv['formattedName'].isna()]
+```

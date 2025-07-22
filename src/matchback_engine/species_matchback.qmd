@@ -1,0 +1,68 @@
+
+# Strategy
+1) Check keys that are in raw_obs but not in original gbif_species_match_service used to create the predicate
+2) For keys in 1), crossreference first name in searchedName/canonicalName (gbif_species_match_service) to see if there is a match in either column for raw_obs key
+
+
+# Loading directories and api functions
+```{python}
+import os
+import sys
+
+back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+two_back_dir = os.path.normpath(back_dir + os.sep + os.pardir)
+api_dir = os.path.join(two_back_dir,'apis')
+
+sys.path.insert(0,api_dir)
+
+import gbif_key_matching_service as gbif_match
+```
+
+
+# Import data to matchback
+- First check the table (so we can properly backfill)
+- See if
+
+```{python}
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder \
+     .config("spark.jars",r"/home/boon/temp/postgresql-42.7.7.jar") \
+     .master("local") \
+     .getOrCreate()
+
+df = spark.read \
+    .format("jdbc") \
+    .option("url",f"jdbc:postgresql://{os.environ['POSTGRES_HOST']}:5433/{os.environ['POSTGRES_DB']}") \
+    .option("dbtable","public_raw.gbif_species_match_service") \
+    .option("user",f"{os.environ['POSTGRES_USER']}") \
+    .option("password",f"{os.environ['POSTGRES_PASS']}") \
+    .option("driver","org.postgresql.Driver") \
+    .load()
+
+df.createOrReplaceTempView("spk_species_matches")
+
+# df.head()
+df.printSchema()
+res = spark.sql("Select * from spk_species_matches where rank not in ('SPECIES','GENUS')")
+res.show()
+
+# print('Beep')
+spark.stop()
+```
+
+# Potential Tests
+- Number of words in searchedName vs. canonicalName should match
+- Checking rank (only species an genus in the book?)
+- Checking matchtype?
+
+```{python}
+```
+
+# Looking at raw_obs
+- What keys are in raw_obs that are not in 
+- FIX: These keys that were not originally correctly matched, should not be in the dataset at all!!!!!
+
+
+```{python}
+```
