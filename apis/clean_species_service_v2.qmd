@@ -6,7 +6,9 @@ import os
 
 back_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
 csv1_path = os.path.join(back_dir,'outputs','gbif_search_service_output_665_all_2025-07-05_18-58-49.csv')
-csv2_path = os.path.join(os.getcwd(),'outputs','gbif_search_service_output_665_all_2025-07-21_15-10-41.csv')
+# csv2_path = os.path.join(os.getcwd(),'outputs','gbif_search_service_output_665_all_2025-07-21_15-10-41.csv')
+
+csv2_path = os.path.join(back_dir,'src','matchback_engine','outputs','gbif_search_service_output_2336_all_2025-07-21_17-38-45.csv')
 
 df1 = pd.read_csv(csv1_path)
 df2 = pd.read_csv(csv2_path)
@@ -17,7 +19,7 @@ df2 = pd.read_csv(csv2_path)
 
 ```{python}
 # Duplications of species matched
-display(df2[df2.duplicated(subset='usageKey',keep=False)])
+display(df2[df2.duplicated(subset='usageKey',keep=False)].sort_values(by='usageKey'))
 
 # Matches with Family rank
 # print(df1[df1['rank']=='FAMILY'].shape)
@@ -37,11 +39,14 @@ for col in df2.columns:
 ## Dropping based on index and KINGDOM/FAMILY
 
 ```{python}
-idx_to_drop =[21,110,171]
+# Index drop muted for 2336 
+# idx_to_drop =[21,110,171]
 
-df2.drop(labels=idx_to_drop,inplace=True,axis=0)
+# df2.drop(labels=idx_to_drop,inplace=True,axis=0)
 
+df2.shape
 df2 = df2[(df2['rank']!='KINGDOM') & (df2['rank']!='FAMILY')]
+df2.shape
 ```
 
 # Checking num of spaces in searched name vs canonicalname
@@ -70,7 +75,7 @@ df2.shape
 ```{python}
 import re
 # df['searchedName'] != df['scientificName'].str.apply(lambda x: x.srip.split(' ')[0])
-df2['scientificName'] = df2['formattedName'].map(lambda x: ' '.join(re.findall(r"<i>(.*?)</i>",x)))
+df2['scientificName'] = df2['formattedName'].map(lambda x: ' '.join(re.findall(r"<i>(.*?)</i>",str(x))))
 
 df2['first_of_searched'] = df2['searchedName'].apply(lambda x: x.strip().split(' ')[0])
 df2['first_of_binomial'] = df2['scientificName'].apply(lambda x: x.strip().split(' ')[0])
@@ -83,6 +88,10 @@ df2[mask1].head(20)
 # display(df2[df2['first_of_binomial']!=df2['first_of_canonical']])
 ```
 
+ For 2336 file
+```{python}
+df2 = df2.drop(labels=[1390])
+```
 
 ```{python}
 pd.options.display.max_rows = None
@@ -97,4 +106,11 @@ print(df[col_ls][mask1].head())
 # save_dir = os.path.join(back_dir,'outputs','gbif_species_match_650_clean.csv')
 save_dir = os.path.join(os.getcwd(),'outputs',f'gbif_species_match_{df2.shape[0]}_clean.csv')
 df2.to_csv(save_dir,index=False)
+```
+
+
+saving 2336 file
+```{python}
+second_save_dir = os.path.join(back_dir,'src','matchback_engine','outputs',f'gbif_search_service_output_{df2.shape[0]}_clean.csv')
+df2.to_csv(second_save_dir,index=False)
 ```
