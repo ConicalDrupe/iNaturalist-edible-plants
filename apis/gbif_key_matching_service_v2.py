@@ -15,6 +15,7 @@ parser.add_argument('-g','--genus',help='Genus Rank',action=argparse.BooleanOpti
 parser.add_argument('-a','--all',help='Run all as Species Rank',action=argparse.BooleanOptionalAction)
 
 parser.add_argument('-f','--file',help='Absolute Path to csv file')
+parser.add_argument('-d','--directory_to_save',help='Absolute Path to save directory')
 
 args = parser.parse_args()
 
@@ -74,11 +75,16 @@ def parse_v2_response(data,name):
     diagnostics = data['diagnostics']
     usage = data['usage']
 
+    # Edge case
+    formattedName = ''
+    if 'formattedName' in usage:
+        formattedName = usage['formattedName']
+
     parsed_data = {
         'searchedName':name,
         'usageKey':usage['key'],
         'canonicalName':usage['canonicalName'],
-        'formattedName':usage['formattedName'], # scientific name between <i> </i> tags
+        'formattedName':formattedName, # scientific name between <i> </i> tags
         'rank':usage['rank'],
         'family':family,
         'family_key':family_key,
@@ -114,7 +120,12 @@ def save_matches(record_ls,save_path):
     print(f'[INFO] Saved matched names to {save_path}')
     return True
 
-def run_match_service(save_dir='/home/boon/Projects/iNaturalist-edible-plants/apis/outputs',name_col='name'):
+def run_match_service(name_col='name'):
+
+    if args.directory_to_save:
+        save_dir = args.directory_to_save
+    else:
+        save_dir='/home/boon/Projects/iNaturalist-edible-plants/apis/outputs'
 
     if args.file:
         file_to_match = args.file
