@@ -46,6 +46,7 @@ taxons_to_union as (
         ,CASE WHEN T1.obs_species is null then T1.obs_genus 
               ELSE T1.obs_species 
               END as scientific_name
+        ,T2.first_of_canonical
         ,CASE WHEN T1.obs_species is null then 'GENUS'
               ELSE 'SPECIES'
               END as taxon_rank
@@ -97,7 +98,7 @@ taxons_to_union as (
         ,T2.e_pith
         ,T2.e_immature_seedpods
         ,T2.e_immature_fruits
-        ,T2.source
+        ,T2.edible_source
     from (Select * from backfill_candidates where info_tk is null) T1
     RIGHT JOIN (select * from {{ ref('stg_species_info') }} where taxon_rank='GENUS') T2
     ON T1.obs_genus = T2.scientific_name 
@@ -110,11 +111,17 @@ final as (
     Select 
         M.taxon_key,
         M.scientific_name,
-        T2.obs_genus as genus,
-        T2.obs_family as family,
+        T2.obs_genus,
+        T2.obs_family, 
         M.taxon_rank,
         M.book_name,
         M.edibles,
+        M.species,
+        M.species_key,
+        M.genus,
+        M.genus_key,
+        M.family,
+        M.family_key,
         M.stems_shoots,
         M.leaves_greens,
         M.specialized,
@@ -162,7 +169,7 @@ final as (
         from (
                 Select * from taxons_to_union
                 UNION
-                Select * from {{ ref('stg_species_info') }}
+                Select * from {{ ref('stg_matchback') }}
              ) M
         LEFT JOIN backfill_candidates T2
         on M.taxon_key = T2.obs_tk
