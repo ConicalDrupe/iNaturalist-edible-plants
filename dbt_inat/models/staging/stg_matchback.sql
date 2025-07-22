@@ -1,14 +1,23 @@
 -- Edible genus in
 with edible_genus as (
     Select *
-    from public_staging.stg_species_info
+    from {{ref('stg_species_info')}}
     where taxon_rank = 'GENUS'
 ),
 
 -- Appending edibles. Note not all records were able to be matched
 edibles_appended as (
     Select 
-    unk.*, 
+    unk.usageKey as taxon_key,
+    unk.canonicalname as scientific_name,
+    unk.first_of_canonical,
+    unk."rank" as taxon_rank,
+    unk.family,
+    unk.family_key,
+    unk.genus,
+    unk.genus_key,
+    unk.species,
+    unk.species_key,
     eg.stems_shoots,
     eg.leaves_greens,
     eg.specialized,
@@ -52,11 +61,75 @@ edibles_appended as (
     eg.e_flowers,
     eg.e_pith,
     eg.e_immature_seedpods,
-    eg.e_immature_fruits
-    from public_raw.gbif_species_unknown_matchback unk
+    eg.e_immature_fruits,
+    eg.book_name
+    from {{ref('gbif_species_unknown_matchback')}} unk
     INNER JOIN edible_genus eg
     ON unk.genus_key = eg.genus_key
+),
+
+unioned as (
+    Select * 
+    from edibles_appended
+    UNION ALL
+    Select 
+    taxon_key,
+    scientific_name,
+    first_of_canonical,
+    taxon_rank,
+    family,
+    family_key,
+    genus,
+    genus_key,
+    species,
+    species_key,
+    stems_shoots,
+    leaves_greens,
+    specialized,
+    roots,
+    fruits,
+    pods,
+    flowers_buds,
+    seeds_nuts,
+    bark_sap,
+    e_stem,
+    e_leaves,
+    e_fiddleheads,
+    e_root,
+    e_heart,
+    e_shoots,
+    e_fruit,
+    e_flower,
+    e_seeds,
+    e_cambium,
+    e_needles,
+    e_pollen,
+    e_bark,
+    e_immature_seed,
+    e_tips,
+    e_nuts,
+    e_immature_fruit,
+    e_sap,
+    e_peel,
+    e_immature_seeds,
+    e_buds,
+    e_immature_flower,
+    e_shoot,
+    e_stems,
+    e_immature_buds,
+    e_flowerbuds,
+    e_fruits,
+    e_roots,
+    e_beans,
+    e_galls,
+    e_stalks,
+    e_flowers,
+    e_pith,
+    e_immature_seedpods,
+    e_immature_fruits,
+    book_name
+    from {{ ref('stg_species_info')}}
 )
 
-Select * 
-from edibles_appended
+Select * from unioned
+
