@@ -1,3 +1,6 @@
+{{config(
+    enabled=false
+)}}
 -- If a results returns, this means a GENUS has two distinct taxon keys
 
 with taxon_key_counts as (

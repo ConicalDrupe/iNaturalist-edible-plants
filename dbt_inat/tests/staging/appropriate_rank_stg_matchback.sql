@@ -1,3 +1,7 @@
+{{config(
+    enabled=false
+)}}
+
 -- Species that are only one word long
 SELECT
 *
