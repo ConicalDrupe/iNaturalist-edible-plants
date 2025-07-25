@@ -42,6 +42,18 @@ ddf['identification_date'] = dd.to_datetime(ddf['identification_date'],format="I
 ddf['occurrence_date'] = dd.to_datetime(ddf['occurrence_date'],format="ISO8601")
 ```
 
+# Helper column for species_matchback engine
+
+```{python}
+ddf = ddf.assign(first_of_scientific_name=ddf['scientific_name'].map(lambda x: x.split(' ')[0],meta=pd.Series(dtype="object")))
+# print(ddf.compute())
+```
+
+
+```{python}
+ddf.head()
+```
+
 # Save as Parquet
 
 ```{python}
