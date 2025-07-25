@@ -65,7 +65,7 @@ SELECT
     ,obs.elevation
     ,obs.elevation_accuracy
 from {{ref('fct_observations')}} obs
-Left Join {{ref('dim_species')}} sp
+INNER Join {{ref('dim_species')}} sp --Inner Join to filter out unmatchable species
 ON obs.taxon_key = sp.taxon_key
 WHERE 1=1
     AND obs.county_fips is not null -- Where dim_species values are null, signify a failed reverse geocode. Plotting these observations shows boundaries with the ocean. Likely the high resolution shapefile does not stretch this far.
