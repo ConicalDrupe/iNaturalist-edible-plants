@@ -1,5 +1,5 @@
 ---
-version: 1
+version: 2
 
 models:
   - name: observations
@@ -14,5 +14,9 @@ models:
           - not_null
       - name: county_fips
         data_type: varchar(4)
+        tests:
+          - not_null
+      - name: geoid
+        data_type: varchar(6)
         tests:
           - not_null
