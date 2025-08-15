@@ -1,0 +1,250 @@
+
+For 'nhgis0001_ds267_20235_county'.csv file
+Includes: Total Population, Poverty status by household type (past 12 months), and Median Household Income
+Codes:
+YEAR: Data File Year
+STATE: State Name
+STATEA: State Code
+COUNTY: County Name
+COUNTYA: County Code
+GEO_ID: Census Geographic Area Identifier
+
+ASN1E001: Total Population
+ASN1M001 Total Population Margin of Error
+
+
+ASQLE001: Total Poverty Households Population?
+ASQLM001: Margin of Error Total Poverty Households Population?
+ASQLE002: Income in the past 12 months below poverty level
+ASQLM002: Margin of Error - Income in the past 12 months below poverty level
+? ASQLE003:Income in the past 12 months below poverty level: Family households
+? ASQLM003: Margin of Error - Income in the past 12 months below poverty level: Family households
+? ASQLE020: Income in the past 12 months below poverty level: Nonfamily households
+? ASQLM020: Margin of Error - Income in the past 12 months below poverty level: Nonfamily households
+ASQLE031: Income in the past 12 months at or above poverty level
+ASQLM031: Margin of Error - Income in the past 12 months at or above poverty level
+
+ASQPE001: Median household income in the past 12 months (in 2023 inflation-adjusted dollars)
+ASQPM001: Margin of Error - Median household income in the past 12 months (in 2023 inflation-adjusted dollars)
+
+'YEAR' ,'STATE' ,'STATEA' ,'COUNTY' ,'COUNTYA' ,'GEO_ID',
+'ASN1E001', 'ASN1M001',
+'ASQLE001', 'ASQLM001', 'ASQLE002', 'ASQLM002', 'ASQLE003', 'ASQLM003', 'ASQLE020', 'ASQLM020', 'ASQLE031', 'ASQLM031',
+'ASQPE001', 'ASQPM001'
+```{python}
+import os
+import pandas as pd
+pd.options.display.max_rows = None
+pd.options.display.max_columns= None
+
+df = pd.read_csv(os.path.join(os.getcwd(),'nhgis0002_ds267_20235_county.csv'))
+
+print('BEFORE',df.shape)
+# No COUNTY, or COUNTYA
+columns = ['YEAR' ,'STATE','COUNTY','GEO_ID', 'ASN1E001', 'ASN1M001', 'ASQLE001', 'ASQLM001', 'ASQLE002', 'ASQLM002', 'ASQLE003', 'ASQLM003', 'ASQLE020', 'ASQLM020', 'ASQLE031', 'ASQLM031', 'ASQPE001', 'ASQPM001']
+df = df[columns]
+print('AFTER',df.shape)
+
+# By default is -5555555, Reset to 0
+df['ASN1M001']=0
+
+# State Fips - getting last two digits of Census GEO_ID
+df['StateFips'] = df['GEO_ID'].map(lambda x: str(x)[-5:-3])
+df['CountyFips'] = df['GEO_ID'].map(lambda x: str(x)[-3:])
+
+df.head()
+```
+
+## Column Renames
+```{python}
+
+column_map = {'YEAR':'ACS_YEAR',
+              'GEO_ID':'geoID_full',
+              'ASN1E001':'TotalPopulation',
+              'ASN1M001':'MOE_TotalPopulation',
+              'ASQLE001':'TotalHouseholds',
+              'ASQLM001':'MOE_TotalHouseholds',
+              'ASQLE002':'ImpoverishedHouseholds',
+              'ASQLM002':'MOE_ImpoverishedHouseholds',
+              'ASQLE003':'ImpoverishedFamilyHouseholds',
+              'ASQLM003':'MOE_ImpoverishedFamilyHouseholds',
+              'ASQLE020':'ImpoverishedNonFamilyHouseholds',
+              'ASQLM020':'MOE_ImpoverishedNonFamilyHouseholds',
+              'ASQLE031':'HouseholdsAbovePovertyLine',
+              'ASQLM031':'MOE_HouseholdsAbovePovertyLine',
+              'ASQPE001':'MedianHouseholdIncome',
+              'ASQPM001':'MOE_MedianHouseholdIncome'
+              }
+
+df = df.rename(columns=column_map)
+
+df.head()
+```
+
+Data Checks
+assert that
+HouseholdsAbovePovertyLine + ImpoverishedHouseholds = Totalhouseholds
+HouseholdsAdovePovertyLine < Total Households
+ImpoverishedHouseholds < Total Households
+```{python}
+# df['test'] = df['HouseholdsAbovePovertyLine'] + df['ImpoverishedHouseholds']
+# display(df[['test','TotalHouseholds']])
+```
+
+For table 'nhgis0001_ds268_20235_state'
+Includes: Means of Transportation by Poverty Status (past 12 Months), Receipt of Food Stamps/SNAP in the past 12 months by poverty status
+
+Codes:
+YEAR: Data File Year
+STATE: State Name
+STATEA: State Code
+COUNTY: County Name
+COUNTYA: County Code
+GEO_ID: Census Geographic Area Identifier
+
+
+AS3FE001: Total Universe (Workers 16 years and over for whom poverty status is determined)
+AS3FE002: Below 100 percent of the poverty level
+AS3FE003: 100 to 149 percent of the poverty level
+AS3FE004: At or above 150 percent of the poverty level
+AS3FE005: Car, truck, or van - drove alone
+AS3FE006: Car, truck, or van - drove alone: Below 100 percent of the poverty level
+AS3FE009: Car, truck, or van - carpooled
+AS3FE010: Car, truck, or van - carpooled: Below 100 percent of the poverty level
+AS3FE013: Public transportation (excluding taxicab)
+AS3FE014: Public transportation (excluding taxicab): Below 100 percent of the poverty level
+AS3FE017: Walked
+AS3FE018: Walked: Below 100 percent of the poverty level
+AS3FE021: Taxicab, motorcycle, bicycle, or other means
+AS3FE022: Taxicab, motorcycle, bicycle, or other means: Below 100 percent of the poverty level
+AS3FE025: Worked from home
+AS3FE026: Worked from home: Below 100 percent of the poverty level
+AS3FM001:
+AS3FM002:
+AS3FM003:
+AS3FM004:
+AS3FM005:
+AS3FM006:
+AS3FM009:
+AS3FM010:
+AS3FM013:
+AS3FM014:
+AS3FM017:
+AS3FM018:
+AS3FM021:
+AS3FM022:
+AS3FM025:
+AS3FM026:
+
+
+ATBVE001: Total Households
+ATBVE002: Household received Food Stamps/SNAP in the past 12 months
+ATBVE003: Household received Food Stamps/SNAP in the past 12 months: Income in the past 12 months below poverty level
+ATBVE004: Household received Food Stamps/SNAP in the past 12 months: Income in the past 12 months at or above poverty level
+ATBVE005: Household did not receive Food Stamps/SNAP in the past 12 months
+ATBVE006: Household did not receive Food Stamps/SNAP in the past 12 months: Income in the past 12 months below poverty level
+ATBVE007: Household did not receive Food Stamps/SNAP in the past 12 months: Income in the past 12 months at or above poverty level
+ATBVM001:
+ATBVM002:
+ATBVM003:
+ATBVM004:
+ATBVM005:
+ATBVM006:
+ATBVM007:
+
+```{python}
+df2 = pd.read_csv(os.path.join(os.getcwd(),'nhgis0002_ds268_20235_county.csv'))
+
+print('BEFORE',df2.shape)
+
+# columns = ['YEAR', 'STATE', 'GEO_ID', 'AS3FE001', 'AS3FM001', 'AS3FE002', 'AS3FM002', 'AS3FE003', 'AS3FM003', 'AS3FE004', 'AS3FM004', 'AS3FE005', 'AS3FM005', 'AS3FE006', 'AS3FM006', 'AS3FE009', 'AS3FM009', 'AS3FE010', 'AS3FM010', 'AS3FE013', 'AS3FM013', 'AS3FE014', 'AS3FM014', 'AS3FE017', 'AS3FM017', 'AS3FE018', 'AS3FM018', 'AS3FE021', 'AS3FM021', 'AS3FE022', 'AS3FM022', 'AS3FE025', 'AS3FM025', 'AS3FE026', 'AS3FM026', 'ATBVE001', 'ATBVM001', 'ATBVE002', 'ATBVM002', 'ATBVE003', 'ATBVM003', 'ATBVE004', 'ATBVM004', 'ATBVE005', 'ATBVM005', 'ATBVE006', 'ATBVM006', 'ATBVE007', 'ATBVM007']
+columns = ['GEO_ID', 'AS3FE001', 'AS3FM001', 'AS3FE002', 'AS3FM002', 'AS3FE003', 'AS3FM003', 'AS3FE004', 'AS3FM004', 'AS3FE005', 'AS3FM005', 'AS3FE006', 'AS3FM006', 'AS3FE009', 'AS3FM009', 'AS3FE010', 'AS3FM010', 'AS3FE013', 'AS3FM013', 'AS3FE014', 'AS3FM014', 'AS3FE017', 'AS3FM017', 'AS3FE018', 'AS3FM018', 'AS3FE021', 'AS3FM021', 'AS3FE022', 'AS3FM022', 'AS3FE025', 'AS3FM025', 'AS3FE026', 'AS3FM026', 'ATBVE002', 'ATBVM002', 'ATBVE003', 'ATBVM003', 'ATBVE004', 'ATBVM004', 'ATBVE005', 'ATBVM005', 'ATBVE006', 'ATBVM006', 'ATBVE007', 'ATBVM007']
+df2=df2[columns]
+
+df2['StateFips'] = df2['GEO_ID'].map(lambda x: str(x)[-5:-3])
+df2['CountyFips'] = df2['GEO_ID'].map(lambda x: str(x)[-3:])
+
+print('AFTER',df2.shape)
+
+display(df2.head())
+```
+
+Renaming the columns
+
+```{python}
+column_map = {'YEAR':'ACS_YEAR',
+           'GEO_ID':'geoID_full',
+           'AS3FE001':'TotalPopOfDeterminedPovertyLevel',
+           'AS3FM001':'MOE_TotalPopOfDeterminedPovertyLevel',
+           'AS3FE002':'Total100PercBelowPoverty',
+           'AS3FM002':'MOE_Total100PercPoverty',
+           'AS3FE003':'Total100to149PercPoverty',
+           'AS3FM003':'MOE_Total100to149PercPoverty',
+           'AS3FE004':'TotalOver150PercPoverty',
+           'AS3FM004':'MOE_TotalOver150PercPoverty',
+           'AS3FE005':'CarTruckVanAlone',
+           'AS3FM005':'MOE_CarTruckVanAlone',
+           'AS3FE006':'CarTruckVanAloneImpoverished',
+           'AS3FM006':'MOE_CarTruckVanAloneImpoverished',
+           'AS3FE009':'CarTruckVanCarPool',
+           'AS3FM009':'MOE_CarTruckVanCarPool',
+           'AS3FE010':'CarTruckVanCarPoolImpoverished',
+           'AS3FM010':'MOE_CarTruckVanCarPoolImpoverished',
+           'AS3FE013':'PublicTransport',
+           'AS3FM013':'MOE_PublicTransport',
+           'AS3FE014':'PublicTransportImpoverished',
+           'AS3FM014':'MOE_PublicTransportImpoverished',
+           'AS3FE017':'Walked',
+           'AS3FM017':'MOE_Walked',
+           'AS3FE018':'WalkedImpoverished',
+           'AS3FM018':'MOE_WalkedImpoverished',
+           'AS3FE021':'TaxicabCyclesOther',
+           'AS3FM021':'MOE_TaxicabCyclesOther',
+           'AS3FE022':'TaxicabCyclesOtherImpoverished',
+           'AS3FM022':'MOE_TaxicabCyclesOtherImpoverished',
+           'AS3FE025':'WorkFromHome',
+           'AS3FM025':'MOE_WorkFromHome',
+           'AS3FE026':'WorkFromHomeImpoverished',
+           'AS3FM026':'MOE_WorkFromHomeImpoverished',
+           'ATBVE002':'HouseholdsSNAP',
+           'ATBVM002':'MOE_HouseholdsSNAP',
+           'ATBVE003':'HouseholdsSNAPImpoverished',
+           'ATBVM003':'MOE_HouseholdsSNAPImpoverished',
+           'ATBVE004':'HouseholdsSNAPAbovePov',
+           'ATBVM004':'MOE_HouseholdsSNAPAbovePov',
+           'ATBVE005':'HouseholdsNOSNAP',
+           'ATBVM005':'MOE_HouseholdsNOSNAP',
+           'ATBVE006':'HouseholdsNOSNAPImpoverished',
+           'ATBVM006':'MOE_HouseholdsNOSNAPImpoverished',
+           'ATBVE007':'HouseholdsNOSNAPAbovePov',
+           'ATBVM007':'MOE_HouseholdsNOSNAPAbovePov'}
+
+df2 = df2.rename(columns=column_map)
+
+df2.head()
+```
+
+# Merging Both Dataframes
+
+```{python}
+final = df.merge(df2,how='outer',on='geoID_full')
+
+final = final.drop(columns=['StateFips_y','CountyFips_y'])
+final = final.rename(columns={'StateFips_x':'StateFips','CountyFips_x':'CountyFips'})
+
+print(final.isna().sum())
+print(final.head())
+print(final.shape)
+
+```
+
+Checking Total Hosehoulds
+- Removed ATBV001 - Housholds
+```{python}
+# final[final['TotalHouseholds']!=final['TotalHouseholdsSNAP']]
+```
+
+# Saving
+```{python}
+final.to_csv(os.path.join(os.getcwd(),'ACS_COUNTY_Output_Data.csv'),index=False)
+```

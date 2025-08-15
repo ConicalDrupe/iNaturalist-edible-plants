@@ -1,0 +1,229 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0001_ds268_20235_state'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2019-2023
+Geographic level: State
+Extent:           All areas
+Dataset:          2023 American Community Survey: 5-Year Data [2019-2023, Tracts & Larger Areas]
+   NHGIS code:    2019_2023_ACS5b
+   NHGIS ID:      ds268
+Breakdown(s):     Geographic Component:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Means of Transportation to Work by Poverty Status in the Past 12 Months
+   Universe:    Workers 16 years and over for whom poverty status is determined
+   Source code: B08122
+   NHGIS code:  AS3F
+ 
+2. Receipt of Food Stamps/SNAP in the Past 12 Months by Poverty Status in the Past 12 Months for Households
+   Universe:    Households
+   Source code: B22003
+   NHGIS code:  ATBV
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        STUSAB:      State Postal Abbreviation
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        TRACTA:      Census Tract Code
+        CONCITA:     Consolidated City Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        RES_ONLYA:   American Indian Area/Alaska Native Area (Reservation or Statistical Entity Only) Code
+        TRUSTA:      American Indian Area (Off-Reservation Trust Land Only)/Hawaiian Home Land Code
+        AIHHTLI:     American Indian/Hawaiian Home Land Trust Land Indicator
+        AITSA:       Tribal Subdivision/Remainder Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        CNECTA:      New England City and Town Combined Statistical Area
+        NECTADIV:    New England City and Town Area Division
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (2023-2025, 118th Congress) Code
+        SLDUA:       State Legislative District (Upper Chamber) Code
+        SLDLA:       State Legislative District (Lower Chamber) Code
+        ZCTA5A:      5-Digit ZIP Code Tabulation Area Code
+        SUBMCDA:     Subminor Civil Division Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PCI:         Principal City Indicator
+        PUMAA:       Public Use Microdata Area Code
+        GEO_ID:      Census Geographic Area Identifier
+        BTTRA:       Tribal Census Tract Code
+        TL_GEO_ID:   TIGER/Line Shapefile Geographic Area Identifier
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Means of Transportation to Work by Poverty Status in the Past 12 Months
+    Universe:    Workers 16 years and over for whom poverty status is determined
+    Source code: B08122
+    NHGIS code:  AS3F
+        AS3FE001:    Total
+        AS3FE002:    Below 100 percent of the poverty level
+        AS3FE003:    100 to 149 percent of the poverty level
+        AS3FE004:    At or above 150 percent of the poverty level
+        AS3FE005:    Car, truck, or van - drove alone
+        AS3FE006:    Car, truck, or van - drove alone: Below 100 percent of the poverty level
+        AS3FE007:    Car, truck, or van - drove alone: 100 to 149 percent of the poverty level
+        AS3FE008:    Car, truck, or van - drove alone: At or above 150 percent of the poverty level
+        AS3FE009:    Car, truck, or van - carpooled
+        AS3FE010:    Car, truck, or van - carpooled: Below 100 percent of the poverty level
+        AS3FE011:    Car, truck, or van - carpooled: 100 to 149 percent of the poverty level
+        AS3FE012:    Car, truck, or van - carpooled: At or above 150 percent of the poverty level
+        AS3FE013:    Public transportation (excluding taxicab)
+        AS3FE014:    Public transportation (excluding taxicab): Below 100 percent of the poverty level
+        AS3FE015:    Public transportation (excluding taxicab): 100 to 149 percent of the poverty level
+        AS3FE016:    Public transportation (excluding taxicab): At or above 150 percent of the poverty level
+        AS3FE017:    Walked
+        AS3FE018:    Walked: Below 100 percent of the poverty level
+        AS3FE019:    Walked: 100 to 149 percent of the poverty level
+        AS3FE020:    Walked: At or above 150 percent of the poverty level
+        AS3FE021:    Taxicab, motorcycle, bicycle, or other means
+        AS3FE022:    Taxicab, motorcycle, bicycle, or other means: Below 100 percent of the poverty level
+        AS3FE023:    Taxicab, motorcycle, bicycle, or other means: 100 to 149 percent of the poverty level
+        AS3FE024:    Taxicab, motorcycle, bicycle, or other means: At or above 150 percent of the poverty level
+        AS3FE025:    Worked from home
+        AS3FE026:    Worked from home: Below 100 percent of the poverty level
+        AS3FE027:    Worked from home: 100 to 149 percent of the poverty level
+        AS3FE028:    Worked from home: At or above 150 percent of the poverty level
+ 
+    Table 2:     Receipt of Food Stamps/SNAP in the Past 12 Months by Poverty Status in the Past 12 Months for Households
+    Universe:    Households
+    Source code: B22003
+    NHGIS code:  ATBV
+        ATBVE001:    Total
+        ATBVE002:    Household received Food Stamps/SNAP in the past 12 months
+        ATBVE003:    Household received Food Stamps/SNAP in the past 12 months: Income in the past 12 months below poverty level
+        ATBVE004:    Household received Food Stamps/SNAP in the past 12 months: Income in the past 12 months at or above poverty level
+        ATBVE005:    Household did not receive Food Stamps/SNAP in the past 12 months
+        ATBVE006:    Household did not receive Food Stamps/SNAP in the past 12 months: Income in the past 12 months below poverty level
+        ATBVE007:    Household did not receive Food Stamps/SNAP in the past 12 months: Income in the past 12 months at or above poverty level
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Means of Transportation to Work by Poverty Status in the Past 12 Months
+    Universe:    Workers 16 years and over for whom poverty status is determined
+    Source code: B08122
+    NHGIS code:  AS3F
+        AS3FM001:    Total
+        AS3FM002:    Below 100 percent of the poverty level
+        AS3FM003:    100 to 149 percent of the poverty level
+        AS3FM004:    At or above 150 percent of the poverty level
+        AS3FM005:    Car, truck, or van - drove alone
+        AS3FM006:    Car, truck, or van - drove alone: Below 100 percent of the poverty level
+        AS3FM007:    Car, truck, or van - drove alone: 100 to 149 percent of the poverty level
+        AS3FM008:    Car, truck, or van - drove alone: At or above 150 percent of the poverty level
+        AS3FM009:    Car, truck, or van - carpooled
+        AS3FM010:    Car, truck, or van - carpooled: Below 100 percent of the poverty level
+        AS3FM011:    Car, truck, or van - carpooled: 100 to 149 percent of the poverty level
+        AS3FM012:    Car, truck, or van - carpooled: At or above 150 percent of the poverty level
+        AS3FM013:    Public transportation (excluding taxicab)
+        AS3FM014:    Public transportation (excluding taxicab): Below 100 percent of the poverty level
+        AS3FM015:    Public transportation (excluding taxicab): 100 to 149 percent of the poverty level
+        AS3FM016:    Public transportation (excluding taxicab): At or above 150 percent of the poverty level
+        AS3FM017:    Walked
+        AS3FM018:    Walked: Below 100 percent of the poverty level
+        AS3FM019:    Walked: 100 to 149 percent of the poverty level
+        AS3FM020:    Walked: At or above 150 percent of the poverty level
+        AS3FM021:    Taxicab, motorcycle, bicycle, or other means
+        AS3FM022:    Taxicab, motorcycle, bicycle, or other means: Below 100 percent of the poverty level
+        AS3FM023:    Taxicab, motorcycle, bicycle, or other means: 100 to 149 percent of the poverty level
+        AS3FM024:    Taxicab, motorcycle, bicycle, or other means: At or above 150 percent of the poverty level
+        AS3FM025:    Worked from home
+        AS3FM026:    Worked from home: Below 100 percent of the poverty level
+        AS3FM027:    Worked from home: 100 to 149 percent of the poverty level
+        AS3FM028:    Worked from home: At or above 150 percent of the poverty level
+ 
+    Table 2:     Receipt of Food Stamps/SNAP in the Past 12 Months by Poverty Status in the Past 12 Months for Households
+    Universe:    Households
+    Source code: B22003
+    NHGIS code:  ATBV
+        ATBVM001:    Total
+        ATBVM002:    Household received Food Stamps/SNAP in the past 12 months
+        ATBVM003:    Household received Food Stamps/SNAP in the past 12 months: Income in the past 12 months below poverty level
+        ATBVM004:    Household received Food Stamps/SNAP in the past 12 months: Income in the past 12 months at or above poverty level
+        ATBVM005:    Household did not receive Food Stamps/SNAP in the past 12 months
+        ATBVM006:    Household did not receive Food Stamps/SNAP in the past 12 months: Income in the past 12 months below poverty level
+        ATBVM007:    Household did not receive Food Stamps/SNAP in the past 12 months: Income in the past 12 months at or above poverty level
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Jonathan Schroeder, David Van Riper, Steven Manson, Katherine Knowles, Tracy Kugler, Finn Roberts, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 20.0 
+        [dataset]. Minneapolis, MN: IPUMS. 2025. 
+        http://doi.org/10.18128/D050.V20.0
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
