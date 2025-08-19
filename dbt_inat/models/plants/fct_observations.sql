@@ -1,3 +1,10 @@
+{{ config(
+    materialized='table',
+    indexes=[
+        {'columns': ['occ_point'], 'type':'gist'}
+    ]
+) 
+}}
 
 with reverse_geocoded as 
 (
@@ -17,6 +24,7 @@ with reverse_geocoded as
     ,obs.identification_date
     ,obs.lon
     ,obs.lat
+    ,ST_SetSRID(ST_MakePoint(obs.lon,obs.lat),4326) as occ_point
     ,obs.occurrence_link
     ,obs.rights_holder
     ,ST_DISTANCE(obs.geo_loc,c.geom) as calculated_distance
@@ -42,6 +50,7 @@ SELECT
     ,identification_date
     ,lon
     ,lat
+    ,occ_point
     ,occurrence_link
     ,rights_holder
 from reverse_geocoded
