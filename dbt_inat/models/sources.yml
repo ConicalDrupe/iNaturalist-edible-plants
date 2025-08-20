@@ -93,3 +93,11 @@ sources:
           data_type: varchar(4)
           tests:
             - not_null
+
+  - name: qgis
+    schema: public_raw
+    database: iNat
+    loader: shp2pgsql
+    tables:
+      - name: filtered_and_clipped_worldgrid_ersi24034
+        description: "Grid output from QGIS where each grid is of size 1600mx1600m using counties_5m resolution. Grids that overlap county lines are removed."
