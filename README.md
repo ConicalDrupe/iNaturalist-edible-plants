@@ -27,7 +27,16 @@ Combined food-atlas data from 2019 to gauge county level poverty and SNAP benefi
 Food-Atlas Data comes in a finer grain, the CensusTract level. But we aggregated to county level, and recalculated margin of error to track accuracy of estimates.
 Further joined population census data from 2024.
 
+# Estimate Species Population By County
+We use quadrant estimation to estimate the number of each species on a per-county basis.
+This is done by laying a grid over the county where each grid box has area A, and randomly selecting grids and counting the number of observations of each species within the grid area A.
+The distribution of observations in each grid are expeceted to follow a Poisson distribution.
+This is then extrapolated to the entire area of the county. 
+This workflow was done in QGIS - an open source Geographical Information System software.
+
 # Dashboard
+
+# Results
 
 # Further Improvments
 ## Text Extraction
